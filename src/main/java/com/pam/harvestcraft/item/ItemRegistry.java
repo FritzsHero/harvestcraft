@@ -820,8 +820,8 @@ public static boolean squiddropCalamari;
 public static float snacksaturation;
 public static float mealsaturation;
 public static float meatymealsaturation;
-public static int freshmilkfrombucket;
-public static int freshwaterfrombucket;
+public static int freshmilkfrombucket = 8;
+public static int freshwaterfrombucket = 8;
 public static boolean enablesaltfromwaterbucketrecipe;
 public static int seedrarity;
 public static boolean enablecropitemsasseeds;
@@ -906,12 +906,12 @@ squiddropCalamari = config.get("general", "squiddropCalamari", true).getBoolean(
 snacksaturation = (float)config.get("crops", "snacksaturation", 0.6000000238418579D).getDouble(0.6000000238418579D);
 mealsaturation = (float)config.get("crops", "mealsaturation", 1.2000000476837158D).getDouble(1.2000000476837158D);
 meatymealsaturation = (float)config.get("crops", "meatymealsaturation", 1.600000023841858D).getDouble(1.600000023841858D);
-freshmilkfrombucket = config.get("miscellaneous recipes", "freshmilkfrombucket", 4).getInt();
-freshwaterfrombucket = config.get("miscellaneous recipes", "freshwaterfrombucket", 1).getInt();
+//freshmilkfrombucket = config.get("miscellaneous recipes", "freshmilkfrombucket", 4).getInt();
+//freshwaterfrombucket = config.get("miscellaneous recipes", "freshwaterfrombucket", 1).getInt();
 enablesaltfromwaterbucketrecipe = config.get("miscellaneous recipes", "enablesaltfromwaterbucketrecipe", true).getBoolean(true);
 seedrarity = config.get("seeds", "seedrarity", 1).getInt();
 enablecropitemsasseeds = config.get("miscellaneous recipes", "enablecropitemsasseeds", true).getBoolean(true);
- 
+
 asparagusseeddropfromgrass = config.get("seeds", "asparagusseeddropfromgrass", false).getBoolean(false);
 barleyseeddropfromgrass = config.get("seeds", "barleyseeddropfromgrass", false).getBoolean(false);
 beanseeddropfromgrass = config.get("seeds", "beanseeddropfromgrass", false).getBoolean(false);
