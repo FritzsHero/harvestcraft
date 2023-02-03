@@ -993,24 +993,10 @@ enablelistAllwatervanillawaterbucket = config.get("miscellaneous recipes", "enab
 
 
 
-public static void loadItemRegistry()
-{
-GameRegistry.registerItem(cuttingboardItem = new ItemPamTool().setUnlocalizedName("cuttingboardItem").setContainerItem(cuttingboardItem).setCreativeTab(harvestcraft.modTab), "cuttingboardItem");
-GameRegistry.registerItem(potItem = new ItemPamTool().setUnlocalizedName("potItem").setContainerItem(potItem).setCreativeTab(harvestcraft.modTab), "potItem");
-GameRegistry.registerItem(skilletItem = new ItemPamTool().setUnlocalizedName("skilletItem").setContainerItem(skilletItem).setCreativeTab(harvestcraft.modTab), "skilletItem");
-GameRegistry.registerItem(saucepanItem = new ItemPamTool().setUnlocalizedName("saucepanItem").setContainerItem(saucepanItem).setCreativeTab(harvestcraft.modTab), "saucepanItem");
-GameRegistry.registerItem(bakewareItem = new ItemPamTool().setUnlocalizedName("bakewareItem").setContainerItem(bakewareItem).setCreativeTab(harvestcraft.modTab), "bakewareItem");
-GameRegistry.registerItem(mortarandpestleItem = new ItemPamTool().setUnlocalizedName("mortarandpestleItem").setContainerItem(mortarandpestleItem).setCreativeTab(harvestcraft.modTab), "mortarandpestleItem");
-GameRegistry.registerItem(mixingbowlItem = new ItemPamTool().setUnlocalizedName("mixingbowlItem").setContainerItem(mixingbowlItem).setCreativeTab(harvestcraft.modTab), "mixingbowlItem");
-GameRegistry.registerItem(juicerItem = new ItemPamTool().setUnlocalizedName("juicerItem").setContainerItem(juicerItem).setCreativeTab(harvestcraft.modTab), "juicerItem");
-potItem.setContainerItem(potItem);
-skilletItem.setContainerItem(skilletItem);
-saucepanItem.setContainerItem(saucepanItem);
-bakewareItem.setContainerItem(bakewareItem);
-cuttingboardItem.setContainerItem(cuttingboardItem);
-mortarandpestleItem.setContainerItem(mortarandpestleItem);
-mixingbowlItem.setContainerItem(mixingbowlItem);
-juicerItem.setContainerItem(juicerItem);
+        public static void loadItemRegistry()
+        {
+                RegisterTools();
+
 
 //GameRegistry.registerItem(queenbeeItem = new ItemPamBee().setUnlocalizedName("queenbeeItem").setCreativeTab(harvestcraft.modTab), "queenbeeItem");
 //GameRegistry.registerItem(waxcombItem = new Item().setUnlocalizedName("waxcombItem").setCreativeTab(harvestcraft.modTab), "waxcombItem");
@@ -1797,4 +1783,17 @@ PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
 
 
 }
+
+
+        private static void RegisterTools()
+        {
+                GameRegistry.registerItem(cuttingboardItem = new ItemPamTool().setUnlocalizedName("cuttingboardItem").setContainerItem(cuttingboardItem).setCreativeTab(harvestcraft.modTab), "cuttingboardItem");
+                GameRegistry.registerItem(potItem = new ItemPamTool().setUnlocalizedName("potItem").setContainerItem(potItem).setCreativeTab(harvestcraft.modTab), "potItem");
+                GameRegistry.registerItem(skilletItem = new ItemPamTool().setUnlocalizedName("skilletItem").setContainerItem(skilletItem).setCreativeTab(harvestcraft.modTab), "skilletItem");
+                GameRegistry.registerItem(saucepanItem = new ItemPamTool().setUnlocalizedName("saucepanItem").setContainerItem(saucepanItem).setCreativeTab(harvestcraft.modTab), "saucepanItem");
+                GameRegistry.registerItem(bakewareItem = new ItemPamTool().setUnlocalizedName("bakewareItem").setContainerItem(bakewareItem).setCreativeTab(harvestcraft.modTab), "bakewareItem");
+                GameRegistry.registerItem(mortarandpestleItem = new ItemPamTool().setUnlocalizedName("mortarandpestleItem").setContainerItem(mortarandpestleItem).setCreativeTab(harvestcraft.modTab), "mortarandpestleItem");
+                GameRegistry.registerItem(mixingbowlItem = new ItemPamTool().setUnlocalizedName("mixingbowlItem").setContainerItem(mixingbowlItem).setCreativeTab(harvestcraft.modTab), "mixingbowlItem");
+                GameRegistry.registerItem(juicerItem = new ItemPamTool().setUnlocalizedName("juicerItem").setContainerItem(juicerItem).setCreativeTab(harvestcraft.modTab), "juicerItem");
+        }
 }
