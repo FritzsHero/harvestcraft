@@ -1,6 +1,6 @@
- package com.pam.harvestcraft.item;
+package com.pam.harvestcraft.item;
  
- import com.pam.harvestcraft.blocks.BlockRegistry;
+import com.pam.harvestcraft.blocks.BlockRegistry;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -49,7 +49,7 @@ public class PamFoodRecipes
      
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.sunflowerseedsItem, 2, 0), new Object[] { new ItemStack(Blocks.double_plant, 1, 0), new ItemStack(Blocks.double_plant, 1, 0) }));
      
-          if (ItemRegistry.enablesaltfromwaterbucketrecipe)
+          if (ItemRegistry.isSaltFromWaterEnabled)
           {
                CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.saltItem, new Object[] { "toolPot", "listAllwater" }));
           }

@@ -830,9 +830,10 @@ public static float mealsaturation;
 public static float meatymealsaturation;
 public static int freshmilkfrombucket = 8;
 public static int freshwaterfrombucket = 8;
-public static boolean enablesaltfromwaterbucketrecipe;
 public static int seedrarity;
 public static boolean enablecropitemsasseeds;
+
+        public static boolean isSaltFromWaterEnabled;
         public static boolean isSeedDroppingFromGrass;
 public static boolean enablecroptoseedRecipe;
 public static boolean enabletofuasmeatinRecipes;
@@ -857,9 +858,9 @@ mealsaturation = (float)config.get("crops", "mealsaturation", 1.2000000476837158
 meatymealsaturation = (float)config.get("crops", "meatymealsaturation", 1.600000023841858D).getDouble(1.600000023841858D);
 //freshmilkfrombucket = config.get("miscellaneous recipes", "freshmilkfrombucket", 4).getInt();
 //freshwaterfrombucket = config.get("miscellaneous recipes", "freshwaterfrombucket", 1).getInt();
-enablesaltfromwaterbucketrecipe = config.get("miscellaneous recipes", "enablesaltfromwaterbucketrecipe", true).getBoolean(true);
 seedrarity = config.get("seeds", "seedrarity", 1).getInt();
 enablecropitemsasseeds = config.get("miscellaneous recipes", "enablecropitemsasseeds", true).getBoolean(true);
+                isSaltFromWaterEnabled = config.get("miscellaneous recipes", "isSaltFromWaterEnabled", true).getBoolean(true);
                 isSeedDroppingFromGrass = config.get("seeds", "isSeedDroppingFromGrass", false).getBoolean(false);
 
  
