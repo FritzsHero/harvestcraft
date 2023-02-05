@@ -27,43 +27,43 @@ public class MessageMarketBrowse implements IMessage, IMessageHandler<MessageMar
 
   public MessageMarketBrowse(int itemNum, int x, int y, int z)
   {
-/* 24 */     this.itemNum = itemNum;
-/* 25 */     this.x = x;
-/* 26 */     this.y = y;
-/* 27 */     this.z = z;
+    this.itemNum = itemNum;
+    this.x = x;
+    this.y = y;
+    this.z = z;
   }
   
 
   public void fromBytes(ByteBuf buf)
   {
-/* 33 */     this.itemNum = buf.readInt();
-/* 34 */     this.x = buf.readInt();
-/* 35 */     this.y = buf.readInt();
-/* 36 */     this.z = buf.readInt();
+    this.itemNum = buf.readInt();
+    this.x = buf.readInt();
+    this.y = buf.readInt();
+    this.z = buf.readInt();
   }
   
 
   public void toBytes(ByteBuf buf)
   {
-/* 42 */     buf.writeInt(this.itemNum);
-/* 43 */     buf.writeInt(this.x);
-/* 44 */     buf.writeInt(this.y);
-/* 45 */     buf.writeInt(this.z);
+    buf.writeInt(this.itemNum);
+    buf.writeInt(this.x);
+    buf.writeInt(this.y);
+    buf.writeInt(this.z);
   }
   
 
   public IMessage onMessage(MessageMarketBrowse message, MessageContext ctx)
   {
-/* 51 */     EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+    EntityPlayerMP player = ctx.getServerHandler().playerEntity;
     
-             BlockPos position = new BlockPos(message.x, message.y, message.z);
-/* 53 */     TileEntity tile_entity = player.worldObj.getTileEntity(position);
-/* 54 */     if ((tile_entity instanceof TileEntityMarket))
+    BlockPos position = new BlockPos(message.x, message.y, message.z);
+    TileEntity tile_entity = player.worldObj.getTileEntity(position);
+    if ((tile_entity instanceof TileEntityMarket))
     {
-/* 56 */       TileEntityMarket tileEntityMarket = (TileEntityMarket)tile_entity;
-/* 57 */       tileEntityMarket.setBrowsingInfo(message.itemNum);
+      TileEntityMarket tileEntityMarket = (TileEntityMarket)tile_entity;
+      tileEntityMarket.setBrowsingInfo(message.itemNum);
     }
-/* 59 */     player.worldObj.markBlockForUpdate(position);
-/* 60 */     return null;
+    player.worldObj.markBlockForUpdate(position);
+    return null;
   }
 }

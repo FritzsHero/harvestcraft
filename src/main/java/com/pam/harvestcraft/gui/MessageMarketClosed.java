@@ -26,45 +26,45 @@ public class MessageMarketClosed implements IMessage, IMessageHandler<MessageMar
   
   public MessageMarketClosed(int x, int y, int z)
   {
-/* 23 */     this.x = x;
-/* 24 */     this.y = y;
-/* 25 */     this.z = z;
+    this.x = x;
+    this.y = y;
+    this.z = z;
   }
   
 
   public void fromBytes(ByteBuf buf)
   {
-/* 31 */     this.x = buf.readInt();
-/* 32 */     this.y = buf.readInt();
-/* 33 */     this.z = buf.readInt();
+    this.x = buf.readInt();
+    this.y = buf.readInt();
+    this.z = buf.readInt();
   }
   
 
   public void toBytes(ByteBuf buf)
   {
-/* 39 */     buf.writeInt(this.x);
-/* 40 */     buf.writeInt(this.y);
-/* 41 */     buf.writeInt(this.z);
+    buf.writeInt(this.x);
+    buf.writeInt(this.y);
+    buf.writeInt(this.z);
   }
   
 
   public IMessage onMessage(MessageMarketClosed message, MessageContext ctx)
   {
-/* 47 */     EntityPlayerMP player = ctx.getServerHandler().playerEntity;
-             BlockPos position = new BlockPos(message.x, message.y, message.z);
-/* 49 */     TileEntity tile_entity = player.worldObj.getTileEntity(position);
-/* 50 */     if ((tile_entity instanceof TileEntityMarket))
+    EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+    BlockPos position = new BlockPos(message.x, message.y, message.z);
+    TileEntity tile_entity = player.worldObj.getTileEntity(position);
+    if ((tile_entity instanceof TileEntityMarket))
     {
-/* 52 */       TileEntityMarket tileEntityMarket = (TileEntityMarket)tile_entity;
+      TileEntityMarket tileEntityMarket = (TileEntityMarket)tile_entity;
       
-/* 54 */       if (tileEntityMarket.getStackInSlot(0) != null)
+      if (tileEntityMarket.getStackInSlot(0) != null)
       {
-/* 56 */         player.entityDropItem(tileEntityMarket.getStackInSlot(0), 1.0F);
-/* 57 */         tileEntityMarket.setInventorySlotContents(0, null);
+        player.entityDropItem(tileEntityMarket.getStackInSlot(0), 1.0F);
+        tileEntityMarket.setInventorySlotContents(0, null);
       }
-/* 59 */       tileEntityMarket.setTrading(false);
+      tileEntityMarket.setTrading(false);
     }
-/* 61 */     player.worldObj.markBlockForUpdate(position);
-/* 62 */     return null;
+    player.worldObj.markBlockForUpdate(position);
+    return null;
   }
 }
