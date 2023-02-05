@@ -39,15 +39,15 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 
 	public BlockPamCrop() 
 	{
-		super(Material.plants);
-		this.setCreativeTab(harvestcraft.modTab);
-		this.setTickRandomly(true);
+        super(Material.plants);
+        setCreativeTab(harvestcraft.modTab);
+        setTickRandomly(true);
         float f = 0.5F;
-        this.setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
-		this.setHardness(1.0F);
-        this.setStepSound(soundTypeGrass);
-        this.disableStats();
-		this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
+        setBlockBounds(0.5F - f, 0.0F, 0.5F - f, 0.5F + f, 0.25F, 0.5F + f);
+        setHardness(1.0F);
+        setStepSound(soundTypeGrass);
+        disableStats();
+        setDefaultState(blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
 	}
 	
 
@@ -56,20 +56,20 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 	{
 		Block soilBlock = world.getBlockState(pos.down()).getBlock();
 
-		return this.isSuitableSoilBlock(soilBlock);
+		return isSuitableSoilBlock(soilBlock);
 	}
 
 
 	@Override
 	public void onNeighborBlockChange(World world, BlockPos pos, IBlockState state, Block neighborBlock)
 	{
-		this.validatePosition(world, pos, state);
+		validatePosition(world, pos, state);
 	}
 
 
 	public void validatePosition(World world, BlockPos pos, IBlockState state)
 	{
-		if (!this.canPlaceBlockAt(world, pos))
+		if (!canPlaceBlockAt(world, pos))
 		{
 
 			world.setBlockToAir(pos);
@@ -115,7 +115,7 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 	@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
-		return this.getDefaultState().withProperty(AGE, Integer.valueOf(meta));
+		return getDefaultState().withProperty(AGE, Integer.valueOf(meta));
 	}
 
 
@@ -246,7 +246,7 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
-		this.grow(worldIn, pos, state);
+		grow(worldIn, pos, state);
 	}
 	
 	

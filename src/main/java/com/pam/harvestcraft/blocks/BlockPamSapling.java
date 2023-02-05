@@ -47,12 +47,12 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 	public BlockPamSapling(String name)
 	{
 		super();
-		this.setBlockBounds(0.1F, 0.0F, 0.1F, 0.9F, 0.8F, 0.9F);
-		this.setCreativeTab(harvestcraft.modTab);
+		setBlockBounds(0.1F, 0.0F, 0.1F, 0.9F, 0.8F, 0.9F);
+		setCreativeTab(harvestcraft.modTab);
 		GameRegistry.registerBlock(this, name);
 		setUnlocalizedName(name);
-		this.setStepSound(Block.soundTypeGrass);
-		this.setHardness(0.0F);
+		setStepSound(Block.soundTypeGrass);
+		setHardness(0.0F);
 	}
 
 	
@@ -67,22 +67,22 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 	{
 		Block soilBlock = world.getBlockState(pos.down()).getBlock();
 
-		return this.isSuitableSoilBlock(soilBlock);
+		return isSuitableSoilBlock(soilBlock);
 	}
 
 
 	@Override
 	public void onNeighborBlockChange(World world, BlockPos pos, IBlockState state, Block neighborBlock)
 	{
-		this.validatePosition(world, pos, state);
+		validatePosition(world, pos, state);
 	}
 
 
 	public void validatePosition(World world, BlockPos pos, IBlockState state)
 	{
-		if (!this.canPlaceBlockAt(world, pos))
+		if (!canPlaceBlockAt(world, pos))
 		{
-			this.dropBlockAsItem(world, pos, state, 0);
+			dropBlockAsItem(world, pos, state, 0);
 
 			world.setBlockToAir(pos);
 		}
@@ -125,7 +125,7 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 
 			if (worldIn.getLightFromNeighbors(pos.up()) >= 9 && rand.nextInt(7) == 0)
 			{
-				this.grow(worldIn, pos, state, rand);
+				grow(worldIn, pos, state, rand);
 			}
 		}
 	}
@@ -133,7 +133,7 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 
 	public void grow(World worldIn, BlockPos pos, IBlockState state, Random rand)
 	{
-		this.generateTree(worldIn, pos, state, rand);
+		generateTree(worldIn, pos, state, rand);
 	}
 
 
@@ -703,7 +703,7 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
-		this.grow(worldIn, pos, state, rand);
+		grow(worldIn, pos, state, rand);
 	}
 
 

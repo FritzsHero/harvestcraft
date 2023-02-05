@@ -24,27 +24,27 @@ public class MessageMarketClosed implements IMessage, IMessageHandler<MessageMar
   public MessageMarketClosed() {}
   
   
-  public MessageMarketClosed(int x, int y, int z)
+  public MessageMarketClosed(int _x, int _y, int _z)
   {
-    this.x = x;
-    this.y = y;
-    this.z = z;
+    x = _x;
+    y = _y;
+    z = _z;
   }
   
 
   public void fromBytes(ByteBuf buf)
   {
-    this.x = buf.readInt();
-    this.y = buf.readInt();
-    this.z = buf.readInt();
+    x = buf.readInt();
+    y = buf.readInt();
+    z = buf.readInt();
   }
   
 
   public void toBytes(ByteBuf buf)
   {
-    buf.writeInt(this.x);
-    buf.writeInt(this.y);
-    buf.writeInt(this.z);
+    buf.writeInt(x);
+    buf.writeInt(y);
+    buf.writeInt(z);
   }
   
 

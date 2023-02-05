@@ -46,47 +46,47 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				case 0: 
 				if (BlockRegistry.appletreeGeneration)
 				{
-					this.generateAppleTree(world, random, xCh, yCh + 64, zCh);
+					generateAppleTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 1: 
 				if (BlockRegistry.avocadotreeGeneration)
 				{
-					this.generateAvocadoTree(world, random, xCh, yCh + 64, zCh);
+					generateAvocadoTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 2: 
 				if (BlockRegistry.cherrytreeGeneration)
 				{
-					this.generateCherryTree(world, random, xCh, yCh + 64, zCh);
+					generateCherryTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 3: 
 				if (BlockRegistry.chestnuttreeGeneration)
 				{
-					this.generateChestnutTree(world, random, xCh, yCh + 64, zCh);
+					generateChestnutTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 4: 
 				if (BlockRegistry.nutmegtreeGeneration)
 				{
-					this.generateNutmegTree(world, random, xCh, yCh + 64, zCh);
+					generateNutmegTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 5: 
 				if (BlockRegistry.peartreeGeneration)
 				{
-					this.generatePearTree(world, random, xCh, yCh + 64, zCh);
+					generatePearTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 6: 
 				if (BlockRegistry.plumtreeGeneration)
 				{
-					this.generatePlumTree(world, random, xCh, yCh + 64, zCh);
+					generatePlumTree(world, random, xCh, yCh + 64, zCh);
 				}
 				case 7: 
 					if (BlockRegistry.walnuttreeGeneration)
 					{
-						this.generateWalnutTree(world, random, xCh, yCh + 64, zCh);
+						generateWalnutTree(world, random, xCh, yCh + 64, zCh);
 					}
 				case 8: 
 				if (BlockRegistry.gooseberrytreeGeneration)
 				{
-					this.generateGooseberryTree(world, random, xCh, yCh + 64, zCh);
+					generateGooseberryTree(world, random, xCh, yCh + 64, zCh);
 				}
 				break;
 				}
@@ -106,127 +106,127 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				case 0: 
 				if (BlockRegistry.bananatreeGeneration)
 				  {
-					this.generateBananaTree(world, random, xCh, yCh + 64, zCh);
+					generateBananaTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 1: 
 				if (BlockRegistry.cinnamontreeGeneration)
 				  {
-					this.generateCinnamonTree(world, random, xCh, yCh + 64, zCh);				  
+					generateCinnamonTree(world, random, xCh, yCh + 64, zCh);				  
 					}
 				case 2: 
 				if (BlockRegistry.coconuttreeGeneration)
 				  {
-					this.generateCoconutTree(world, random, xCh, yCh + 64, zCh);
+					generateCoconutTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 3: 
 				if (BlockRegistry.datetreeGeneration)
 				  {
-					this.generateDateTree(world, random, xCh, yCh + 64, zCh);
+					generateDateTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 4: 
 				if (BlockRegistry.dragonfruittreeGeneration)
 				  {
-					this.generateDragonfruitTree(world, random, xCh, yCh + 64, zCh);
+					generateDragonfruitTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 5: 
 				if (BlockRegistry.papayatreeGeneration)
 				  {
-					this.generatePapayaTree(world, random, xCh, yCh + 64, zCh);
+					generatePapayaTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 6: 
 				if (BlockRegistry.almondtreeGeneration)
 				  {
-					this.generateAlmondTree(world, random, xCh, yCh + 64, zCh);
+					generateAlmondTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 7: 
 				if (BlockRegistry.apricottreeGeneration)
 				  {
-					this.generateApricotTree(world, random, xCh, yCh + 64, zCh);
+					generateApricotTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 8: 
 				if (BlockRegistry.cashewtreeGeneration)
 				  {
-					this.generateCashewTree(world, random, xCh, yCh + 64, zCh);
+					generateCashewTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 9: 
 				if (BlockRegistry.duriantreeGeneration)
 				  {
-					this.generateDurianTree(world, random, xCh, yCh + 64, zCh);
+					generateDurianTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 10: 
 				if (BlockRegistry.figtreeGeneration)
 				  {
-					this.generateFigTree(world, random, xCh, yCh + 64, zCh);
+					generateFigTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 11: 
 				if (BlockRegistry.grapefruittreeGeneration)
 				  {
-					this.generateGrapefruitTree(world, random, xCh, yCh + 64, zCh);
+					generateGrapefruitTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 12: 
 				if (BlockRegistry.lemontreeGeneration)
 				  {
-					this.generateLemonTree(world, random, xCh, yCh + 64, zCh);
+					generateLemonTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 13: 
 				if (BlockRegistry.limetreeGeneration)
 				  {
-					this.generateLimeTree(world, random, xCh, yCh + 64, zCh);
+					generateLimeTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 14: 
 				if (BlockRegistry.mangotreeGeneration)
 				  {
-					this.generateMangoTree(world, random, xCh, yCh + 64, zCh);
+					generateMangoTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 15: 
 				if (BlockRegistry.orangetreeGeneration)
 				  {
-					this.generateOrangeTree(world, random, xCh, yCh + 64, zCh);
+					generateOrangeTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 16: 
 				if (BlockRegistry.paperbarktreeGeneration)
 				  {
-					this.generatePaperbarkTree(world, random, xCh, yCh + 64, zCh);
+					generatePaperbarkTree(world, random, xCh, yCh + 64, zCh);
 					}
 				case 17: 
 				if (BlockRegistry.peachtreeGeneration)
 				  {
-					this.generatePeachTree(world, random, xCh, yCh + 64, zCh);
+					generatePeachTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 18: 
 				if (BlockRegistry.pecantreeGeneration)
 				  {
-					this.generatePecanTree(world, random, xCh, yCh + 64, zCh);
+					generatePecanTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 19: 
 				if (BlockRegistry.peppercorntreeGeneration)
 				  {
-					this.generatePeppercornTree(world, random, xCh, yCh + 64, zCh);
+					generatePeppercornTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 20: 
 				if (BlockRegistry.persimmontreeGeneration)
 				  {
-					this.generatePersimmonTree(world, random, xCh, yCh + 64, zCh);
+					generatePersimmonTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 21: 
 				if (BlockRegistry.pistachiotreeGeneration)
 				  {
-					this.generatePistachioTree(world, random, xCh, yCh + 64, zCh);
+					generatePistachioTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 22: 
 				if (BlockRegistry.pomegranatetreeGeneration)
 				  {
-					this.generatePomegranateTree(world, random, xCh, yCh + 64, zCh);
+					generatePomegranateTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 23: 
 				if (BlockRegistry.starfruittreeGeneration)
 				  {
-					this.generateStarfruitTree(world, random, xCh, yCh + 64, zCh);
+					generateStarfruitTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				case 24: 
 				if (BlockRegistry.vanillabeantreeGeneration)
 				  {
-					this.generateVanillabeanTree(world, random, xCh, yCh + 64, zCh);
+					generateVanillabeanTree(world, random, xCh, yCh + 64, zCh);
 				  }
 				  
 				  break;
@@ -238,7 +238,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				|| (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MOUNTAIN))
 				|| (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.CONIFEROUS)))
 		{
-			this.generateMapleTree(world, random, xCh, yCh + 64, zCh);
+			generateMapleTree(world, random, xCh, yCh + 64, zCh);
 		}
 	
 	}

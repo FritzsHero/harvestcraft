@@ -19,10 +19,10 @@ public abstract class BlockBaseGarden extends BlockBush
     private final String type;
 
 
-    public BlockBaseGarden(String type, Material grass)
+    public BlockBaseGarden(String _type, Material _material)
     {
-        super(grass);
-        this.type = type;
+        super(_material);
+        type = _type;
     }
 
 

@@ -21,7 +21,7 @@ public class ItemBlockSaplings extends ItemBlockVariants
 	@Override
 	public String getItemStackDisplayName(ItemStack stack)
 	{
-		return ("" + StatCollector.translateToLocal("harvestcraft." + this.getUnlocalizedNameInefficiently(stack) + ".name")).trim();
+		return ("" + StatCollector.translateToLocal("harvestcraft." + getUnlocalizedNameInefficiently(stack) + ".name")).trim();
 	}
 
 	

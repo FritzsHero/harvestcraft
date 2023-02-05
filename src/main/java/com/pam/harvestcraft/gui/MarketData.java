@@ -10,28 +10,28 @@ public class MarketData
     int price;
 
 
-    public MarketData(ItemStack item, ItemStack currency, int price)
+    public MarketData(ItemStack _item, ItemStack _currency, int _price)
     {
-        this.item = item;
-        this.currency = currency;
-        this.price = price;
+        item = _item;
+        currency = _currency;
+        price = _price;
     }
 
 
     public ItemStack getItem()
     {
-        return this.item;
+        return item;
     }
 
 
     public ItemStack getCurrency()
     {
-        return this.currency;
+        return currency;
     }
 
 
     public int getPrice()
     {
-        return this.price;
+        return price;
     }
 }

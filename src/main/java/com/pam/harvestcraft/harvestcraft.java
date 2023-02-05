@@ -59,7 +59,7 @@ public class harvestcraft {
     public void preInit(FMLPreInitializationEvent event)
     {
         Config.instance.load(event);
-    	this.proxy.preInit(event);
+    	proxy.preInit(event);
         Config.instance.configureGardenDrops();
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
         PamFoodRecipes.getRecipes();
@@ -82,7 +82,7 @@ public class harvestcraft {
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        this.proxy.init(event);
+        proxy.init(event);
         GameRegistry.registerWorldGenerator(new BushWorldWorldGen(), 0);
         GameRegistry.registerWorldGenerator(new FruitTreeWorldGen(), 0);
         GameRegistry.registerWorldGenerator(new LogFruitTreeWorldGen(), 0);
@@ -92,6 +92,6 @@ public class harvestcraft {
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-        this.proxy.postInit(event);
+        proxy.postInit(event);
     }
 }

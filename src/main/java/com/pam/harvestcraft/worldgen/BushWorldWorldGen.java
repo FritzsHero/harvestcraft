@@ -32,36 +32,33 @@ public class BushWorldWorldGen implements IWorldGenerator
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SANDY)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MESA)))
 		{
-			this.generateAridGarden(world, random, xCh, yCh + 64, zCh);
+			generateAridGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SNOWY)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MOUNTAIN)))
 		{
-			this.generateFrostGarden(world, random, xCh, yCh + 64, zCh);
+			generateFrostGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.FOREST)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SPOOKY)))
 		{
-			this.generateShadedGarden(world, random, xCh, yCh + 64, zCh);
+			generateShadedGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SWAMP)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.RIVER)))
 		{
-			this.generateSoggyGarden(world, random, xCh, yCh + 64, zCh);
+			generateSoggyGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.JUNGLE)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.OCEAN)))
 		{
-			this.generateTropicalGarden(world, random, xCh, yCh + 64, zCh);
+			generateTropicalGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SAVANNA)))
 		{
-			this.generateWindyGarden(world, random, xCh, yCh + 64, zCh);
+			generateWindyGarden(world, random, xCh, yCh + 64, zCh);
 		}
-		
-		
-		
 	}
 
 

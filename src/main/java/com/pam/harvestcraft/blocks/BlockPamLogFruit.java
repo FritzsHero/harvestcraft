@@ -41,10 +41,10 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 	public BlockPamLogFruit() 
 	{
 		super(Material.plants);
-		this.setCreativeTab(harvestcraft.modTab);
-		this.setHardness(5);
-		this.setTickRandomly(true);
-		this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
+		setCreativeTab(harvestcraft.modTab);
+		setHardness(5);
+		setTickRandomly(true);
+		setDefaultState(blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
 	}
 	
 	
@@ -65,7 +65,7 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 	@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
-		return this.getDefaultState().withProperty(AGE, Integer.valueOf(meta));
+		return getDefaultState().withProperty(AGE, Integer.valueOf(meta));
 	}
 
 
@@ -126,7 +126,7 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
-		this.grow(worldIn, pos, state);
+		grow(worldIn, pos, state);
 	}
 	
 	

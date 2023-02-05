@@ -17,15 +17,15 @@ public class BlockPamMarket extends BlockContainer
 {
   public BlockPamMarket(Material par2Material)
   {
-	super(par2Material);
-	setStepSound(Block.soundTypeWood);
-	this.setCreativeTab(harvestcraft.modTab);
+	  super(par2Material);
+	  setStepSound(Block.soundTypeWood);
+	  setCreativeTab(harvestcraft.modTab);
   }
   
 
   public TileEntity createNewTileEntity(World world)
   {
-	return new TileEntityMarket();
+	  return new TileEntityMarket();
   }
   
 
@@ -45,6 +45,6 @@ public class BlockPamMarket extends BlockContainer
   @Override
   public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_)
   {
-	return new TileEntityMarket();
+	  return new TileEntityMarket();
   }
 }

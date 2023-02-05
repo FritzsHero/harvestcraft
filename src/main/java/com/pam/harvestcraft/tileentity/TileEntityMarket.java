@@ -37,25 +37,25 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	@Override
 	public ItemStack decrStackSize(int par1, int par2)
 	{
-		if (this.paySlot != null)
+		if (paySlot != null)
 		{
 			ItemStack var3;
 
-			if (this.paySlot.stackSize <= par2)
+			if (paySlot.stackSize <= par2)
 			{
-				var3 = this.paySlot;
-				this.paySlot = null;
-				this.markDirty();
+				var3 = paySlot;
+				paySlot = null;
+				markDirty();
 				return var3;
 			}
-			var3 = this.paySlot.splitStack(par2);
+			var3 = paySlot.splitStack(par2);
 
-			if (this.paySlot.stackSize == 0)
+			if (paySlot.stackSize == 0)
 			{
-				this.paySlot = null;
+				paySlot = null;
 			}
 
-			this.markDirty();
+			markDirty();
 			return var3;
 		}
 		return null;
@@ -65,10 +65,10 @@ public class TileEntityMarket extends TileEntity implements IInventory
 //	@Override
 	public ItemStack getStackInSlotOnClosing(int par1)
 	{
-		if (this.paySlot != null)
+		if (paySlot != null)
 		{
-			ItemStack var2 = this.paySlot;
-			this.paySlot = null;
+			ItemStack var2 = paySlot;
+			paySlot = null;
 			return var2;
 		}
 		return null;
@@ -78,14 +78,14 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	@Override
 	public void setInventorySlotContents(int par1, ItemStack par2ItemStack)
 	{
-		this.paySlot = par2ItemStack;
+		paySlot = par2ItemStack;
 
-		if (par2ItemStack != null && par2ItemStack.stackSize > this.getInventoryStackLimit())
+		if (par2ItemStack != null && par2ItemStack.stackSize > getInventoryStackLimit())
 		{
-			par2ItemStack.stackSize = this.getInventoryStackLimit();
+			par2ItemStack.stackSize = getInventoryStackLimit();
 		}
 
-		this.markDirty();
+		markDirty();
 	}
 
 
@@ -100,24 +100,24 @@ public class TileEntityMarket extends TileEntity implements IInventory
 
 	public void takeEmeraldFromSlot(int price)
 	{
-		if (this.paySlot != null)
+		if (paySlot != null)
 		{
-			this.paySlot.stackSize -= price;
+			paySlot.stackSize -= price;
 		}
-		this.markDirty();
+		markDirty();
 	}
 
 
 	public void clearInventory()
 	{
-		this.paySlot = null;
+		paySlot = null;
 	}
 	
 	@Override
 	public void readFromNBT(NBTTagCompound par1NBTTagCompound)
 	{
 		super.readFromNBT(par1NBTTagCompound);
-		this.stockNum = par1NBTTagCompound.getInteger("StockNum");
+		stockNum = par1NBTTagCompound.getInteger("StockNum");
 	}
 
 
@@ -129,9 +129,9 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	}
 
 
-	public void setBrowsingInfo(int stockNum)
+	public void setBrowsingInfo(int _stockNumber)
 	{
-		this.stockNum = stockNum;
+		stockNum = _stockNumber;
 	}
 
 
@@ -143,7 +143,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 
 	public void setTrading(boolean isUsing)
 	{
-		this.isTrading = isUsing;
+		isTrading = isUsing;
 	}
 
 
@@ -163,7 +163,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer par1EntityPlayer)
 	{
-		return this.worldObj.getTileEntity(new BlockPos(xCoord, yCoord, zCoord)) != this ? false : par1EntityPlayer.getDistanceSq(this.xCoord + 0.5D, this.yCoord + 0.5D, this.zCoord + 0.5D) <= 64.0D;
+		return worldObj.getTileEntity(new BlockPos(xCoord, yCoord, zCoord)) != this ? false : par1EntityPlayer.getDistanceSq(xCoord + 0.5D, yCoord + 0.5D, zCoord + 0.5D) <= 64.0D;
 	}
 
 
@@ -195,7 +195,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	@Override
 	public void invalidate()
 	{
-		this.updateContainingBlockInfo();
+		updateContainingBlockInfo();
 		super.invalidate();
 	}
 

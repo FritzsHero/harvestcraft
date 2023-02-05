@@ -25,33 +25,33 @@ public class MessageMarketBuy implements IMessage, IMessageHandler<MessageMarket
   public MessageMarketBuy() {}
   
 
-  public MessageMarketBuy(int itemNum, int x, int y, int z, boolean shouldClear)
+  public MessageMarketBuy(int _itemNumber, int _x, int _y, int _z, boolean _shouldClear)
   {
-    this.itemNum = itemNum;
-    this.x = x;
-    this.y = y;
-    this.z = z;
-    this.shouldClear = shouldClear;
+    itemNum = _itemNumber;
+    x = _x;
+    y = _y;
+    z = _z;
+    shouldClear = _shouldClear;
   }
   
 
   public void fromBytes(ByteBuf buf)
   {
-    this.itemNum = buf.readInt();
-    this.x = buf.readInt();
-    this.y = buf.readInt();
-    this.z = buf.readInt();
-    this.shouldClear = buf.readBoolean();
+    itemNum = buf.readInt();
+    x = buf.readInt();
+    y = buf.readInt();
+    z = buf.readInt();
+    shouldClear = buf.readBoolean();
   }
   
 
   public void toBytes(ByteBuf buf)
   {
-    buf.writeInt(this.itemNum);
-    buf.writeInt(this.x);
-    buf.writeInt(this.y);
-    buf.writeInt(this.z);
-    buf.writeBoolean(this.shouldClear);
+    buf.writeInt(itemNum);
+    buf.writeInt(x);
+    buf.writeInt(y);
+    buf.writeInt(z);
+    buf.writeBoolean(shouldClear);
   }
   
 

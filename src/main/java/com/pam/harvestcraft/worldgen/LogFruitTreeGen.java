@@ -31,20 +31,20 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
     private final IBlockState fruitType;
  
 
-	public LogFruitTreeGen(boolean p_i46446_1_, int p_i46446_2_, IBlockState p_i46446_3_, IBlockState p_i46446_4_, boolean p_i46446_5_, IBlockState fruittype)
+	public LogFruitTreeGen(boolean p_i46446_1_, int p_i46446_2_, IBlockState p_i46446_3_, IBlockState p_i46446_4_, boolean p_i46446_5_, IBlockState _fruitType)
 	{
 		super(p_i46446_1_);
-        this.minTreeHeight = p_i46446_2_;
-        this.metaWood = p_i46446_3_;
-        this.metaLeaves = p_i46446_4_;
-        this.vinesGrow = p_i46446_5_;
-        this.fruitType = fruittype;
+        minTreeHeight = p_i46446_2_;
+        metaWood = p_i46446_3_;
+        metaLeaves = p_i46446_4_;
+        vinesGrow = p_i46446_5_;
+        fruitType = _fruitType;
 	}
 
 
 	public boolean generate(World worldIn, Random rand, BlockPos position)
     {
-		int i = rand.nextInt(3) + this.minTreeHeight;
+		int i = rand.nextInt(3) + minTreeHeight;
         boolean flag = true;
 
         if (position.getY() >= 1 && position.getY() + i + 1 <= 256)
@@ -71,7 +71,7 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
                     {
                         if (j >= 0 && j < 256)
                         {
-                            if (!this.isReplaceable(worldIn,blockpos$mutableblockpos.set(l, j, i1)))
+                            if (!isReplaceable(worldIn,blockpos$mutableblockpos.set(l, j, i1)))
                             {
                                 flag = false;
                             }
@@ -122,7 +122,7 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
 
                                     if (block.isAir(worldIn, blockpos) || block.isLeaves(worldIn, blockpos) || block.getMaterial() == Material.vine)
                                     {
-                                        this.setBlockAndNotifyAdequately(worldIn, blockpos, this.metaLeaves);
+                                        setBlockAndNotifyAdequately(worldIn, blockpos, metaLeaves);
 
                                     }
                                 }
@@ -137,19 +137,15 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
 
                         if (block2.isAir(worldIn, upN))
                         {
-                        		this.setBlockAndNotifyAdequately(worldIn, position.up(j3), this.fruitType);
+                        	setBlockAndNotifyAdequately(worldIn, position.up(j3), fruitType);
                         }
                         if (block2.isLeaves(worldIn, upN))
                         {
-                        	this.setBlockAndNotifyAdequately(worldIn, position.up(j3), this.metaWood);
+                        	setBlockAndNotifyAdequately(worldIn, position.up(j3), metaWood);
                         }
 
                     }
                     
-
-                    
-
-
                     return true;
                 }
                 else

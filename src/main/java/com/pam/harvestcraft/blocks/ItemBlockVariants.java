@@ -13,10 +13,10 @@ public class ItemBlockVariants extends ItemBlock
 	public ItemBlockVariants(Block block)
 	{
 		super(block);
-		this.blockWithVariants = (IBlockWithVariants) block;
+		blockWithVariants = (IBlockWithVariants) block;
 
-		this.setMaxDamage(0);
-		this.setHasSubtypes(true);
+		setMaxDamage(0);
+		setHasSubtypes(true);
 	}
 
 
@@ -30,6 +30,6 @@ public class ItemBlockVariants extends ItemBlock
 	@Override
 	public String getUnlocalizedName(ItemStack stack)
 	{
-		return super.getUnlocalizedName() + "." + this.blockWithVariants.getVariantUnlocalizedName(stack);
+		return super.getUnlocalizedName() + "." + blockWithVariants.getVariantUnlocalizedName(stack);
 	}
 }

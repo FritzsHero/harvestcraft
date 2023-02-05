@@ -14,9 +14,9 @@ public class MetaItem extends Item
 	public MetaItem(String unlocalizedName)
 	{
 		super();
-		this.setHasSubtypes(true);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(harvestcraft.modTab);
+		setHasSubtypes(true);
+		setUnlocalizedName(unlocalizedName);
+		setCreativeTab(harvestcraft.modTab);
 	}
 
 

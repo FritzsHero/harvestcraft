@@ -10,7 +10,7 @@ public class ItemModelList
 
 	public ItemModelList()
 	{
-		this.rootDirectory = null;
+		rootDirectory = null;
 	}
 
 
@@ -21,13 +21,13 @@ public class ItemModelList
 			throw new RuntimeException("Resource root path must be relative! (end with '/')");
 		}
 
-		this.rootDirectory = ResourceHelper.getResourcePath(resourceRoot);
+		rootDirectory = ResourceHelper.getResourcePath(resourceRoot);
 	}
 
 
 	public ItemModelList add(int meta, String path)
 	{
-		this.registrations.put(meta, this.rootDirectory != null ? this.rootDirectory + path : ResourceHelper.getResourcePath(path));
+		registrations.put(meta, rootDirectory != null ? rootDirectory + path : ResourceHelper.getResourcePath(path));
 
 		return this;
 	}
@@ -35,7 +35,7 @@ public class ItemModelList
 	
 	public HashMap<Integer, String> getRegistrations()
 	{
-		return this.registrations;
+		return registrations;
 	}
 }
 

@@ -43,7 +43,7 @@ public class ContainerMarket extends Container
   public ItemStack transferStackInSlot(EntityPlayer entityPlayer, int slotIndex)
   {
 	ItemStack itemStack = null;
-	Slot slot = (Slot)this.inventorySlots.get(slotIndex);
+	Slot slot = (Slot)inventorySlots.get(slotIndex);
 	if ((slot != null) && (slot.getHasStack())) {
 	ItemStack slotStack = slot.getStack();
 	itemStack = slotStack.copy();

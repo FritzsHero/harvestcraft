@@ -30,10 +30,10 @@ public class GuiMarket extends GuiContainer
         private EntityPlayer player;
  
 
-        public GuiMarket(InventoryPlayer inventoryplayer, TileEntityMarket tileEntityMarket)
+        public GuiMarket(InventoryPlayer inventoryplayer, TileEntityMarket _tileEntityMarket)
         {
-                super(new ContainerMarket(inventoryplayer, tileEntityMarket));
-                this.tileEntityMarket = tileEntityMarket;
+                super(new ContainerMarket(inventoryplayer, _tileEntityMarket));
+                tileEntityMarket = _tileEntityMarket;
         }
  
 
@@ -56,7 +56,7 @@ public class GuiMarket extends GuiContainer
                 buttonList.add(right);
                 buttonList.add(button_buy);
                
-                this.itemNum = tileEntityMarket.getBrowsingInfo();
+                itemNum = tileEntityMarket.getBrowsingInfo();
         }
  
 
@@ -74,7 +74,7 @@ public class GuiMarket extends GuiContainer
                         {
                                 itemNum = MarketItems.getSize() - 1;
                         }
-                        this.tileEntityMarket.setBrowsingInfo(itemNum);
+                        tileEntityMarket.setBrowsingInfo(itemNum);
                 }
                 if (guibutton.id == 1)
                 {
@@ -83,11 +83,11 @@ public class GuiMarket extends GuiContainer
                         {
                                 itemNum = 0;
                         }
-                        this.tileEntityMarket.setBrowsingInfo(itemNum);
+                        tileEntityMarket.setBrowsingInfo(itemNum);
                 }
                 if (guibutton.id == 2)
                 {
-                        this.buySlot = this.tileEntityMarket.getStackInSlot(0);
+                        buySlot = tileEntityMarket.getStackInSlot(0);
                         if (buySlot != null)
                         {
                                 MarketData data = MarketItems.getData(itemNum);
@@ -99,15 +99,15 @@ public class GuiMarket extends GuiContainer
                                                 if (buySlot.stackSize == price)
                                                 {
                      
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, true));
+                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(itemNum, tileEntityMarket.xCoord, tileEntityMarket.yCoord, tileEntityMarket.zCoord, true));
                                                 }
                                                 else if (buySlot.stackSize > price && buySlot.stackSize > 1)
                                                 {
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, false));
+                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(itemNum, tileEntityMarket.xCoord, tileEntityMarket.yCoord, tileEntityMarket.zCoord, false));
                                                 }
                                                 if (buySlot.stackSize == 0 && price == 1)
                                                 {
-                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(this.itemNum, this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord, true));
+                                                        PacketHandler.INSTANCE.sendToServer(new MessageMarketBuy(itemNum, tileEntityMarket.xCoord, tileEntityMarket.yCoord, tileEntityMarket.zCoord, true));
                                                 }
                                         }
                                 }
@@ -119,7 +119,7 @@ public class GuiMarket extends GuiContainer
         @Override
         public void onGuiClosed()
         {
-                PacketHandler.INSTANCE.sendToServer(new MessageMarketClosed(this.tileEntityMarket.xCoord, this.tileEntityMarket.yCoord, this.tileEntityMarket.zCoord));
+                PacketHandler.INSTANCE.sendToServer(new MessageMarketClosed(tileEntityMarket.xCoord, tileEntityMarket.yCoord, tileEntityMarket.zCoord));
                 super.onGuiClosed();
         }
  
@@ -127,7 +127,7 @@ public class GuiMarket extends GuiContainer
         @Override
         protected void drawGuiContainerForegroundLayer(int par1, int par2)
         {
-                this.fontRendererObj.drawString("Inventory", 8, (ySize - 96) + 13, 4210752);
+                fontRendererObj.drawString("Inventory", 8, (ySize - 96) + 13, 4210752);
  
                 GL11.glPushMatrix();
                 RenderHelper.enableGUIStandardItemLighting();
@@ -141,18 +141,18 @@ public class GuiMarket extends GuiContainer
                
                 ItemStack item = data.getItem();
                 itemRender.renderItemAndEffectIntoGUI(item, 73, 16);
-                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, item, 73, 16, item.getDisplayName());
-//                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, this.mc.getTextureManager(), item, 73, 16);
+                itemRender.renderItemOverlayIntoGUI(fontRendererObj, item, 73, 16, item.getDisplayName());
+                //itemRender.renderItemOverlayIntoGUI(fontRendererObj, mc.getTextureManager(), item, 73, 16);
  
                 ItemStack currency = data.getCurrency();
                 itemRender.renderItemAndEffectIntoGUI(currency, 100, 16);
-                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, currency, 100, 16, currency.getDisplayName());
-//                itemRender.renderItemOverlayIntoGUI(this.fontRendererObj, this.mc.getTextureManager(), currency, 100, 16);
+                itemRender.renderItemOverlayIntoGUI(fontRendererObj, currency, 100, 16, currency.getDisplayName());
+                //itemRender.renderItemOverlayIntoGUI(fontRendererObj, mc.getTextureManager(), currency, 100, 16);
                 itemRender.zLevel = 0.0F;
                 GL11.glDisable(GL11.GL_LIGHTING);
  
                 int price = data.getPrice();
-                this.fontRendererObj.drawString("x" + Integer.toString(price), 116, 20, 0);
+                fontRendererObj.drawString("x" + Integer.toString(price), 116, 20, 0);
  
                 GL11.glPopMatrix();
                 GL11.glEnable(GL11.GL_LIGHTING);
@@ -166,10 +166,10 @@ public class GuiMarket extends GuiContainer
         {
                 super.drawScreen(par1, par2, par3);
                 ItemStack item = MarketItems.getData(itemNum).getItem();
-//                if (this.func_146978_c(73, 16, 16, 16, par1, par2))
-//                {
-//                        this.renderToolTip(item, par1, par2);
-//                }
+                //if (this.func_146978_c(73, 16, 16, 16, par1, par2))
+                //{
+                        //this.renderToolTip(item, par1, par2);
+                //}
         }
  
 
@@ -177,9 +177,9 @@ public class GuiMarket extends GuiContainer
         protected void drawGuiContainerBackgroundLayer(float f, int i, int j)
         {
                 GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-                this.mc.getTextureManager().bindTexture(gui);
+                mc.getTextureManager().bindTexture(gui);
                 int l = (width - xSize) / 2;
                 int i1 = (height - ySize) / 2;
-                this.drawTexturedModalRect(l, i1 - 10, 0, 0, xSize, ySize + 21);
+                drawTexturedModalRect(l, i1 - 10, 0, 0, xSize, ySize + 21);
         }
 }
