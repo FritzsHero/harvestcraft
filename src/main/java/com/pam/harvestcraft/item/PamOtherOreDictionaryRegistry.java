@@ -46,25 +46,7 @@ public class PamOtherOreDictionaryRegistry
 
 		OreDictionary.registerOre("flowerRed", Blocks.red_flower);
 		OreDictionary.registerOre("flowerYellow", Blocks.yellow_flower);
-
 		OreDictionary.registerOre("blockTorch", Blocks.torch);
-		//OreDictionary.registerOre("materialHardenedleather", ItemRegistry.hardenedleatherItem);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco1);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco2);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco3);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco4);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco5);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco6);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco7);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco8);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco9);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco10);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco11);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco12);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco13);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco14);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco15);
-		//OreDictionary.registerOre("blockTorch", BlockRegistry.pamcandleDeco16);
 
 		OreDictionary.registerOre("logWood", BlockRegistry.pamMaple);
 		OreDictionary.registerOre("logWood", BlockRegistry.pamPaperbark);

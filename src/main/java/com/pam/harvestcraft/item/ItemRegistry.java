@@ -45,19 +45,13 @@ public static Item honeyItem;
 public static Item saltItem;
 //public static Item waxItem;
 public static Item wovencottonItem;
-//public static Item hardenedleatherItem;
 public static Item freshwaterItem;
 public static Item freshmilkItem;
 //public static Item grainbaitItem;
 //public static Item veggiebaitItem;
 //public static Item fruitbaitItem;
 //public static Item fishtrapbaitItem;
-//public static Item hardenedleatherhelmItem;
-//public static Item hardenedleatherchestItem;
-//public static Item hardenedleatherleggingsItem;
-//public static Item hardenedleatherbootsItem;
 
-//public static ItemArmor.ArmorMaterial armorHardenedLeather = EnumHelper.addArmorMaterial("HARDENEDLEATHER", 15, new int[] { 2, 6, 5, 2 }, 9);
 //#region "Juice"
 public static Item applejuiceItem;
 public static Item melonjuiceItem;
@@ -86,7 +80,6 @@ public static Item grapefruitjuiceItem;
 public static Item persimmonjuiceItem;
 //#endregion
 
-//public static Item muttonrawItem;
 //#region "Fish"
 public static Item anchovyrawItem;
 public static Item bassrawItem;
@@ -115,7 +108,6 @@ public static Item turtlerawItem;
 public static Item walleyerawItem;
 public static Item greenheartfishItem;
 public static Item calamarirawItem;
-//public static Item muttoncookedItem;
 //#endregion
 
 public static Item calamaricookedItem;
@@ -820,10 +812,8 @@ public static Item toadintheholeItem;
 public static Item tunapotatoItem;
 public static Item yorkshirepuddingItem;
 
-
 public static int cropfoodRestore;
 public static float cropsaturationRestore;
-//public static boolean sheepdropMutton;
 public static boolean squiddropCalamari;
 public static float snacksaturation;
 public static float mealsaturation;
@@ -851,7 +841,6 @@ public static void initItems(FMLPreInitializationEvent event, Configuration conf
 {
 cropfoodRestore = config.get("crops", "cropfoodRestore", 1).getInt();
 cropsaturationRestore = (float)config.get("crops", "cropsaturationRestore", 0.6000000238418579D).getDouble(0.6000000238418579D);
-//sheepdropMutton = config.get("general", "sheepdropMutton", true).getBoolean(true);
 squiddropCalamari = config.get("general", "squiddropCalamari", true).getBoolean(true);
 snacksaturation = (float)config.get("crops", "snacksaturation", 0.6000000238418579D).getDouble(0.6000000238418579D);
 mealsaturation = (float)config.get("crops", "mealsaturation", 1.2000000476837158D).getDouble(1.2000000476837158D);
@@ -909,12 +898,6 @@ GameRegistry.registerItem(wovencottonItem = new Item().setUnlocalizedName("woven
 //GameRegistry.registerItem(veggiebaitItem = new Item().setUnlocalizedName("veggiebaitItem").setCreativeTab(harvestcraft.modTab), "veggiebaitItem");
 //GameRegistry.registerItem(fruitbaitItem = new Item().setUnlocalizedName("fruitbaitItem").setCreativeTab(harvestcraft.modTab), "fruitbaitItem");
 //GameRegistry.registerItem(fishtrapbaitItem = new Item().setUnlocalizedName("fishtrapbaitItem").setCreativeTab(harvestcraft.modTab), "fishtrapbaitItem");
-//GameRegistry.registerItem(hardenedleatherhelmItem = new ItemPamArmor(armorHardenedLeather, 0).setUnlocalizedName("hardenedleatherhelmItem"), "hardenedleatherhelmItem");
-//GameRegistry.registerItem(hardenedleatherchestItem = new ItemPamArmor(armorHardenedLeather, 1).setUnlocalizedName("hardenedleatherchestItem"), "hardenedleatherchestItem");
-//GameRegistry.registerItem(hardenedleatherleggingsItem = new ItemPamArmor(armorHardenedLeather, 2).setUnlocalizedName("hardenedleatherleggingsItem"), "hardenedleatherleggingsItem");
-//GameRegistry.registerItem(hardenedleatherbootsItem = new ItemPamArmor(armorHardenedLeather, 3).setUnlocalizedName("hardenedleatherbootsItem"), "hardenedleatherbootsItem");
-//GameRegistry.registerItem(muttonrawItem = new ItemFood(3, snacksaturation, true).setUnlocalizedName("muttonrawItem").setCreativeTab(harvestcraft.modTab), "muttonrawItem");
-//GameRegistry.registerItem(muttoncookedItem = new ItemFood(8, meatymealsaturation, true).setUnlocalizedName("muttoncookedItem").setCreativeTab(harvestcraft.modTab), "muttoncookedItem");
 GameRegistry.registerItem(calamaricookedItem = new ItemFood(5, meatymealsaturation, false).setUnlocalizedName("calamaricookedItem").setCreativeTab(harvestcraft.modTab), "calamaricookedItem");
 GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cropsaturationRestore, false).setUnlocalizedName("sunflowerseedsItem").setCreativeTab(harvestcraft.modTab), "sunflowerseedsItem");
 GameRegistry.registerItem(freshwaterItem = new Item().setUnlocalizedName("freshwaterItem").setCreativeTab(harvestcraft.modTab), "freshwaterItem");
@@ -1533,8 +1516,6 @@ GameRegistry.registerItem(suaderoItem = new ItemFood(10, mealsaturation, false).
 GameRegistry.registerItem(randomtacoItem = new ItemFood(16, mealsaturation, false).setUnlocalizedName("randomtacoItem").setCreativeTab(harvestcraft.modTab), "randomtacoItem");
 GameRegistry.registerItem(turkeyrawItem = new ItemFood(2, snacksaturation, true).setUnlocalizedName("turkeyrawItem").setCreativeTab(harvestcraft.modTab), "turkeyrawItem");
 GameRegistry.registerItem(turkeycookedItem = new ItemFood(5, meatymealsaturation, true).setUnlocalizedName("turkeycookedItem").setCreativeTab(harvestcraft.modTab), "turkeycookedItem");
-//GameRegistry.registerItem(rabbitrawItem = new ItemFood(2, snacksaturation, true).setUnlocalizedName("rabbitrawItem").setCreativeTab(harvestcraft.modTab), "rabbitrawItem");
-//GameRegistry.registerItem(rabbitcookedItem = new ItemFood(5, meatymealsaturation, true).setUnlocalizedName("rabbitcookedItem").setCreativeTab(harvestcraft.modTab), "rabbitcookedItem");
 GameRegistry.registerItem(venisonrawItem = new ItemFood(3, snacksaturation, true).setUnlocalizedName("venisonrawItem").setCreativeTab(harvestcraft.modTab), "venisonrawItem");
 GameRegistry.registerItem(venisoncookedItem = new ItemFood(8, meatymealsaturation, true).setUnlocalizedName("venisoncookedItem").setCreativeTab(harvestcraft.modTab), "venisoncookedItem");
 GameRegistry.registerItem(strawberrymilkshakeItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("strawberrymilkshakeItem").setCreativeTab(harvestcraft.modTab), "strawberrymilkshakeItem");
