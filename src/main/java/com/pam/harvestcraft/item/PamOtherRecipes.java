@@ -13,15 +13,15 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
+
 public class PamOtherRecipes 
 {
-	  
 	public static ItemStack book;
+
 
 	@SuppressWarnings("unchecked")
 	public static void getRecipes()
 	{
-		
 		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
 	 	 		"X@@", " @@", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(ItemRegistry.skilletItem, true, new Object[]{
@@ -147,5 +147,4 @@ public class PamOtherRecipes
 				GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
 				GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
 	}
-	
 }

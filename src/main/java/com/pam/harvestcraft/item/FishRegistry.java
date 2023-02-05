@@ -1,17 +1,13 @@
 /*     */ package com.pam.harvestcraft.item;
-/*     */ 
+
 /*     */ import java.lang.reflect.Field;
 /*     */ import java.util.ArrayList;
 /*     */ import java.util.List;
 /*     */ import net.minecraft.entity.projectile.EntityFishHook;
 /*     */ import net.minecraft.item.ItemStack;
 /*     */ import net.minecraft.util.WeightedRandomFishable;
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
+
+
 /*     */ public class FishRegistry
 /*     */ {
 /*     */   public static void registerItems()
@@ -39,15 +35,8 @@
 /*  39 */       registerNormal(new ItemStack(ItemRegistry.greenheartfishItem, 1, 0), 25);
 /*     */     }
 /*     */   }
-/*     */   
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
+
+
 /*     */   public static void registerNormal(ItemStack item, int weight)
 /*     */   {
 /*     */     try
@@ -62,15 +51,8 @@
 /*  62 */       e.printStackTrace();
 /*     */     }
 /*     */   }
-/*     */   
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
+
+
 /*     */   public static void registerLoot(ItemStack loot, int weight)
 /*     */   {
 /*     */     try
@@ -85,15 +67,8 @@
 /*  85 */       e.printStackTrace();
 /*     */     }
 /*     */   }
-/*     */   
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
-/*     */ 
+
+
 /*     */   public static void registerRare(ItemStack rare, int weight)
 /*     */   {
 /*     */     try
@@ -108,9 +83,6 @@
 /* 108 */       e.printStackTrace();
 /*     */     }
 /*     */   }
-/*     */   
-/*     */ 
-/*     */ 
 /*     */   private static List getStaticFinalList(Field field)
 /*     */     throws Exception
 /*     */   {

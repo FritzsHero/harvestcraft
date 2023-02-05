@@ -15,6 +15,7 @@ import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+
 public class Config 
 {
 	public static final Config instance = new Config();
@@ -34,6 +35,7 @@ public class Config
 
 	private Map<String, String[]> dropConfig = new HashMap<String, String[]>();
 	
+
 	public void load(FMLPreInitializationEvent event) {
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
@@ -82,6 +84,7 @@ public class Config
 		}
 	}
 
+	
 	/**
 	 * Configures drops from the various gardens; this needs to happen after the item registries are updated
      */

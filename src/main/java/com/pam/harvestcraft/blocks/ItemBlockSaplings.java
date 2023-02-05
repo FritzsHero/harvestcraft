@@ -9,6 +9,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class ItemBlockSaplings extends ItemBlockVariants
 {
 	public ItemBlockSaplings(Block block)
@@ -16,12 +17,14 @@ public class ItemBlockSaplings extends ItemBlockVariants
 		super(block);
 	}
 
+
 	@Override
 	public String getItemStackDisplayName(ItemStack stack)
 	{
 		return ("" + StatCollector.translateToLocal("harvestcraft." + this.getUnlocalizedNameInefficiently(stack) + ".name")).trim();
 	}
 
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	@SideOnly(Side.CLIENT)

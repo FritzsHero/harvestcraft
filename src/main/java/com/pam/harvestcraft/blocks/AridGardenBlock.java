@@ -24,9 +24,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class AridGardenBlock extends BlockBaseGarden
 {
 	private final String name = "aridgarden";
+
 
 	public AridGardenBlock()
 	{	
@@ -36,27 +38,32 @@ public class AridGardenBlock extends BlockBaseGarden
 		setCreativeTab(harvestcraft.modTab);
 	}
 	
+
 	//@SideOnly(Side.CLIENT)
     //public void initModel() {
     //    ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     //}
 	
+
 	@Override
 	protected boolean canPlaceBlockOn(Block ground)
     {
         return ground == Blocks.sand;
     }
 	
+
 	public String getName()
 	{
 		return name;
 	}
 	
+
 	@Override
     public net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess world, BlockPos pos)
     {
         return net.minecraftforge.common.EnumPlantType.Desert;
     }
+
 
     @Override
     public IBlockState getPlant(net.minecraft.world.IBlockAccess world, BlockPos pos)

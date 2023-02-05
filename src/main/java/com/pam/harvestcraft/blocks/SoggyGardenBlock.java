@@ -19,11 +19,13 @@ import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+
 public class SoggyGardenBlock extends BlockBaseGarden
 {
 	private final String name = "soggygarden";
 	public static List<ItemStack> drops;
 	
+
 	public SoggyGardenBlock()
 	{	
 		super("soggyGarden", Material.grass);
@@ -32,22 +34,26 @@ public class SoggyGardenBlock extends BlockBaseGarden
 		setCreativeTab(harvestcraft.modTab);
 	}
 	
+
 	@Override
 	protected boolean canPlaceBlockOn(Block ground)
     {
         return ground == Blocks.grass;
     }
+
 	
 	public String getName()
 	{
 		return name;
 	}
+
 	
 	@Override
     public net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess world, BlockPos pos)
     {
         return net.minecraftforge.common.EnumPlantType.Plains;
     }
+
 
     @Override
     public IBlockState getPlant(net.minecraft.world.IBlockAccess world, BlockPos pos)

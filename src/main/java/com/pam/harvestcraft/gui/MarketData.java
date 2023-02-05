@@ -1,7 +1,8 @@
 /*    */ package com.pam.harvestcraft.gui;
 /*    */ 
 /*    */ import net.minecraft.item.ItemStack;
-/*    */ 
+
+
 /*    */ public class MarketData
 /*    */ {
 /*    */   ItemStack item;

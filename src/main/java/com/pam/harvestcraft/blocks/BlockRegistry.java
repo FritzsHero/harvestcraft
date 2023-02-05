@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class BlockRegistry 
 {
 	public static Block AridGardenBlock;
@@ -245,6 +246,7 @@ public class BlockRegistry
 	public static int marketcurrencyHorse;
 	public static int marketcurrencyBonemeal;
 	
+
 	public static void initBlocks(FMLPreInitializationEvent event, Configuration config)
 	{
 	/* 358 */     gardenRarity = config.get("gardens", "gardenRarity", 2).getInt();
@@ -332,6 +334,8 @@ public class BlockRegistry
 	/* 356 */     marketcurrencyHorse = config.get("market currency", "marketcurrencyHorse", 0).getInt();
 	/* 357 */     marketcurrencyBonemeal = config.get("market currency", "marketcurrencyBonemeal", 0).getInt();
 }
+	
+
 	private static Block registerBlock(String name, Class<? extends ItemBlock> itemblock, Block block)
 	{
 		block.setUnlocalizedName(name);
@@ -339,6 +343,7 @@ public class BlockRegistry
 
 		return block;
 	}
+
 
 	public static void loadBlockRegistry()
 	{
@@ -490,5 +495,4 @@ public class BlockRegistry
 		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamlemonSapling, pamlimeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamstarfruitSapling, pamvanillabeanSapling };
 		PamLogSaplings = new Block[] { pamcinnamonSapling, pammapleSapling, pampaperbarkSapling };
 	}
-	
 }

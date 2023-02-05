@@ -38,11 +38,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class BlockPamSapling extends BlockBush implements IGrowable
 {
-
 	public String name;
 	
+
 	public BlockPamSapling(String name)
 	{
 		super();
@@ -52,13 +53,14 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		setUnlocalizedName(name);
 		this.setStepSound(Block.soundTypeGrass);
 		this.setHardness(0.0F);
-
 	}
+
 	
 	public String getName()
 	{
 		return name;
 	}
+
 
 	@Override
 	public boolean canPlaceBlockAt(World world, BlockPos pos)
@@ -68,11 +70,13 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		return this.isSuitableSoilBlock(soilBlock);
 	}
 
+
 	@Override
 	public void onNeighborBlockChange(World world, BlockPos pos, IBlockState state, Block neighborBlock)
 	{
 		this.validatePosition(world, pos, state);
 	}
+
 
 	public void validatePosition(World world, BlockPos pos, IBlockState state)
 	{
@@ -84,11 +88,13 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		}
 	}
 
+
 	@Override
 	public AxisAlignedBB getCollisionBoundingBox(World worldIn, BlockPos pos, IBlockState state)
 	{
 		return null;
 	}
+
 
 	@Override
 	public boolean isOpaqueCube()
@@ -96,17 +102,20 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		return false;
 	}
 
+
 	@Override
 	public boolean isFullCube()
 	{
 		return false;
 	}
 
+
 	public boolean isSuitableSoilBlock(Block soilBlock)
 	{
 		return soilBlock == Blocks.grass || soilBlock == Blocks.dirt || soilBlock == Blocks.farmland;
 	}
 	
+
 	@Override
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
 	{
@@ -121,10 +130,12 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		}
 	}
 
+
 	public void grow(World worldIn, BlockPos pos, IBlockState state, Random rand)
 	{
 		this.generateTree(worldIn, pos, state, rand);
 	}
+
 
 	public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand) 
 	{
@@ -681,11 +692,13 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		return true;
 	}
 
+
 	@Override
 	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
 		return worldIn.rand.nextFloat() < 0.45D;
 	}
+
 
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
@@ -701,6 +714,7 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		return EnumWorldBlockLayer.CUTOUT;
 	}
 
+
 	@Override
     public IBlockState getPlant(net.minecraft.world.IBlockAccess world, BlockPos pos)
     {
@@ -708,6 +722,4 @@ public class BlockPamSapling extends BlockBush implements IGrowable
         if (state.getBlock() != this) return getDefaultState();
         return state;
     }
-
-
 }

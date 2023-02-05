@@ -17,9 +17,9 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
+
 public class FruitTreeWorldGen implements IWorldGenerator
 {
-
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
 	{
@@ -243,6 +243,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 	
 	}
 
+
 	public boolean generateAppleTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -266,6 +267,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateAvocadoTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -289,6 +291,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateCherryTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -312,6 +315,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateChestnutTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -335,6 +339,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateNutmegTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -357,6 +362,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generatePearTree(World world, Random random, int x, int y, int z)
 	{
@@ -381,6 +387,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePlumTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -403,6 +410,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateWalnutTree(World world, Random random, int x, int y, int z)
 	{
@@ -426,6 +434,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateGooseberryTree(World world, Random random, int x, int y, int z)
 	{
@@ -449,6 +458,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateAlmondTree(World world, Random random, int x, int y, int z)
 	{
@@ -473,6 +483,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateApricotTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -496,6 +507,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateBananaTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -518,6 +530,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateCashewTree(World world, Random random, int x, int y, int z)
 	{
@@ -542,6 +555,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateCoconutTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -564,6 +578,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateDateTree(World world, Random random, int x, int y, int z)
 	{
@@ -587,6 +602,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateDragonfruitTree(World world, Random random, int x, int y, int z)
 	{
@@ -610,6 +626,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateDurianTree(World world, Random random, int x, int y, int z)
 	{
@@ -634,6 +651,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateFigTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -657,6 +675,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateGrapefruitTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -679,6 +698,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateLemonTree(World world, Random random, int x, int y, int z)
 	{
@@ -703,6 +723,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateLimeTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -726,6 +747,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateMangoTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -748,6 +770,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateOliveTree(World world, Random random, int x, int y, int z)
 	{
@@ -772,6 +795,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateOrangeTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -795,6 +819,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePapayaTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -818,6 +843,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePeachTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -841,6 +867,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePecanTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -864,6 +891,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePeppercornTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -887,6 +915,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePersimmonTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -909,6 +938,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generatePistachioTree(World world, Random random, int x, int y, int z)
 	{
@@ -933,6 +963,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePomegranateTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -955,6 +986,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateStarfruitTree(World world, Random random, int x, int y, int z)
 	{
@@ -979,6 +1011,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generateVanillabeanTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -1001,6 +1034,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		}
 		return false;
 	}
+
 	
 	public boolean generateCinnamonTree(World world, Random random, int x, int y, int z)
 	{
@@ -1025,7 +1059,6 @@ public class FruitTreeWorldGen implements IWorldGenerator
 	}
 	
 	
-	
 	public boolean generateMapleTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.SPRUCE);
@@ -1048,6 +1081,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 	
+
 	public boolean generatePaperbarkTree(World world, Random random, int x, int y, int z)
 	{
 		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
@@ -1070,4 +1104,3 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		return false;
 	}
 }
-

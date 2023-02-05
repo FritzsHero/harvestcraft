@@ -12,9 +12,9 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
+
 public class BushWorldWorldGen implements IWorldGenerator
 {
-
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider)
 	{
@@ -64,6 +64,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 		
 	}
 
+
 	public boolean generateAridGarden(World world, Random random, int x, int y, int z)
 	{
 		for (int tries = 0; tries < 32; tries++)
@@ -81,6 +82,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 		return true;
 	}
 	
+
 	public boolean generateFrostGarden(World world, Random random, int x, int y, int z)
 	{
 		for (int tries = 0; tries < 32; tries++)
@@ -98,6 +100,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 		return true;
 	}
 	
+
 	public boolean generateShadedGarden(World world, Random random, int x, int y, int z)
 	{
 		for (int tries = 0; tries < 32; tries++)
@@ -115,6 +118,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 		return true;
 	}
 	
+
 	public boolean generateSoggyGarden(World world, Random random, int x, int y, int z)
 	{
 		for (int tries = 0; tries < 32; tries++)
@@ -131,6 +135,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 
 		return true;
 	}
+
 
 	public boolean generateTropicalGarden(World world, Random random, int x, int y, int z)
 	{
@@ -149,6 +154,7 @@ public class BushWorldWorldGen implements IWorldGenerator
 		return true;
 	}
 	
+
 	public boolean generateWindyGarden(World world, Random random, int x, int y, int z)
 	{
 		for (int tries = 0; tries < 32; tries++)
@@ -165,5 +171,4 @@ public class BushWorldWorldGen implements IWorldGenerator
 
 		return true;
 	}
-
 }

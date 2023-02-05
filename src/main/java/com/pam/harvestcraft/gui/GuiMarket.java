@@ -14,7 +14,8 @@ import org.lwjgl.opengl.GL12;
 
 import com.pam.harvestcraft.proxy.PacketHandler;
 import com.pam.harvestcraft.tileentity.TileEntityMarket;
- 
+
+
 public class GuiMarket extends GuiContainer
 {
         private static final ResourceLocation gui = new ResourceLocation("harvestcraft:textures/gui/market.png");
@@ -28,12 +29,14 @@ public class GuiMarket extends GuiContainer
         private TileEntityMarket tileEntityMarket;
         private EntityPlayer player;
  
+
         public GuiMarket(InventoryPlayer inventoryplayer, TileEntityMarket tileEntityMarket)
         {
                 super(new ContainerMarket(inventoryplayer, tileEntityMarket));
                 this.tileEntityMarket = tileEntityMarket;
         }
  
+
         @Override
         public void initGui()
         {
@@ -56,6 +59,7 @@ public class GuiMarket extends GuiContainer
                 this.itemNum = tileEntityMarket.getBrowsingInfo();
         }
  
+
         @Override
         protected void actionPerformed(GuiButton guibutton)
         {
@@ -110,6 +114,7 @@ public class GuiMarket extends GuiContainer
                         }
                 }
         }
+
  
         @Override
         public void onGuiClosed()
@@ -118,6 +123,7 @@ public class GuiMarket extends GuiContainer
                 super.onGuiClosed();
         }
  
+
         @Override
         protected void drawGuiContainerForegroundLayer(int par1, int par2)
         {
@@ -154,6 +160,7 @@ public class GuiMarket extends GuiContainer
                 RenderHelper.enableStandardItemLighting();
         }
  
+
         @Override
         public void drawScreen(int par1, int par2, float par3)
         {
@@ -165,6 +172,7 @@ public class GuiMarket extends GuiContainer
 //                }
         }
  
+
         @Override
         protected void drawGuiContainerBackgroundLayer(float f, int i, int j)
         {

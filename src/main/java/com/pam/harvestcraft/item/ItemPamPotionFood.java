@@ -6,6 +6,7 @@ import net.minecraft.item.EnumAction;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 
+
 public class ItemPamPotionFood extends ItemFood
 {
 	public ItemPamPotionFood(int par2, float par3, boolean par4)
@@ -13,6 +14,7 @@ public class ItemPamPotionFood extends ItemFood
 		super(par2, par3, par4);
 		setCreativeTab(harvestcraft.modTab);
 	}
+	
 
 	public EnumAction getItemUseAction(ItemStack par1ItemStack)
 	{

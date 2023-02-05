@@ -32,11 +32,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class BlockPamLogFruit extends Block  implements IGrowable
 {
-
 	public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 2);
 	
+
 	public BlockPamLogFruit() 
 	{
 		super(Material.plants);
@@ -45,8 +46,6 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		this.setTickRandomly(true);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
 	}
-
-	
 	
 	
 	public int quantityDropped(Random random)
@@ -54,6 +53,7 @@ public class BlockPamLogFruit extends Block  implements IGrowable
         return 0;
     }
 	
+
 	@Override
 	@SideOnly(Side.CLIENT)
 	public EnumWorldBlockLayer getBlockLayer()
@@ -61,6 +61,7 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		return EnumWorldBlockLayer.CUTOUT;
 	}
 	
+
 	@Override
 	public IBlockState getStateFromMeta(int meta)
 	{
@@ -74,11 +75,13 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		return ((Integer) state.getValue(AGE)).intValue();
 	}
 
+
 	@Override
 	protected BlockState createBlockState()
 	{
 		return new BlockState(this, new IProperty[] { AGE });
 	}
+
 
 	@Override
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
@@ -94,6 +97,7 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		super.updateTick(worldIn, pos, state, rand);
 	}
 
+
 	public void grow(World worldIn, BlockPos pos, IBlockState state)
 	{
 		int i = ((Integer) state.getValue(AGE)).intValue() + MathHelper.getRandomIntegerInRange(worldIn.rand, 2, 5);
@@ -104,11 +108,13 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		worldIn.setBlockState(pos, state.withProperty(AGE, Integer.valueOf(i)), 2);
 	}
 
+
 	@Override
 	public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient)
 	{
 		return ((Integer) state.getValue(AGE)).intValue() < 2;
 	}
+
 
 	@Override
 	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state)
@@ -116,13 +122,13 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 		return true;
 	}
 
+
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
 		this.grow(worldIn, pos, state);
 	}
 	
-
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
@@ -163,11 +169,10 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
-	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
+	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
+	{
 		list.add(new ItemStack(itemIn, 1, 0));
 		list.add(new ItemStack(itemIn, 1, 1));
 		list.add(new ItemStack(itemIn, 1, 2));
 	}
-
-	
 }

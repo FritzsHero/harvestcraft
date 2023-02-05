@@ -12,9 +12,11 @@ import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 
+
 public class ItemModels 
 {
 	private static HashMap<Item, ItemModelList> models = new HashMap<Item, ItemModelList>();
+
 
 	public static void preInit()
 	{
@@ -22,11 +24,13 @@ public class ItemModels
 		prepareModels();
 	}
 
+
 	public static void init()
 	{
 		registerModels();
 	}
 	
+
 	private static void defineItemModels()
 	{
 		registerItemModels(getItem(BlockRegistry.AridGardenBlock), new ItemModelList("gardens/")
@@ -562,10 +566,12 @@ public class ItemModels
 				.add(0, "walnut_sapling"));
 	}
 	
+
 	private static void registerItemModels(Item item, ItemModelList list)
 	{
 		models.put(item, list);
 	}
+
 
 	private static void prepareModels()
 	{
@@ -581,6 +587,7 @@ public class ItemModels
 			}
 		}
 	}
+
 
 	private static void registerModels()
 	{
@@ -602,6 +609,7 @@ public class ItemModels
 		}
 	}
 
+	
 	/**
 	 * Shorthand utility method for Item.getItemFromBlock(block).
 	 */

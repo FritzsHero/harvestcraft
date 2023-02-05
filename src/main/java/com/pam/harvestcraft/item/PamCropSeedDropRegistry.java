@@ -1,9 +1,9 @@
 /*     */ package com.pam.harvestcraft.item;
-/*     */ 
+
 /*     */ import net.minecraft.item.ItemStack;
 /*     */ import net.minecraftforge.common.MinecraftForge;
-/*     */ 
-/*     */ 
+
+
 /*     */ public class PamCropSeedDropRegistry
 /*     */ {
 /*     */   public static void getSeedDrops()

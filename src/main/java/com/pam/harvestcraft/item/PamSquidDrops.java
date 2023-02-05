@@ -1,12 +1,14 @@
 /*    */ package com.pam.harvestcraft.item;
+
 /*    */ import net.minecraft.entity.EntityLivingBase;
 /*    */ import net.minecraft.util.DamageSource;
 /*    */ import net.minecraftforge.event.entity.living.LivingDropsEvent;
-/*    */ 
+
+
 /*    */ public class PamSquidDrops
 /*    */ {
 /*    */   public static double rand;
-/*    */   
+
 /*    */   @net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 /*    */   public void onEntityDrop(LivingDropsEvent event)
 /*    */   {

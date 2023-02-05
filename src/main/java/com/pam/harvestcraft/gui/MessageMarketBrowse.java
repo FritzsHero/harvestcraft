@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
+
 public class MessageMarketBrowse implements IMessage, IMessageHandler<MessageMarketBrowse, IMessage>
 {
   private int itemNum;
@@ -20,8 +21,10 @@ public class MessageMarketBrowse implements IMessage, IMessageHandler<MessageMar
   private int y;
   private int z;
   
+
   public MessageMarketBrowse() {}
   
+
   public MessageMarketBrowse(int itemNum, int x, int y, int z)
   {
 /* 24 */     this.itemNum = itemNum;
@@ -63,5 +66,4 @@ public class MessageMarketBrowse implements IMessage, IMessageHandler<MessageMar
 /* 59 */     player.worldObj.markBlockForUpdate(position);
 /* 60 */     return null;
   }
-
 }

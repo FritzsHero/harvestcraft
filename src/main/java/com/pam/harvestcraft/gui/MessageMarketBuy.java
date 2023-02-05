@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
+
 public class MessageMarketBuy implements IMessage, IMessageHandler<MessageMarketBuy, IMessage>
 {
   private int itemNum;
@@ -20,8 +21,10 @@ public class MessageMarketBuy implements IMessage, IMessageHandler<MessageMarket
   private int z;
   private boolean shouldClear;
   
+
   public MessageMarketBuy() {}
   
+
   public MessageMarketBuy(int itemNum, int x, int y, int z, boolean shouldClear)
   {
 /* 23 */     this.itemNum = itemNum;

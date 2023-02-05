@@ -69,5 +69,5 @@ import com.pam.harvestcraft.blocks.BlockRegistry;
 	OreDictionary.registerOre("logWood", BlockRegistry.pamMaple);
 	OreDictionary.registerOre("logWood", BlockRegistry.pamPaperbark);
 	OreDictionary.registerOre("logWood", BlockRegistry.pamCinnamon);
-/*    */   }
-/*    */ }
+}
+}

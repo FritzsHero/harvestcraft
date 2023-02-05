@@ -10,6 +10,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
+
 public class ContainerMarket extends Container
 {
   public ContainerMarket(IInventory par1IInventory, TileEntityMarket tileEntity)
@@ -32,11 +33,13 @@ public class ContainerMarket extends Container
     }
   }
   
+
   public boolean canInteractWith(EntityPlayer par1EntityPlayer)
   {
 	return true;
   }
   
+
   public ItemStack transferStackInSlot(EntityPlayer entityPlayer, int slotIndex)
   {
 	ItemStack itemStack = null;
@@ -80,8 +83,6 @@ public class ContainerMarket extends Container
     
 	return itemStack;
   }
-  
-
 
 
   public void onContainerClosed(EntityPlayer par1EntityPlayer)

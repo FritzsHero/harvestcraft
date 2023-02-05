@@ -35,11 +35,13 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class harvestcraft {
 
 	@Instance(Reference.MODID)
 	public static harvestcraft instance;
+
 
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
@@ -52,8 +54,10 @@ public class harvestcraft {
 		}
 	};
 
+
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event)
+    {
         Config.instance.load(event);
     	this.proxy.preInit(event);
         Config.instance.configureGardenDrops();
@@ -72,19 +76,22 @@ public class harvestcraft {
         {
         MinecraftForge.EVENT_BUS.register(new PamSquidDrops());
         }
-
     }
 
+
     @EventHandler
-    public void init(FMLInitializationEvent event) {
+    public void init(FMLInitializationEvent event)
+    {
         this.proxy.init(event);
         GameRegistry.registerWorldGenerator(new BushWorldWorldGen(), 0);
         GameRegistry.registerWorldGenerator(new FruitTreeWorldGen(), 0);
         GameRegistry.registerWorldGenerator(new LogFruitTreeWorldGen(), 0);
     }
 
+
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
+    public void postInit(FMLPostInitializationEvent event)
+    {
         this.proxy.postInit(event);
     }
 }

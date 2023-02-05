@@ -9,6 +9,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.IChatComponent;
 
+
 public class TileEntityMarket extends TileEntity implements IInventory
 {
 	private ItemStack paySlot = null;
@@ -18,17 +19,20 @@ public class TileEntityMarket extends TileEntity implements IInventory
 
 	private boolean isTrading = false;
 
+
 	@Override
 	public int getSizeInventory()
 	{
 		return 1;
 	}
 
+
 	@Override
 	public ItemStack getStackInSlot(int par1)
 	{
 		return paySlot;
 	}
+
 
 	@Override
 	public ItemStack decrStackSize(int par1, int par2)
@@ -57,6 +61,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		return null;
 	}
 
+
 //	@Override
 	public ItemStack getStackInSlotOnClosing(int par1)
 	{
@@ -68,6 +73,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		}
 		return null;
 	}
+
 
 	@Override
 	public void setInventorySlotContents(int par1, ItemStack par2ItemStack)
@@ -82,6 +88,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		this.markDirty();
 	}
 
+
 	/**
 	 * Returns the name of the inventory.
 	 */
@@ -89,6 +96,7 @@ public class TileEntityMarket extends TileEntity implements IInventory
 	{
 		return "Market";
 	}
+
 
 	public void takeEmeraldFromSlot(int price)
 	{
@@ -99,17 +107,19 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		this.markDirty();
 	}
 
+
 	public void clearInventory()
 	{
 		this.paySlot = null;
 	}
-
+	
 	@Override
 	public void readFromNBT(NBTTagCompound par1NBTTagCompound)
 	{
 		super.readFromNBT(par1NBTTagCompound);
 		this.stockNum = par1NBTTagCompound.getInteger("StockNum");
 	}
+
 
 	@Override
 	public void writeToNBT(NBTTagCompound par1NBTTagCompound)
@@ -118,31 +128,37 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		par1NBTTagCompound.setInteger("StockNum", stockNum);
 	}
 
+
 	public void setBrowsingInfo(int stockNum)
 	{
 		this.stockNum = stockNum;
 	}
+
 
 	public int getBrowsingInfo()
 	{
 		return stockNum;
 	}
 
+
 	public void setTrading(boolean isUsing)
 	{
 		this.isTrading = isUsing;
 	}
+
 
 	public boolean isTrading()
 	{
 		return isTrading;
 	}
 
-        @Override
+
+    @Override
 	public int getInventoryStackLimit()
 	{
 		return 64;
 	}
+
 
 	@Override
 	public boolean isUseableByPlayer(EntityPlayer par1EntityPlayer)
@@ -150,11 +166,13 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		return this.worldObj.getTileEntity(new BlockPos(xCoord, yCoord, zCoord)) != this ? false : par1EntityPlayer.getDistanceSq(this.xCoord + 0.5D, this.yCoord + 0.5D, this.zCoord + 0.5D) <= 64.0D;
 	}
 
+
 	@Override
 	public void updateContainingBlockInfo()
 	{
 		super.updateContainingBlockInfo();
 	}
+
 
 //	@Override
 	public void updateEntity()
@@ -162,14 +180,17 @@ public class TileEntityMarket extends TileEntity implements IInventory
 //		super.updateEntity();
 	}
 
+
 //	@Override
 	public void openInventory(){}
+
 
 //	@Override
 	public void closeInventory()
 	{
 		setTrading(false);
 	}
+
 
 	@Override
 	public void invalidate()
@@ -178,11 +199,13 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		super.invalidate();
 	}
 
+
 	@Override
 	public boolean isItemValidForSlot(int i, ItemStack itemstack)
 	{
 		return false;
 	}
+
 
 //	@Override
 	public String getInventoryName()
@@ -190,59 +213,80 @@ public class TileEntityMarket extends TileEntity implements IInventory
 		return "Market";
 	}
 
+
 //	@Override
 	public boolean hasCustomInventoryName()
 	{
 		return false;
 	}
 
+
     @Override
-    public ItemStack removeStackFromSlot(int i) {
+    public ItemStack removeStackFromSlot(int i)
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public void openInventory(EntityPlayer ep) {
+    public void openInventory(EntityPlayer ep)
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public void closeInventory(EntityPlayer ep) {
+    public void closeInventory(EntityPlayer ep)
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public int getField(int i) {
+    public int getField(int i)
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public void setField(int i, int i1) {
+    public void setField(int i, int i1)
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public int getFieldCount() {
+    public int getFieldCount()
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public void clear() {
+    public void clear()
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public String getName() {
+    public String getName()
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public boolean hasCustomName() {
+    public boolean hasCustomName()
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+
     @Override
-    public IChatComponent getDisplayName() {
+    public IChatComponent getDisplayName()
+	{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

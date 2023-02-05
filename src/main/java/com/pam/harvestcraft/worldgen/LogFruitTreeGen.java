@@ -1,6 +1,7 @@
 package com.pam.harvestcraft.worldgen;
 
 import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCocoa;
 import net.minecraft.block.BlockLeaves;
@@ -18,6 +19,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
+
 public class LogFruitTreeGen extends WorldGenAbstractTree
 {
 	private static final IBlockState field_181653_a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
@@ -28,6 +30,7 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
     private final IBlockState metaLeaves;
     private final IBlockState fruitType;
  
+
 	public LogFruitTreeGen(boolean p_i46446_1_, int p_i46446_2_, IBlockState p_i46446_3_, IBlockState p_i46446_4_, boolean p_i46446_5_, IBlockState fruittype)
 	{
 		super(p_i46446_1_);
@@ -37,6 +40,7 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
         this.vinesGrow = p_i46446_5_;
         this.fruitType = fruittype;
 	}
+
 
 	public boolean generate(World worldIn, Random rand, BlockPos position)
     {
@@ -159,7 +163,4 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
             return false;
         }
     }
-
-   
 }
-

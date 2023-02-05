@@ -13,13 +13,16 @@ import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
+
 public class MessageMarketClosed implements IMessage, IMessageHandler<MessageMarketClosed, IMessage>
 {
   private int x;
   private int y;
   private int z;
   
+
   public MessageMarketClosed() {}
+  
   
   public MessageMarketClosed(int x, int y, int z)
   {

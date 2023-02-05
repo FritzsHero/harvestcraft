@@ -10,12 +10,9 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 
-
-
-
 public class MarketItems
 {
-/*  14 */   private static ArrayList<MarketData> items = new ArrayList();
+      private static ArrayList<MarketData> items = new ArrayList();
   
   public static void registerItems(MarketData data)
   {

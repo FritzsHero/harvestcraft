@@ -8,13 +8,16 @@ import net.minecraft.util.ResourceLocation;
 
 import com.pam.harvestcraft.Reference;
 
-public final class ItemRenderRegister {
 
-	public static void preInit() {
+public final class ItemRenderRegister
+{
+	public static void preInit()
+	{
 		//ModelBakery.registerItemVariants(ItemRegistry.metaItem, new ResourceLocation("harvestcraft:meta_item_white"), new ResourceLocation("harvestcraft:meta_item_black"));
 	}
 
-	public static void registerItemRenderer() {
+	public static void registerItemRenderer()
+	{
 		reg(ItemRegistry.cuttingboardItem);
 		reg(ItemRegistry.potItem);
 		reg(ItemRegistry.skilletItem);
@@ -790,11 +793,14 @@ public final class ItemRenderRegister {
 
 	public static String modid = Reference.MODID;
 
-	public static void reg(Item item) {
+
+	public static void reg(Item item)
+	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(modid + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
 
-	public static void reg(Item item, int meta, String file) {
+	public static void reg(Item item, int meta, String file)
+	{
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, meta, new ModelResourceLocation(modid + ":" + file, "inventory"));
 	}
 }

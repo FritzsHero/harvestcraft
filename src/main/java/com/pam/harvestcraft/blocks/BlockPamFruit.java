@@ -32,11 +32,12 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+
 public class BlockPamFruit extends Block  implements IGrowable
 {
-
 	public static final PropertyInteger AGE = PropertyInteger.create("age", 0, 2);
 	
+
 	public BlockPamFruit() 
 	{
 		super(Material.plants);
@@ -45,6 +46,7 @@ public class BlockPamFruit extends Block  implements IGrowable
 		this.setTickRandomly(true);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, Integer.valueOf(0)));
 	}
+
 	
 	@Override
 	public boolean canPlaceBlockAt(World world, BlockPos pos)
@@ -54,11 +56,13 @@ public class BlockPamFruit extends Block  implements IGrowable
 		return this.isSuitableSoilBlock(leafBlock);
 	}
 
+
 	@Override
 	public void onNeighborBlockChange(World world, BlockPos pos, IBlockState state, Block neighborBlock)
 	{
 		this.validatePosition(world, pos, state);
 	}
+
 
 	public void validatePosition(World world, BlockPos pos, IBlockState state)
 	{
@@ -69,11 +73,13 @@ public class BlockPamFruit extends Block  implements IGrowable
 		}
 	}
 
+
 	@Override
 	public AxisAlignedBB getCollisionBoundingBox(World worldIn, BlockPos pos, IBlockState state)
 	{
 		return null;
 	}
+
 
 	@Override
 	public boolean isOpaqueCube()
@@ -81,16 +87,19 @@ public class BlockPamFruit extends Block  implements IGrowable
 		return false;
 	}
 
+
 	@Override
 	public boolean isFullCube()
 	{
 		return false;
 	}
 
+
 	public boolean isSuitableSoilBlock(Block leafBlock)
 	{
 		return leafBlock == Blocks.leaves;
 	}
+
 
 	@Override
 	@SideOnly(Side.CLIENT)
@@ -98,6 +107,7 @@ public class BlockPamFruit extends Block  implements IGrowable
 	{
 		return EnumWorldBlockLayer.CUTOUT;
 	}
+
 	
 	@Override
 	public IBlockState getStateFromMeta(int meta)
@@ -112,11 +122,13 @@ public class BlockPamFruit extends Block  implements IGrowable
 		return ((Integer) state.getValue(AGE)).intValue();
 	}
 
+
 	@Override
 	protected BlockState createBlockState()
 	{
 		return new BlockState(this, new IProperty[] { AGE });
 	}
+
 
 	@Override
 	public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
@@ -132,6 +144,7 @@ public class BlockPamFruit extends Block  implements IGrowable
 		super.updateTick(worldIn, pos, state, rand);
 	}
 
+
 	public void grow(World worldIn, BlockPos pos, IBlockState state)
 	{
 		int i = ((Integer) state.getValue(AGE)).intValue() + MathHelper.getRandomIntegerInRange(worldIn.rand, 2, 5);
@@ -142,11 +155,13 @@ public class BlockPamFruit extends Block  implements IGrowable
 		worldIn.setBlockState(pos, state.withProperty(AGE, Integer.valueOf(i)), 2);
 	}
 
+
 	@Override
 	public boolean canGrow(World worldIn, BlockPos pos, IBlockState state, boolean isClient)
 	{
 		return ((Integer) state.getValue(AGE)).intValue() < 2;
 	}
+
 
 	@Override
 	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state)
@@ -154,12 +169,12 @@ public class BlockPamFruit extends Block  implements IGrowable
 		return true;
 	}
 
+
 	@Override
 	public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state)
 	{
 		this.grow(worldIn, pos, state);
 	}
-	
 
 	
 	@Override
@@ -297,6 +312,4 @@ public class BlockPamFruit extends Block  implements IGrowable
 		list.add(new ItemStack(itemIn, 1, 1));
 		list.add(new ItemStack(itemIn, 1, 2));
 	}
-
-	
 }

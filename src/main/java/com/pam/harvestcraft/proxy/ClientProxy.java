@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+
 public class ClientProxy extends CommonProxy {
 
     @Override
@@ -16,6 +17,7 @@ public class ClientProxy extends CommonProxy {
         super.preInit(e);
         ItemModels.preInit();
     }
+
 
     @Override
     public void init(FMLInitializationEvent e) {
@@ -25,11 +27,13 @@ public class ClientProxy extends CommonProxy {
         
     }
 
+
     @Override
     public void postInit(FMLPostInitializationEvent e) {
         super.postInit(e);
     }
     
+
     public void registerRenderInformation(FMLPreInitializationEvent event)
     	{
 //    	TileEntityHandler.registerTileEntityRenderers();
@@ -40,4 +44,3 @@ public class ClientProxy extends CommonProxy {
     	return FMLClientHandler.instance().getClient().theWorld;
     	}
 }
-

@@ -8,8 +8,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class CommonProxy {
-
+public class CommonProxy
+{
     public void preInit(FMLPreInitializationEvent e) 
     {
     	BlockRegistry.loadBlockRegistry();
@@ -17,22 +17,24 @@ public class CommonProxy {
          
     }
 
-    public void init(FMLInitializationEvent e) {
 
-    }
+    public void init(FMLInitializationEvent e) {}
 
-    public void postInit(FMLPostInitializationEvent e) {
 
-    }
+    public void postInit(FMLPostInitializationEvent e) {}
     
+
     public void registerHandlers(FMLPreInitializationEvent event)
-    	{
-    	 net.minecraftforge.common.MinecraftForge.EVENT_BUS.register(new EventHandler());
-    	}
+    {
+    	net.minecraftforge.common.MinecraftForge.EVENT_BUS.register(new EventHandler());
+    }
+
+
     public void registerRenderInformation(FMLPreInitializationEvent event) {}
 
+
     public World getClientWorld()
-    	{
+    {
     	return null;
-    	}
+    }
 }
