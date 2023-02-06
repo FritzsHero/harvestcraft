@@ -142,20 +142,22 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 			
 			ItemStack savedStack;
 			
-			Block currentBlock = worldIn.getBlockState(pos).getBlock();
-			 
-            if(currentBlock == BlockRegistry.pamCinnamon){
-                savedStack = new ItemStack(ItemRegistry.cinnamonItem);
-            }
-            if(currentBlock == BlockRegistry.pamMaple){
+			if(this == BlockRegistry.pamCinnamon)
+			{
+				savedStack = new ItemStack(ItemRegistry.cinnamonItem);
+			}
+			else if(this == BlockRegistry.pamMaple)
+			{
                 savedStack = new ItemStack(ItemRegistry.maplesyrupItem);
-            }
-            if(currentBlock == BlockRegistry.pamPaperbark){
-                savedStack = new ItemStack(Items.paper);
-            }
-            else
-                savedStack = new ItemStack(Items.wheat);
- 
+			}
+			else if(this == BlockRegistry.pamPaperbark)
+			{
+				savedStack = new ItemStack(Items.paper);
+			}
+			else
+			{
+				savedStack = new ItemStack(Items.wheat);
+			}
             
             worldIn.setBlockState(pos, state.withProperty(AGE, 0), 3);
             EntityItem entityItem = new EntityItem(worldIn, playerIn.posX, playerIn.posY - 1D, playerIn.posZ, savedStack);

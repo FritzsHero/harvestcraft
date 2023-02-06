@@ -35,7 +35,8 @@ public abstract class BlockBaseGarden extends BlockBush
         // Optimize so we're not calling this every time through the for loop...
         int len = Math.min(BlockRegistry.gardendropAmount, ourDrops.size());
 
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++)
+        {
             ItemStack drop = ourDrops.get(i);
 
             // This should never happen, but check it anyway...
