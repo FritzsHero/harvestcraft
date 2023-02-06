@@ -41,10 +41,6 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("listAllmeatraw", ItemRegistry.turkeyrawItem);
 		OreDictionary.registerOre("listAllmeatraw", Items.rabbit);
 		OreDictionary.registerOre("listAllmeatraw", ItemRegistry.venisonrawItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
-			OreDictionary.registerOre("listAllmeatraw", ItemRegistry.firmtofuItem);
-		}
 
 		OreDictionary.registerOre("listAllmeatcooked", Items.cooked_beef);
 		OreDictionary.registerOre("listAllmeatcooked", Items.cooked_chicken);
@@ -53,10 +49,6 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.turkeycookedItem);
 		OreDictionary.registerOre("listAllmeatcooked", Items.cooked_rabbit);
 		OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.venisoncookedItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
-			OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.firmtofuItem);
-		}
 
 		OreDictionary.registerOre("listAllfishraw", Items.fish);
 		OreDictionary.registerOre("listAllfishraw", new ItemStack(Items.fish, 1, 1));
@@ -92,105 +84,44 @@ public class PamFoodOreDictionaryRegistry
 
 		OreDictionary.registerOre("salmonRaw", new ItemStack(Items.fish, 1));
 
-		if (ItemRegistry.enabletofuasmeatinRecipes)
+		if (ItemRegistry.isTofuAsMeatEnabled)
 		{
+			OreDictionary.registerOre("listAllmeatraw", ItemRegistry.firmtofuItem);
+			OreDictionary.registerOre("listAllmeatcooked", ItemRegistry.firmtofuItem);
 			OreDictionary.registerOre("listAllfishcooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllegg", Items.egg);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllegg", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllchickenraw", Items.chicken);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllchickenraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllchickencooked", Items.cooked_chicken);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllchickencooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllporkraw", Items.porkchop);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllporkraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllporkcooked", Items.cooked_porkchop);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllporkcooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllbeefraw", Items.beef);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllbeefraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllbeefcooked", Items.cooked_beef);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllbeefcooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllmuttonraw", Items.mutton);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllmuttonraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllmuttoncooked", Items.cooked_mutton);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllmuttoncooked", ItemRegistry.firmtofuItem);
-		}
-   
-		OreDictionary.registerOre("listAllturkeyraw", ItemRegistry.turkeyrawItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllturkeyraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllturkeycooked", ItemRegistry.turkeycookedItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllturkeycooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllrabbitraw", Items.rabbit);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllrabbitraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllrabbitcooked", Items.cooked_rabbit);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllrabbitcooked", ItemRegistry.firmtofuItem);
-		}
-
-		OreDictionary.registerOre("listAllvenisonraw", ItemRegistry.venisonrawItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllvenisonraw", ItemRegistry.firmtofuItem);
-		}
-		OreDictionary.registerOre("listAllvenisoncooked", ItemRegistry.venisoncookedItem);
-		if (ItemRegistry.enabletofuasmeatinRecipes)
-		{
 			OreDictionary.registerOre("listAllvenisoncooked", ItemRegistry.firmtofuItem);
 		}
 
-		if (ItemRegistry.enabletofuasmilkinRecipes)
-		{
-			OreDictionary.registerOre("listAllheavycream", ItemRegistry.silkentofuItem);
-		}
-		OreDictionary.registerOre("listAllheavycream", ItemRegistry.heavycreamItem);
+		OreDictionary.registerOre("listAllegg", Items.egg);
+		OreDictionary.registerOre("listAllchickenraw", Items.chicken);
+		OreDictionary.registerOre("listAllchickencooked", Items.cooked_chicken);
+		OreDictionary.registerOre("listAllporkraw", Items.porkchop);
+		OreDictionary.registerOre("listAllporkcooked", Items.cooked_porkchop);
+		OreDictionary.registerOre("listAllbeefraw", Items.beef);
+		OreDictionary.registerOre("listAllbeefcooked", Items.cooked_beef);
+		OreDictionary.registerOre("listAllmuttonraw", Items.mutton);
+		OreDictionary.registerOre("listAllmuttoncooked", Items.cooked_mutton);
+		OreDictionary.registerOre("listAllturkeyraw", ItemRegistry.turkeyrawItem);
+		OreDictionary.registerOre("listAllturkeycooked", ItemRegistry.turkeycookedItem);
+		OreDictionary.registerOre("listAllrabbitraw", Items.rabbit);
+		OreDictionary.registerOre("listAllrabbitcooked", Items.cooked_rabbit);
+		OreDictionary.registerOre("listAllvenisonraw", ItemRegistry.venisonrawItem);
+		OreDictionary.registerOre("listAllvenisoncooked", ItemRegistry.venisoncookedItem);
 
-		if (ItemRegistry.enabletofuasmilkinRecipes)
-		{
-			OreDictionary.registerOre("listAllicecream", ItemRegistry.silkentofuItem);
-		}
-		OreDictionary.registerOre("listAllicecream", ItemRegistry.icecreamItem);
 
 		if (ItemRegistry.enablelistAllwatervanillawaterbucket)
 		{
@@ -202,10 +133,15 @@ public class PamFoodOreDictionaryRegistry
 			OreDictionary.registerOre("listAllwater", ItemRegistry.freshwaterItem);
 		}
 
+		OreDictionary.registerOre("listAllheavycream", ItemRegistry.heavycreamItem);
+		OreDictionary.registerOre("listAllicecream", ItemRegistry.icecreamItem);
 		OreDictionary.registerOre("listAllmilk", Items.milk_bucket);
 		OreDictionary.registerOre("listAllmilk", ItemRegistry.freshmilkItem);
-		if (ItemRegistry.enabletofuasmilkinRecipes)
+
+		if (ItemRegistry.isTofuAsMilkEnabled)
 		{
+			OreDictionary.registerOre("listAllheavycream", ItemRegistry.silkentofuItem);
+			OreDictionary.registerOre("listAllicecream", ItemRegistry.silkentofuItem);
 			OreDictionary.registerOre("listAllmilk", ItemRegistry.soymilkItem);
 		}
 

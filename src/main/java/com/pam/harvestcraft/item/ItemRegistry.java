@@ -826,8 +826,8 @@ public static boolean enablecropitemsasseeds;
         public static boolean isSaltFromWaterEnabled;
         public static boolean isSeedDroppingFromGrass;
 public static boolean enablecroptoseedRecipe;
-public static boolean enabletofuasmeatinRecipes;
-public static boolean enabletofuasmilkinRecipes;
+        public static boolean isTofuAsMeatEnabled;
+        public static boolean isTofuAsMilkEnabled;
 public static boolean enableharvestcraftfish;
 public static int fishtrapbaitrecipeamount;
 public static int grainbaitrecipeamount;
@@ -853,11 +853,11 @@ enablecropitemsasseeds = config.get("miscellaneous recipes", "enablecropitemsass
                 isSeedDroppingFromGrass = config.get("seeds", "isSeedDroppingFromGrass", false).getBoolean(false);
 
  
+                isTofuAsMeatEnabled = config.get("miscellaneous recipes", "isTofuAsMeatEnabled", true).getBoolean(true);
+                isTofuAsMilkEnabled = config.get("miscellaneous recipes", "isTofuAsMilkEnabled", true).getBoolean(true);
 
 enablecroptoseedRecipe = config.get("miscellaneous recipes", "enablecroptoseedRecipe", true).getBoolean(true);
  
-enabletofuasmeatinRecipes = config.get("miscellaneous recipes", "enabletofuasmeatinRecipes", true).getBoolean(true);
-enabletofuasmilkinRecipes = config.get("miscellaneous recipes", "enabletofuasmilkinRecipes", true).getBoolean(true);
  
 //enableharvestcraftfish = config.get("miscellaneous recipes", "enableharvestcraftfish", true).getBoolean(true);
  
