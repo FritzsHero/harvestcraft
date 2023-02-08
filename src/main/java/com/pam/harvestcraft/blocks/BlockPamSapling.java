@@ -42,6 +42,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockPamSapling extends BlockBush implements IGrowable
 {
 	public String name;
+	private BlockPlanks.EnumType woodType;
+	private Block fruitType;
+	private boolean isLogFruit = false;
 	
 
 	public BlockPamSapling(String name)
@@ -53,6 +56,177 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		setUnlocalizedName(name);
 		setStepSound(Block.soundTypeGrass);
 		setHardness(0.0F);
+	}
+
+
+	private void SetWoodAndFruit()
+	{
+		woodType = BlockPlanks.EnumType.JUNGLE;
+
+
+
+
+		if (this == BlockRegistry.pamappleSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamApple;
+		}
+		else if (this == BlockRegistry.pamavocadoSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamAvocado;
+		}
+		else if (this == BlockRegistry.pamcherrySapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamCherry;
+		}
+		else if (this == BlockRegistry.pamchestnutSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamChestnut;
+		}
+		else if (this == BlockRegistry.pamnutmegSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamNutmeg;
+		}
+		else if (this == BlockRegistry.pampearSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamPear;
+		}
+		else if (this == BlockRegistry.pamplumSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamPlum;
+		}
+		else if (this == BlockRegistry.pamwalnutSapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamWalnut;
+		}
+		else if (this == BlockRegistry.pamgooseberrySapling)
+		{
+			woodType = BlockPlanks.EnumType.OAK;
+			fruitType = BlockRegistry.pamGooseberry;
+		}
+		
+		else if (this == BlockRegistry.pamalmondSapling)
+		{
+			fruitType = BlockRegistry.pamAlmond;
+		}
+		else if (this == BlockRegistry.pamapricotSapling)
+		{
+			fruitType = BlockRegistry.pamApricot;
+		}
+		else if (this == BlockRegistry.pambananaSapling)
+		{
+			fruitType = BlockRegistry.pamBanana;
+		}
+		else if (this == BlockRegistry.pamcashewSapling)
+		{
+			fruitType = BlockRegistry.pamCashew;
+		}
+		else if (this == BlockRegistry.pamcoconutSapling)
+		{
+			fruitType = BlockRegistry.pamCoconut;
+		}
+		else if (this == BlockRegistry.pamdateSapling)
+		{
+			fruitType = BlockRegistry.pamDate;
+		}
+		else if (this == BlockRegistry.pamdragonfruitSapling)
+		{
+			fruitType = BlockRegistry.pamDragonfruit;
+		}
+		else if (this == BlockRegistry.pamdurianSapling)
+		{
+			fruitType = BlockRegistry.pamDurian;
+		}
+		else if (this == BlockRegistry.pamfigSapling)
+		{
+			fruitType = BlockRegistry.pamFig;
+		}
+		else if (this == BlockRegistry.pamgrapefruitSapling)
+		{
+			fruitType = BlockRegistry.pamGrapefruit;
+		}
+		else if (this == BlockRegistry.pamlemonSapling)
+		{
+			fruitType = BlockRegistry.pamLemon;
+		}
+		else if (this == BlockRegistry.pamlimeSapling)
+		{
+			fruitType = BlockRegistry.pamLime;
+		}
+		else if (this == BlockRegistry.pammangoSapling)
+		{
+			fruitType = BlockRegistry.pamMango;
+		}
+		else if (this == BlockRegistry.pamoliveSapling)
+		{
+			fruitType = BlockRegistry.pamOlive;
+		}
+		else if (this == BlockRegistry.pamorangeSapling)
+		{
+			fruitType = BlockRegistry.pamOrange;
+		}
+		else if (this == BlockRegistry.pampapayaSapling)
+		{
+			fruitType = BlockRegistry.pamPapaya;
+		}
+		else if (this == BlockRegistry.pampeachSapling)
+		{
+			fruitType = BlockRegistry.pamPeach;
+		}
+		else if (this == BlockRegistry.pampecanSapling)
+		{
+			fruitType = BlockRegistry.pamPecan;
+		}
+		else if (this == BlockRegistry.pampeppercornSapling)
+		{
+			fruitType = BlockRegistry.pamPeppercorn;
+		}
+		else if (this == BlockRegistry.pampersimmonSapling)
+		{
+			fruitType = BlockRegistry.pamPersimmon;
+		}
+		else if (this == BlockRegistry.pampistachioSapling)
+		{
+			fruitType = BlockRegistry.pamPistachio;
+		}
+		else if (this == BlockRegistry.pampomegranateSapling)
+		{
+			fruitType = BlockRegistry.pamPomegranate;
+		}
+		else if (this == BlockRegistry.pamstarfruitSapling)
+		{
+			fruitType = BlockRegistry.pamStarfruit;
+		}
+		else if (this == BlockRegistry.pamvanillabeanSapling)
+		{
+			fruitType = BlockRegistry.pamVanillabean;
+		}
+
+
+		// Trees which have their wood as fruit
+		else if (this == BlockRegistry.pamcinnamonSapling)
+		{
+			fruitType = BlockRegistry.pamCinnamon;
+			isLogFruit = true;
+		}
+		else if (this == BlockRegistry.pammapleSapling)
+		{
+			woodType = BlockPlanks.EnumType.SPRUCE;
+			fruitType = BlockRegistry.pamMaple;
+			isLogFruit = true;
+		}
+		else if (this == BlockRegistry.pampaperbarkSapling)
+		{
+			fruitType = BlockRegistry.pamPaperbark;
+			isLogFruit = true;
+		}
 	}
 
 	
@@ -133,552 +307,41 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 
 	public void grow(World worldIn, BlockPos pos, IBlockState state, Random rand)
 	{
-		generateTree(worldIn, pos, state, rand);
+		GenerateTree(worldIn, pos, state, rand);
 	}
 
 
-	public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand) 
+	public void GenerateTree(World _worldIn, BlockPos _pos, IBlockState _state, Random _random) 
 	{
-		if (this == BlockRegistry.pamappleSapling)
+		SetWoodAndFruit();
+
+
+		if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(_worldIn, _random, _pos)) 
 		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamApple.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
+			return;
 		}
-		if (this == BlockRegistry.pamavocadoSapling)
+		_worldIn.setBlockToAir(_pos);
+		final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, woodType);
+		final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, woodType).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
+		final IBlockState c = fruitType.getDefaultState();
+
+		// Create a tree with wood as fruit
+		if (isLogFruit)
 		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
+			if(!new LogFruitTreeGen(true, 5, a, b, false, c).generate(_worldIn, _random, _pos))
 			{
-				return;
+				//Re-add the sapling if the tree failed to grow
+				_worldIn.setBlockState(_pos, _state);
 			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamAvocado.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
+
+			return;
 		}
-		if (this == BlockRegistry.pamcherrySapling)
+
+		// Create a normal tree with fruits
+		if(!new FruitTreeGen(true, 5, a, b, false, c).generate(_worldIn, _random, _pos))
 		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamCherry.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamchestnutSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamChestnut.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamnutmegSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamNutmeg.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampearSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPear.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamplumSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPlum.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamwalnutSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamWalnut.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamgooseberrySapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamGooseberry.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		
-		if (this == BlockRegistry.pamalmondSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamAlmond.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamapricotSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamApricot.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pambananaSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamBanana.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamcashewSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamCashew.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamcoconutSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamCoconut.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamdateSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamDate.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamdragonfruitSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamDragonfruit.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamdurianSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamDurian.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamfigSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamFig.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamgrapefruitSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamGrapefruit.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamlemonSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamLemon.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamlimeSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamLime.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pammangoSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamMango.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamoliveSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamOlive.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamorangeSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamOrange.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampapayaSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPapaya.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampeachSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPeach.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampecanSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPecan.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampeppercornSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPeppercorn.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampersimmonSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPersimmon.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampistachioSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPistachio.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampomegranateSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPomegranate.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamstarfruitSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamStarfruit.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamvanillabeanSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamVanillabean.getDefaultState();
-			if(!new FruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pamcinnamonSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamCinnamon.getDefaultState();
-			if(!new LogFruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pammapleSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.SPRUCE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.SPRUCE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamMaple.getDefaultState();
-			if(!new LogFruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
-		}
-		if (this == BlockRegistry.pampaperbarkSapling)
-		{
-			if (!net.minecraftforge.event.terraingen.TerrainGen.saplingGrowTree(worldIn, rand, pos)) 
-			{
-				return;
-			}
-			worldIn.setBlockToAir(pos);
-			final IBlockState a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.JUNGLE);
-			final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.JUNGLE).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-			final IBlockState c = BlockRegistry.pamPaperbark.getDefaultState();
-			if(!new LogFruitTreeGen(true, 5, a, b, false, c).generate(worldIn, rand, pos))
-			{
-				worldIn.setBlockState(pos, state); //Re-add the sapling if the tree failed to grow
-			}
+			//Re-add the sapling if the tree failed to grow
+			_worldIn.setBlockState(_pos, _state);
 		}
     }
 
