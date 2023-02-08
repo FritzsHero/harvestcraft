@@ -21,8 +21,6 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 public class FruitTreeGen extends WorldGenAbstractTree
 {
-	private static final IBlockState field_181653_a = Blocks.log.getDefaultState().withProperty(BlockOldLog.VARIANT, BlockPlanks.EnumType.OAK);
-    private static final IBlockState field_181654_b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, BlockPlanks.EnumType.OAK).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
     private final int minTreeHeight;
     private final boolean vinesGrow;
     private final IBlockState metaWood;
@@ -30,25 +28,25 @@ public class FruitTreeGen extends WorldGenAbstractTree
     private final IBlockState fruitType;
  
 
-	public FruitTreeGen(boolean p_i46446_1_, int p_i46446_2_, IBlockState p_i46446_3_, IBlockState p_i46446_4_, boolean p_i46446_5_, IBlockState _fruitType)
+	public FruitTreeGen(boolean _isNotifying, int _minTreeHeight, IBlockState _woodType, IBlockState _leavesType, boolean _isVineGrowing, IBlockState _fruitType)
 	{
-		super(p_i46446_1_);
-        minTreeHeight = p_i46446_2_;
-        metaWood = p_i46446_3_;
-        metaLeaves = p_i46446_4_;
-        vinesGrow = p_i46446_5_;
+        super(_isNotifying);
+        minTreeHeight = _minTreeHeight;
+        metaWood = _woodType;
+        metaLeaves = _leavesType;
+        vinesGrow = _isVineGrowing;
         fruitType = _fruitType;
 	}
 
 
 	public boolean generate(World worldIn, Random rand, BlockPos position)
     {
-        int i = rand.nextInt(3) + minTreeHeight;
+        int treeHeight = rand.nextInt(3) + minTreeHeight;
         boolean flag = true;
 
-        if (position.getY() >= 1 && position.getY() + i + 1 <= 256)
+        if (position.getY() >= 1 && position.getY() + treeHeight + 1 <= 256)
         {
-            for (int j = position.getY(); j <= position.getY() + 1 + i; ++j)
+            for (int j = position.getY(); j <= position.getY() + 1 + treeHeight; ++j)
             {
                 int k = 1;
 
@@ -57,7 +55,7 @@ public class FruitTreeGen extends WorldGenAbstractTree
                     k = 0;
                 }
 
-                if (j >= position.getY() + 1 + i - 2)
+                if (j >= position.getY() + 1 + treeHeight - 2)
                 {
                     k = 2;
                 }
@@ -93,15 +91,15 @@ public class FruitTreeGen extends WorldGenAbstractTree
                 Block block1 = worldIn.getBlockState(down).getBlock();
                 boolean isSoil = block1.canSustainPlant(worldIn, down, net.minecraft.util.EnumFacing.UP, (net.minecraft.block.BlockSapling)Blocks.sapling);
 
-                if (isSoil && position.getY() < 256 - i - 1)
+                if (isSoil && position.getY() < 256 - treeHeight - 1)
                 {
                     block1.onPlantGrow(worldIn, down, position);
                     int k2 = 3;
                     int l2 = 0;
 
-                    for (int i3 = position.getY() - k2 + i; i3 <= position.getY() + i; ++i3)
+                    for (int i3 = position.getY() - k2 + treeHeight; i3 <= position.getY() + treeHeight; ++i3)
                     {
-                        int i4 = i3 - (position.getY() + i);
+                        int i4 = i3 - (position.getY() + treeHeight);
                         int j1 = l2 + 1 - i4 / 2;
 
                         for (int k1 = position.getX() - j1; k1 <= position.getX() + j1; ++k1)
@@ -122,16 +120,16 @@ public class FruitTreeGen extends WorldGenAbstractTree
                                     if (block.isAir(worldIn, blockpos) || block.isLeaves(worldIn, blockpos) || block.getMaterial() == Material.vine)
                                     {
                                         setBlockAndNotifyAdequately(worldIn, blockpos, metaLeaves);
+                                        
+                                        // Create the fruits
                                         if (worldIn.isAirBlock(blockpos2))
                                         {
                                         	if (worldIn.isAirBlock(blockpos3) && i3 > 2)
                                         	{
-                                        
                                         		if (rand.nextInt(4) == 0)
                                         		{
                                         			setBlockAndNotifyAdequately(worldIn, blockpos2, fruitType);
                                         		}
-                                            
                                         	}
                                         }
                                     }
@@ -140,7 +138,7 @@ public class FruitTreeGen extends WorldGenAbstractTree
                         }
                     }
 
-                    for (int j3 = 0; j3 < i; ++j3)
+                    for (int j3 = 0; j3 < treeHeight; ++j3)
                     {
                         BlockPos upN = position.up(j3);
                         Block block2 = worldIn.getBlockState(upN).getBlock();
@@ -176,9 +174,9 @@ public class FruitTreeGen extends WorldGenAbstractTree
 
                     if (vinesGrow)
                     {
-                        for (int k3 = position.getY() - 3 + i; k3 <= position.getY() + i; ++k3)
+                        for (int k3 = position.getY() - 3 + treeHeight; k3 <= position.getY() + treeHeight; ++k3)
                         {
-                            int j4 = k3 - (position.getY() + i);
+                            int j4 = k3 - (position.getY() + treeHeight);
                             int k4 = 2 - j4 / 2;
                             BlockPos.MutableBlockPos blockpos$mutableblockpos1 = new BlockPos.MutableBlockPos();
 
@@ -219,7 +217,7 @@ public class FruitTreeGen extends WorldGenAbstractTree
                             }
                         }
 
-                        if (rand.nextInt(5) == 0 && i > 5)
+                        if (rand.nextInt(5) == 0 && treeHeight > 5)
                         {
                             for (int l3 = 0; l3 < 2; ++l3)
                             {
@@ -228,7 +226,7 @@ public class FruitTreeGen extends WorldGenAbstractTree
                                     if (rand.nextInt(4 - l3) == 0)
                                     {
                                         EnumFacing enumfacing1 = enumfacing.getOpposite();
-                                        func_181652_a(worldIn, rand.nextInt(3), position.add(enumfacing1.getFrontOffsetX(), i - 5 + l3, enumfacing1.getFrontOffsetZ()), enumfacing);
+                                        func_181652_a(worldIn, rand.nextInt(3), position.add(enumfacing1.getFrontOffsetX(), treeHeight - 5 + l3, enumfacing1.getFrontOffsetZ()), enumfacing);
                                     }
                                 }
                             }
