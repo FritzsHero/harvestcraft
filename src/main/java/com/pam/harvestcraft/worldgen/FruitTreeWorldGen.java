@@ -63,23 +63,31 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				{
 				case 0: 
 					fruitType = BlockRegistry.pamApple;
+					break;
 				case 1: 
 					fruitType = BlockRegistry.pamAvocado;
+					break;
 				case 2: 
 					fruitType = BlockRegistry.pamCherry;
+					break;
 				case 3: 
 					fruitType = BlockRegistry.pamChestnut;
+					break;
 				case 4: 
 					fruitType = BlockRegistry.pamNutmeg;
+					break;
 				case 5: 
 					fruitType = BlockRegistry.pamPear;
+					break;
 				case 6: 
 					fruitType = BlockRegistry.pamPlum;
+					break;
 				case 7: 
 					fruitType = BlockRegistry.pamWalnut;
+					break;
 				case 8: 
 					fruitType = BlockRegistry.pamGooseberry;
-				break;
+					break;
 				}
 
 				
@@ -103,57 +111,81 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				{
 				case 0: 
 					fruitType = BlockRegistry.pamBanana;
+					break;
 				case 1: 
 					isLogFruit = true;
-					fruitType = BlockRegistry.pamCinnamon;			  
+					fruitType = BlockRegistry.pamCinnamon;
+					break;
 				case 2: 
 					fruitType = BlockRegistry.pamCoconut;
+					break;
 				case 3: 
 					fruitType = BlockRegistry.pamDate;
+					break;
 				case 4: 
 					fruitType = BlockRegistry.pamDragonfruit;
+					break;
 				case 5: 
 					fruitType = BlockRegistry.pamPapaya;
+					break;
 				case 6: 
 					fruitType = BlockRegistry.pamAlmond;
+					break;
 				case 7: 
 					fruitType = BlockRegistry.pamApricot;
+					break;
 				case 8: 
 					fruitType = BlockRegistry.pamCashew;
+					break;
 				case 9: 
 					fruitType = BlockRegistry.pamDurian;
+					break;
 				case 10: 
 					fruitType = BlockRegistry.pamFig;
+					break;
 				case 11: 
 					fruitType = BlockRegistry.pamGrapefruit;
+					break;
 				case 12: 
 					fruitType = BlockRegistry.pamLemon;
+					break;
 				case 13: 
 					fruitType = BlockRegistry.pamLime;
+					break;
 				case 14: 
 					fruitType = BlockRegistry.pamMango;
+					break;
 				case 15: 
 					fruitType = BlockRegistry.pamOrange;
+					break;
 				case 16: 
 					isLogFruit = true;
 					fruitType = BlockRegistry.pamPaperbark;
+					break;
 				case 17: 
 					fruitType = BlockRegistry.pamPeach;
+					break;
 				case 18: 
 					fruitType = BlockRegistry.pamPecan;
+					break;
 				case 19: 
 					fruitType = BlockRegistry.pamPeppercorn;
+					break;
 				case 20: 
 					fruitType = BlockRegistry.pamPersimmon;
+					break;
 				case 21: 
 					fruitType = BlockRegistry.pamPistachio;
+					break;
 				case 22: 
 					fruitType = BlockRegistry.pamPomegranate;
+					break;
 				case 23: 
 					fruitType = BlockRegistry.pamStarfruit;
+					break;
 				case 24: 
 					fruitType = BlockRegistry.pamVanillabean;
-				  break;
+				  	break;
 				}
 
 
@@ -210,6 +242,9 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				}
 			}
 		}
+
+		// Reset isLogFruit because it could cause issues
+		isLogFruit = false;
 
 		return false;
 	}
