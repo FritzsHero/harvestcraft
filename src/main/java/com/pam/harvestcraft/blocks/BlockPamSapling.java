@@ -328,7 +328,7 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		// Create a tree with wood as fruit
 		if (isLogFruit)
 		{
-			if(!new LogFruitTreeGen(true, 5, a, b, false, c).generate(_worldIn, _random, _pos))
+			if(!new LogFruitTreeGen(true, 5, a, b, c).generate(_worldIn, _random, _pos))
 			{
 				//Re-add the sapling if the tree failed to grow
 				_worldIn.setBlockState(_pos, _state);

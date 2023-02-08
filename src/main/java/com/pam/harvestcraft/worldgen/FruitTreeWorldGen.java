@@ -193,7 +193,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				{
 					if(isLogFruit)
 					{
-						new LogFruitTreeGen(true, 5, a, b, false, c).generate(world, random, pos);
+						new LogFruitTreeGen(true, 5, a, b, c).generate(world, random, pos);
 					}
 					else
 					{
