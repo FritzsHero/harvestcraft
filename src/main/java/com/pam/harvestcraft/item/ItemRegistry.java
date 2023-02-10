@@ -1612,14 +1612,23 @@ PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
 
         private static void RegisterTools()
         {
-                GameRegistry.registerItem(cuttingboardItem = new ItemPamTool().setUnlocalizedName("cuttingboardItem").setContainerItem(cuttingboardItem).setCreativeTab(harvestcraft.modTab), "cuttingboardItem");
-                GameRegistry.registerItem(potItem = new ItemPamTool().setUnlocalizedName("potItem").setContainerItem(potItem).setCreativeTab(harvestcraft.modTab), "potItem");
-                GameRegistry.registerItem(skilletItem = new ItemPamTool().setUnlocalizedName("skilletItem").setContainerItem(skilletItem).setCreativeTab(harvestcraft.modTab), "skilletItem");
-                GameRegistry.registerItem(saucepanItem = new ItemPamTool().setUnlocalizedName("saucepanItem").setContainerItem(saucepanItem).setCreativeTab(harvestcraft.modTab), "saucepanItem");
-                GameRegistry.registerItem(bakewareItem = new ItemPamTool().setUnlocalizedName("bakewareItem").setContainerItem(bakewareItem).setCreativeTab(harvestcraft.modTab), "bakewareItem");
-                GameRegistry.registerItem(mortarandpestleItem = new ItemPamTool().setUnlocalizedName("mortarandpestleItem").setContainerItem(mortarandpestleItem).setCreativeTab(harvestcraft.modTab), "mortarandpestleItem");
-                GameRegistry.registerItem(mixingbowlItem = new ItemPamTool().setUnlocalizedName("mixingbowlItem").setContainerItem(mixingbowlItem).setCreativeTab(harvestcraft.modTab), "mixingbowlItem");
-                GameRegistry.registerItem(juicerItem = new ItemPamTool().setUnlocalizedName("juicerItem").setContainerItem(juicerItem).setCreativeTab(harvestcraft.modTab), "juicerItem");
+                GameRegistry.registerItem(cuttingboardItem = new ItemPamTool().setUnlocalizedName("cuttingboardItem").setCreativeTab(harvestcraft.modTab), "cuttingboardItem");
+                GameRegistry.registerItem(potItem = new ItemPamTool().setUnlocalizedName("potItem").setCreativeTab(harvestcraft.modTab), "potItem");
+                GameRegistry.registerItem(skilletItem = new ItemPamTool().setUnlocalizedName("skilletItem").setCreativeTab(harvestcraft.modTab), "skilletItem");
+                GameRegistry.registerItem(saucepanItem = new ItemPamTool().setUnlocalizedName("saucepanItem").setCreativeTab(harvestcraft.modTab), "saucepanItem");
+                GameRegistry.registerItem(bakewareItem = new ItemPamTool().setUnlocalizedName("bakewareItem").setCreativeTab(harvestcraft.modTab), "bakewareItem");
+                GameRegistry.registerItem(mortarandpestleItem = new ItemPamTool().setUnlocalizedName("mortarandpestleItem").setCreativeTab(harvestcraft.modTab), "mortarandpestleItem");
+                GameRegistry.registerItem(mixingbowlItem = new ItemPamTool().setUnlocalizedName("mixingbowlItem").setCreativeTab(harvestcraft.modTab), "mixingbowlItem");
+                GameRegistry.registerItem(juicerItem = new ItemPamTool().setUnlocalizedName("juicerItem").setCreativeTab(harvestcraft.modTab), "juicerItem");
+
+                cuttingboardItem.setContainerItem(cuttingboardItem);
+                potItem.setContainerItem(potItem);
+                skilletItem.setContainerItem(skilletItem);
+                saucepanItem.setContainerItem(saucepanItem);
+                bakewareItem.setContainerItem(bakewareItem);
+                mortarandpestleItem.setContainerItem(mortarandpestleItem);
+                mixingbowlItem.setContainerItem(mixingbowlItem);
+                juicerItem.setContainerItem(juicerItem);
         }
 
 
