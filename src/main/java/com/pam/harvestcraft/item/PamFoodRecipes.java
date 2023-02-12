@@ -843,6 +843,7 @@ public class PamFoodRecipes
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.yorkshirepuddingItem, new Object[] { "toolBakeware", "foodFlour", "foodSalt", "foodStock", "listAllegg", "listAllmilk"}));
 	
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.schnitzelItem, new Object[] { "toolSkillet", "listAllporkraw", "foodFlour", "cropLemon", "foodOliveoil", "foodBlackpepper" }));
+          recipeList.add(new ShapelessOreRecipe(ItemRegistry.bratwurstItem, new Object[] { "toolCuttingboard", "foodPorksausage", "foodPickles", "cropOnion", Items.bread }));
      }
 
 

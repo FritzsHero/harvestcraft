@@ -790,6 +790,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.yorkshirepuddingItem);
 		
 		reg(ItemRegistry.schnitzelItem);
+		reg(ItemRegistry.bratwurstItem);
 		//reg(ItemRegistry.metaItem, 0, "meta_item_white");
 		//reg(ItemRegistry.metaItem, 1, "meta_item_black");
 	}
