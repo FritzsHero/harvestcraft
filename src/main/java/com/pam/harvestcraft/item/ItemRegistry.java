@@ -811,6 +811,7 @@ public static Item potatoandleeksoupItem;
 public static Item toadintheholeItem;
 public static Item tunapotatoItem;
 public static Item yorkshirepuddingItem;
+public static Item schnitzelItem;
 
 public static int cropfoodRestore;
 public static float cropsaturationRestore;
@@ -1599,6 +1600,7 @@ GameRegistry.registerItem(potatoandleeksoupItem = new ItemFood(6, mealsaturation
 GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("yorkshirepuddingItem").setCreativeTab(harvestcraft.modTab), "yorkshirepuddingItem");
 GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturation, false).setUnlocalizedName("toadintheholeItem").setCreativeTab(harvestcraft.modTab), "toadintheholeItem");
 
+                GameRegistry.registerItem(schnitzelItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("schnitzelItem").setCreativeTab(harvestcraft.modTab), "schnitzelItem");
 
 PamCropItems = new Item[] { asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem, cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem, parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem, scallionItem, soybeanItem, spiceleafItem, sweetpotatoItem, tealeafItem, turnipItem, whitemushroomItem, artichokeItem, bellpepperItem, blackberryItem, blueberryItem, brusselsproutItem, cabbageItem, cactusfruitItem, candleberryItem, cantaloupeItem, chilipepperItem, coffeebeanItem, cornItem, cottonItem, cucumberItem, eggplantItem, grapeItem, kiwiItem, mustardseedsItem, okraItem, peasItem, raspberryItem, rhubarbItem, seaweedItem, strawberryItem, tomatoItem, wintersquashItem, zucchiniItem, bambooshootItem, spinachItem, curryleafItem, sesameseedsItem, waterchestnutItem };
 PamSeeds = new Item[] { asparagusseedItem, barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem, celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem, lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem, pineappleseedItem, radishseedItem, riceseedItem, rutabagaseedItem, ryeseedItem, scallionseedItem, soybeanseedItem, spiceleafseedItem, sweetpotatoseedItem, teaseedItem, turnipseedItem, whitemushroomseedItem, artichokeseedItem, bellpepperseedItem, blackberryseedItem, blueberryseedItem, brusselsproutseedItem, cabbageseedItem, cactusfruitseedItem, candleberryseedItem, cantaloupeseedItem, chilipepperseedItem, coffeeseedItem, cornseedItem, cottonseedItem, cucumberseedItem, eggplantseedItem, grapeseedItem, kiwiseedItem, mustardseedItem, okraseedItem, peasseedItem, raspberryseedItem, rhubarbseedItem, seaweedseedItem, strawberryseedItem, tomatoseedItem, wintersquashseedItem, zucchiniseedItem, bambooshootseedItem, spinachseedItem, curryleafseedItem, sesameseedsseedItem, waterchestnutseedItem };
@@ -1607,7 +1609,7 @@ PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, cashewItem, co
 PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
 
 
-}
+        }
 
 
         private static void RegisterTools()
