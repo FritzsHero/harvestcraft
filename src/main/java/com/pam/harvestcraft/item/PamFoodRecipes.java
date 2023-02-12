@@ -19,6 +19,8 @@ public class PamFoodRecipes
 
      public static void getRecipes()
      {
+          AddSmelting();
+
           for (int i = 0; i < 9; i++)
           {
                CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(BlockRegistry.PamTemperateSaplings[i], new Object[] { ItemRegistry.PamTemperateFruits[i], ItemRegistry.PamTemperateFruits[i], ItemRegistry.PamTemperateFruits[i], new ItemStack(Blocks.sapling, 1, 0) }));
@@ -69,61 +71,8 @@ public class PamFoodRecipes
      
           CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.cake, 1), new Object[] { "AAA", "BEB", "CCC", Character.valueOf('A'), "listAllmilk", Character.valueOf('B'), "honeyEqualssugar", Character.valueOf('C'), "flourEqualswheat", Character.valueOf('E'), "listAllegg" }));
      
- 
- 
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(Items.mushroom_stew, new Object[] { Items.bowl, "listAllmushroom", "listAllmushroom" }));
      
-          GameRegistry.addSmelting(ItemRegistry.doughItem, new ItemStack(Items.bread, 1, 0), 0.1F);
-          GameRegistry.addSmelting(Items.bread, new ItemStack(ItemRegistry.toastItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(Items.pumpkin_seeds, new ItemStack(ItemRegistry.roastedpumpkinseedsItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(Blocks.brown_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(Blocks.red_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
-     
-          //GameRegistry.addSmelting(ItemRegistry.muttonrawItem, new ItemStack(ItemRegistry.muttoncookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.calamarirawItem, new ItemStack(ItemRegistry.calamaricookedItem, 1, 0), 0.1F);
-     
-          GameRegistry.addSmelting(ItemRegistry.asparagusItem, new ItemStack(ItemRegistry.grilledasparagusItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.riceItem, new ItemStack(ItemRegistry.ricecakeItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.tealeafItem, new ItemStack(ItemRegistry.teaItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.cornItem, new ItemStack(ItemRegistry.popcornItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.sweetpotatoItem, new ItemStack(ItemRegistry.bakedsweetpotatoItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.coffeebeanItem, new ItemStack(ItemRegistry.coffeeItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.eggplantItem, new ItemStack(ItemRegistry.grilledeggplantItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.grapeItem, new ItemStack(ItemRegistry.raisinsItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.whitemushroomItem, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.coconutItem, new ItemStack(ItemRegistry.toastedcoconutItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.vanillabeanItem, new ItemStack(ItemRegistry.vanillaItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.chestnutItem, new ItemStack(ItemRegistry.roastedchestnutItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.sesameseedsItem, new ItemStack(ItemRegistry.toastedsesameseedsItem, 1, 0), 0.1F);
-     
-          GameRegistry.addSmelting(ItemRegistry.anchovyrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.bassrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.carprawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.catfishrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.charrrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.eelrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.grouperrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.herringrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.mudfishrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.perchrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.snapperrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.tilapiarawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.troutrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.tunarawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.walleyerawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-     
- 
-          GameRegistry.addSmelting(ItemRegistry.clamrawItem, new ItemStack(ItemRegistry.clamcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.crabrawItem, new ItemStack(ItemRegistry.crabcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.crayfishrawItem, new ItemStack(ItemRegistry.crayfishcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.frograwItem, new ItemStack(ItemRegistry.frogcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.octopusrawItem, new ItemStack(ItemRegistry.octopuscookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.scalloprawItem, new ItemStack(ItemRegistry.scallopcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.shrimprawItem, new ItemStack(ItemRegistry.shrimpcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.snailrawItem, new ItemStack(ItemRegistry.snailcookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.turtlerawItem, new ItemStack(ItemRegistry.turtlecookedItem, 1, 0), 0.1F);
-     
- 
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.silkentofuItem, new Object[] { "toolSaucepan", "cropSoybean" }));
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.firmtofuItem, new Object[] { "toolSkillet", "foodSilkentofu" }));
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.soymilkItem, new Object[] { "toolPot", "foodSilkentofu" }));
@@ -887,4 +836,58 @@ public class PamFoodRecipes
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.tunapotatoItem, new Object[] { "toolCuttingboard", "foodButteredpotato", "cropCorn", "listAllfishcooked"}));
           CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.yorkshirepuddingItem, new Object[] { "toolBakeware", "foodFlour", "foodSalt", "foodStock", "listAllegg", "listAllmilk"}));
 	}
+
+
+     private static void AddSmelting()
+     {
+          GameRegistry.addSmelting(ItemRegistry.doughItem, new ItemStack(Items.bread, 1, 0), 0.1F);
+          GameRegistry.addSmelting(Items.bread, new ItemStack(ItemRegistry.toastItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(Items.pumpkin_seeds, new ItemStack(ItemRegistry.roastedpumpkinseedsItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(Blocks.brown_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(Blocks.red_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
+     
+          //GameRegistry.addSmelting(ItemRegistry.muttonrawItem, new ItemStack(ItemRegistry.muttoncookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.calamarirawItem, new ItemStack(ItemRegistry.calamaricookedItem, 1, 0), 0.1F);
+     
+          GameRegistry.addSmelting(ItemRegistry.asparagusItem, new ItemStack(ItemRegistry.grilledasparagusItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.riceItem, new ItemStack(ItemRegistry.ricecakeItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.tealeafItem, new ItemStack(ItemRegistry.teaItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.cornItem, new ItemStack(ItemRegistry.popcornItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.sweetpotatoItem, new ItemStack(ItemRegistry.bakedsweetpotatoItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.coffeebeanItem, new ItemStack(ItemRegistry.coffeeItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.eggplantItem, new ItemStack(ItemRegistry.grilledeggplantItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.grapeItem, new ItemStack(ItemRegistry.raisinsItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.whitemushroomItem, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.coconutItem, new ItemStack(ItemRegistry.toastedcoconutItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.vanillabeanItem, new ItemStack(ItemRegistry.vanillaItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.chestnutItem, new ItemStack(ItemRegistry.roastedchestnutItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.sesameseedsItem, new ItemStack(ItemRegistry.toastedsesameseedsItem, 1, 0), 0.1F);
+     
+          GameRegistry.addSmelting(ItemRegistry.anchovyrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.bassrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.carprawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.catfishrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.charrrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.eelrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.grouperrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.herringrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.mudfishrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.perchrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.snapperrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.tilapiarawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.troutrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.tunarawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.walleyerawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
+     
+ 
+          GameRegistry.addSmelting(ItemRegistry.clamrawItem, new ItemStack(ItemRegistry.clamcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.crabrawItem, new ItemStack(ItemRegistry.crabcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.crayfishrawItem, new ItemStack(ItemRegistry.crayfishcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.frograwItem, new ItemStack(ItemRegistry.frogcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.octopusrawItem, new ItemStack(ItemRegistry.octopuscookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.scalloprawItem, new ItemStack(ItemRegistry.scallopcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.shrimprawItem, new ItemStack(ItemRegistry.shrimpcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.snailrawItem, new ItemStack(ItemRegistry.snailcookedItem, 1, 0), 0.1F);
+          GameRegistry.addSmelting(ItemRegistry.turtlerawItem, new ItemStack(ItemRegistry.turtlecookedItem, 1, 0), 0.1F);
+     }
 }
