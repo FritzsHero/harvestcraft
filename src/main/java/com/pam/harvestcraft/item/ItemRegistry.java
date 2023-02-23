@@ -811,6 +811,7 @@ public static Item potatoandleeksoupItem;
 public static Item toadintheholeItem;
 public static Item tunapotatoItem;
 public static Item yorkshirepuddingItem;
+public static Item tunasaladItem;
 public static Item schnitzelItem;
 public static Item bratwurstItem;
 
@@ -1601,6 +1602,7 @@ GameRegistry.registerItem(potatoandleeksoupItem = new ItemFood(6, mealsaturation
 GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("yorkshirepuddingItem").setCreativeTab(harvestcraft.modTab), "yorkshirepuddingItem");
 GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturation, false).setUnlocalizedName("toadintheholeItem").setCreativeTab(harvestcraft.modTab), "toadintheholeItem");
 
+                GameRegistry.registerItem(tunasaladItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("tunasaladItem").setCreativeTab(harvestcraft.modTab), "tunasaladItem");
                 GameRegistry.registerItem(schnitzelItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("schnitzelItem").setCreativeTab(harvestcraft.modTab), "schnitzelItem");
                 GameRegistry.registerItem(bratwurstItem = new ItemFood(13, mealsaturation, false).setUnlocalizedName("bratwurstItem").setCreativeTab(harvestcraft.modTab), "bratwurstItem");
 
