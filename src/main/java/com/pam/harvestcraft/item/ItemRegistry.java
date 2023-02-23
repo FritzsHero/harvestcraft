@@ -605,7 +605,7 @@ public static Item orangesodaItem;
 public static Item rootbeersodaItem;
 public static Item strawberrysodaItem;
 public static Item caramelicecreamItem;
-public static Item mintchocolatechipicemcreamItem;
+public static Item mintchocolatechipicecreamItem;
 public static Item strawberryicecreamItem;
 public static Item vanillaicecreamItem;
 public static Item gingerchickenItem;
@@ -1397,7 +1397,7 @@ GameRegistry.registerItem(orangesodaItem = new ItemPamPotionFood(2, snacksaturat
 GameRegistry.registerItem(rootbeersodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("rootbeersodaItem").setCreativeTab(harvestcraft.modTab), "rootbeersodaItem");
 GameRegistry.registerItem(strawberrysodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("strawberrysodaItem").setCreativeTab(harvestcraft.modTab), "strawberrysodaItem");
 GameRegistry.registerItem(caramelicecreamItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("caramelicecreamItem").setCreativeTab(harvestcraft.modTab), "caramelicecreamItem");
-GameRegistry.registerItem(mintchocolatechipicemcreamItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("mintchocolatechipicemcreamItem").setCreativeTab(harvestcraft.modTab), "mintchocolatechipicecreamItem");
+GameRegistry.registerItem(mintchocolatechipicecreamItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("mintchocolatechipicecreamItem").setCreativeTab(harvestcraft.modTab), "mintchocolatechipicecreamItem");
 GameRegistry.registerItem(strawberryicecreamItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("strawberryicecreamItem").setCreativeTab(harvestcraft.modTab), "strawberryicecreamItem");
 GameRegistry.registerItem(vanillaicecreamItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("vanillaicecreamItem").setCreativeTab(harvestcraft.modTab), "vanillaicecreamItem");
 GameRegistry.registerItem(gingerchickenItem = new ItemFood(12, meatymealsaturation, false).setUnlocalizedName("gingerchickenItem").setCreativeTab(harvestcraft.modTab), "gingerchickenItem");

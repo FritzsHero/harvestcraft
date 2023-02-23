@@ -927,7 +927,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("foodStrawberrysoda", ItemRegistry.strawberrysodaItem);
 
 		OreDictionary.registerOre("foodCaramelicecream", ItemRegistry.caramelicecreamItem);
-		OreDictionary.registerOre("foodMintchocolatechipicecream", ItemRegistry.mintchocolatechipicemcreamItem);
+		OreDictionary.registerOre("foodMintchocolatechipicecream", ItemRegistry.mintchocolatechipicecreamItem);
 		OreDictionary.registerOre("foodStrawberryicecream", ItemRegistry.strawberryicecreamItem);
 		OreDictionary.registerOre("foodVanillaicecream", ItemRegistry.vanillaicecreamItem);
 

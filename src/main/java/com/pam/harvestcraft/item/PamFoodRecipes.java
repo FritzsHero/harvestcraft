@@ -609,7 +609,7 @@ public class PamFoodRecipes
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.strawberrysodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodStrawberryjuice" }));
      
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.caramelicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "foodCaramel" }));
-          recipeList.add(new ShapelessOreRecipe(ItemRegistry.mintchocolatechipicemcreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropSpiceleaf", "foodChocolatebar" }));
+          recipeList.add(new ShapelessOreRecipe(ItemRegistry.mintchocolatechipicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropSpiceleaf", "foodChocolatebar" }));
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.strawberryicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropStrawberry" }));
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.vanillaicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "foodVanilla" }));
      

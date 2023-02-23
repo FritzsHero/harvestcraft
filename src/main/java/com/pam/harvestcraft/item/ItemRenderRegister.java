@@ -550,7 +550,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.rootbeersodaItem);
 		reg(ItemRegistry.strawberrysodaItem);
 		reg(ItemRegistry.caramelicecreamItem);
-		reg(ItemRegistry.mintchocolatechipicemcreamItem);
+		reg(ItemRegistry.mintchocolatechipicecreamItem);
 		reg(ItemRegistry.strawberryicecreamItem);
 		reg(ItemRegistry.vanillaicecreamItem);
 		reg(ItemRegistry.gingerchickenItem);
