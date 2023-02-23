@@ -791,6 +791,7 @@ public final class ItemRenderRegister
 		
 		reg(ItemRegistry.tunasaladItem);
 		reg(ItemRegistry.VanillaConchasBreadItem);
+		reg(ItemRegistry.VanillaCupcakeItem);
 		reg(ItemRegistry.wontonsoupItem);
 		reg(ItemRegistry.schnitzelItem);
 		reg(ItemRegistry.bratwurstItem);
