@@ -1003,6 +1003,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("foodManjuu", ItemRegistry.manjuuItem);
 
 		OreDictionary.registerOre("foodTunasalad", ItemRegistry.tunasaladItem);
+		OreDictionary.registerOre("foodTurkishDelight", ItemRegistry.TurkishDelightItem);
 		OreDictionary.registerOre("foodVanillaConchasBread", ItemRegistry.VanillaConchasBreadItem);
 		OreDictionary.registerOre("foodVanillaCupcake", ItemRegistry.VanillaCupcakeItem);
 		OreDictionary.registerOre("foodWontonsoup", ItemRegistry.wontonsoupItem);
