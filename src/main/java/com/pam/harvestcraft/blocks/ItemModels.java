@@ -45,6 +45,11 @@ public class ItemModels
 				.add(0, "tropicalgarden"));
 		registerItemModels(getItem(BlockRegistry.WindyGardenBlock), new ItemModelList("gardens/")
 				.add(0, "windygarden"));
+		registerItemModels(getItem(BlockRegistry.AgaveCrop), new ItemModelList("crops/")
+				.add(0, "agave_stage0")
+				.add(1, "agave_stage1")
+				.add(2, "agave_stage2")
+				.add(3, "agave_stage3"));
 		registerItemModels(getItem(BlockRegistry.pamblackberryCrop), new ItemModelList("crops/")
 				.add(0, "blackberry_stage0")
 				.add(1, "blackberry_stage1")

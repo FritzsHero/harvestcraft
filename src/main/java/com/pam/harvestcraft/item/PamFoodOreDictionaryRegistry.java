@@ -274,6 +274,9 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("seedWhitemushroom", ItemRegistry.whitemushroomseedItem);
 		OreDictionary.registerOre("listAllseed", ItemRegistry.whitemushroomseedItem);
 
+		OreDictionary.registerOre("cropAgave", ItemRegistry.AgaveItem);
+		OreDictionary.registerOre("seedAgave", ItemRegistry.AgaveSeedItem);
+		OreDictionary.registerOre("listAllseed", ItemRegistry.AgaveSeedItem);
 		OreDictionary.registerOre("cropArtichoke", ItemRegistry.artichokeItem);
 		OreDictionary.registerOre("listAllveggie", ItemRegistry.artichokeItem);
 		OreDictionary.registerOre("listAllgreenveggie", ItemRegistry.artichokeItem);

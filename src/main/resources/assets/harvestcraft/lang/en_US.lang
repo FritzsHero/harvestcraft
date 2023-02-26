@@ -108,6 +108,7 @@ tile.vanillabean_sapling.name=Vanilla Sapling
 tile.walnut_sapling.name=Walnut Sapling
 tile.gooseberry_sapling.name=Gooseberry Sapling
 
+harvestcraft.tile.AgaveCrop.name=Agave Crop
 harvestcraft.tile.pamblackberryCrop.name=Blackberry Crop
 harvestcraft.tile.pamblueberryCrop.name=Blueberry Crop
 harvestcraft.tile.pamcandleberryCrop.name=Candleberry Crop
@@ -296,7 +297,9 @@ item.turnipItem.name=Turnip
 item.turnipseedItem.name=Turnip Seed
 item.whitemushroomItem.name=White Mushroom
 item.whitemushroomseedItem.name=White Mushroom Spore
-        
+
+item.AgaveItem.name=Agave
+item.AgaveSeedItem.name=Agave Seed
 item.artichokeItem.name=Artichoke
 item.artichokeseedItem.name=Artichoke Seed
 item.bellpepperItem.name=Bellpepper

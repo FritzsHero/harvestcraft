@@ -38,6 +38,7 @@ public final class ItemRenderRegister
 		//reg(ItemRegistry.muttoncookedItem);
 		reg(ItemRegistry.calamaricookedItem);
 		reg(ItemRegistry.sunflowerseedsItem);
+		reg(ItemRegistry.AgaveItem);
 		reg(ItemRegistry.blackberryItem);
 		reg(ItemRegistry.blueberryItem);
 		reg(ItemRegistry.candleberryItem);
@@ -99,6 +100,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.riceItem);
 		reg(ItemRegistry.seaweedItem);
 		reg(ItemRegistry.waterchestnutItem);
+		reg(ItemRegistry.AgaveSeedItem);
 		reg(ItemRegistry.cottonseedItem);
 		reg(ItemRegistry.asparagusseedItem);
 		reg(ItemRegistry.barleyseedItem);

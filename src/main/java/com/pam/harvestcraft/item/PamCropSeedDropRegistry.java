@@ -13,6 +13,7 @@ public class PamCropSeedDropRegistry
             return;
         }
 
+        MinecraftForge.addGrassSeed(new ItemStack(ItemRegistry.AgaveSeedItem, 1, 0), ItemRegistry.seedrarity);
         MinecraftForge.addGrassSeed(new ItemStack(ItemRegistry.asparagusseedItem, 1, 0), ItemRegistry.seedrarity);
         MinecraftForge.addGrassSeed(new ItemStack(ItemRegistry.barleyseedItem, 1, 0), ItemRegistry.seedrarity);
         MinecraftForge.addGrassSeed(new ItemStack(ItemRegistry.beanseedItem, 1, 0), ItemRegistry.seedrarity);

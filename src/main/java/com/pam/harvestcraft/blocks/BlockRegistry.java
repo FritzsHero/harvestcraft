@@ -25,6 +25,7 @@ public class BlockRegistry
 	public static Block[] PamWarmSaplings;
 	public static Block[] PamLogSaplings;
 	
+	public static Block AgaveCrop;
 	public static Block pamblackberryCrop;
 	public static Block pamblueberryCrop;
 	public static Block pamcandleberryCrop;
@@ -284,6 +285,7 @@ public class BlockRegistry
 		ShadedGardenBlock = new ShadedGardenBlock();
 		SoggyGardenBlock = new SoggyGardenBlock();
 		
+		AgaveCrop = registerBlock("AgaveCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamblackberryCrop = registerBlock("pamblackberryCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamblueberryCrop = registerBlock("pamblueberryCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamcandleberryCrop = registerBlock("pamcandleberryCrop", ItemBlockFruit.class, new BlockPamCrop());
