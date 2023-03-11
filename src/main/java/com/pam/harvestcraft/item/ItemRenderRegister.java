@@ -21,6 +21,9 @@ public final class ItemRenderRegister
 	public static void registerItemRenderer()
 	{
 		RegisterCropRenderer();
+		RegisterSeedRenderer();
+
+
 		reg(ItemRegistry.cuttingboardItem);
 		reg(ItemRegistry.potItem);
 		reg(ItemRegistry.skilletItem);
@@ -40,69 +43,6 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.calamaricookedItem);
 		reg(ItemRegistry.sunflowerseedsItem);
 		reg(ItemRegistry.ediblerootItem);
-		reg(ItemRegistry.AgaveSeedItem);
-		reg(ItemRegistry.AmaranthSeedItem);
-		reg(ItemRegistry.ArrowrootSeedItem);
-		reg(ItemRegistry.cottonseedItem);
-		reg(ItemRegistry.asparagusseedItem);
-		reg(ItemRegistry.barleyseedItem);
-		reg(ItemRegistry.beanseedItem);
-		reg(ItemRegistry.beetseedItem);
-		reg(ItemRegistry.broccoliseedItem);
-		reg(ItemRegistry.whitemushroomseedItem);
-		reg(ItemRegistry.cauliflowerseedItem);
-		reg(ItemRegistry.celeryseedItem);
-		reg(ItemRegistry.cranberryseedItem);
-		reg(ItemRegistry.garlicseedItem);
-		reg(ItemRegistry.gingerseedItem);
-		reg(ItemRegistry.leekseedItem);
-		reg(ItemRegistry.lettuceseedItem);
-		reg(ItemRegistry.oatsseedItem);
-		reg(ItemRegistry.onionseedItem);
-		reg(ItemRegistry.parsnipseedItem);
-		reg(ItemRegistry.peanutseedItem);
-		reg(ItemRegistry.pineappleseedItem);
-		reg(ItemRegistry.radishseedItem);
-		reg(ItemRegistry.riceseedItem);
-		reg(ItemRegistry.rutabagaseedItem);
-		reg(ItemRegistry.ryeseedItem);
-		reg(ItemRegistry.scallionseedItem);
-		reg(ItemRegistry.soybeanseedItem);
-		reg(ItemRegistry.spiceleafseedItem);
-		reg(ItemRegistry.sweetpotatoseedItem);
-		reg(ItemRegistry.teaseedItem);
-		reg(ItemRegistry.turnipseedItem);
-		reg(ItemRegistry.artichokeseedItem);
-		reg(ItemRegistry.bellpepperseedItem);
-		reg(ItemRegistry.blackberryseedItem);
-		reg(ItemRegistry.blueberryseedItem);
-		reg(ItemRegistry.brusselsproutseedItem);
-		reg(ItemRegistry.cabbageseedItem);
-		reg(ItemRegistry.cactusfruitseedItem);
-		reg(ItemRegistry.candleberryseedItem);
-		reg(ItemRegistry.cantaloupeseedItem);
-		reg(ItemRegistry.chilipepperseedItem);
-		reg(ItemRegistry.coffeeseedItem);
-		reg(ItemRegistry.cornseedItem);
-		reg(ItemRegistry.cucumberseedItem);
-		reg(ItemRegistry.eggplantseedItem);
-		reg(ItemRegistry.grapeseedItem);
-		reg(ItemRegistry.kiwiseedItem);
-		reg(ItemRegistry.mustardseedItem);
-		reg(ItemRegistry.okraseedItem);
-		reg(ItemRegistry.peasseedItem);
-		reg(ItemRegistry.raspberryseedItem);
-		reg(ItemRegistry.rhubarbseedItem);
-		reg(ItemRegistry.seaweedseedItem);
-		reg(ItemRegistry.strawberryseedItem);
-		reg(ItemRegistry.tomatoseedItem);
-		reg(ItemRegistry.wintersquashseedItem);
-		reg(ItemRegistry.zucchiniseedItem);
-		reg(ItemRegistry.bambooshootseedItem);
-		reg(ItemRegistry.spinachseedItem);
-		reg(ItemRegistry.curryleafseedItem);
-		reg(ItemRegistry.sesameseedsseedItem);
-		reg(ItemRegistry.waterchestnutseedItem);
 
 		reg(ItemRegistry.almondItem);
 		reg(ItemRegistry.apricotItem);
@@ -750,6 +690,15 @@ public final class ItemRenderRegister
 		for(int i = 0; i < ItemRegistry.PamCropItems.length; i++)
         {
             reg(ItemRegistry.PamCropItems[i]);
+        }
+	}
+
+
+	private static void RegisterSeedRenderer()
+	{
+		for(int i = 0; i < ItemRegistry.PamSeeds.length; i++)
+        {
+            reg(ItemRegistry.PamSeeds[i]);
         }
 	}
 
