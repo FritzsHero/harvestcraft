@@ -20,6 +20,7 @@ public final class ItemRenderRegister
 
 	public static void registerItemRenderer()
 	{
+		RegisterCropRenderer();
 		reg(ItemRegistry.cuttingboardItem);
 		reg(ItemRegistry.potItem);
 		reg(ItemRegistry.skilletItem);
@@ -38,70 +39,7 @@ public final class ItemRenderRegister
 		//reg(ItemRegistry.muttoncookedItem);
 		reg(ItemRegistry.calamaricookedItem);
 		reg(ItemRegistry.sunflowerseedsItem);
-		reg(ItemRegistry.AgaveItem);
-		reg(ItemRegistry.AmaranthItem);
-		reg(ItemRegistry.ArrowrootItem);
-		reg(ItemRegistry.blackberryItem);
-		reg(ItemRegistry.blueberryItem);
-		reg(ItemRegistry.candleberryItem);
-		reg(ItemRegistry.raspberryItem);
-		reg(ItemRegistry.strawberryItem);
-		reg(ItemRegistry.grapeItem);
-		reg(ItemRegistry.cactusfruitItem);
-		reg(ItemRegistry.asparagusItem);
-		reg(ItemRegistry.barleyItem);
-		reg(ItemRegistry.oatsItem);
-		reg(ItemRegistry.ryeItem);
-		reg(ItemRegistry.cornItem);
-		reg(ItemRegistry.bambooshootItem);
-		reg(ItemRegistry.cantaloupeItem);
-		reg(ItemRegistry.cucumberItem);
-		reg(ItemRegistry.wintersquashItem);
-		reg(ItemRegistry.zucchiniItem);
-		reg(ItemRegistry.beetItem);
-		reg(ItemRegistry.onionItem);
-		reg(ItemRegistry.parsnipItem);
-		reg(ItemRegistry.peanutItem);
-		reg(ItemRegistry.radishItem);
-		reg(ItemRegistry.rutabagaItem);
-		reg(ItemRegistry.sweetpotatoItem);
-		reg(ItemRegistry.turnipItem);
-		reg(ItemRegistry.rhubarbItem);
-		reg(ItemRegistry.celeryItem);
-		reg(ItemRegistry.garlicItem);
-		reg(ItemRegistry.gingerItem);
-		reg(ItemRegistry.spiceleafItem);
 		reg(ItemRegistry.ediblerootItem);
-		reg(ItemRegistry.tealeafItem);
-		reg(ItemRegistry.coffeebeanItem);
-		reg(ItemRegistry.mustardseedsItem);
-		reg(ItemRegistry.broccoliItem);
-		reg(ItemRegistry.cauliflowerItem);
-		reg(ItemRegistry.leekItem);
-		reg(ItemRegistry.lettuceItem);
-		reg(ItemRegistry.scallionItem);
-		reg(ItemRegistry.artichokeItem);
-		reg(ItemRegistry.brusselsproutItem);
-		reg(ItemRegistry.cabbageItem);
-		reg(ItemRegistry.spinachItem);
-		reg(ItemRegistry.whitemushroomItem);
-		reg(ItemRegistry.beanItem);
-		reg(ItemRegistry.soybeanItem);
-		reg(ItemRegistry.bellpepperItem);
-		reg(ItemRegistry.chilipepperItem);
-		reg(ItemRegistry.eggplantItem);
-		reg(ItemRegistry.okraItem);
-		reg(ItemRegistry.peasItem);
-		reg(ItemRegistry.tomatoItem);
-		reg(ItemRegistry.cottonItem);
-		reg(ItemRegistry.pineappleItem);
-		reg(ItemRegistry.kiwiItem);
-		reg(ItemRegistry.sesameseedsItem);
-		reg(ItemRegistry.curryleafItem);
-		reg(ItemRegistry.cranberryItem);
-		reg(ItemRegistry.riceItem);
-		reg(ItemRegistry.seaweedItem);
-		reg(ItemRegistry.waterchestnutItem);
 		reg(ItemRegistry.AgaveSeedItem);
 		reg(ItemRegistry.AmaranthSeedItem);
 		reg(ItemRegistry.ArrowrootSeedItem);
@@ -804,6 +742,15 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.bratwurstItem);
 		//reg(ItemRegistry.metaItem, 0, "meta_item_white");
 		//reg(ItemRegistry.metaItem, 1, "meta_item_black");
+	}
+
+
+	private static void RegisterCropRenderer()
+	{
+		for(int i = 0; i < ItemRegistry.PamCropItems.length; i++)
+        {
+            reg(ItemRegistry.PamCropItems[i]);
+        }
 	}
 
 
