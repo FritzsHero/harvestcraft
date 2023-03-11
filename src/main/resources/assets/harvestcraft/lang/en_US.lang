@@ -110,6 +110,7 @@ tile.gooseberry_sapling.name=Gooseberry Sapling
 
 harvestcraft.tile.AgaveCrop.name=Agave Crop
 harvestcraft.tile.AmaranthCrop.name=Amaranth Crop
+harvestcraft.tile.ArrowrootCrop.name=Arrowroot Crop
 harvestcraft.tile.pamblackberryCrop.name=Blackberry Crop
 harvestcraft.tile.pamblueberryCrop.name=Blueberry Crop
 harvestcraft.tile.pamcandleberryCrop.name=Candleberry Crop
@@ -303,6 +304,8 @@ item.AgaveItem.name=Agave
 item.AgaveSeedItem.name=Agave Seed
 item.AmaranthItem.name=Amaranth
 item.AmaranthSeedItem.name=Amaranth Seed
+item.ArrowrootItem.name=Arrowroot
+item.ArrowrootSeedItem.name=Arrowroot Seed
 item.artichokeItem.name=Artichoke
 item.artichokeseedItem.name=Artichoke Seed
 item.bellpepperItem.name=Bellpepper

@@ -40,6 +40,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.sunflowerseedsItem);
 		reg(ItemRegistry.AgaveItem);
 		reg(ItemRegistry.AmaranthItem);
+		reg(ItemRegistry.ArrowrootItem);
 		reg(ItemRegistry.blackberryItem);
 		reg(ItemRegistry.blueberryItem);
 		reg(ItemRegistry.candleberryItem);
@@ -103,6 +104,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.waterchestnutItem);
 		reg(ItemRegistry.AgaveSeedItem);
 		reg(ItemRegistry.AmaranthSeedItem);
+		reg(ItemRegistry.ArrowrootSeedItem);
 		reg(ItemRegistry.cottonseedItem);
 		reg(ItemRegistry.asparagusseedItem);
 		reg(ItemRegistry.barleyseedItem);

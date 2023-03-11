@@ -55,6 +55,11 @@ public class ItemModels
 				.add(1, "amaranth_stage1")
 				.add(2, "amaranth_stage2")
 				.add(3, "amaranth_stage3"));
+		registerItemModels(getItem(BlockRegistry.ArrowrootCrop), new ItemModelList("crops/")
+				.add(0, "arrowroot_stage0")
+				.add(1, "arrowroot_stage1")
+				.add(2, "arrowroot_stage2")
+				.add(3, "arrowroot_stage3"));
 		registerItemModels(getItem(BlockRegistry.pamblackberryCrop), new ItemModelList("crops/")
 				.add(0, "blackberry_stage0")
 				.add(1, "blackberry_stage1")
