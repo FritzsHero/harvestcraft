@@ -32,143 +32,32 @@ public class LogFruitTreeWorldGen implements IWorldGenerator
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SANDY)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MESA)))
 		{
-			generateAridGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateAridGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SNOWY)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MOUNTAIN)))
 		{
-			generateFrostGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateFrostGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.FOREST)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SPOOKY)))
 		{
-			generateShadedGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateShadedGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SWAMP)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.RIVER)))
 		{
-			generateSoggyGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateSoggyGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.JUNGLE)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.OCEAN)))
 		{
-			generateTropicalGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateTropicalGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SAVANNA)))
 		{
-			generateWindyGarden(world, random, xCh, yCh + 64, zCh);
+			BushWorldWorldGen.generateWindyGarden(world, random, xCh, yCh + 64, zCh);
 		}
-		
-		
-		
-	}
-
-
-	public boolean generateAridGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.cactus.canBlockStay(world, pos))
-			{
-				world.setBlockState(pos, BlockRegistry.AridGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
-	}
-	
-
-	public boolean generateFrostGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
-			{
-				world.setBlockState(pos, BlockRegistry.FrostGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
-	}
-	
-
-	public boolean generateShadedGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
-			{
-				world.setBlockState(pos, BlockRegistry.ShadedGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
-	}
-
-	
-	public boolean generateSoggyGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
-			{
-				world.setBlockState(pos, BlockRegistry.SoggyGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
-	}
-
-
-	public boolean generateTropicalGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
-			{
-				world.setBlockState(pos, BlockRegistry.TropicalGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
-	}
-
-	
-	public boolean generateWindyGarden(World world, Random random, int x, int y, int z)
-	{
-		for (int tries = 0; tries < 32; tries++)
-		{
-			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-			BlockPos pos = new BlockPos(i1, j1, k1);
-			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
-			{
-				world.setBlockState(pos, BlockRegistry.WindyGardenBlock.getDefaultState(), 2);
-			}
-		}
-
-		return true;
 	}
 }
