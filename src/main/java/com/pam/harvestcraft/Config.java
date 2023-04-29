@@ -57,7 +57,7 @@ public class Config
 						"harvestcraft:radishItem", "harvestcraft:rhubarbItem", "harvestcraft:tealeafItem",
 						"harvestcraft:garlicItem", "harvestcraft:sweetpotatoItem", "harvestcraft:turnipItem",
 						"harvestcraft:spiceleafItem", "harvestcraft:beanItem", "harvestcraft:leekItem",
-						"harvestcraft:scallionItem", "harvestcraft:tomatoItem"},
+						"harvestcraft:scallionItem", "harvestcraft:tomatoItem", "harvestcraft:GigaPickleItem"},
 				"comment"));
 		dropConfig.put("soggyGarden", config.getStringList("soggyGarden", "drops",
 				new String[]{"harvestcraft:brusselsproutItem", "harvestcraft:spiceleafItem", "harvestcraft:blueberryItem",
