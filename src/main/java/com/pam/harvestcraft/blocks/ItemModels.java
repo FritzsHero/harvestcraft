@@ -95,6 +95,11 @@ public class ItemModels
 				.add(1, "huckleberry_stage1")
 				.add(2, "huckleberry_stage2")
 				.add(3, "huckleberry_stage3"));
+		registerItemModels(getItem(BlockRegistry.JicamaCrop), new ItemModelList("crops/")
+				.add(0, "jicama_stage0")
+				.add(1, "jicama_stage1")
+				.add(2, "jicama_stage2")
+				.add(3, "jicama_stage3"));
 		registerItemModels(getItem(BlockRegistry.pamblackberryCrop), new ItemModelList("crops/")
 				.add(0, "blackberry_stage0")
 				.add(1, "blackberry_stage1")
