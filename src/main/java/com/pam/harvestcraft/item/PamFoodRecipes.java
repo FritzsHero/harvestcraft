@@ -19,7 +19,7 @@ public class PamFoodRecipes
 {
      public static String[] cropName =
      {
-          "cropAgave", "cropAmaranth", "cropArrowroot",
+          "cropAgave", "cropAmaranth", "cropArrowroot", "cropCassava",
           "cropAsparagus", "cropBarley", "cropBean", "cropBeet", "cropBroccoli", "cropCauliflower",
           "cropCelery", "cropCranberry", "cropGarlic", "cropGinger", "cropLeek", "cropLettuce", "cropOats",
           "cropOnion", "cropParsnip", "cropPeanut", "cropPineapple", "cropRadish", "cropRice", "cropRutabaga",

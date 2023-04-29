@@ -43,7 +43,8 @@ public class Config
 		ItemRegistry.initItems(event, config);
 
 		dropConfig.put("aridGarden", config.getStringList("aridGarden", "drops",
-				new String[]{"harvestcraft:cactusfruitItem", "harvestcraft:AgaveItem"},
+				new String[]{"harvestcraft:cactusfruitItem", "harvestcraft:AgaveItem", "harvestcraft:CassavaItem"
+						},
 				"comment"));
 		dropConfig.put("frostGarden", config.getStringList("frostGarden", "drops",
 				new String[]{"harvestcraft:raspberryItem", "harvestcraft:oatsItem", "harvestcraft:ryeItem",
