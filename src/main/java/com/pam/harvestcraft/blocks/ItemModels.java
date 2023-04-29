@@ -70,6 +70,11 @@ public class ItemModels
 				.add(1, "chickpea_stage1")
 				.add(2, "chickpea_stage2")
 				.add(3, "chickpea_stage3"));
+		registerItemModels(getItem(BlockRegistry.ElderberryCrop), new ItemModelList("crops/")
+				.add(0, "elderberry_stage0")
+				.add(1, "elderberry_stage1")
+				.add(2, "elderberry_stage2")
+				.add(3, "elderberry_stage3"));
 		registerItemModels(getItem(BlockRegistry.pamblackberryCrop), new ItemModelList("crops/")
 				.add(0, "blackberry_stage0")
 				.add(1, "blackberry_stage1")
