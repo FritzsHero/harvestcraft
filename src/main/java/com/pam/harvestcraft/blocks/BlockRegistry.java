@@ -31,6 +31,7 @@ public class BlockRegistry
 	public static Block CassavaCrop;
 	public static Block ChickpeaCrop;
 	public static Block ElderberryCrop;
+	public static Block FlaxCrop;
 	public static Block pamblackberryCrop;
 	public static Block pamblueberryCrop;
 	public static Block pamcandleberryCrop;
@@ -296,6 +297,7 @@ public class BlockRegistry
 		CassavaCrop = registerBlock("CassavaCrop", ItemBlockFruit.class, new BlockPamCrop());
 		ChickpeaCrop = registerBlock("ChickpeaCrop", ItemBlockFruit.class, new BlockPamCrop());
 		ElderberryCrop = registerBlock("ElderberryCrop", ItemBlockFruit.class, new BlockPamCrop());
+		FlaxCrop = registerBlock("FlaxCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamblackberryCrop = registerBlock("pamblackberryCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamblueberryCrop = registerBlock("pamblueberryCrop", ItemBlockFruit.class, new BlockPamCrop());
 		pamcandleberryCrop = registerBlock("pamcandleberryCrop", ItemBlockFruit.class, new BlockPamCrop());

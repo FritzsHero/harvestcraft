@@ -75,6 +75,11 @@ public class ItemModels
 				.add(1, "elderberry_stage1")
 				.add(2, "elderberry_stage2")
 				.add(3, "elderberry_stage3"));
+		registerItemModels(getItem(BlockRegistry.FlaxCrop), new ItemModelList("crops/")
+				.add(0, "flax_stage0")
+				.add(1, "flax_stage1")
+				.add(2, "flax_stage2")
+				.add(3, "flax_stage3"));
 		registerItemModels(getItem(BlockRegistry.pamblackberryCrop), new ItemModelList("crops/")
 				.add(0, "blackberry_stage0")
 				.add(1, "blackberry_stage1")
