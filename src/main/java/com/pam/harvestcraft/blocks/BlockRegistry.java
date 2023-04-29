@@ -239,7 +239,7 @@ public class BlockRegistry
 		tropicalfruittreeRarity = config.get("fruit trees", "tropicalfruittreeRarity", 32).getInt();
 		coniferousfruittreeRarity = config.get("fruit trees", "coniferousfruittreeRarity", 24).getInt();
 		isFruitTreeGenerationEnabled = config.get("fruit trees", "isFruitTreeGenerationEnabled", true).getBoolean(true);
-	  
+
 		//cropsdropSeeds = config.get("crops", "cropsdropSeeds", false).getBoolean(false);
 		rightclickharvestCrop = config.get("crops", "rightclickharvestCrop", true).getBoolean(true);
 		rightclickharvestFruit = config.get("fruit trees", "rightclickharvestFruit", true).getBoolean(true);
@@ -277,12 +277,30 @@ public class BlockRegistry
 	}
 	
 
-	private static Block registerBlock(String name, Class<? extends ItemBlock> itemblock, Block block)
+	private static Block registerBlock(Block block, Class<? extends ItemBlock> itemblock, String name)
 	{
 		block.setUnlocalizedName(name);
 		GameRegistry.registerBlock(block, itemblock, name);
 
 		return block;
+	}
+
+
+	private static Block RegisterPamCrop(String _name)
+	{
+		return registerBlock(new BlockPamCrop(), ItemBlockFruit.class, _name);
+	}
+
+
+	private static Block RegisterPamFruit(String _name)
+	{
+		return registerBlock(new BlockPamFruit(), ItemBlockFruit.class, _name);
+	}
+
+
+	private static Block RegisterPamLog(String _name)
+	{
+		return registerBlock(new BlockPamLogFruit(), ItemBlockFruit.class, _name);
 	}
 
 
@@ -295,156 +313,173 @@ public class BlockRegistry
 		ShadedGardenBlock = new ShadedGardenBlock();
 		SoggyGardenBlock = new SoggyGardenBlock();
 		
-		AgaveCrop = registerBlock("AgaveCrop", ItemBlockFruit.class, new BlockPamCrop());
-		AmaranthCrop = registerBlock("AmaranthCrop", ItemBlockFruit.class, new BlockPamCrop());
-		ArrowrootCrop = registerBlock("ArrowrootCrop", ItemBlockFruit.class, new BlockPamCrop());
-		CassavaCrop = registerBlock("CassavaCrop", ItemBlockFruit.class, new BlockPamCrop());
-		ChickpeaCrop = registerBlock("ChickpeaCrop", ItemBlockFruit.class, new BlockPamCrop());
-		ElderberryCrop = registerBlock("ElderberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		FlaxCrop = registerBlock("FlaxCrop", ItemBlockFruit.class, new BlockPamCrop());
-		GigaPickleCrop = registerBlock("GigaPickleCrop", ItemBlockFruit.class, new BlockPamCrop());
-		GreenGrapeCrop = registerBlock("GreenGrapeCrop", ItemBlockFruit.class, new BlockPamCrop());
-		HuckleberryCrop = registerBlock("HuckleberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		JicamaCrop = registerBlock("JicamaCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamblackberryCrop = registerBlock("pamblackberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamblueberryCrop = registerBlock("pamblueberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcandleberryCrop = registerBlock("pamcandleberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamraspberryCrop = registerBlock("pamraspberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamstrawberryCrop = registerBlock("pamstrawberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcactusfruitCrop = registerBlock("pamcactusfruitCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamasparagusCrop = registerBlock("pamasparagusCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambarleyCrop = registerBlock("pambarleyCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamoatsCrop = registerBlock("pamoatsCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamryeCrop = registerBlock("pamryeCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcornCrop = registerBlock("pamcornCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambambooshootCrop = registerBlock("pambambooshootCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcantaloupeCrop = registerBlock("pamcantaloupeCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcucumberCrop = registerBlock("pamcucumberCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamwintersquashCrop = registerBlock("pamwintersquashCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamzucchiniCrop = registerBlock("pamzucchiniCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambeetCrop = registerBlock("pambeetCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamonionCrop = registerBlock("pamonionCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamparsnipCrop = registerBlock("pamparsnipCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pampeanutCrop = registerBlock("pampeanutCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamradishCrop = registerBlock("pamradishCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamrutabagaCrop = registerBlock("pamrutabagaCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamsweetpotatoCrop = registerBlock("pamsweetpotatoCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamturnipCrop = registerBlock("pamturnipCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamrhubarbCrop = registerBlock("pamrhubarbCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamceleryCrop = registerBlock("pamceleryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamgarlicCrop = registerBlock("pamgarlicCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamgingerCrop = registerBlock("pamgingerCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamspiceleafCrop = registerBlock("pamspiceleafCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamtealeafCrop = registerBlock("pamtealeafCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcoffeebeanCrop = registerBlock("pamcoffeebeanCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pammustardseedsCrop = registerBlock("pammustardseedsCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambroccoliCrop = registerBlock("pambroccoliCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcauliflowerCrop = registerBlock("pamcauliflowerCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamleekCrop = registerBlock("pamleekCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamlettuceCrop = registerBlock("pamlettuceCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamscallionCrop = registerBlock("pamscallionCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamartichokeCrop = registerBlock("pamartichokeCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambrusselsproutCrop = registerBlock("pambrusselsproutCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcabbageCrop = registerBlock("pamcabbageCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamspinachCrop = registerBlock("pamspinachCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamwhitemushroomCrop = registerBlock("pamwhitemushroomCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambeanCrop = registerBlock("pambeanCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamsoybeanCrop = registerBlock("pamsoybeanCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pambellpepperCrop = registerBlock("pambellpepperCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamchilipepperCrop = registerBlock("pamchilipepperCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pameggplantCrop = registerBlock("pameggplantCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamokraCrop = registerBlock("pamokraCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pampeasCrop = registerBlock("pampeasCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamtomatoCrop = registerBlock("pamtomatoCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcottonCrop = registerBlock("pamcottonCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pampineappleCrop = registerBlock("pampineappleCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamgrapeCrop = registerBlock("pamgrapeCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamkiwiCrop = registerBlock("pamkiwiCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcranberryCrop = registerBlock("pamcranberryCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamriceCrop = registerBlock("pamriceCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamseaweedCrop = registerBlock("pamseaweedCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamcurryleafCrop = registerBlock("pamcurryleafCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamsesameseedsCrop = registerBlock("pamsesameseedsCrop", ItemBlockFruit.class, new BlockPamCrop());
-		pamwaterchestnutCrop = registerBlock("pamwaterchestnutCrop", ItemBlockFruit.class, new BlockPamCrop());
-		
-		pamApple = registerBlock("pamApple", ItemBlockFruit.class, new BlockPamFruit());
-		pamappleSapling = new BlockPamSapling("apple_sapling");
-		pamAlmond  = registerBlock("pamAlmond", ItemBlockFruit.class, new BlockPamFruit());
-		pamalmondSapling = new BlockPamSapling("almond_sapling");
-		pamApricot = registerBlock("pamApricot", ItemBlockFruit.class, new BlockPamFruit());
-		pamapricotSapling = new BlockPamSapling("apricot_sapling");
-		pamAvocado = registerBlock("pamAvocado", ItemBlockFruit.class, new BlockPamFruit());
-		pamavocadoSapling = new BlockPamSapling("avocado_sapling");
-		pamBanana = registerBlock("pamBanana", ItemBlockFruit.class, new BlockPamFruit());
-		pambananaSapling = new BlockPamSapling("banana_sapling");
-		pamCashew = registerBlock("pamCashew", ItemBlockFruit.class, new BlockPamFruit());
-		pamcashewSapling = new BlockPamSapling("cashew_sapling");
-		pamCherry = registerBlock("pamCherry", ItemBlockFruit.class, new BlockPamFruit());
-		pamcherrySapling = new BlockPamSapling("cherry_sapling");
-		pamChestnut = registerBlock("pamChestnut", ItemBlockFruit.class, new BlockPamFruit());
-		pamchestnutSapling = new BlockPamSapling("chestnut_sapling");
-		pamCinnamon = registerBlock("pamCinnamon", ItemBlockFruit.class, new BlockPamLogFruit());
-		pamcinnamonSapling = new BlockPamSapling("cinnamon_sapling");
-		pamCoconut = registerBlock("pamCoconut", ItemBlockFruit.class, new BlockPamFruit());
-		pamcoconutSapling = new BlockPamSapling("coconut_sapling");
-		pamDate = registerBlock("pamDate", ItemBlockFruit.class, new BlockPamFruit());
-		pamdateSapling = new BlockPamSapling("date_sapling");
-		pamDragonfruit = registerBlock("pamDragonfruit", ItemBlockFruit.class, new BlockPamFruit());
-		pamdragonfruitSapling = new BlockPamSapling("dragonfruit_sapling");
-		pamDurian = registerBlock("pamDurian", ItemBlockFruit.class, new BlockPamFruit());
-		pamdurianSapling = new BlockPamSapling("durian_sapling");
-		pamFig = registerBlock("pamFig", ItemBlockFruit.class, new BlockPamFruit());
-		pamfigSapling = new BlockPamSapling("fig_sapling");
-		pamGooseberry = registerBlock("pamGooseberry", ItemBlockFruit.class, new BlockPamFruit());
-		pamgooseberrySapling = new BlockPamSapling("gooseberry_sapling");
-		pamGrapefruit = registerBlock("pamGrapefruit", ItemBlockFruit.class, new BlockPamFruit());
-		pamgrapefruitSapling = new BlockPamSapling("grapefruit_sapling");
-		pamLemon = registerBlock("pamLemon", ItemBlockFruit.class, new BlockPamFruit());
-		pamlemonSapling = new BlockPamSapling("lemon_sapling");
-		pamLime = registerBlock("pamLime", ItemBlockFruit.class, new BlockPamFruit());
-		pamlimeSapling = new BlockPamSapling("lime_sapling");
-		pamMaple = registerBlock("pamMaple", ItemBlockFruit.class, new BlockPamLogFruit());
-		pammapleSapling = new BlockPamSapling("maple_sapling");
-		pamMango = registerBlock("pamMango", ItemBlockFruit.class, new BlockPamFruit());
-		pammangoSapling = new BlockPamSapling("mango_sapling");
-		pamNutmeg = registerBlock("pamNutmeg", ItemBlockFruit.class, new BlockPamFruit());
-		pamnutmegSapling = new BlockPamSapling("nutmeg_sapling");
-		pamOlive  = registerBlock("pamOlive", ItemBlockFruit.class, new BlockPamFruit());
-		pamoliveSapling = new BlockPamSapling("olive_sapling");
-		pamOrange = registerBlock("pamOrange", ItemBlockFruit.class, new BlockPamFruit());
-		pamorangeSapling = new BlockPamSapling("orange_sapling");
-		pamPapaya = registerBlock("pamPapaya", ItemBlockFruit.class, new BlockPamFruit());
-		pampapayaSapling = new BlockPamSapling("papaya_sapling");
-		pamPaperbark = registerBlock("pamPaperbark", ItemBlockFruit.class, new BlockPamLogFruit());
-		pampaperbarkSapling = new BlockPamSapling("paperbark_sapling");
-		pamPeach = registerBlock("pamPeach", ItemBlockFruit.class, new BlockPamFruit());
-		pampeachSapling = new BlockPamSapling("peach_sapling");
-		pamPear = registerBlock("pamPear", ItemBlockFruit.class, new BlockPamFruit());
-		pampearSapling = new BlockPamSapling("pear_sapling");
-		pamPecan = registerBlock("pamPecan", ItemBlockFruit.class, new BlockPamFruit());
-		pampecanSapling = new BlockPamSapling("pecan_sapling");
-		pamPeppercorn = registerBlock("pamPeppercorn", ItemBlockFruit.class, new BlockPamFruit());
-		pampeppercornSapling = new BlockPamSapling("peppercorn_sapling");
-		pamPersimmon = registerBlock("pamPersimmon", ItemBlockFruit.class, new BlockPamFruit());
-		pampersimmonSapling = new BlockPamSapling("persimmon_sapling");
-		pamPistachio = registerBlock("pamPistachio", ItemBlockFruit.class, new BlockPamFruit());
-		pampistachioSapling = new BlockPamSapling("pistachio_sapling");
-		pamPlum = registerBlock("pamPlum", ItemBlockFruit.class, new BlockPamFruit());
-		pamplumSapling = new BlockPamSapling("plum_sapling");
-		pamPomegranate = registerBlock("pamPomegranate", ItemBlockFruit.class, new BlockPamFruit());
-		pampomegranateSapling = new BlockPamSapling("pomegranate_sapling");
-		pamStarfruit = registerBlock("pamStarfruit", ItemBlockFruit.class, new BlockPamFruit());
-		pamstarfruitSapling = new BlockPamSapling("starfruit_sapling");
-		pamVanillabean = registerBlock("pamVanillabean", ItemBlockFruit.class, new BlockPamFruit());
-		pamvanillabeanSapling = new BlockPamSapling("vanillabean_sapling");
-		pamWalnut = registerBlock("pamWalnut", ItemBlockFruit.class, new BlockPamFruit());
-		pamwalnutSapling = new BlockPamSapling("walnut_sapling");
-		
+		RegisterCrops();
+		RegisterTrees();
+		RegisterLogTrees();
+
 		pamMarket = new BlockPamMarket(Material.wood).setHardness(1.0F).setResistance(1.0F);
 		GameRegistry.registerBlock(pamMarket, "market");
 		
 		PamTemperateSaplings = new Block[] { pamappleSapling, pamavocadoSapling, pamcherrySapling, pamchestnutSapling, pamnutmegSapling, pampearSapling, pamplumSapling, pamwalnutSapling, pamgooseberrySapling };
 		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamlemonSapling, pamlimeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamstarfruitSapling, pamvanillabeanSapling };
 		PamLogSaplings = new Block[] { pamcinnamonSapling, pammapleSapling, pampaperbarkSapling };
+	}
+
+
+	private static void RegisterCrops()
+	{
+		AgaveCrop = RegisterPamCrop("AgaveCrop");
+		AmaranthCrop = RegisterPamCrop("AmaranthCrop");
+		ArrowrootCrop = RegisterPamCrop("ArrowrootCrop");
+		CassavaCrop = RegisterPamCrop("CassavaCrop");
+		ChickpeaCrop = RegisterPamCrop("ChickpeaCrop");
+		ElderberryCrop = RegisterPamCrop("ElderberryCrop");
+		FlaxCrop = RegisterPamCrop("FlaxCrop");
+		GigaPickleCrop = RegisterPamCrop("GigaPickleCrop");
+		GreenGrapeCrop = RegisterPamCrop("GreenGrapeCrop");
+		HuckleberryCrop = RegisterPamCrop("HuckleberryCrop");
+		JicamaCrop = RegisterPamCrop("JicamaCrop");
+		pamblackberryCrop = RegisterPamCrop("pamblackberryCrop");
+		pamblueberryCrop = RegisterPamCrop("pamblueberryCrop");
+		pamcandleberryCrop = RegisterPamCrop("pamcandleberryCrop");
+		pamraspberryCrop = RegisterPamCrop("pamraspberryCrop");
+		pamstrawberryCrop = RegisterPamCrop("pamstrawberryCrop");
+		pamcactusfruitCrop = RegisterPamCrop("pamcactusfruitCrop");
+		pamasparagusCrop = RegisterPamCrop("pamasparagusCrop");
+		pambarleyCrop = RegisterPamCrop("pambarleyCrop");
+		pamoatsCrop = RegisterPamCrop("pamoatsCrop");
+		pamryeCrop = RegisterPamCrop("pamryeCrop");
+		pamcornCrop = RegisterPamCrop("pamcornCrop");
+		pambambooshootCrop = RegisterPamCrop("pambambooshootCrop");
+		pamcantaloupeCrop = RegisterPamCrop("pamcantaloupeCrop");
+		pamcucumberCrop = RegisterPamCrop("pamcucumberCrop");
+		pamwintersquashCrop = RegisterPamCrop("pamwintersquashCrop");
+		pamzucchiniCrop = RegisterPamCrop("pamzucchiniCrop");
+		pambeetCrop = RegisterPamCrop("pambeetCrop");
+		pamonionCrop = RegisterPamCrop("pamonionCrop");
+		pamparsnipCrop = RegisterPamCrop("pamparsnipCrop");
+		pampeanutCrop = RegisterPamCrop("pampeanutCrop");
+		pamradishCrop = RegisterPamCrop("pamradishCrop");
+		pamrutabagaCrop = RegisterPamCrop("pamrutabagaCrop");
+		pamsweetpotatoCrop = RegisterPamCrop("pamsweetpotatoCrop");
+		pamturnipCrop = RegisterPamCrop("pamturnipCrop");
+		pamrhubarbCrop = RegisterPamCrop("pamrhubarbCrop");
+		pamceleryCrop = RegisterPamCrop("pamceleryCrop");
+		pamgarlicCrop = RegisterPamCrop("pamgarlicCrop");
+		pamgingerCrop = RegisterPamCrop("pamgingerCrop");
+		pamspiceleafCrop = RegisterPamCrop("pamspiceleafCrop");
+		pamtealeafCrop = RegisterPamCrop("pamtealeafCrop");
+		pamcoffeebeanCrop = RegisterPamCrop("pamcoffeebeanCrop");
+		pammustardseedsCrop = RegisterPamCrop("pammustardseedsCrop");
+		pambroccoliCrop = RegisterPamCrop("pambroccoliCrop");
+		pamcauliflowerCrop = RegisterPamCrop("pamcauliflowerCrop");
+		pamleekCrop = RegisterPamCrop("pamleekCrop");
+		pamlettuceCrop = RegisterPamCrop("pamlettuceCrop");
+		pamscallionCrop = RegisterPamCrop("pamscallionCrop");
+		pamartichokeCrop = RegisterPamCrop("pamartichokeCrop");
+		pambrusselsproutCrop = RegisterPamCrop("pambrusselsproutCrop");
+		pamcabbageCrop = RegisterPamCrop("pamcabbageCrop");
+		pamspinachCrop = RegisterPamCrop("pamspinachCrop");
+		pamwhitemushroomCrop = RegisterPamCrop("pamwhitemushroomCrop");
+		pambeanCrop = RegisterPamCrop("pambeanCrop");
+		pamsoybeanCrop = RegisterPamCrop("pamsoybeanCrop");
+		pambellpepperCrop = RegisterPamCrop("pambellpepperCrop");
+		pamchilipepperCrop = RegisterPamCrop("pamchilipepperCrop");
+		pameggplantCrop = RegisterPamCrop("pameggplantCrop");
+		pamokraCrop = RegisterPamCrop("pamokraCrop");
+		pampeasCrop = RegisterPamCrop("pampeasCrop");
+		pamtomatoCrop = RegisterPamCrop("pamtomatoCrop");
+		pamcottonCrop = RegisterPamCrop("pamcottonCrop");
+		pampineappleCrop = RegisterPamCrop("pampineappleCrop");
+		pamgrapeCrop = RegisterPamCrop("pamgrapeCrop");
+		pamkiwiCrop = RegisterPamCrop("pamkiwiCrop");
+		pamcranberryCrop = RegisterPamCrop("pamcranberryCrop");
+		pamriceCrop = RegisterPamCrop("pamriceCrop");
+		pamseaweedCrop = RegisterPamCrop("pamseaweedCrop");
+		pamcurryleafCrop = RegisterPamCrop("pamcurryleafCrop");
+		pamsesameseedsCrop = RegisterPamCrop("pamsesameseedsCrop");
+		pamwaterchestnutCrop = RegisterPamCrop("pamwaterchestnutCrop");
+	}
+
+
+	private static void RegisterTrees()
+	{
+		pamApple = RegisterPamFruit("pamApple");
+		pamappleSapling = new BlockPamSapling("apple_sapling");
+		pamAlmond  = RegisterPamFruit("pamAlmond");
+		pamalmondSapling = new BlockPamSapling("almond_sapling");
+		pamApricot = RegisterPamFruit("pamApricot");
+		pamapricotSapling = new BlockPamSapling("apricot_sapling");
+		pamAvocado = RegisterPamFruit("pamAvocado");
+		pamavocadoSapling = new BlockPamSapling("avocado_sapling");
+		pamBanana = RegisterPamFruit("pamBanana");
+		pambananaSapling = new BlockPamSapling("banana_sapling");
+		pamCashew = RegisterPamFruit("pamCashew");
+		pamcashewSapling = new BlockPamSapling("cashew_sapling");
+		pamCherry = RegisterPamFruit("pamCherry");
+		pamcherrySapling = new BlockPamSapling("cherry_sapling");
+		pamChestnut = RegisterPamFruit("pamChestnut");
+		pamchestnutSapling = new BlockPamSapling("chestnut_sapling");
+		pamCoconut = RegisterPamFruit("pamCoconut");
+		pamcoconutSapling = new BlockPamSapling("coconut_sapling");
+		pamDate = RegisterPamFruit("pamDate");
+		pamdateSapling = new BlockPamSapling("date_sapling");
+		pamDragonfruit = RegisterPamFruit("pamDragonfruit");
+		pamdragonfruitSapling = new BlockPamSapling("dragonfruit_sapling");
+		pamDurian = RegisterPamFruit("pamDurian");
+		pamdurianSapling = new BlockPamSapling("durian_sapling");
+		pamFig = RegisterPamFruit("pamFig");
+		pamfigSapling = new BlockPamSapling("fig_sapling");
+		pamGooseberry = RegisterPamFruit("pamGooseberry");
+		pamgooseberrySapling = new BlockPamSapling("gooseberry_sapling");
+		pamGrapefruit = RegisterPamFruit("pamGrapefruit");
+		pamgrapefruitSapling = new BlockPamSapling("grapefruit_sapling");
+		pamLemon = RegisterPamFruit("pamLemon");
+		pamlemonSapling = new BlockPamSapling("lemon_sapling");
+		pamLime = RegisterPamFruit("pamLime");
+		pamlimeSapling = new BlockPamSapling("lime_sapling");
+		pamMango = RegisterPamFruit("pamMango");
+		pammangoSapling = new BlockPamSapling("mango_sapling");
+		pamNutmeg = RegisterPamFruit("pamNutmeg");
+		pamnutmegSapling = new BlockPamSapling("nutmeg_sapling");
+		pamOlive  = RegisterPamFruit("pamOlive");
+		pamoliveSapling = new BlockPamSapling("olive_sapling");
+		pamOrange = RegisterPamFruit("pamOrange");
+		pamorangeSapling = new BlockPamSapling("orange_sapling");
+		pamPapaya = RegisterPamFruit("pamPapaya");
+		pampapayaSapling = new BlockPamSapling("papaya_sapling");
+		pamPeach = RegisterPamFruit("pamPeach");
+		pampeachSapling = new BlockPamSapling("peach_sapling");
+		pamPear = RegisterPamFruit("pamPear");
+		pampearSapling = new BlockPamSapling("pear_sapling");
+		pamPecan = RegisterPamFruit("pamPecan");
+		pampecanSapling = new BlockPamSapling("pecan_sapling");
+		pamPeppercorn = RegisterPamFruit("pamPeppercorn");
+		pampeppercornSapling = new BlockPamSapling("peppercorn_sapling");
+		pamPersimmon = RegisterPamFruit("pamPersimmon");
+		pampersimmonSapling = new BlockPamSapling("persimmon_sapling");
+		pamPistachio = RegisterPamFruit("pamPistachio");
+		pampistachioSapling = new BlockPamSapling("pistachio_sapling");
+		pamPlum = RegisterPamFruit("pamPlum");
+		pamplumSapling = new BlockPamSapling("plum_sapling");
+		pamPomegranate = RegisterPamFruit("pamPomegranate");
+		pampomegranateSapling = new BlockPamSapling("pomegranate_sapling");
+		pamStarfruit = RegisterPamFruit("pamStarfruit");
+		pamstarfruitSapling = new BlockPamSapling("starfruit_sapling");
+		pamVanillabean = RegisterPamFruit("pamVanillabean");
+		pamvanillabeanSapling = new BlockPamSapling("vanillabean_sapling");
+		pamWalnut = RegisterPamFruit("pamWalnut");
+		pamwalnutSapling = new BlockPamSapling("walnut_sapling");
+	}
+
+
+	private static void RegisterLogTrees()
+	{
+		pamCinnamon = RegisterPamLog("pamCinnamon");
+		pamcinnamonSapling = new BlockPamSapling("cinnamon_sapling");
+		pamMaple = RegisterPamLog("pamMaple");
+		pammapleSapling = new BlockPamSapling("maple_sapling");
+		pamPaperbark = RegisterPamLog("pamPaperbark");
+		pampaperbarkSapling = new BlockPamSapling("paperbark_sapling");
 	}
 }
