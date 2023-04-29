@@ -296,6 +296,10 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
             {
                 savedStack = new ItemStack(ItemRegistry.GigaPickleItem);
             }
+            else if(currentBlock == BlockRegistry.GreenGrapeCrop)
+            {
+                savedStack = new ItemStack(ItemRegistry.GreenGrapeItem);
+            }
             else
             if(currentBlock == BlockRegistry.pamblackberryCrop){
                 savedStack = new ItemStack(ItemRegistry.blackberryItem);
