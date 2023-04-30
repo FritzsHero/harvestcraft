@@ -1658,14 +1658,47 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 GameRegistry.registerItem(schnitzelItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("schnitzelItem").setCreativeTab(harvestcraft.modTab), "schnitzelItem");
                 GameRegistry.registerItem(bratwurstItem = new ItemFood(13, mealsaturation, false).setUnlocalizedName("bratwurstItem").setCreativeTab(harvestcraft.modTab), "bratwurstItem");
 
-
-PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem, ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem, asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem, cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem, parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem, scallionItem, soybeanItem, spiceleafItem, sweetpotatoItem, tealeafItem, turnipItem, whitemushroomItem, artichokeItem, bellpepperItem, blackberryItem, blueberryItem, brusselsproutItem, cabbageItem, cactusfruitItem, candleberryItem, cantaloupeItem, chilipepperItem, coffeebeanItem, cornItem, cottonItem, cucumberItem, eggplantItem, grapeItem, kiwiItem, mustardseedsItem, okraItem, peasItem, raspberryItem, rhubarbItem, seaweedItem, strawberryItem, tomatoItem, wintersquashItem, zucchiniItem, bambooshootItem, spinachItem, curryleafItem, sesameseedsItem, waterchestnutItem };
-PamSeeds = new Item[] { AgaveSeedItem, AmaranthSeedItem, ArrowrootSeedItem, CassavaSeedItem, ChickpeaSeedItem, ElderberrySeedItem, FlaxSeedItem, GigaPickleSeedItem, GreenGrapeSeedItem, HuckleberrySeedItem, JicamaSeedItem, asparagusseedItem, barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem, celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem, lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem, pineappleseedItem, radishseedItem, riceseedItem, rutabagaseedItem, ryeseedItem, scallionseedItem, soybeanseedItem, spiceleafseedItem, sweetpotatoseedItem, teaseedItem, turnipseedItem, whitemushroomseedItem, artichokeseedItem, bellpepperseedItem, blackberryseedItem, blueberryseedItem, brusselsproutseedItem, cabbageseedItem, cactusfruitseedItem, candleberryseedItem, cantaloupeseedItem, chilipepperseedItem, coffeeseedItem, cornseedItem, cottonseedItem, cucumberseedItem, eggplantseedItem, grapeseedItem, kiwiseedItem, mustardseedItem, okraseedItem, peasseedItem, raspberryseedItem, rhubarbseedItem, seaweedseedItem, strawberryseedItem, tomatoseedItem, wintersquashseedItem, zucchiniseedItem, bambooshootseedItem, spinachseedItem, curryleafseedItem, sesameseedsseedItem, waterchestnutseedItem };
-PamTemperateFruits = new Item[] { Items.apple, avocadoItem, cherryItem, chestnutItem, nutmegItem, pearItem, plumItem, walnutItem, gooseberryItem };
-PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, cashewItem, coconutItem, dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem, lemonItem, limeItem, mangoItem, oliveItem, orangeItem, papayaItem, peachItem, pecanItem, peppercornItem, persimmonItem, pistachioItem, pomegranateItem, starfruitItem, vanillabeanItem };
-PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
+                CreateCropAndFruitList();
+        }
 
 
+        private static void CreateCropAndFruitList()
+        {
+                PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
+                        ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
+                        asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem,
+                        cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem,
+                        parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem,
+                        scallionItem, soybeanItem, spiceleafItem, sweetpotatoItem, tealeafItem, turnipItem,
+                        whitemushroomItem, artichokeItem, bellpepperItem, blackberryItem, blueberryItem,
+                        brusselsproutItem, cabbageItem, cactusfruitItem, candleberryItem, cantaloupeItem,
+                        chilipepperItem, coffeebeanItem, cornItem, cottonItem, cucumberItem, eggplantItem,
+                        grapeItem, kiwiItem, mustardseedsItem, okraItem, peasItem, raspberryItem, rhubarbItem,
+                        seaweedItem, strawberryItem, tomatoItem, wintersquashItem, zucchiniItem,
+                        bambooshootItem, spinachItem, curryleafItem, sesameseedsItem, waterchestnutItem };
+                PamSeeds = new Item[] { AgaveSeedItem, AmaranthSeedItem, ArrowrootSeedItem, CassavaSeedItem,
+                        ChickpeaSeedItem, ElderberrySeedItem, FlaxSeedItem, GigaPickleSeedItem,
+                        GreenGrapeSeedItem, HuckleberrySeedItem, JicamaSeedItem, asparagusseedItem,
+                        barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem,
+                        celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem,
+                        lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem,
+                        pineappleseedItem, radishseedItem, riceseedItem, rutabagaseedItem, ryeseedItem,
+                        scallionseedItem, soybeanseedItem, spiceleafseedItem, sweetpotatoseedItem, teaseedItem,
+                        turnipseedItem, whitemushroomseedItem, artichokeseedItem, bellpepperseedItem,
+                        blackberryseedItem, blueberryseedItem, brusselsproutseedItem, cabbageseedItem,
+                        cactusfruitseedItem, candleberryseedItem, cantaloupeseedItem, chilipepperseedItem,
+                        coffeeseedItem, cornseedItem, cottonseedItem, cucumberseedItem, eggplantseedItem,
+                        grapeseedItem, kiwiseedItem, mustardseedItem, okraseedItem, peasseedItem,
+                        raspberryseedItem, rhubarbseedItem, seaweedseedItem, strawberryseedItem, tomatoseedItem,
+                        wintersquashseedItem, zucchiniseedItem, bambooshootseedItem, spinachseedItem,
+                        curryleafseedItem, sesameseedsseedItem, waterchestnutseedItem };
+                PamTemperateFruits = new Item[] { Items.apple, avocadoItem, cherryItem, chestnutItem,
+                        nutmegItem, pearItem, plumItem, walnutItem, gooseberryItem };
+                PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, cashewItem, coconutItem,
+                        dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem, lemonItem, limeItem,
+                        mangoItem, oliveItem, orangeItem, papayaItem, peachItem, pecanItem, peppercornItem,
+                        persimmonItem, pistachioItem, pomegranateItem, starfruitItem, vanillabeanItem };
+                PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
         }
 
 
