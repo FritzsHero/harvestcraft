@@ -3,6 +3,7 @@ package com.pam.harvestcraft.item;
 import com.pam.harvestcraft.harvestcraft;
 import com.pam.harvestcraft.blocks.BlockRegistry;
 
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -900,16 +901,11 @@ enablelistAllwatervanillawaterbucket = config.get("miscellaneous recipes", "enab
 }
 
 
-
         public static void loadItemRegistry()
         {
                 RegisterTools();
-
                 RegisterJuices();
-
                 RegisterFish();
-
-
 
 
 //GameRegistry.registerItem(queenbeeItem = new ItemPamBee().setUnlocalizedName("queenbeeItem").setCreativeTab(harvestcraft.modTab), "queenbeeItem");
@@ -932,149 +928,10 @@ GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cro
 GameRegistry.registerItem(freshwaterItem = new Item().setUnlocalizedName("freshwaterItem").setCreativeTab(harvestcraft.modTab), "freshwaterItem");
 GameRegistry.registerItem(freshmilkItem = new Item().setUnlocalizedName("freshmilkItem").setCreativeTab(harvestcraft.modTab), "freshmilkItem");
 
-GameRegistry.registerItem(AgaveItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.AgaveCrop, Blocks.farmland).setUnlocalizedName("AgaveItem").setCreativeTab(harvestcraft.modTab), "AgaveItem");
-GameRegistry.registerItem(AmaranthItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.AmaranthCrop, Blocks.farmland).setUnlocalizedName("AmaranthItem").setCreativeTab(harvestcraft.modTab), "AmaranthItem");
-GameRegistry.registerItem(ArrowrootItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.ArrowrootCrop, Blocks.farmland).setUnlocalizedName("ArrowrootItem").setCreativeTab(harvestcraft.modTab), "ArrowrootItem");
-GameRegistry.registerItem(CassavaItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.CassavaCrop, Blocks.farmland).setUnlocalizedName("CassavaItem").setCreativeTab(harvestcraft.modTab), "CassavaItem");
-GameRegistry.registerItem(ChickpeaItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.ChickpeaCrop, Blocks.farmland).setUnlocalizedName("ChickpeaItem").setCreativeTab(harvestcraft.modTab), "ChickpeaItem");
-GameRegistry.registerItem(ElderberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.ElderberryCrop, Blocks.farmland).setUnlocalizedName("ElderberryItem").setCreativeTab(harvestcraft.modTab), "ElderberryItem");
-GameRegistry.registerItem(FlaxItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.FlaxCrop, Blocks.farmland).setUnlocalizedName("FlaxItem").setCreativeTab(harvestcraft.modTab), "FlaxItem");
-GameRegistry.registerItem(GigaPickleItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.GigaPickleCrop, Blocks.farmland).setUnlocalizedName("GigaPickleItem").setCreativeTab(harvestcraft.modTab), "GigaPickleItem");
-GameRegistry.registerItem(GreenGrapeItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.GreenGrapeCrop, Blocks.farmland).setUnlocalizedName("GreenGrapeItem").setCreativeTab(harvestcraft.modTab), "GreenGrapeItem");
-GameRegistry.registerItem(HuckleberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.HuckleberryCrop, Blocks.farmland).setUnlocalizedName("HuckleberryItem").setCreativeTab(harvestcraft.modTab), "HuckleberryItem");
-GameRegistry.registerItem(JicamaItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.JicamaCrop, Blocks.farmland).setUnlocalizedName("JicamaItem").setCreativeTab(harvestcraft.modTab), "JicamaItem");
-GameRegistry.registerItem(blackberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamblackberryCrop, Blocks.farmland).setUnlocalizedName("blackberryItem").setCreativeTab(harvestcraft.modTab), "blackberryItem");
-GameRegistry.registerItem(blueberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamblueberryCrop, Blocks.farmland).setUnlocalizedName("blueberryItem").setCreativeTab(harvestcraft.modTab), "blueberryItem");
-GameRegistry.registerItem(candleberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcandleberryCrop, Blocks.farmland).setUnlocalizedName("candleberryItem").setCreativeTab(harvestcraft.modTab), "candleberryItem");
-GameRegistry.registerItem(raspberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamraspberryCrop, Blocks.farmland).setUnlocalizedName("raspberryItem").setCreativeTab(harvestcraft.modTab), "raspberryItem");
-GameRegistry.registerItem(strawberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamstrawberryCrop, Blocks.farmland).setUnlocalizedName("strawberryItem").setCreativeTab(harvestcraft.modTab), "strawberryItem");
-GameRegistry.registerItem(grapeItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamgrapeCrop, Blocks.farmland).setUnlocalizedName("grapeItem").setCreativeTab(harvestcraft.modTab), "grapeItem");
-GameRegistry.registerItem(cactusfruitItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcactusfruitCrop, Blocks.sand).setUnlocalizedName("cactusfruitItem").setCreativeTab(harvestcraft.modTab), "cactusfruitItem");
-GameRegistry.registerItem(asparagusItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamasparagusCrop, Blocks.farmland).setUnlocalizedName("asparagusItem").setCreativeTab(harvestcraft.modTab), "asparagusItem");
-GameRegistry.registerItem(barleyItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambarleyCrop, Blocks.farmland).setUnlocalizedName("barleyItem").setCreativeTab(harvestcraft.modTab), "barleyItem");
-GameRegistry.registerItem(oatsItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamoatsCrop, Blocks.farmland).setUnlocalizedName("oatsItem").setCreativeTab(harvestcraft.modTab), "oatsItem");
-GameRegistry.registerItem(ryeItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamryeCrop, Blocks.farmland).setUnlocalizedName("ryeItem").setCreativeTab(harvestcraft.modTab), "ryeItem");
-GameRegistry.registerItem(cornItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcornCrop, Blocks.farmland).setUnlocalizedName("cornItem").setCreativeTab(harvestcraft.modTab), "cornItem");
-GameRegistry.registerItem(bambooshootItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambambooshootCrop, Blocks.farmland).setUnlocalizedName("bambooshootItem").setCreativeTab(harvestcraft.modTab), "bambooshootItem");
-GameRegistry.registerItem(cantaloupeItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcantaloupeCrop, Blocks.farmland).setUnlocalizedName("cantaloupeItem").setCreativeTab(harvestcraft.modTab), "cantaloupeItem");
-GameRegistry.registerItem(cucumberItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcucumberCrop, Blocks.farmland).setUnlocalizedName("cucumberItem").setCreativeTab(harvestcraft.modTab), "cucumberItem");
-GameRegistry.registerItem(wintersquashItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamwintersquashCrop, Blocks.farmland).setUnlocalizedName("wintersquashItem").setCreativeTab(harvestcraft.modTab), "wintersquashItem");
-GameRegistry.registerItem(zucchiniItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamzucchiniCrop, Blocks.farmland).setUnlocalizedName("zucchiniItem").setCreativeTab(harvestcraft.modTab), "zucchiniItem");
-GameRegistry.registerItem(beetItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambeetCrop, Blocks.farmland).setUnlocalizedName("beetItem").setCreativeTab(harvestcraft.modTab), "beetItem");
-GameRegistry.registerItem(onionItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamonionCrop, Blocks.farmland).setUnlocalizedName("onionItem").setCreativeTab(harvestcraft.modTab), "onionItem");
-GameRegistry.registerItem(parsnipItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamparsnipCrop, Blocks.farmland).setUnlocalizedName("parsnipItem").setCreativeTab(harvestcraft.modTab), "parsnipItem");
-GameRegistry.registerItem(peanutItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pampeanutCrop, Blocks.farmland).setUnlocalizedName("peanutItem").setCreativeTab(harvestcraft.modTab), "peanutItem");
-GameRegistry.registerItem(radishItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamradishCrop, Blocks.farmland).setUnlocalizedName("radishItem").setCreativeTab(harvestcraft.modTab), "radishItem");
-GameRegistry.registerItem(rutabagaItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamrutabagaCrop, Blocks.farmland).setUnlocalizedName("rutabagaItem").setCreativeTab(harvestcraft.modTab), "rutabagaItem");
-GameRegistry.registerItem(sweetpotatoItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamsweetpotatoCrop, Blocks.farmland).setUnlocalizedName("sweetpotatoItem").setCreativeTab(harvestcraft.modTab), "sweetpotatoItem");
-GameRegistry.registerItem(turnipItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamturnipCrop, Blocks.farmland).setUnlocalizedName("turnipItem").setCreativeTab(harvestcraft.modTab), "turnipItem");
-GameRegistry.registerItem(rhubarbItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamrhubarbCrop, Blocks.farmland).setUnlocalizedName("rhubarbItem").setCreativeTab(harvestcraft.modTab), "rhubarbItem");
-GameRegistry.registerItem(celeryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamceleryCrop, Blocks.farmland).setUnlocalizedName("celeryItem").setCreativeTab(harvestcraft.modTab), "celeryItem");
-GameRegistry.registerItem(garlicItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamgarlicCrop, Blocks.farmland).setUnlocalizedName("garlicItem").setCreativeTab(harvestcraft.modTab), "garlicItem");
-GameRegistry.registerItem(gingerItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamgingerCrop, Blocks.farmland).setUnlocalizedName("gingerItem").setCreativeTab(harvestcraft.modTab), "gingerItem");
-GameRegistry.registerItem(spiceleafItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamspiceleafCrop, Blocks.farmland).setUnlocalizedName("spiceleafItem").setCreativeTab(harvestcraft.modTab), "spiceleafItem");
-GameRegistry.registerItem(ediblerootItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamspiceleafCrop, Blocks.farmland).setUnlocalizedName("ediblerootItem").setCreativeTab(harvestcraft.modTab), "ediblerootItem");
-GameRegistry.registerItem(tealeafItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamtealeafCrop, Blocks.farmland).setUnlocalizedName("tealeafItem").setCreativeTab(harvestcraft.modTab), "tealeafItem");
-GameRegistry.registerItem(coffeebeanItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcoffeebeanCrop, Blocks.farmland).setUnlocalizedName("coffeebeanItem").setCreativeTab(harvestcraft.modTab), "coffeebeanItem");
-GameRegistry.registerItem(mustardseedsItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pammustardseedsCrop, Blocks.farmland).setUnlocalizedName("mustardseedsItem").setCreativeTab(harvestcraft.modTab), "mustardseedsItem");
-GameRegistry.registerItem(broccoliItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambroccoliCrop, Blocks.farmland).setUnlocalizedName("broccoliItem").setCreativeTab(harvestcraft.modTab), "broccoliItem");
-GameRegistry.registerItem(cauliflowerItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcauliflowerCrop, Blocks.farmland).setUnlocalizedName("cauliflowerItem").setCreativeTab(harvestcraft.modTab), "cauliflowerItem");
-GameRegistry.registerItem(leekItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamleekCrop, Blocks.farmland).setUnlocalizedName("leekItem").setCreativeTab(harvestcraft.modTab), "leekItem");
-GameRegistry.registerItem(lettuceItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamlettuceCrop, Blocks.farmland).setUnlocalizedName("lettuceItem").setCreativeTab(harvestcraft.modTab), "lettuceItem");
-GameRegistry.registerItem(scallionItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamscallionCrop, Blocks.farmland).setUnlocalizedName("scallionItem").setCreativeTab(harvestcraft.modTab), "scallionItem");
-GameRegistry.registerItem(artichokeItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamartichokeCrop, Blocks.farmland).setUnlocalizedName("artichokeItem").setCreativeTab(harvestcraft.modTab), "artichokeItem");
-GameRegistry.registerItem(brusselsproutItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambrusselsproutCrop, Blocks.farmland).setUnlocalizedName("brusselsproutItem").setCreativeTab(harvestcraft.modTab), "brusselsproutItem");
-GameRegistry.registerItem(cabbageItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcabbageCrop, Blocks.farmland).setUnlocalizedName("cabbageItem").setCreativeTab(harvestcraft.modTab), "cabbageItem");
-GameRegistry.registerItem(spinachItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamspinachCrop, Blocks.farmland).setUnlocalizedName("spinachItem").setCreativeTab(harvestcraft.modTab), "spinachItem");
-GameRegistry.registerItem(whitemushroomItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamwhitemushroomCrop, Blocks.log).setUnlocalizedName("whitemushroomItem").setCreativeTab(harvestcraft.modTab), "whitemushroomItem");
-GameRegistry.registerItem(beanItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambeanCrop, Blocks.farmland).setUnlocalizedName("beanItem").setCreativeTab(harvestcraft.modTab), "beanItem");
-GameRegistry.registerItem(soybeanItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamsoybeanCrop, Blocks.farmland).setUnlocalizedName("soybeanItem").setCreativeTab(harvestcraft.modTab), "soybeanItem");
-GameRegistry.registerItem(bellpepperItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pambellpepperCrop, Blocks.farmland).setUnlocalizedName("bellpepperItem").setCreativeTab(harvestcraft.modTab), "bellpepperItem");
-GameRegistry.registerItem(chilipepperItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamchilipepperCrop, Blocks.farmland).setUnlocalizedName("chilipepperItem").setCreativeTab(harvestcraft.modTab), "chilipepperItem");
-GameRegistry.registerItem(eggplantItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pameggplantCrop, Blocks.farmland).setUnlocalizedName("eggplantItem").setCreativeTab(harvestcraft.modTab), "eggplantItem");
-GameRegistry.registerItem(okraItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamokraCrop, Blocks.farmland).setUnlocalizedName("okraItem").setCreativeTab(harvestcraft.modTab), "okraItem");
-GameRegistry.registerItem(peasItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pampeasCrop, Blocks.farmland).setUnlocalizedName("peasItem").setCreativeTab(harvestcraft.modTab), "peasItem");
-GameRegistry.registerItem(tomatoItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamtomatoCrop, Blocks.farmland).setUnlocalizedName("tomatoItem").setCreativeTab(harvestcraft.modTab), "tomatoItem");
-GameRegistry.registerItem(cottonItem = new ItemSeeds(BlockRegistry.pamcottonCrop, Blocks.farmland).setUnlocalizedName("cottonItem").setCreativeTab(harvestcraft.modTab), "cottonItem");
-GameRegistry.registerItem(pineappleItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pampineappleCrop, Blocks.farmland).setUnlocalizedName("pineappleItem").setCreativeTab(harvestcraft.modTab), "pineappleItem");
-GameRegistry.registerItem(kiwiItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamkiwiCrop, Blocks.farmland).setUnlocalizedName("kiwiItem").setCreativeTab(harvestcraft.modTab), "kiwiItem");
-GameRegistry.registerItem(sesameseedsItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamsesameseedsCrop, Blocks.farmland).setUnlocalizedName("sesameseedsItem").setCreativeTab(harvestcraft.modTab), "sesameseedsItem");
-GameRegistry.registerItem(curryleafItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcurryleafCrop, Blocks.farmland).setUnlocalizedName("curryleafItem").setCreativeTab(harvestcraft.modTab), "curryleafItem");
-GameRegistry.registerItem(cranberryItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamcranberryCrop, Blocks.water).setUnlocalizedName("cranberryItem").setCreativeTab(harvestcraft.modTab), "cranberryItem");
-GameRegistry.registerItem(riceItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamriceCrop, Blocks.water).setUnlocalizedName("riceItem").setCreativeTab(harvestcraft.modTab), "riceItem");
-GameRegistry.registerItem(seaweedItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamseaweedCrop, Blocks.water).setUnlocalizedName("seaweedItem").setCreativeTab(harvestcraft.modTab), "seaweedItem");
-GameRegistry.registerItem(waterchestnutItem = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, BlockRegistry.pamwaterchestnutCrop, Blocks.water).setUnlocalizedName("waterchestnutItem").setCreativeTab(harvestcraft.modTab), "waterchestnutItem");
-GameRegistry.registerItem(blackberryseedItem = new ItemSeeds(BlockRegistry.pamblackberryCrop, Blocks.farmland).setUnlocalizedName("blackberryseedItem").setCreativeTab(harvestcraft.modTab), "blackberryseedItem");
-GameRegistry.registerItem(AgaveSeedItem = new ItemSeeds(BlockRegistry.AgaveCrop, Blocks.farmland).setUnlocalizedName("AgaveSeedItem").setCreativeTab(harvestcraft.modTab), "AgaveSeedItem");
-GameRegistry.registerItem(AmaranthSeedItem = new ItemSeeds(BlockRegistry.AmaranthCrop, Blocks.farmland).setUnlocalizedName("AmaranthSeedItem").setCreativeTab(harvestcraft.modTab), "AmaranthSeedItem");
-GameRegistry.registerItem(ArrowrootSeedItem = new ItemSeeds(BlockRegistry.ArrowrootCrop, Blocks.farmland).setUnlocalizedName("ArrowrootSeedItem").setCreativeTab(harvestcraft.modTab), "ArrowrootSeedItem");
-GameRegistry.registerItem(CassavaSeedItem = new ItemSeeds(BlockRegistry.CassavaCrop, Blocks.farmland).setUnlocalizedName("CassavaSeedItem").setCreativeTab(harvestcraft.modTab), "CassavaSeedItem");
-GameRegistry.registerItem(ChickpeaSeedItem = new ItemSeeds(BlockRegistry.ChickpeaCrop, Blocks.farmland).setUnlocalizedName("ChickpeaSeedItem").setCreativeTab(harvestcraft.modTab), "ChickpeaSeedItem");
-GameRegistry.registerItem(ElderberrySeedItem = new ItemSeeds(BlockRegistry.ElderberryCrop, Blocks.farmland).setUnlocalizedName("ElderberrySeedItem").setCreativeTab(harvestcraft.modTab), "ElderberrySeedItem");
-GameRegistry.registerItem(FlaxSeedItem = new ItemSeeds(BlockRegistry.FlaxCrop, Blocks.farmland).setUnlocalizedName("FlaxSeedItem").setCreativeTab(harvestcraft.modTab), "FlaxSeedItem");
-GameRegistry.registerItem(GigaPickleSeedItem = new ItemSeeds(BlockRegistry.GigaPickleCrop, Blocks.farmland).setUnlocalizedName("GigaPickleSeedItem").setCreativeTab(harvestcraft.modTab), "GigaPickleSeedItem");
-GameRegistry.registerItem(GreenGrapeSeedItem = new ItemSeeds(BlockRegistry.GreenGrapeCrop, Blocks.farmland).setUnlocalizedName("GreenGrapeSeedItem").setCreativeTab(harvestcraft.modTab), "GreenGrapeSeedItem");
-GameRegistry.registerItem(HuckleberrySeedItem = new ItemSeeds(BlockRegistry.HuckleberryCrop, Blocks.farmland).setUnlocalizedName("HuckleberrySeedItem").setCreativeTab(harvestcraft.modTab), "HuckleberrySeedItem");
-GameRegistry.registerItem(JicamaSeedItem = new ItemSeeds(BlockRegistry.JicamaCrop, Blocks.farmland).setUnlocalizedName("JicamaSeedItem").setCreativeTab(harvestcraft.modTab), "JicamaSeedItem");
-GameRegistry.registerItem(blueberryseedItem = new ItemSeeds(BlockRegistry.pamblueberryCrop, Blocks.farmland).setUnlocalizedName("blueberryseedItem").setCreativeTab(harvestcraft.modTab), "blueberryseedItem");
-GameRegistry.registerItem(candleberryseedItem = new ItemSeeds(BlockRegistry.pamcandleberryCrop, Blocks.farmland).setUnlocalizedName("candleberryseedItem").setCreativeTab(harvestcraft.modTab), "candleberryseedItem");
-GameRegistry.registerItem(raspberryseedItem = new ItemSeeds(BlockRegistry.pamraspberryCrop, Blocks.farmland).setUnlocalizedName("raspberryseedItem").setCreativeTab(harvestcraft.modTab), "raspberryseedItem");
-GameRegistry.registerItem(strawberryseedItem = new ItemSeeds(BlockRegistry.pamstrawberryCrop, Blocks.farmland).setUnlocalizedName("strawberryseedItem").setCreativeTab(harvestcraft.modTab), "strawberryseedItem");
-GameRegistry.registerItem(grapeseedItem = new ItemSeeds(BlockRegistry.pamgrapeCrop, Blocks.farmland).setUnlocalizedName("grapeseedItem").setCreativeTab(harvestcraft.modTab), "grapeseedItem");
-GameRegistry.registerItem(cactusfruitseedItem = new ItemSeeds(BlockRegistry.pamcactusfruitCrop, Blocks.farmland).setUnlocalizedName("cactusfruitseedItem").setCreativeTab(harvestcraft.modTab), "cactusfruitseedItem");
-GameRegistry.registerItem(asparagusseedItem = new ItemSeeds(BlockRegistry.pamasparagusCrop, Blocks.farmland).setUnlocalizedName("asparagusseedItem").setCreativeTab(harvestcraft.modTab), "asparagusseedItem");
-GameRegistry.registerItem(barleyseedItem = new ItemSeeds(BlockRegistry.pambarleyCrop, Blocks.farmland).setUnlocalizedName("barleyseedItem").setCreativeTab(harvestcraft.modTab), "barleyseedItem");
-GameRegistry.registerItem(oatsseedItem = new ItemSeeds(BlockRegistry.pamoatsCrop, Blocks.farmland).setUnlocalizedName("oatsseedItem").setCreativeTab(harvestcraft.modTab), "oatsseedItem");
-GameRegistry.registerItem(ryeseedItem = new ItemSeeds(BlockRegistry.pamryeCrop, Blocks.farmland).setUnlocalizedName("ryeseedItem").setCreativeTab(harvestcraft.modTab), "ryeseedItem");
-GameRegistry.registerItem(cornseedItem = new ItemSeeds(BlockRegistry.pamcornCrop, Blocks.farmland).setUnlocalizedName("cornseedItem").setCreativeTab(harvestcraft.modTab), "cornseedItem");
-GameRegistry.registerItem(bambooshootseedItem = new ItemSeeds(BlockRegistry.pambambooshootCrop, Blocks.farmland).setUnlocalizedName("bambooshootseedItem").setCreativeTab(harvestcraft.modTab), "bambooshootseedItem");
-GameRegistry.registerItem(cantaloupeseedItem = new ItemSeeds(BlockRegistry.pamcantaloupeCrop, Blocks.farmland).setUnlocalizedName("cantaloupeseedItem").setCreativeTab(harvestcraft.modTab), "cantaloupeseedItem");
-GameRegistry.registerItem(cucumberseedItem = new ItemSeeds(BlockRegistry.pamcucumberCrop, Blocks.farmland).setUnlocalizedName("cucumberseedItem").setCreativeTab(harvestcraft.modTab), "cucumberseedItem");
-GameRegistry.registerItem(wintersquashseedItem = new ItemSeeds(BlockRegistry.pamwintersquashCrop, Blocks.farmland).setUnlocalizedName("wintersquashseedItem").setCreativeTab(harvestcraft.modTab), "wintersquashseedItem");
-GameRegistry.registerItem(zucchiniseedItem = new ItemSeeds(BlockRegistry.pamzucchiniCrop, Blocks.farmland).setUnlocalizedName("zucchiniseedItem").setCreativeTab(harvestcraft.modTab), "zucchiniseedItem");
-GameRegistry.registerItem(beetseedItem = new ItemSeeds(BlockRegistry.pambeetCrop, Blocks.farmland).setUnlocalizedName("beetseedItem").setCreativeTab(harvestcraft.modTab), "beetseedItem");
-GameRegistry.registerItem(onionseedItem = new ItemSeeds(BlockRegistry.pamonionCrop, Blocks.farmland).setUnlocalizedName("onionseedItem").setCreativeTab(harvestcraft.modTab), "onionseedItem");
-GameRegistry.registerItem(parsnipseedItem = new ItemSeeds(BlockRegistry.pamparsnipCrop, Blocks.farmland).setUnlocalizedName("parsnipseedItem").setCreativeTab(harvestcraft.modTab), "parsnipseedItem");
-GameRegistry.registerItem(peanutseedItem = new ItemSeeds(BlockRegistry.pampeanutCrop, Blocks.farmland).setUnlocalizedName("peanutseedItem").setCreativeTab(harvestcraft.modTab), "peanutseedItem");
-GameRegistry.registerItem(radishseedItem = new ItemSeeds(BlockRegistry.pamradishCrop, Blocks.farmland).setUnlocalizedName("radishseedItem").setCreativeTab(harvestcraft.modTab), "radishseedItem");
-GameRegistry.registerItem(rutabagaseedItem = new ItemSeeds(BlockRegistry.pamrutabagaCrop, Blocks.farmland).setUnlocalizedName("rutabagaseedItem").setCreativeTab(harvestcraft.modTab), "rutabagaseedItem");
-GameRegistry.registerItem(sweetpotatoseedItem = new ItemSeeds(BlockRegistry.pamsweetpotatoCrop, Blocks.farmland).setUnlocalizedName("sweetpotatoseedItem").setCreativeTab(harvestcraft.modTab), "sweetpotatoseedItem");
-GameRegistry.registerItem(turnipseedItem = new ItemSeeds(BlockRegistry.pamturnipCrop, Blocks.farmland).setUnlocalizedName("turnipseedItem").setCreativeTab(harvestcraft.modTab), "turnipseedItem");
-GameRegistry.registerItem(rhubarbseedItem = new ItemSeeds(BlockRegistry.pamrhubarbCrop, Blocks.farmland).setUnlocalizedName("rhubarbseedItem").setCreativeTab(harvestcraft.modTab), "rhubarbseedItem");
-GameRegistry.registerItem(celeryseedItem = new ItemSeeds(BlockRegistry.pamceleryCrop, Blocks.farmland).setUnlocalizedName("celeryseedItem").setCreativeTab(harvestcraft.modTab), "celeryseedItem");
-GameRegistry.registerItem(garlicseedItem = new ItemSeeds(BlockRegistry.pamgarlicCrop, Blocks.farmland).setUnlocalizedName("garlicseedItem").setCreativeTab(harvestcraft.modTab), "garlicseedItem");
-GameRegistry.registerItem(gingerseedItem = new ItemSeeds(BlockRegistry.pamgingerCrop, Blocks.farmland).setUnlocalizedName("gingerseedItem").setCreativeTab(harvestcraft.modTab), "gingerseedItem");
-GameRegistry.registerItem(spiceleafseedItem = new ItemSeeds(BlockRegistry.pamspiceleafCrop, Blocks.farmland).setUnlocalizedName("spiceleafseedItem").setCreativeTab(harvestcraft.modTab), "spiceleafseedItem");
-GameRegistry.registerItem(teaseedItem = new ItemSeeds(BlockRegistry.pamtealeafCrop, Blocks.farmland).setUnlocalizedName("teaseedItem").setCreativeTab(harvestcraft.modTab), "teaseedItem");
-GameRegistry.registerItem(coffeeseedItem = new ItemSeeds(BlockRegistry.pamcoffeebeanCrop, Blocks.farmland).setUnlocalizedName("coffeeseedItem").setCreativeTab(harvestcraft.modTab), "coffeeseedItem");
-GameRegistry.registerItem(mustardseedItem = new ItemSeeds(BlockRegistry.pammustardseedsCrop, Blocks.farmland).setUnlocalizedName("mustardseedItem").setCreativeTab(harvestcraft.modTab), "mustardseedItem");
-GameRegistry.registerItem(broccoliseedItem = new ItemSeeds(BlockRegistry.pambroccoliCrop, Blocks.farmland).setUnlocalizedName("broccoliseedItem").setCreativeTab(harvestcraft.modTab), "broccoliseedItem");
-GameRegistry.registerItem(cauliflowerseedItem = new ItemSeeds(BlockRegistry.pamcauliflowerCrop, Blocks.farmland).setUnlocalizedName("cauliflowerseedItem").setCreativeTab(harvestcraft.modTab), "cauliflowerseedItem");
-GameRegistry.registerItem(leekseedItem = new ItemSeeds(BlockRegistry.pamleekCrop, Blocks.farmland).setUnlocalizedName("leekseedItem").setCreativeTab(harvestcraft.modTab), "leekseedItem");
-GameRegistry.registerItem(lettuceseedItem = new ItemSeeds(BlockRegistry.pamlettuceCrop, Blocks.farmland).setUnlocalizedName("lettuceseedItem").setCreativeTab(harvestcraft.modTab), "lettuceseedItem");
-GameRegistry.registerItem(scallionseedItem = new ItemSeeds(BlockRegistry.pamscallionCrop, Blocks.farmland).setUnlocalizedName("scallionseedItem").setCreativeTab(harvestcraft.modTab), "scallionseedItem");
-GameRegistry.registerItem(artichokeseedItem = new ItemSeeds(BlockRegistry.pamartichokeCrop, Blocks.farmland).setUnlocalizedName("artichokeseedItem").setCreativeTab(harvestcraft.modTab), "artichokeseedItem");
-GameRegistry.registerItem(brusselsproutseedItem = new ItemSeeds(BlockRegistry.pambrusselsproutCrop, Blocks.farmland).setUnlocalizedName("brusselsproutseedItem").setCreativeTab(harvestcraft.modTab), "brusselsproutseedItem");
-GameRegistry.registerItem(cabbageseedItem = new ItemSeeds(BlockRegistry.pamcabbageCrop, Blocks.farmland).setUnlocalizedName("cabbageseedItem").setCreativeTab(harvestcraft.modTab), "cabbageseedItem");
-GameRegistry.registerItem(spinachseedItem = new ItemSeeds(BlockRegistry.pamspinachCrop, Blocks.farmland).setUnlocalizedName("spinachseedItem").setCreativeTab(harvestcraft.modTab), "spinachseedItem");
-GameRegistry.registerItem(whitemushroomseedItem = new ItemSeeds(BlockRegistry.pamwhitemushroomCrop, Blocks.farmland).setUnlocalizedName("whitemushroomseedItem").setCreativeTab(harvestcraft.modTab), "whitemushroomseedItem");
-GameRegistry.registerItem(beanseedItem = new ItemSeeds(BlockRegistry.pambeanCrop, Blocks.farmland).setUnlocalizedName("beanseedItem").setCreativeTab(harvestcraft.modTab), "beanseedItem");
-GameRegistry.registerItem(soybeanseedItem = new ItemSeeds(BlockRegistry.pamsoybeanCrop, Blocks.farmland).setUnlocalizedName("soybeanseedItem").setCreativeTab(harvestcraft.modTab), "soybeanseedItem");
-GameRegistry.registerItem(bellpepperseedItem = new ItemSeeds(BlockRegistry.pambellpepperCrop, Blocks.farmland).setUnlocalizedName("bellpepperseedItem").setCreativeTab(harvestcraft.modTab), "bellpepperseedItem");
-GameRegistry.registerItem(chilipepperseedItem = new ItemSeeds(BlockRegistry.pamchilipepperCrop, Blocks.farmland).setUnlocalizedName("chilipepperseedItem").setCreativeTab(harvestcraft.modTab), "chilipepperseedItem");
-GameRegistry.registerItem(eggplantseedItem = new ItemSeeds(BlockRegistry.pameggplantCrop, Blocks.farmland).setUnlocalizedName("eggplantseedItem").setCreativeTab(harvestcraft.modTab), "eggplantseedItem");
-GameRegistry.registerItem(okraseedItem = new ItemSeeds(BlockRegistry.pamokraCrop, Blocks.farmland).setUnlocalizedName("okraseedItem").setCreativeTab(harvestcraft.modTab), "okraseedItem");
-GameRegistry.registerItem(peasseedItem = new ItemSeeds(BlockRegistry.pampeasCrop, Blocks.farmland).setUnlocalizedName("peasseedItem").setCreativeTab(harvestcraft.modTab), "peasseedItem");
-GameRegistry.registerItem(tomatoseedItem = new ItemSeeds(BlockRegistry.pamtomatoCrop, Blocks.farmland).setUnlocalizedName("tomatoseedItem").setCreativeTab(harvestcraft.modTab), "tomatoseedItem");
-GameRegistry.registerItem(cottonseedItem = new ItemSeeds(BlockRegistry.pamcottonCrop, Blocks.farmland).setUnlocalizedName("cottonseedItem").setCreativeTab(harvestcraft.modTab), "cottonseedItem");
-GameRegistry.registerItem(pineappleseedItem = new ItemSeeds(BlockRegistry.pampineappleCrop, Blocks.farmland).setUnlocalizedName("pineappleseedItem").setCreativeTab(harvestcraft.modTab), "pineappleseedItem");
-GameRegistry.registerItem(curryleafseedItem = new ItemSeeds(BlockRegistry.pamcurryleafCrop, Blocks.farmland).setUnlocalizedName("curryleafseedItem").setCreativeTab(harvestcraft.modTab), "curryleafseedItem");
-GameRegistry.registerItem(sesameseedsseedItem = new ItemSeeds(BlockRegistry.pamsesameseedsCrop, Blocks.farmland).setUnlocalizedName("sesameseedsseedItem").setCreativeTab(harvestcraft.modTab), "sesameseedsseedItem");
-GameRegistry.registerItem(kiwiseedItem = new ItemSeeds(BlockRegistry.pamkiwiCrop, Blocks.farmland).setUnlocalizedName("kiwiseedItem").setCreativeTab(harvestcraft.modTab), "kiwiseedItem");
-GameRegistry.registerItem(cranberryseedItem = new ItemSeeds(BlockRegistry.pamcranberryCrop, Blocks.farmland).setUnlocalizedName("cranberryseedItem").setCreativeTab(harvestcraft.modTab), "cranberryseedItem");
-GameRegistry.registerItem(riceseedItem = new ItemSeeds(BlockRegistry.pamriceCrop, Blocks.farmland).setUnlocalizedName("riceseedItem").setCreativeTab(harvestcraft.modTab), "riceseedItem");
-GameRegistry.registerItem(seaweedseedItem = new ItemSeeds(BlockRegistry.pamseaweedCrop, Blocks.farmland).setUnlocalizedName("seaweedseedItem").setCreativeTab(harvestcraft.modTab), "seaweedseedItem");
-GameRegistry.registerItem(waterchestnutseedItem = new ItemSeeds(BlockRegistry.pamwaterchestnutCrop, Blocks.farmland).setUnlocalizedName("waterchestnutseedItem").setCreativeTab(harvestcraft.modTab), "waterchestnutseedItem");
+
+                RegisterCrops();
+                RegisterSeeds();
+
 GameRegistry.registerItem(almondItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("almondItem").setCreativeTab(harvestcraft.modTab), "almondItem");
 GameRegistry.registerItem(apricotItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("apricotItem").setCreativeTab(harvestcraft.modTab), "apricotItem");
 GameRegistry.registerItem(avocadoItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("avocadoItem").setCreativeTab(harvestcraft.modTab), "avocadoItem");
@@ -1699,6 +1556,177 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                         mangoItem, oliveItem, orangeItem, papayaItem, peachItem, pecanItem, peppercornItem,
                         persimmonItem, pistachioItem, pomegranateItem, starfruitItem, vanillabeanItem };
                 PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
+        }
+
+
+        private static void RegisterCrops()
+        {
+                AgaveItem = RegisterCrop(BlockRegistry.AgaveCrop, Blocks.farmland, "AgaveItem");
+                AmaranthItem = RegisterCrop(BlockRegistry.AmaranthCrop, Blocks.farmland, "AmaranthItem");
+                ArrowrootItem = RegisterCrop(BlockRegistry.ArrowrootCrop, Blocks.farmland, "ArrowrootItem");
+                CassavaItem = RegisterCrop(BlockRegistry.CassavaCrop, Blocks.farmland, "CassavaItem");
+                ChickpeaItem = RegisterCrop(BlockRegistry.ChickpeaCrop, Blocks.farmland, "ChickpeaItem");
+                ElderberryItem = RegisterCrop(BlockRegistry.ElderberryCrop, Blocks.farmland, "ElderberryItem");
+                FlaxItem = RegisterCrop(BlockRegistry.FlaxCrop, Blocks.farmland, "FlaxItem");
+                GigaPickleItem = RegisterCrop(BlockRegistry.GigaPickleCrop, Blocks.farmland, "GigaPickleItem");
+                GreenGrapeItem = RegisterCrop(BlockRegistry.GreenGrapeCrop, Blocks.farmland, "GreenGrapeItem");
+                HuckleberryItem = RegisterCrop(BlockRegistry.HuckleberryCrop, Blocks.farmland, "HuckleberryItem");
+                JicamaItem = RegisterCrop(BlockRegistry.JicamaCrop, Blocks.farmland, "JicamaItem");
+                blackberryItem = RegisterCrop(BlockRegistry.pamblackberryCrop, Blocks.farmland, "blackberryItem");
+                blueberryItem = RegisterCrop(BlockRegistry.pamblueberryCrop, Blocks.farmland, "blueberryItem");
+                candleberryItem = RegisterCrop(BlockRegistry.pamcandleberryCrop, Blocks.farmland, "candleberryItem");
+                raspberryItem = RegisterCrop(BlockRegistry.pamraspberryCrop, Blocks.farmland, "raspberryItem");
+                strawberryItem = RegisterCrop(BlockRegistry.pamstrawberryCrop, Blocks.farmland, "strawberryItem");
+                grapeItem = RegisterCrop(BlockRegistry.pamgrapeCrop, Blocks.farmland, "grapeItem");
+                cactusfruitItem = RegisterCrop(BlockRegistry.pamcactusfruitCrop, Blocks.sand, "cactusfruitItem");
+                asparagusItem = RegisterCrop(BlockRegistry.pamasparagusCrop, Blocks.farmland, "asparagusItem");
+                barleyItem = RegisterCrop(BlockRegistry.pambarleyCrop, Blocks.farmland, "barleyItem");
+                oatsItem = RegisterCrop(BlockRegistry.pamoatsCrop, Blocks.farmland, "oatsItem");
+                ryeItem = RegisterCrop(BlockRegistry.pamryeCrop, Blocks.farmland, "ryeItem");
+                cornItem = RegisterCrop(BlockRegistry.pamcornCrop, Blocks.farmland, "cornItem");
+                bambooshootItem = RegisterCrop(BlockRegistry.pambambooshootCrop, Blocks.farmland, "bambooshootItem");
+                cantaloupeItem = RegisterCrop(BlockRegistry.pamcantaloupeCrop, Blocks.farmland, "cantaloupeItem");
+                cucumberItem = RegisterCrop(BlockRegistry.pamcucumberCrop, Blocks.farmland, "cucumberItem");
+                wintersquashItem = RegisterCrop(BlockRegistry.pamwintersquashCrop, Blocks.farmland, "wintersquashItem");
+                zucchiniItem = RegisterCrop(BlockRegistry.pamzucchiniCrop, Blocks.farmland, "zucchiniItem");
+                beetItem = RegisterCrop(BlockRegistry.pambeetCrop, Blocks.farmland, "beetItem");
+                onionItem = RegisterCrop(BlockRegistry.pamonionCrop, Blocks.farmland, "onionItem");
+                parsnipItem = RegisterCrop(BlockRegistry.pamparsnipCrop, Blocks.farmland, "parsnipItem");
+                peanutItem = RegisterCrop(BlockRegistry.pampeanutCrop, Blocks.farmland, "peanutItem");
+                radishItem = RegisterCrop(BlockRegistry.pamradishCrop, Blocks.farmland, "radishItem");
+                rutabagaItem = RegisterCrop(BlockRegistry.pamrutabagaCrop, Blocks.farmland, "rutabagaItem");
+                sweetpotatoItem = RegisterCrop(BlockRegistry.pamsweetpotatoCrop, Blocks.farmland, "sweetpotatoItem");
+                turnipItem = RegisterCrop(BlockRegistry.pamturnipCrop, Blocks.farmland, "turnipItem");
+                rhubarbItem = RegisterCrop(BlockRegistry.pamrhubarbCrop, Blocks.farmland, "rhubarbItem");
+                celeryItem = RegisterCrop(BlockRegistry.pamceleryCrop, Blocks.farmland, "celeryItem");
+                garlicItem = RegisterCrop(BlockRegistry.pamgarlicCrop, Blocks.farmland, "garlicItem");
+                gingerItem = RegisterCrop(BlockRegistry.pamgingerCrop, Blocks.farmland, "gingerItem");
+                spiceleafItem = RegisterCrop(BlockRegistry.pamspiceleafCrop, Blocks.farmland, "spiceleafItem");
+                ediblerootItem = RegisterCrop(BlockRegistry.pamspiceleafCrop, Blocks.farmland, "ediblerootItem");
+                tealeafItem = RegisterCrop(BlockRegistry.pamtealeafCrop, Blocks.farmland, "tealeafItem");
+                coffeebeanItem = RegisterCrop(BlockRegistry.pamcoffeebeanCrop, Blocks.farmland, "coffeebeanItem");
+                mustardseedsItem = RegisterCrop(BlockRegistry.pammustardseedsCrop, Blocks.farmland, "mustardseedsItem");
+                broccoliItem = RegisterCrop(BlockRegistry.pambroccoliCrop, Blocks.farmland, "broccoliItem");
+                cauliflowerItem = RegisterCrop(BlockRegistry.pamcauliflowerCrop, Blocks.farmland, "cauliflowerItem");
+                leekItem = RegisterCrop(BlockRegistry.pamleekCrop, Blocks.farmland, "leekItem");
+                lettuceItem = RegisterCrop(BlockRegistry.pamlettuceCrop, Blocks.farmland, "lettuceItem");
+                scallionItem = RegisterCrop(BlockRegistry.pamscallionCrop, Blocks.farmland, "scallionItem");
+                artichokeItem = RegisterCrop(BlockRegistry.pamartichokeCrop, Blocks.farmland, "artichokeItem");
+                brusselsproutItem = RegisterCrop(BlockRegistry.pambrusselsproutCrop, Blocks.farmland, "brusselsproutItem");
+                cabbageItem = RegisterCrop(BlockRegistry.pamcabbageCrop, Blocks.farmland, "cabbageItem");
+                spinachItem = RegisterCrop(BlockRegistry.pamspinachCrop, Blocks.farmland, "spinachItem");
+                whitemushroomItem = RegisterCrop(BlockRegistry.pamwhitemushroomCrop, Blocks.log, "whitemushroomItem");
+                beanItem = RegisterCrop(BlockRegistry.pambeanCrop, Blocks.farmland, "beanItem");
+                soybeanItem = RegisterCrop(BlockRegistry.pamsoybeanCrop, Blocks.farmland, "soybeanItem");
+                bellpepperItem = RegisterCrop(BlockRegistry.pambellpepperCrop, Blocks.farmland, "bellpepperItem");
+                chilipepperItem = RegisterCrop(BlockRegistry.pamchilipepperCrop, Blocks.farmland, "chilipepperItem");
+                eggplantItem = RegisterCrop(BlockRegistry.pameggplantCrop, Blocks.farmland, "eggplantItem");
+                okraItem = RegisterCrop(BlockRegistry.pamokraCrop, Blocks.farmland, "okraItem");
+                peasItem = RegisterCrop(BlockRegistry.pampeasCrop, Blocks.farmland, "peasItem");
+                tomatoItem = RegisterCrop(BlockRegistry.pamtomatoCrop, Blocks.farmland, "tomatoItem");
+                pineappleItem = RegisterCrop(BlockRegistry.pampineappleCrop, Blocks.farmland, "pineappleItem");
+                kiwiItem = RegisterCrop(BlockRegistry.pamkiwiCrop, Blocks.farmland, "kiwiItem");
+                sesameseedsItem = RegisterCrop(BlockRegistry.pamsesameseedsCrop, Blocks.farmland, "sesameseedsItem");
+                curryleafItem = RegisterCrop(BlockRegistry.pamcurryleafCrop, Blocks.farmland, "curryleafItem");
+                cranberryItem = RegisterCrop(BlockRegistry.pamcranberryCrop, Blocks.water, "cranberryItem");
+                riceItem = RegisterCrop(BlockRegistry.pamriceCrop, Blocks.water, "riceItem");
+                seaweedItem = RegisterCrop(BlockRegistry.pamseaweedCrop, Blocks.water, "seaweedItem");
+                waterchestnutItem = RegisterCrop(BlockRegistry.pamwaterchestnutCrop, Blocks.water, "waterchestnutItem");
+        }
+
+
+	private static Item RegisterCrop(Block _crop, Block _ground, String _name)
+	{
+                Item item = new ItemSeedFood(cropfoodRestore, cropsaturationRestore, _crop, _ground)
+                        .setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(item, _name);
+                return item;
+	}
+
+
+        private static void RegisterSeeds()
+        {
+                cottonItem = RegisterSeed(BlockRegistry.pamcottonCrop, "cottonItem");
+                blackberryseedItem = RegisterSeed(BlockRegistry.pamblackberryCrop, "blackberryseedItem");
+                AgaveSeedItem = RegisterSeed(BlockRegistry.AgaveCrop, "AgaveSeedItem");
+                AmaranthSeedItem = RegisterSeed(BlockRegistry.AmaranthCrop, "AmaranthSeedItem");
+                ArrowrootSeedItem = RegisterSeed(BlockRegistry.ArrowrootCrop, "ArrowrootSeedItem");
+                CassavaSeedItem = RegisterSeed(BlockRegistry.CassavaCrop, "CassavaSeedItem");
+                ChickpeaSeedItem = RegisterSeed(BlockRegistry.ChickpeaCrop, "ChickpeaSeedItem");
+                ElderberrySeedItem = RegisterSeed(BlockRegistry.ElderberryCrop, "ElderberrySeedItem");
+                FlaxSeedItem = RegisterSeed(BlockRegistry.FlaxCrop, "FlaxSeedItem");
+                GigaPickleSeedItem = RegisterSeed(BlockRegistry.GigaPickleCrop, "GigaPickleSeedItem");
+                GreenGrapeSeedItem = RegisterSeed(BlockRegistry.GreenGrapeCrop, "GreenGrapeSeedItem");
+                HuckleberrySeedItem = RegisterSeed(BlockRegistry.HuckleberryCrop, "HuckleberrySeedItem");
+                JicamaSeedItem = RegisterSeed(BlockRegistry.JicamaCrop, "JicamaSeedItem");
+                blueberryseedItem = RegisterSeed(BlockRegistry.pamblueberryCrop, "blueberryseedItem");
+                candleberryseedItem = RegisterSeed(BlockRegistry.pamcandleberryCrop, "candleberryseedItem");
+                raspberryseedItem = RegisterSeed(BlockRegistry.pamraspberryCrop, "raspberryseedItem");
+                strawberryseedItem = RegisterSeed(BlockRegistry.pamstrawberryCrop, "strawberryseedItem");
+                grapeseedItem = RegisterSeed(BlockRegistry.pamgrapeCrop, "grapeseedItem");
+                cactusfruitseedItem = RegisterSeed(BlockRegistry.pamcactusfruitCrop, "cactusfruitseedItem");
+                asparagusseedItem = RegisterSeed(BlockRegistry.pamasparagusCrop, "asparagusseedItem");
+                barleyseedItem = RegisterSeed(BlockRegistry.pambarleyCrop, "barleyseedItem");
+                oatsseedItem = RegisterSeed(BlockRegistry.pamoatsCrop, "oatsseedItem");
+                ryeseedItem = RegisterSeed(BlockRegistry.pamryeCrop, "ryeseedItem");
+                cornseedItem = RegisterSeed(BlockRegistry.pamcornCrop, "cornseedItem");
+                bambooshootseedItem = RegisterSeed(BlockRegistry.pambambooshootCrop, "bambooshootseedItem");
+                cantaloupeseedItem = RegisterSeed(BlockRegistry.pamcantaloupeCrop, "cantaloupeseedItem");
+                cucumberseedItem = RegisterSeed(BlockRegistry.pamcucumberCrop, "cucumberseedItem");
+                wintersquashseedItem = RegisterSeed(BlockRegistry.pamwintersquashCrop, "wintersquashseedItem");
+                zucchiniseedItem = RegisterSeed(BlockRegistry.pamzucchiniCrop, "zucchiniseedItem");
+                beetseedItem = RegisterSeed(BlockRegistry.pambeetCrop, "beetseedItem");
+                onionseedItem = RegisterSeed(BlockRegistry.pamonionCrop, "onionseedItem");
+                parsnipseedItem = RegisterSeed(BlockRegistry.pamparsnipCrop, "parsnipseedItem");
+                peanutseedItem = RegisterSeed(BlockRegistry.pampeanutCrop, "peanutseedItem");
+                radishseedItem = RegisterSeed(BlockRegistry.pamradishCrop, "radishseedItem");
+                rutabagaseedItem = RegisterSeed(BlockRegistry.pamrutabagaCrop, "rutabagaseedItem");
+                sweetpotatoseedItem = RegisterSeed(BlockRegistry.pamsweetpotatoCrop, "sweetpotatoseedItem");
+                turnipseedItem = RegisterSeed(BlockRegistry.pamturnipCrop, "turnipseedItem");
+                rhubarbseedItem = RegisterSeed(BlockRegistry.pamrhubarbCrop, "rhubarbseedItem");
+                celeryseedItem = RegisterSeed(BlockRegistry.pamceleryCrop, "celeryseedItem");
+                garlicseedItem = RegisterSeed(BlockRegistry.pamgarlicCrop, "garlicseedItem");
+                gingerseedItem = RegisterSeed(BlockRegistry.pamgingerCrop, "gingerseedItem");
+                spiceleafseedItem = RegisterSeed(BlockRegistry.pamspiceleafCrop, "spiceleafseedItem");
+                teaseedItem = RegisterSeed(BlockRegistry.pamtealeafCrop, "teaseedItem");
+                coffeeseedItem = RegisterSeed(BlockRegistry.pamcoffeebeanCrop, "coffeeseedItem");
+                mustardseedItem = RegisterSeed(BlockRegistry.pammustardseedsCrop, "mustardseedItem");
+                broccoliseedItem = RegisterSeed(BlockRegistry.pambroccoliCrop, "broccoliseedItem");
+                cauliflowerseedItem = RegisterSeed(BlockRegistry.pamcauliflowerCrop, "cauliflowerseedItem");
+                leekseedItem = RegisterSeed(BlockRegistry.pamleekCrop, "leekseedItem");
+                lettuceseedItem = RegisterSeed(BlockRegistry.pamlettuceCrop, "lettuceseedItem");
+                scallionseedItem = RegisterSeed(BlockRegistry.pamscallionCrop, "scallionseedItem");
+                artichokeseedItem = RegisterSeed(BlockRegistry.pamartichokeCrop, "artichokeseedItem");
+                brusselsproutseedItem = RegisterSeed(BlockRegistry.pambrusselsproutCrop, "brusselsproutseedItem");
+                cabbageseedItem = RegisterSeed(BlockRegistry.pamcabbageCrop, "cabbageseedItem");
+                spinachseedItem = RegisterSeed(BlockRegistry.pamspinachCrop, "spinachseedItem");
+                whitemushroomseedItem = RegisterSeed(BlockRegistry.pamwhitemushroomCrop, "whitemushroomseedItem");
+                beanseedItem = RegisterSeed(BlockRegistry.pambeanCrop, "beanseedItem");
+                soybeanseedItem = RegisterSeed(BlockRegistry.pamsoybeanCrop, "soybeanseedItem");
+                bellpepperseedItem = RegisterSeed(BlockRegistry.pambellpepperCrop, "bellpepperseedItem");
+                chilipepperseedItem = RegisterSeed(BlockRegistry.pamchilipepperCrop, "chilipepperseedItem");
+                eggplantseedItem = RegisterSeed(BlockRegistry.pameggplantCrop, "eggplantseedItem");
+                okraseedItem = RegisterSeed(BlockRegistry.pamokraCrop, "okraseedItem");
+                peasseedItem = RegisterSeed(BlockRegistry.pampeasCrop, "peasseedItem");
+                tomatoseedItem = RegisterSeed(BlockRegistry.pamtomatoCrop, "tomatoseedItem");
+                cottonseedItem = RegisterSeed(BlockRegistry.pamcottonCrop, "cottonseedItem");
+                pineappleseedItem = RegisterSeed(BlockRegistry.pampineappleCrop, "pineappleseedItem");
+                curryleafseedItem = RegisterSeed(BlockRegistry.pamcurryleafCrop, "curryleafseedItem");
+                sesameseedsseedItem = RegisterSeed(BlockRegistry.pamsesameseedsCrop, "sesameseedsseedItem");
+                kiwiseedItem = RegisterSeed(BlockRegistry.pamkiwiCrop, "kiwiseedItem");
+                cranberryseedItem = RegisterSeed(BlockRegistry.pamcranberryCrop, "cranberryseedItem");
+                riceseedItem = RegisterSeed(BlockRegistry.pamriceCrop, "riceseedItem");
+                seaweedseedItem = RegisterSeed(BlockRegistry.pamseaweedCrop, "seaweedseedItem");
+                waterchestnutseedItem = RegisterSeed(BlockRegistry.pamwaterchestnutCrop, "waterchestnutseedItem");
+        }
+
+
+        private static Item RegisterSeed(Block _cropBlock, String _name)
+        {
+                Item seed = new ItemSeeds(_cropBlock, Blocks.farmland)
+                        .setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(seed, _name);
+                return seed;
         }
 
 
