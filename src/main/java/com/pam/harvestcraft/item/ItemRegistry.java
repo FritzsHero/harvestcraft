@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ItemRegistry
 {
+        //#region "Vars"
         public static Item[] PamCropItems;
         public static Item[] PamSeeds;
         public static Item[] PamTemperateFruits;
@@ -865,40 +866,40 @@ public class ItemRegistry
         public static int fruitbaitrecipeamount;
         public static boolean enablelistAllwaterfreshwater;
         public static boolean enablelistAllwatervanillawaterbucket;
+        //#endregion
 
 
-public static void initItems(FMLPreInitializationEvent event, Configuration config)
-{
-cropfoodRestore = config.get("crops", "cropfoodRestore", 1).getInt();
-cropsaturationRestore = (float)config.get("crops", "cropsaturationRestore", 0.6000000238418579D).getDouble(0.6000000238418579D);
-squiddropCalamari = config.get("general", "squiddropCalamari", true).getBoolean(true);
-snacksaturation = (float)config.get("crops", "snacksaturation", 0.6000000238418579D).getDouble(0.6000000238418579D);
-mealsaturation = (float)config.get("crops", "mealsaturation", 1.2000000476837158D).getDouble(1.2000000476837158D);
-meatymealsaturation = (float)config.get("crops", "meatymealsaturation", 1.600000023841858D).getDouble(1.600000023841858D);
-//freshmilkfrombucket = config.get("miscellaneous recipes", "freshmilkfrombucket", 4).getInt();
-//freshwaterfrombucket = config.get("miscellaneous recipes", "freshwaterfrombucket", 1).getInt();
-seedrarity = config.get("seeds", "seedrarity", 1).getInt();
-enablecropitemsasseeds = config.get("miscellaneous recipes", "enablecropitemsasseeds", true).getBoolean(true);
-                isSaltFromWaterEnabled = config.get("miscellaneous recipes", "isSaltFromWaterEnabled", true).getBoolean(true);
+        public static void initItems(FMLPreInitializationEvent event, Configuration config)
+        {
+                String common = "miscellaneous recipes";
+
+                cropfoodRestore = config.get("crops", "cropfoodRestore", 1).getInt();
+                cropsaturationRestore = (float)config.get("crops", "cropsaturationRestore", 0.6D).getDouble(0.6D);
+                squiddropCalamari = config.get("general", "squiddropCalamari", true).getBoolean(true);
+                snacksaturation = (float)config.get("crops", "snacksaturation", 0.6D).getDouble(0.6D);
+                mealsaturation = (float)config.get("crops", "mealsaturation", 1.2D).getDouble(1.2D);
+                meatymealsaturation = (float)config.get("crops", "meatymealsaturation", 1.6D).getDouble(1.6D);
+                //freshmilkfrombucket = config.get(common, "freshmilkfrombucket", 4).getInt();
+                //freshwaterfrombucket = config.get(common, "freshwaterfrombucket", 1).getInt();
+                seedrarity = config.get("seeds", "seedrarity", 1).getInt();
+                enablecropitemsasseeds = config.get(common, "enablecropitemsasseeds", true).getBoolean(true);
+                isSaltFromWaterEnabled = config.get(common, "isSaltFromWaterEnabled", true).getBoolean(true);
                 isSeedDroppingFromGrass = config.get("seeds", "isSeedDroppingFromGrass", false).getBoolean(false);
 
- 
-                isTofuAsMeatEnabled = config.get("miscellaneous recipes", "isTofuAsMeatEnabled", true).getBoolean(true);
-                isTofuAsMilkEnabled = config.get("miscellaneous recipes", "isTofuAsMilkEnabled", true).getBoolean(true);
 
-enablecroptoseedRecipe = config.get("miscellaneous recipes", "enablecroptoseedRecipe", true).getBoolean(true);
- 
- 
-//enableharvestcraftfish = config.get("miscellaneous recipes", "enableharvestcraftfish", true).getBoolean(true);
- 
-//fishtrapbaitrecipeamount = config.get("miscellaneous recipes", "fishtrapbaitrecipeamount", 4).getInt();
-//grainbaitrecipeamount = config.get("miscellaneous recipes", "grainbaitrecipeamount", 4).getInt();
-//veggiebaitrecipeamount = config.get("miscellaneous recipes", "veggiebaitrecipeamount", 4).getInt();
-//fruitbaitrecipeamount = config.get("miscellaneous recipes", "fruitbaitrecipeamount", 4).getInt();
- 
-enablelistAllwaterfreshwater = config.get("miscellaneous recipes", "enablelistAllwaterfreshwater", true).getBoolean(true);
-enablelistAllwatervanillawaterbucket = config.get("miscellaneous recipes", "enablelistAllwatervanillawaterbucket", true).getBoolean(true);
-}
+                isTofuAsMeatEnabled = config.get(common, "isTofuAsMeatEnabled", true).getBoolean(true);
+                isTofuAsMilkEnabled = config.get(common, "isTofuAsMilkEnabled", true).getBoolean(true);
+                enablecroptoseedRecipe = config.get(common, "enablecroptoseedRecipe", true).getBoolean(true);
+
+                //enableharvestcraftfish = config.get(common, "enableharvestcraftfish", true).getBoolean(true);
+                //fishtrapbaitrecipeamount = config.get(common, "fishtrapbaitrecipeamount", 4).getInt();
+                //grainbaitrecipeamount = config.get(common, "grainbaitrecipeamount", 4).getInt();
+                //veggiebaitrecipeamount = config.get(common, "veggiebaitrecipeamount", 4).getInt();
+                //fruitbaitrecipeamount = config.get(common, "fruitbaitrecipeamount", 4).getInt();
+
+                enablelistAllwaterfreshwater = config.get(common, "enablelistAllwaterfreshwater", true).getBoolean(true);
+                enablelistAllwatervanillawaterbucket = config.get(common, "enablelistAllwatervanillawaterbucket", true).getBoolean(true);
+        }
 
 
         public static void loadItemRegistry()
