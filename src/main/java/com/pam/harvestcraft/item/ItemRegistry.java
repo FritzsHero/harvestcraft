@@ -1069,7 +1069,6 @@ GameRegistry.registerItem(trailmixItem = new ItemFood(10, mealsaturation, false)
 GameRegistry.registerItem(pbandjItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("pbandjItem").setCreativeTab(harvestcraft.modTab), "pbandjItem");
 GameRegistry.registerItem(peanutbuttercookiesItem = new ItemFood(9, snacksaturation, false).setUnlocalizedName("peanutbuttercookiesItem").setCreativeTab(harvestcraft.modTab), "peanutbuttercookiesItem");
 GameRegistry.registerItem(vinegarItem = new Item().setUnlocalizedName("vinegarItem").setCreativeTab(harvestcraft.modTab), "vinegarItem");
-GameRegistry.registerItem(grapejellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("grapejellyItem").setCreativeTab(harvestcraft.modTab), "grapejellyItem");
 GameRegistry.registerItem(grapesaladItem = new ItemFood(8, mealsaturation, false).setUnlocalizedName("grapesaladItem").setCreativeTab(harvestcraft.modTab), "grapesaladItem");
 GameRegistry.registerItem(raisincookiesItem = new ItemFood(9, snacksaturation, false).setUnlocalizedName("raisincookiesItem").setCreativeTab(harvestcraft.modTab), "raisincookiesItem");
 GameRegistry.registerItem(picklesItem = new ItemFood(7, mealsaturation, false).setUnlocalizedName("picklesItem").setCreativeTab(harvestcraft.modTab), "picklesItem");
@@ -1233,39 +1232,22 @@ GameRegistry.registerItem(eggnogItem = new ItemPamPotionFood(6, mealsaturation, 
 GameRegistry.registerItem(custardItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("custardItem").setCreativeTab(harvestcraft.modTab), "custardItem");
 GameRegistry.registerItem(sushiItem = new ItemFood(6, meatymealsaturation, false).setUnlocalizedName("sushiItem").setCreativeTab(harvestcraft.modTab), "sushiItem");
 GameRegistry.registerItem(gardensoupItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("gardensoupItem").setCreativeTab(harvestcraft.modTab), "gardensoupItem");
-GameRegistry.registerItem(applejellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("applejellyItem").setCreativeTab(harvestcraft.modTab), "applejellyItem");
 GameRegistry.registerItem(applejellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("applejellysandwichItem").setCreativeTab(harvestcraft.modTab), "applejellysandwichItem");
-GameRegistry.registerItem(blackberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("blackberryjellyItem").setCreativeTab(harvestcraft.modTab), "blackberryjellyItem");
 GameRegistry.registerItem(blackberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("blackberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "blackberryjellysandwichItem");
-GameRegistry.registerItem(blueberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("blueberryjellyItem").setCreativeTab(harvestcraft.modTab), "blueberryjellyItem");
 GameRegistry.registerItem(blueberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("blueberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "blueberryjellysandwichItem");
-GameRegistry.registerItem(cherryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("cherryjellyItem").setCreativeTab(harvestcraft.modTab), "cherryjellyItem");
 GameRegistry.registerItem(cherryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("cherryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "cherryjellysandwichItem");
-GameRegistry.registerItem(cranberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("cranberryjellyItem").setCreativeTab(harvestcraft.modTab), "cranberryjellyItem");
 GameRegistry.registerItem(cranberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("cranberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "cranberryjellysandwichItem");
-GameRegistry.registerItem(kiwijellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("kiwijellyItem").setCreativeTab(harvestcraft.modTab), "kiwijellyItem");
 GameRegistry.registerItem(kiwijellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("kiwijellysandwichItem").setCreativeTab(harvestcraft.modTab), "kiwijellysandwichItem");
-GameRegistry.registerItem(lemonjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("lemonjellyItem").setCreativeTab(harvestcraft.modTab), "lemonjellyItem");
 GameRegistry.registerItem(lemonjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("lemonjellysandwichItem").setCreativeTab(harvestcraft.modTab), "lemonjellysandwichItem");
-GameRegistry.registerItem(limejellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("limejellyItem").setCreativeTab(harvestcraft.modTab), "limejellyItem");
 GameRegistry.registerItem(limejellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("limejellysandwichItem").setCreativeTab(harvestcraft.modTab), "limejellysandwichItem");
-GameRegistry.registerItem(mangojellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("mangojellyItem").setCreativeTab(harvestcraft.modTab), "mangojellyItem");
 GameRegistry.registerItem(mangojellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("mangojellysandwichItem").setCreativeTab(harvestcraft.modTab), "mangojellysandwichItem");
-GameRegistry.registerItem(orangejellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("orangejellyItem").setCreativeTab(harvestcraft.modTab), "orangejellyItem");
 GameRegistry.registerItem(orangejellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("orangejellysandwichItem").setCreativeTab(harvestcraft.modTab), "orangejellysandwichItem");
-GameRegistry.registerItem(papayajellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("papayajellyItem").setCreativeTab(harvestcraft.modTab), "papayajellyItem");
 GameRegistry.registerItem(papayajellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("papayajellysandwichItem").setCreativeTab(harvestcraft.modTab), "papayajellysandwichItem");
-GameRegistry.registerItem(peachjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("peachjellyItem").setCreativeTab(harvestcraft.modTab), "peachjellyItem");
 GameRegistry.registerItem(peachjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("peachjellysandwichItem").setCreativeTab(harvestcraft.modTab), "peachjellysandwichItem");
-GameRegistry.registerItem(pomegranatejellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("pomegranatejellyItem").setCreativeTab(harvestcraft.modTab), "pomegranatejellyItem");
 GameRegistry.registerItem(pomegranatejellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("pomegranatejellysandwichItem").setCreativeTab(harvestcraft.modTab), "pomegranatejellysandwichItem");
-GameRegistry.registerItem(raspberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("raspberryjellyItem").setCreativeTab(harvestcraft.modTab), "raspberryjellyItem");
 GameRegistry.registerItem(raspberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("raspberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "raspberryjellysandwichItem");
-GameRegistry.registerItem(starfruitjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("starfruitjellyItem").setCreativeTab(harvestcraft.modTab), "starfruitjellyItem");
 GameRegistry.registerItem(starfruitjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("starfruitjellysandwichItem").setCreativeTab(harvestcraft.modTab), "starfruitjellysandwichItem");
-GameRegistry.registerItem(strawberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("strawberryjellyItem").setCreativeTab(harvestcraft.modTab), "strawberryjellyItem");
 GameRegistry.registerItem(strawberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("strawberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "strawberryjellysandwichItem");
-GameRegistry.registerItem(watermelonjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("watermelonjellyItem").setCreativeTab(harvestcraft.modTab), "watermelonjellyItem");
 GameRegistry.registerItem(watermelonjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("watermelonjellysandwichItem").setCreativeTab(harvestcraft.modTab), "watermelonjellysandwichItem");
 
 
@@ -1304,14 +1286,11 @@ GameRegistry.registerItem(roastedchestnutItem = new ItemFood(4, snacksaturation,
 GameRegistry.registerItem(sweetpotatosouffleItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("sweetpotatosouffleItem").setCreativeTab(harvestcraft.modTab), "sweetpotatosouffleItem");
 GameRegistry.registerItem(cashewchickenItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("cashewchickenItem").setCreativeTab(harvestcraft.modTab), "cashewchickenItem");
 GameRegistry.registerItem(apricotglazedporkItem = new ItemFood(6, meatymealsaturation, false).setUnlocalizedName("apricotglazedporkItem").setCreativeTab(harvestcraft.modTab), "apricotglazedporkItem");
-GameRegistry.registerItem(apricotjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("apricotjellyItem").setCreativeTab(harvestcraft.modTab), "apricotjellyItem");
 GameRegistry.registerItem(apricotjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("apricotjellysandwichItem").setCreativeTab(harvestcraft.modTab), "apricotjellysandwichItem");
 GameRegistry.registerItem(apricotsmoothieItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("apricotsmoothieItem").setCreativeTab(harvestcraft.modTab), "apricotsmoothieItem");
 GameRegistry.registerItem(figbarItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("figbarItem").setCreativeTab(harvestcraft.modTab), "figbarItem");
-GameRegistry.registerItem(figjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("figjellyItem").setCreativeTab(harvestcraft.modTab), "figjellyItem");
 GameRegistry.registerItem(figjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("figjellysandwichItem").setCreativeTab(harvestcraft.modTab), "figjellysandwichItem");
 GameRegistry.registerItem(figsmoothieItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("figsmoothieItem").setCreativeTab(harvestcraft.modTab), "figsmoothieItem");
-GameRegistry.registerItem(grapefruitjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("grapefruitjellyItem").setCreativeTab(harvestcraft.modTab), "grapefruitjellyItem");
 GameRegistry.registerItem(grapefruitjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("grapefruitjellysandwichItem").setCreativeTab(harvestcraft.modTab), "grapefruitjellysandwichItem");
 GameRegistry.registerItem(grapefruitsmoothieItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("grapefruitsmoothieItem").setCreativeTab(harvestcraft.modTab), "grapefruitsmoothieItem");
 GameRegistry.registerItem(grapefruitsodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("grapefruitsodaItem").setCreativeTab(harvestcraft.modTab), "grapefruitsodaItem");
@@ -1319,7 +1298,6 @@ GameRegistry.registerItem(citrussaladItem = new ItemFood(6, mealsaturation, fals
 GameRegistry.registerItem(pecanpieItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("pecanpieItem").setCreativeTab(harvestcraft.modTab), "pecanpieItem");
 GameRegistry.registerItem(pralinesItem = new ItemFood(6, snacksaturation, false).setUnlocalizedName("pralinesItem").setCreativeTab(harvestcraft.modTab), "pralinesItem");
 GameRegistry.registerItem(persimmonsmoothieItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("persimmonsmoothieItem").setCreativeTab(harvestcraft.modTab), "persimmonsmoothieItem");
-GameRegistry.registerItem(persimmonjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("persimmonjellyItem").setCreativeTab(harvestcraft.modTab), "persimmonjellyItem");
 GameRegistry.registerItem(persimmonjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("persimmonjellysandwichItem").setCreativeTab(harvestcraft.modTab), "persimmonjellysandwichItem");
 GameRegistry.registerItem(pistachiobakedsalmonItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("pistachiobakedsalmonItem").setCreativeTab(harvestcraft.modTab), "pistachiobakedsalmonItem");
 GameRegistry.registerItem(baconwrappeddatesItem = new ItemFood(12, meatymealsaturation, false).setUnlocalizedName("baconwrappeddatesItem").setCreativeTab(harvestcraft.modTab), "baconwrappeddatesItem");
@@ -1424,7 +1402,6 @@ GameRegistry.registerItem(croissantItem = new ItemFood(7, mealsaturation, false)
 GameRegistry.registerItem(currypowderItem = new Item().setUnlocalizedName("currypowderItem").setCreativeTab(harvestcraft.modTab), "currypowderItem");
 GameRegistry.registerItem(dimsumItem = new ItemFood(12, meatymealsaturation, false).setUnlocalizedName("dimsumItem").setCreativeTab(harvestcraft.modTab), "dimsumItem");
 GameRegistry.registerItem(friedpecanokraItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("friedpecanokraItem").setCreativeTab(harvestcraft.modTab), "friedpecanokraItem");
-GameRegistry.registerItem(gooseberryjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("gooseberryjellyItem").setCreativeTab(harvestcraft.modTab), "gooseberryjellyItem");
 GameRegistry.registerItem(gooseberryjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("gooseberryjellysandwichItem").setCreativeTab(harvestcraft.modTab), "gooseberryjellysandwichItem");
 GameRegistry.registerItem(gooseberrymilkshakeItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("gooseberrymilkshakeItem").setCreativeTab(harvestcraft.modTab), "gooseberrymilkshakeItem");
 GameRegistry.registerItem(gooseberrypieItem = new ItemFood(8, mealsaturation, false).setUnlocalizedName("gooseberrypieItem").setCreativeTab(harvestcraft.modTab), "gooseberrypieItem");
@@ -1455,10 +1432,8 @@ GameRegistry.registerItem(coconutsmoothieItem = new ItemFood(6, mealsaturation, 
 GameRegistry.registerItem(cranberrysmoothieItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("cranberrysmoothieItem").setCreativeTab(harvestcraft.modTab), "cranberrysmoothieItem");
 GameRegistry.registerItem(grapesmoothieItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("grapesmoothieItem").setCreativeTab(harvestcraft.modTab), "grapesmoothieItem");
 GameRegistry.registerItem(pearsmoothieItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("pearsmoothieItem").setCreativeTab(harvestcraft.modTab), "pearsmoothieItem");
-GameRegistry.registerItem(pearjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("pearjellyItem").setCreativeTab(harvestcraft.modTab), "pearjellyItem");
 GameRegistry.registerItem(pearjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("pearjellysandwichItem").setCreativeTab(harvestcraft.modTab), "pearjellysandwichItem");
 GameRegistry.registerItem(plumsmoothieItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("plumsmoothieItem").setCreativeTab(harvestcraft.modTab), "plumsmoothieItem");
-GameRegistry.registerItem(plumjellyItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("plumjellyItem").setCreativeTab(harvestcraft.modTab), "plumjellyItem");
 GameRegistry.registerItem(plumjellysandwichItem = new ItemFood(10, mealsaturation, false).setUnlocalizedName("plumjellysandwichItem").setCreativeTab(harvestcraft.modTab), "plumjellysandwichItem");
 GameRegistry.registerItem(honeysandwichItem = new ItemFood(8, mealsaturation, false).setUnlocalizedName("honeysandwichItem").setCreativeTab(harvestcraft.modTab), "honeysandwichItem");
 GameRegistry.registerItem(cheeseontoastItem = new ItemFood(8, mealsaturation, false).setUnlocalizedName("cheeseontoastItem").setCreativeTab(harvestcraft.modTab), "cheeseontoastItem");
@@ -1479,6 +1454,8 @@ GameRegistry.registerItem(potatoandleeksoupItem = new ItemFood(6, mealsaturation
 GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation, false).setUnlocalizedName("yorkshirepuddingItem").setCreativeTab(harvestcraft.modTab), "yorkshirepuddingItem");
 GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturation, false).setUnlocalizedName("toadintheholeItem").setCreativeTab(harvestcraft.modTab), "toadintheholeItem");
 
+
+                RegisterJellys();
                 RegisterYogurts();
 
                 GameRegistry.registerItem(tunasaladItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("tunasaladItem").setCreativeTab(harvestcraft.modTab), "tunasaladItem");
@@ -1701,6 +1678,36 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                         .setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
                 GameRegistry.registerItem(seed, _name);
                 return seed;
+        }
+
+
+        private static void RegisterJellys()
+        {
+                grapejellyItem = RegisterMeal(5, "grapejellyItem");
+                applejellyItem = RegisterMeal(5, "applejellyItem");
+                blackberryjellyItem = RegisterMeal(5, "blackberryjellyItem");
+                blueberryjellyItem = RegisterMeal(5, "blueberryjellyItem");
+                cherryjellyItem = RegisterMeal(5, "cherryjellyItem");
+                cranberryjellyItem = RegisterMeal( 5, "cranberryjellyItem");
+                kiwijellyItem = RegisterMeal(5, "kiwijellyItem");
+                lemonjellyItem = RegisterMeal(5, "lemonjellyItem");
+                limejellyItem = RegisterMeal(5, "limejellyItem");
+                mangojellyItem = RegisterMeal(5, "mangojellyItem");
+                orangejellyItem = RegisterMeal(5, "orangejellyItem");
+                papayajellyItem = RegisterMeal(5, "papayajellyItem");
+                peachjellyItem = RegisterMeal(5, "peachjellyItem");
+                pomegranatejellyItem = RegisterMeal(5, "pomegranatejellyItem");
+                raspberryjellyItem = RegisterMeal(5, "raspberryjellyItem");
+                starfruitjellyItem = RegisterMeal(5, "starfruitjellyItem");
+                strawberryjellyItem = RegisterMeal(5, "strawberryjellyItem");
+                watermelonjellyItem = RegisterMeal(5, "watermelonjellyItem");
+                apricotjellyItem = RegisterMeal(5, "apricotjellyItem");
+                figjellyItem = RegisterMeal(5, "figjellyItem");
+                grapefruitjellyItem = RegisterMeal(5, "grapefruitjellyItem");
+                persimmonjellyItem = RegisterMeal(5, "persimmonjellyItem");
+                gooseberryjellyItem = RegisterMeal(5, "gooseberryjellyItem");
+                pearjellyItem = RegisterMeal(5, "pearjellyItem");
+                plumjellyItem = RegisterMeal(5, "plumjellyItem");                
         }
 
 
