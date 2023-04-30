@@ -105,10 +105,8 @@ public class PamOtherRecipes
                 }));
 		}
 		
-		//Cotton Seed & Switch Recipes
+		//Cotton Seed
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));
-				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.cottonItem, 2), "cropCotton", "cropCotton"));
-				
 				//Woven Cloth Recipes
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.string, 2), "cropCotton", "cropCotton", "cropCotton"));
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), Items.string, Items.string));

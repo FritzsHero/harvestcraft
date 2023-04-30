@@ -56,17 +56,13 @@ public class PamFoodRecipes
      
           if (ItemRegistry.enablecroptoseedRecipe)
           {
-               for (int i = 0; i < 60; i++)
+               for (int i = 0; i < cropName.length; i++)
                {
                     if ((!BlockRegistry.enablecropspecialplanting) || ((ItemRegistry.PamCropItems[i] != ItemRegistry.cranberryItem) && (ItemRegistry.PamCropItems[i] != ItemRegistry.riceItem) && (ItemRegistry.PamCropItems[i] != ItemRegistry.seaweedItem)))
                     {
                          recipeList.add(new ShapelessOreRecipe(ItemRegistry.PamSeeds[i], new Object[] { ItemRegistry.PamCropItems[i] }));
                     }
                }
-          }
-          for (int i = 0; i < cropName.length; i++)
-          {
-               recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.PamCropItems[i], 2), new Object[] { cropName[i], cropName[i] }));
           }
      
           recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.sunflowerseedsItem, 2, 0), new Object[] { new ItemStack(Blocks.double_plant, 1, 0), new ItemStack(Blocks.double_plant, 1, 0) }));
