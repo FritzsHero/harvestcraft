@@ -44,6 +44,7 @@ public class BlockRegistry
 	public static Block LentilCrop;
 	public static Block MilletCrop;
 	public static Block MulberryCrop;
+	public static Block QuinoaCrop;
 	public static Block pamblackberryCrop;
 	public static Block pamblueberryCrop;
 	public static Block pamcandleberryCrop;
@@ -355,6 +356,7 @@ public class BlockRegistry
 		LentilCrop = RegisterPamCrop("LentilCrop");
 		MilletCrop = RegisterPamCrop("MilletCrop");
 		MulberryCrop = RegisterPamCrop("MulberryCrop");
+		QuinoaCrop = RegisterPamCrop("QuinoaCrop");
 		pamblackberryCrop = RegisterPamCrop("pamblackberryCrop");
 		pamblueberryCrop = RegisterPamCrop("pamblueberryCrop");
 		pamcandleberryCrop = RegisterPamCrop("pamcandleberryCrop");

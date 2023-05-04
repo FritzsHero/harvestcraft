@@ -133,6 +133,7 @@ public class ItemRegistry
         public static Item LentilItem;
         public static Item MiletItem;
         public static Item MulberryItem;
+        public static Item QuinoaItem;
         public static Item blackberryItem;
         public static Item blueberryItem;
         public static Item candleberryItem;
@@ -213,6 +214,7 @@ public class ItemRegistry
         public static Item LentilSeedItem;
         public static Item MilletSeedItem;
         public static Item MulberrySeedItem;
+        public static Item QuinoaSeedItem;
         public static Item cottonseedItem;
         public static Item asparagusseedItem;
         public static Item barleyseedItem;
@@ -1492,7 +1494,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
                         ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
                         JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem, MiletItem,
-                        MulberryItem,
+                        MulberryItem, QuinoaItem,
                         asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem,
                         cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem,
                         parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem,
@@ -1507,7 +1509,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                         ChickpeaSeedItem, ElderberrySeedItem, FlaxSeedItem, GigaPickleSeedItem,
                         GreenGrapeSeedItem, HuckleberrySeedItem, JicamaSeedItem, JuniperberrySeedItem,
                         JuteSeedItem, KaleSeedItem, KenafSeedItem, KohlrabiSeedItem, LentilSeedItem,
-                        MilletSeedItem, MulberrySeedItem, asparagusseedItem,
+                        MilletSeedItem, MulberrySeedItem, QuinoaSeedItem, asparagusseedItem,
                         barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem,
                         celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem,
                         lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem,
@@ -1552,6 +1554,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 LentilItem = RegisterCrop(BlockRegistry.LentilCrop, Blocks.farmland, "LentilItem");
                 MiletItem = RegisterCrop(BlockRegistry.MilletCrop, Blocks.farmland, "MilletItem");
                 MulberryItem = RegisterCrop(BlockRegistry.MulberryCrop, Blocks.farmland, "MulberryItem");
+                QuinoaItem = RegisterCrop(BlockRegistry.QuinoaCrop, Blocks.farmland, "QuinoaItem");
                 blackberryItem = RegisterCrop(BlockRegistry.pamblackberryCrop, Blocks.farmland, "blackberryItem");
                 blueberryItem = RegisterCrop(BlockRegistry.pamblueberryCrop, Blocks.farmland, "blueberryItem");
                 candleberryItem = RegisterCrop(BlockRegistry.pamcandleberryCrop, Blocks.farmland, "candleberryItem");
@@ -1647,6 +1650,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 LentilSeedItem = RegisterSeed(BlockRegistry.LentilCrop, "LentilSeedItem");
                 MilletSeedItem = RegisterSeed(BlockRegistry.MilletCrop, "MilletSeedItem");
                 MulberrySeedItem = RegisterSeed(BlockRegistry.MulberryCrop, "MulberrySeedItem");
+                QuinoaSeedItem = RegisterSeed(BlockRegistry.QuinoaCrop, "QuinoaSeedItem");
                 blueberryseedItem = RegisterSeed(BlockRegistry.pamblueberryCrop, "blueberryseedItem");
                 candleberryseedItem = RegisterSeed(BlockRegistry.pamcandleberryCrop, "candleberryseedItem");
                 raspberryseedItem = RegisterSeed(BlockRegistry.pamraspberryCrop, "raspberryseedItem");
