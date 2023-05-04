@@ -73,7 +73,7 @@ public class Config
 						"harvestcraft:sesameseedsItem", "harvestcraft:curryleafItem", "harvestcraft:bambooshootItem",
 						"harvestcraft:cantaloupeItem", "harvestcraft:gingerItem", "harvestcraft:coffeebeanItem",
 						"harvestcraft:soybeanItem", "harvestcraft:eggplantItem", "harvestcraft:ArrowrootItem",
-						"harvestcraft:KenafItem"},
+						"harvestcraft:KenafItem", "harvestcraft:TaroItem"},
 				"comment"));
 		dropConfig.put("windyGarden", config.getStringList("windyGarden", "drops",
 				new String[]{"harvestcraft:strawberryItem", "harvestcraft:barleyItem", "harvestcraft:cornItem",
