@@ -50,7 +50,8 @@ public class Config
 				new String[]{"harvestcraft:raspberryItem", "harvestcraft:oatsItem", "harvestcraft:ryeItem",
 						"harvestcraft:celeryItem", "harvestcraft:peasItem", "harvestcraft:beetItem",
 						"harvestcraft:rutabagaItem", "harvestcraft:broccoliItem", "harvestcraft:cauliflowerItem",
-						"harvestcraft:cabbageItem", "harvestcraft:spinachItem", "harvestcraft:HuckleberryItem"},
+						"harvestcraft:cabbageItem", "harvestcraft:spinachItem", "harvestcraft:HuckleberryItem",
+						"harvestcraft:JuniperberryItem"},
 				"comment"));
 		dropConfig.put("shadedGarden", config.getStringList("shadedGarden", "drops",
 				new String[]{"harvestcraft:whitemushroomItem", "harvestcraft:blackberryItem", "harvestcraft:zucchiniItem",
