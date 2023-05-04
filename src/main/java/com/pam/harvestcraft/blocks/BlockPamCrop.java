@@ -319,6 +319,8 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
             return new ItemStack(ItemRegistry.SisalItem);
         } else if (_currentBlock == BlockRegistry.TaroCrop) {
             return new ItemStack(ItemRegistry.TaroItem);
+        } else if (_currentBlock == BlockRegistry.TomatilloCrop) {
+            return new ItemStack(ItemRegistry.TomatilloItem);
         } else if (_currentBlock == BlockRegistry.pamblackberryCrop) {
             return new ItemStack(ItemRegistry.blackberryItem);
         } else if (_currentBlock == BlockRegistry.pamblueberryCrop) {

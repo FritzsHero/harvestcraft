@@ -1123,6 +1123,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("seedQuinoa", ItemRegistry.QuinoaSeedItem);
 		OreDictionary.registerOre("seedSisal", ItemRegistry.SisalSeedItem);
 		OreDictionary.registerOre("seedTaro", ItemRegistry.TaroSeedItem);
+		OreDictionary.registerOre("seedTomatillo", ItemRegistry.TomatilloSeedItem);
 		OreDictionary.registerOre("seedAsparagus", ItemRegistry.asparagusseedItem);
 		OreDictionary.registerOre("seedBarley", ItemRegistry.barleyseedItem);
 		OreDictionary.registerOre("seedBean", ItemRegistry.beanseedItem);
