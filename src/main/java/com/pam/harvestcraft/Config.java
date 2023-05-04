@@ -44,7 +44,7 @@ public class Config
 
 		dropConfig.put("aridGarden", config.getStringList("aridGarden", "drops",
 				new String[]{"harvestcraft:cactusfruitItem", "harvestcraft:AgaveItem", "harvestcraft:CassavaItem",
-						"harvestcraft:ChickpeaItem"},
+						"harvestcraft:ChickpeaItem", "harvestcraft:LentilItem"},
 				"comment"));
 		dropConfig.put("frostGarden", config.getStringList("frostGarden", "drops",
 				new String[]{"harvestcraft:raspberryItem", "harvestcraft:oatsItem", "harvestcraft:ryeItem",

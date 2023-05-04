@@ -130,6 +130,7 @@ public class ItemRegistry
         public static Item KaleItem;
         public static Item KenafItem;
         public static Item KohlrabiItem;
+        public static Item LentilItem;
         public static Item blackberryItem;
         public static Item blueberryItem;
         public static Item candleberryItem;
@@ -207,6 +208,7 @@ public class ItemRegistry
         public static Item KaleSeedItem;
         public static Item KenafSeedItem;
         public static Item KohlrabiSeedItem;
+        public static Item LentilSeedItem;
         public static Item cottonseedItem;
         public static Item asparagusseedItem;
         public static Item barleyseedItem;
@@ -1485,7 +1487,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
         {
                 PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
                         ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
-                        JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem,
+                        JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem,
                         asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem,
                         cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem,
                         parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem,
@@ -1499,7 +1501,8 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 PamSeeds = new Item[] { AgaveSeedItem, AmaranthSeedItem, ArrowrootSeedItem, CassavaSeedItem,
                         ChickpeaSeedItem, ElderberrySeedItem, FlaxSeedItem, GigaPickleSeedItem,
                         GreenGrapeSeedItem, HuckleberrySeedItem, JicamaSeedItem, JuniperberrySeedItem,
-                        JuteSeedItem, KaleSeedItem, KenafSeedItem, KohlrabiSeedItem, asparagusseedItem,
+                        JuteSeedItem, KaleSeedItem, KenafSeedItem, KohlrabiSeedItem, LentilSeedItem,
+                        asparagusseedItem,
                         barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem,
                         celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem,
                         lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem,
@@ -1541,6 +1544,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 KaleItem = RegisterCrop(BlockRegistry.KaleCrop, Blocks.farmland, "KaleItem");
                 KenafItem = RegisterCrop(BlockRegistry.KenafCrop, Blocks.farmland, "KenafItem");
                 KohlrabiItem = RegisterCrop(BlockRegistry.KohlrabiCrop, Blocks.farmland, "KohlrabiItem");
+                LentilItem = RegisterCrop(BlockRegistry.LentilCrop, Blocks.farmland, "LentilItem");
                 blackberryItem = RegisterCrop(BlockRegistry.pamblackberryCrop, Blocks.farmland, "blackberryItem");
                 blueberryItem = RegisterCrop(BlockRegistry.pamblueberryCrop, Blocks.farmland, "blueberryItem");
                 candleberryItem = RegisterCrop(BlockRegistry.pamcandleberryCrop, Blocks.farmland, "candleberryItem");
@@ -1633,6 +1637,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 KaleSeedItem = RegisterSeed(BlockRegistry.KaleCrop, "KaleSeedItem");
                 KenafSeedItem = RegisterSeed(BlockRegistry.KenafCrop, "KenafSeedItem");
                 KohlrabiSeedItem = RegisterSeed(BlockRegistry.KohlrabiCrop, "KohlrabiSeedItem");
+                LentilSeedItem = RegisterSeed(BlockRegistry.LentilCrop, "LentilSeedItem");
                 blueberryseedItem = RegisterSeed(BlockRegistry.pamblueberryCrop, "blueberryseedItem");
                 candleberryseedItem = RegisterSeed(BlockRegistry.pamcandleberryCrop, "candleberryseedItem");
                 raspberryseedItem = RegisterSeed(BlockRegistry.pamraspberryCrop, "raspberryseedItem");
