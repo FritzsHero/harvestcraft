@@ -71,7 +71,8 @@ public class Config
 				new String[]{"harvestcraft:grapeItem", "harvestcraft:pineappleItem", "harvestcraft:kiwiItem",
 						"harvestcraft:sesameseedsItem", "harvestcraft:curryleafItem", "harvestcraft:bambooshootItem",
 						"harvestcraft:cantaloupeItem", "harvestcraft:gingerItem", "harvestcraft:coffeebeanItem",
-						"harvestcraft:soybeanItem", "harvestcraft:eggplantItem", "harvestcraft:ArrowrootItem"},
+						"harvestcraft:soybeanItem", "harvestcraft:eggplantItem", "harvestcraft:ArrowrootItem",
+						"harvestcraft:KenafItem"},
 				"comment"));
 		dropConfig.put("windyGarden", config.getStringList("windyGarden", "drops",
 				new String[]{"harvestcraft:strawberryItem", "harvestcraft:barleyItem", "harvestcraft:cornItem",
