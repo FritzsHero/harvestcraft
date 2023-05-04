@@ -132,6 +132,7 @@ public class ItemRegistry
         public static Item KohlrabiItem;
         public static Item LentilItem;
         public static Item MiletItem;
+        public static Item MulberryItem;
         public static Item blackberryItem;
         public static Item blueberryItem;
         public static Item candleberryItem;
@@ -211,6 +212,7 @@ public class ItemRegistry
         public static Item KohlrabiSeedItem;
         public static Item LentilSeedItem;
         public static Item MilletSeedItem;
+        public static Item MulberrySeedItem;
         public static Item cottonseedItem;
         public static Item asparagusseedItem;
         public static Item barleyseedItem;
@@ -1490,6 +1492,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
                         ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
                         JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem, MiletItem,
+                        MulberryItem,
                         asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem,
                         cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem,
                         parsnipItem, peanutItem, pineappleItem, radishItem, riceItem, rutabagaItem, ryeItem,
@@ -1504,7 +1507,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                         ChickpeaSeedItem, ElderberrySeedItem, FlaxSeedItem, GigaPickleSeedItem,
                         GreenGrapeSeedItem, HuckleberrySeedItem, JicamaSeedItem, JuniperberrySeedItem,
                         JuteSeedItem, KaleSeedItem, KenafSeedItem, KohlrabiSeedItem, LentilSeedItem,
-                        MilletSeedItem, asparagusseedItem,
+                        MilletSeedItem, MulberrySeedItem, asparagusseedItem,
                         barleyseedItem, beanseedItem, beetseedItem, broccoliseedItem, cauliflowerseedItem,
                         celeryseedItem, cranberryseedItem, garlicseedItem, gingerseedItem, leekseedItem,
                         lettuceseedItem, oatsseedItem, onionseedItem, parsnipseedItem, peanutseedItem,
@@ -1548,6 +1551,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 KohlrabiItem = RegisterCrop(BlockRegistry.KohlrabiCrop, Blocks.farmland, "KohlrabiItem");
                 LentilItem = RegisterCrop(BlockRegistry.LentilCrop, Blocks.farmland, "LentilItem");
                 MiletItem = RegisterCrop(BlockRegistry.MilletCrop, Blocks.farmland, "MilletItem");
+                MulberryItem = RegisterCrop(BlockRegistry.MulberryCrop, Blocks.farmland, "MulberryItem");
                 blackberryItem = RegisterCrop(BlockRegistry.pamblackberryCrop, Blocks.farmland, "blackberryItem");
                 blueberryItem = RegisterCrop(BlockRegistry.pamblueberryCrop, Blocks.farmland, "blueberryItem");
                 candleberryItem = RegisterCrop(BlockRegistry.pamcandleberryCrop, Blocks.farmland, "candleberryItem");
@@ -1642,6 +1646,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 KohlrabiSeedItem = RegisterSeed(BlockRegistry.KohlrabiCrop, "KohlrabiSeedItem");
                 LentilSeedItem = RegisterSeed(BlockRegistry.LentilCrop, "LentilSeedItem");
                 MilletSeedItem = RegisterSeed(BlockRegistry.MilletCrop, "MilletSeedItem");
+                MulberrySeedItem = RegisterSeed(BlockRegistry.MulberryCrop, "MulberrySeedItem");
                 blueberryseedItem = RegisterSeed(BlockRegistry.pamblueberryCrop, "blueberryseedItem");
                 candleberryseedItem = RegisterSeed(BlockRegistry.pamcandleberryCrop, "candleberryseedItem");
                 raspberryseedItem = RegisterSeed(BlockRegistry.pamraspberryCrop, "raspberryseedItem");

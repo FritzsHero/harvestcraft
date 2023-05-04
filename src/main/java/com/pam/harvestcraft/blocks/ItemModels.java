@@ -76,6 +76,7 @@ public class ItemModels
 		RegisterCropModel(BlockRegistry.KohlrabiCrop, "kohlrabi");
 		RegisterCropModel(BlockRegistry.LentilCrop, "lentil");
 		RegisterCropModel(BlockRegistry.MilletCrop, "millet");
+		RegisterCropModel(BlockRegistry.MulberryCrop, "mulberry");
 		RegisterCropModel(BlockRegistry.pamblackberryCrop, "blackberry");
 		RegisterCropModel(BlockRegistry.pamblueberryCrop, "blueberry");
 		RegisterCropModel(BlockRegistry.pamcandleberryCrop, "candleberry");
