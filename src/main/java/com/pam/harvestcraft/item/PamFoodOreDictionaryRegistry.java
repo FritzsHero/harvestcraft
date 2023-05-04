@@ -1116,6 +1116,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("seedJute", ItemRegistry.JuteSeedItem);
 		OreDictionary.registerOre("seedKale", ItemRegistry.KaleSeedItem);
 		OreDictionary.registerOre("seedKenaf", ItemRegistry.KenafSeedItem);
+		OreDictionary.registerOre("seedKohlrabi", ItemRegistry.KohlrabiSeedItem);
 		OreDictionary.registerOre("seedAsparagus", ItemRegistry.asparagusseedItem);
 		OreDictionary.registerOre("seedBarley", ItemRegistry.barleyseedItem);
 		OreDictionary.registerOre("seedBean", ItemRegistry.beanseedItem);
