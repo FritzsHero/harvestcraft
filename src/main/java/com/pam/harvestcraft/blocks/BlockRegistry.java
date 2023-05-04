@@ -38,6 +38,7 @@ public class BlockRegistry
 	public static Block JicamaCrop;
 	public static Block JuniperberryCrop;
 	public static Block JuteCrop;
+	public static Block KaleCrop;
 	public static Block pamblackberryCrop;
 	public static Block pamblueberryCrop;
 	public static Block pamcandleberryCrop;
@@ -343,6 +344,7 @@ public class BlockRegistry
 		JicamaCrop = RegisterPamCrop("JicamaCrop");
 		JuniperberryCrop = RegisterPamCrop("JuniperberryCrop");
 		JuteCrop = RegisterPamCrop("JuteCrop");
+		KaleCrop = RegisterPamCrop("KaleCrop");
 		pamblackberryCrop = RegisterPamCrop("pamblackberryCrop");
 		pamblueberryCrop = RegisterPamCrop("pamblueberryCrop");
 		pamcandleberryCrop = RegisterPamCrop("pamcandleberryCrop");
