@@ -954,40 +954,9 @@ GameRegistry.registerItem(freshmilkItem = new Item().setUnlocalizedName("freshmi
 
                 RegisterCrops();
                 RegisterSeeds();
+                RegisterFruits();
 
-GameRegistry.registerItem(almondItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("almondItem").setCreativeTab(harvestcraft.modTab), "almondItem");
-GameRegistry.registerItem(apricotItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("apricotItem").setCreativeTab(harvestcraft.modTab), "apricotItem");
-GameRegistry.registerItem(avocadoItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("avocadoItem").setCreativeTab(harvestcraft.modTab), "avocadoItem");
-GameRegistry.registerItem(bananaItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("bananaItem").setCreativeTab(harvestcraft.modTab), "bananaItem");
-GameRegistry.registerItem(cashewItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("cashewItem").setCreativeTab(harvestcraft.modTab), "cashewItem");
-GameRegistry.registerItem(cherryItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("cherryItem").setCreativeTab(harvestcraft.modTab), "cherryItem");
-GameRegistry.registerItem(chestnutItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("chestnutItem").setCreativeTab(harvestcraft.modTab), "chestnutItem");
-GameRegistry.registerItem(cinnamonItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("cinnamonItem").setCreativeTab(harvestcraft.modTab), "cinnamonItem"); 
-GameRegistry.registerItem(coconutItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("coconutItem").setCreativeTab(harvestcraft.modTab), "coconutItem");
-GameRegistry.registerItem(dateItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("dateItem").setCreativeTab(harvestcraft.modTab), "dateItem");
-GameRegistry.registerItem(dragonfruitItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("dragonfruitItem").setCreativeTab(harvestcraft.modTab), "dragonfruitItem");
-GameRegistry.registerItem(durianItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("durianItem").setCreativeTab(harvestcraft.modTab), "durianItem");
-GameRegistry.registerItem(figItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("figItem").setCreativeTab(harvestcraft.modTab), "figItem");
-GameRegistry.registerItem(grapefruitItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("grapefruitItem").setCreativeTab(harvestcraft.modTab), "grapefruitItem");
-GameRegistry.registerItem(lemonItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("lemonItem").setCreativeTab(harvestcraft.modTab), "lemonItem");
-GameRegistry.registerItem(limeItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("limeItem").setCreativeTab(harvestcraft.modTab), "limeItem");
-GameRegistry.registerItem(maplesyrupItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("maplesyrupItem").setCreativeTab(harvestcraft.modTab), "maplesyrupItem");
-GameRegistry.registerItem(mangoItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("mangoItem").setCreativeTab(harvestcraft.modTab), "mangoItem");
-GameRegistry.registerItem(nutmegItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("nutmegItem").setCreativeTab(harvestcraft.modTab), "nutmegItem");
-GameRegistry.registerItem(oliveItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("oliveItem").setCreativeTab(harvestcraft.modTab), "oliveItem");
-GameRegistry.registerItem(orangeItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("orangeItem").setCreativeTab(harvestcraft.modTab), "orangeItem");
-GameRegistry.registerItem(papayaItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("papayaItem").setCreativeTab(harvestcraft.modTab), "papayaItem");
-GameRegistry.registerItem(peachItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("peachItem").setCreativeTab(harvestcraft.modTab), "peachItem");
-GameRegistry.registerItem(pearItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("pearItem").setCreativeTab(harvestcraft.modTab), "pearItem");
-GameRegistry.registerItem(pecanItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("pecanItem").setCreativeTab(harvestcraft.modTab), "pecanItem");
-GameRegistry.registerItem(peppercornItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("peppercornItem").setCreativeTab(harvestcraft.modTab), "peppercornItem");
-GameRegistry.registerItem(persimmonItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("persimmonItem").setCreativeTab(harvestcraft.modTab), "persimmonItem");
-GameRegistry.registerItem(pistachioItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("pistachioItem").setCreativeTab(harvestcraft.modTab), "pistachioItem");
-GameRegistry.registerItem(plumItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("plumItem").setCreativeTab(harvestcraft.modTab), "plumItem");
-GameRegistry.registerItem(pomegranateItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("pomegranateItem").setCreativeTab(harvestcraft.modTab), "pomegranateItem");
-GameRegistry.registerItem(starfruitItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("starfruitItem").setCreativeTab(harvestcraft.modTab), "starfruitItem");
-GameRegistry.registerItem(vanillabeanItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("vanillabeanItem").setCreativeTab(harvestcraft.modTab), "vanillabeanItem");
-GameRegistry.registerItem(walnutItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("walnutItem").setCreativeTab(harvestcraft.modTab), "walnutItem");
+
 GameRegistry.registerItem(calamaricookedItem = new ItemFood(5, meatymealsaturation, false).setUnlocalizedName("calamaricookedItem").setCreativeTab(harvestcraft.modTab), "calamaricookedItem");
 GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cropsaturationRestore, false).setUnlocalizedName("sunflowerseedsItem").setCreativeTab(harvestcraft.modTab), "sunflowerseedsItem");
 GameRegistry.registerItem(gooseberryItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("gooseberryItem").setCreativeTab(harvestcraft.modTab), "gooseberryItem");
@@ -1732,6 +1701,52 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                         .setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
                 GameRegistry.registerItem(seed, _name);
                 return seed;
+        }
+
+
+        private static void RegisterFruits()
+        {
+                almondItem = RegisterFruit("almondItem");
+                apricotItem = RegisterFruit("apricotItem");
+                avocadoItem = RegisterFruit("avocadoItem");
+                bananaItem = RegisterFruit("bananaItem");
+                cashewItem = RegisterFruit("cashewItem");
+                cherryItem = RegisterFruit("cherryItem");
+                chestnutItem = RegisterFruit("chestnutItem");
+                cinnamonItem = RegisterFruit("cinnamonItem"); 
+                coconutItem = RegisterFruit("coconutItem");
+                dateItem = RegisterFruit("dateItem");
+                dragonfruitItem = RegisterFruit("dragonfruitItem");
+                durianItem = RegisterFruit("durianItem");
+                figItem = RegisterFruit("figItem");
+                grapefruitItem = RegisterFruit("grapefruitItem");
+                lemonItem = RegisterFruit("lemonItem");
+                limeItem = RegisterFruit("limeItem");
+                maplesyrupItem = RegisterFruit("maplesyrupItem");
+                mangoItem = RegisterFruit("mangoItem");
+                nutmegItem = RegisterFruit("nutmegItem");
+                oliveItem = RegisterFruit("oliveItem");
+                orangeItem = RegisterFruit("orangeItem");
+                papayaItem = RegisterFruit("papayaItem");
+                peachItem = RegisterFruit("peachItem");
+                pearItem = RegisterFruit("pearItem");
+                pecanItem = RegisterFruit("pecanItem");
+                peppercornItem = RegisterFruit("peppercornItem");
+                persimmonItem = RegisterFruit("persimmonItem");
+                pistachioItem = RegisterFruit("pistachioItem");
+                plumItem = RegisterFruit("plumItem");
+                pomegranateItem = RegisterFruit("pomegranateItem");
+                starfruitItem = RegisterFruit("starfruitItem");
+                vanillabeanItem = RegisterFruit("vanillabeanItem");
+                walnutItem = RegisterFruit("walnutItem");
+        }
+
+
+        private static Item RegisterFruit(String _name)
+        {
+                Item fruit = new ItemFood(cropfoodRestore, false).setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(fruit, _name);                
+                return fruit;
         }
 
 
