@@ -17,25 +17,6 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
  
 public class PamFoodRecipes
 {
-     public static String[] cropName =
-     {
-          "cropAgave", "cropAmaranth", "cropArrowroot", "cropCassava", "cropChickpea", "cropElderberry",
-          "cropFlax", "cropGigaPickle", "cropGreenGrape", "cropHuckleberry", "cropJicama", "cropJuniperberry",
-          "cropJute", "cropKale", "cropKenaf", "cropKohlrabi", "cropLentil", "cropMillet", "cropMulberry",
-          "cropQuinoa", "cropSisal", "cropTaro", "cropTomatillo",
-          "cropAsparagus", "cropBarley", "cropBean", "cropBeet", "cropBroccoli", "cropCauliflower",
-          "cropCelery", "cropCranberry", "cropGarlic", "cropGinger", "cropLeek", "cropLettuce", "cropOats",
-          "cropOnion", "cropParsnip", "cropPeanut", "cropPineapple", "cropRadish", "cropRice", "cropRutabaga",
-          "cropRye", "cropScallion", "cropSoybean", "cropSpiceleaf", "cropSweetpotato", "cropTea", "cropTurnip",
-          "cropWhitemushroom", "cropArtichoke", "cropBellpepper", "cropBlackberry", "cropBlueberry",
-          "cropBrusselsprout", "cropCabbage", "cropCactusfruit", "cropCandleberry", "cropCantaloupe",
-          "cropChilipepper", "cropCoffee", "cropCorn", "cropCotton", "cropCucumber", "cropEggplant",
-          "cropGrape", "cropKiwi", "cropMustard", "cropOkra", "cropPeas", "cropRaspberry", "cropRhubarb",
-          "cropSeaweed", "cropStrawberry", "cropTomato", "cropWintersquash", "cropZucchini", "cropBambooshoot",
-          "cropSpinach", "cropCurryleaf", "cropSesame", "cropWaterchestnut"
-     };
-   
-
      public static void getRecipes()
      {
           List<IRecipe> recipeList = CraftingManager.getInstance().getRecipeList();
@@ -58,7 +39,7 @@ public class PamFoodRecipes
      
           if (ItemRegistry.enablecroptoseedRecipe)
           {
-               for (int i = 0; i < cropName.length; i++)
+               for (int i = 0; i < ItemRegistry.PamCropItems.length; i++)
                {
                     if ((!BlockRegistry.enablecropspecialplanting) || ((ItemRegistry.PamCropItems[i] != ItemRegistry.cranberryItem) && (ItemRegistry.PamCropItems[i] != ItemRegistry.riceItem) && (ItemRegistry.PamCropItems[i] != ItemRegistry.seaweedItem)))
                     {
