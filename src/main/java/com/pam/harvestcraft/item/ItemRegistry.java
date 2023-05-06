@@ -131,7 +131,7 @@ public class ItemRegistry
         public static Item KenafItem;
         public static Item KohlrabiItem;
         public static Item LentilItem;
-        public static Item MiletItem;
+        public static Item MilletItem;
         public static Item MulberryItem;
         public static Item QuinoaItem;
         public static Item SisalItem;
@@ -1468,7 +1468,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
         {
                 PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
                         ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
-                        JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem, MiletItem,
+                        JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem, MilletItem,
                         MulberryItem, QuinoaItem, SisalItem, TaroItem, TomatilloItem,
                         asparagusItem, barleyItem, beanItem, beetItem, broccoliItem, cauliflowerItem, celeryItem,
                         cranberryItem, garlicItem, gingerItem, leekItem, lettuceItem, oatsItem, onionItem,
@@ -1528,7 +1528,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 KenafItem = RegisterCrop(BlockRegistry.KenafCrop, Blocks.farmland, "KenafItem");
                 KohlrabiItem = RegisterCrop(BlockRegistry.KohlrabiCrop, Blocks.farmland, "KohlrabiItem");
                 LentilItem = RegisterCrop(BlockRegistry.LentilCrop, Blocks.farmland, "LentilItem");
-                MiletItem = RegisterCrop(BlockRegistry.MilletCrop, Blocks.farmland, "MilletItem");
+                MilletItem = RegisterCrop(BlockRegistry.MilletCrop, Blocks.farmland, "MilletItem");
                 MulberryItem = RegisterCrop(BlockRegistry.MulberryCrop, Blocks.farmland, "MulberryItem");
                 QuinoaItem = RegisterCrop(BlockRegistry.QuinoaCrop, Blocks.farmland, "QuinoaItem");
                 SisalItem = RegisterCrop(BlockRegistry.SisalCrop, Blocks.farmland, "SisalItem");
