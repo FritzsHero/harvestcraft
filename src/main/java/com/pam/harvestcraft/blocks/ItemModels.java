@@ -31,13 +31,6 @@ public class ItemModels
 	}
 
 
-	// Shorthand utility method for Item.getItemFromBlock(block)
-	private static Item getItem(Block block)
-	{
-		return Item.getItemFromBlock(block);
-	}
-
-
 	private static void RegisterGardenModels()
 	{
 		RegisterGardenModel(BlockRegistry.AridGardenBlock, "aridgarden");
@@ -51,7 +44,7 @@ public class ItemModels
 
 	private static void RegisterGardenModel(Block _gardenBlock, String _name)
 	{
-		registerItemModels(getItem(_gardenBlock), new ItemModelList("gardens/")
+		registerItemModels(Item.getItemFromBlock(_gardenBlock), new ItemModelList("gardens/")
 			.add(0, _name));
 	}
 
@@ -146,7 +139,7 @@ public class ItemModels
 
 	private static void RegisterCropModel(Block _cropBlock, String _name)
 	{
-		registerItemModels(getItem(_cropBlock), new ItemModelList("crops/")
+		registerItemModels(Item.getItemFromBlock(_cropBlock), new ItemModelList("crops/")
 			.add(0, _name + "_stage0")
 			.add(1, _name + "_stage1")
 			.add(2, _name + "_stage2")
@@ -197,7 +190,7 @@ public class ItemModels
 
 	private static void RegisterFruitModel(Block _fruitBlock, String _name)
 	{
-		registerItemModels(getItem(_fruitBlock), new ItemModelList("fruits/")
+		registerItemModels(Item.getItemFromBlock(_fruitBlock), new ItemModelList("fruits/")
 			.add(0, _name + "_stage0")
 			.add(1, _name + "_stage1")
 			.add(2, _name + "_stage2"));
@@ -247,7 +240,7 @@ public class ItemModels
 
 	private static void RegisterSaplingModel(Block _saplingBlock, String _name)
 	{
-		registerItemModels(getItem(_saplingBlock), new ItemModelList("saplings/")
+		registerItemModels(Item.getItemFromBlock(_saplingBlock), new ItemModelList("saplings/")
 			.add(0, _name + "_sapling"));
 	}
 
