@@ -56,47 +56,19 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MOUNTAIN)))		
 		{
 			{
-				rarity = BlockRegistry.temperatefruittreeRarity;
+				rarity = BlockRegistry.temperatefruittreeRarity / 2;
 				woodType = BlockPlanks.EnumType.OAK;
 
-				switch (random.nextInt(9))
+				for(int i = 0; i < 9; i++)
 				{
-				case 0: 
-					fruitType = BlockRegistry.pamApple;
-					break;
-				case 1: 
-					fruitType = BlockRegistry.pamAvocado;
-					break;
-				case 2: 
-					fruitType = BlockRegistry.pamCherry;
-					break;
-				case 3: 
-					fruitType = BlockRegistry.pamChestnut;
-					break;
-				case 4: 
-					fruitType = BlockRegistry.pamNutmeg;
-					break;
-				case 5: 
-					fruitType = BlockRegistry.pamPear;
-					break;
-				case 6: 
-					fruitType = BlockRegistry.pamPlum;
-					break;
-				case 7: 
-					fruitType = BlockRegistry.pamWalnut;
-					break;
-				case 8: 
-					fruitType = BlockRegistry.pamGooseberry;
-					break;
+					fruitType = GetTemperateFruit(random);
+					GenerateTree(world, random, xCh, yCh + 64, zCh);
 				}
-
-				
-				GenerateTree(world, random, xCh, yCh + 64, zCh);
 			}
 		}
 		
 		if (((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.WET)) 
-				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) 
+				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS))
 				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DRY))) 
 				|| ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.HOT)) 
 						&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) 
@@ -106,90 +78,11 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				rarity = BlockRegistry.tropicalfruittreeRarity;
 				woodType = BlockPlanks.EnumType.JUNGLE;
 
-
-				switch (random.nextInt(24))
+				for(int i = 0; i < 18; i++)
 				{
-				case 0: 
-					fruitType = BlockRegistry.pamBanana;
-					break;
-				case 1: 
-					isLogFruit = true;
-					fruitType = BlockRegistry.pamCinnamon;
-					break;
-				case 2: 
-					fruitType = BlockRegistry.pamCoconut;
-					break;
-				case 3: 
-					fruitType = BlockRegistry.pamDate;
-					break;
-				case 4: 
-					fruitType = BlockRegistry.pamDragonfruit;
-					break;
-				case 5: 
-					fruitType = BlockRegistry.pamPapaya;
-					break;
-				case 6: 
-					fruitType = BlockRegistry.pamAlmond;
-					break;
-				case 7: 
-					fruitType = BlockRegistry.pamApricot;
-					break;
-				case 8: 
-					fruitType = BlockRegistry.pamCashew;
-					break;
-				case 9: 
-					fruitType = BlockRegistry.pamDurian;
-					break;
-				case 10: 
-					fruitType = BlockRegistry.pamFig;
-					break;
-				case 11: 
-					fruitType = BlockRegistry.pamGrapefruit;
-					break;
-				case 12: 
-					fruitType = BlockRegistry.pamLemon;
-					break;
-				case 13: 
-					fruitType = BlockRegistry.pamLime;
-					break;
-				case 14: 
-					fruitType = BlockRegistry.pamMango;
-					break;
-				case 15: 
-					fruitType = BlockRegistry.pamOrange;
-					break;
-				case 16: 
-					isLogFruit = true;
-					fruitType = BlockRegistry.pamPaperbark;
-					break;
-				case 17: 
-					fruitType = BlockRegistry.pamPeach;
-					break;
-				case 18: 
-					fruitType = BlockRegistry.pamPecan;
-					break;
-				case 19: 
-					fruitType = BlockRegistry.pamPeppercorn;
-					break;
-				case 20: 
-					fruitType = BlockRegistry.pamPersimmon;
-					break;
-				case 21: 
-					fruitType = BlockRegistry.pamPistachio;
-					break;
-				case 22: 
-					fruitType = BlockRegistry.pamPomegranate;
-					break;
-				case 23: 
-					fruitType = BlockRegistry.pamStarfruit;
-					break;
-				case 24: 
-					fruitType = BlockRegistry.pamVanillabean;
-				  	break;
+					fruitType = GetTropicalFruit(random);
+					GenerateTree(world, random, xCh, yCh + 64, zCh);
 				}
-
-
-				GenerateTree(world, random, xCh, yCh + 64, zCh);
 			}
 		}
 
@@ -214,6 +107,98 @@ public class FruitTreeWorldGen implements IWorldGenerator
 			GenerateTree(world, random, xCh, yCh + 64, zCh);
 		}
 	}
+
+
+	private Block GetTemperateFruit(Random _random)
+	{
+		switch (_random.nextInt(9))
+		{
+			case 0:
+				return BlockRegistry.pamApple;
+			case 1:
+				return BlockRegistry.pamAvocado;
+			case 2:
+				return BlockRegistry.pamCherry;
+			case 3:
+				return BlockRegistry.pamChestnut;
+			case 4:
+				return BlockRegistry.pamNutmeg;
+			case 5:
+				return BlockRegistry.pamPear;
+			case 6:
+				return BlockRegistry.pamPlum;
+			case 7:
+				return BlockRegistry.pamWalnut;
+			case 8:
+				return BlockRegistry.pamGooseberry;
+			default:
+				return BlockRegistry.pamApple;
+		}
+	}
+
+
+	private Block GetTropicalFruit(Random _random)
+	{
+		isLogFruit = false;
+
+		switch (_random.nextInt(24))
+		{
+			case 0:
+				return BlockRegistry.pamBanana;
+			case 1:
+				isLogFruit = true;
+				return BlockRegistry.pamCinnamon;
+			case 2:
+				return BlockRegistry.pamCoconut;
+			case 3:
+				return BlockRegistry.pamDate;
+			case 4:
+				return BlockRegistry.pamDragonfruit;
+			case 5:
+				return BlockRegistry.pamPapaya;
+			case 6:
+				return BlockRegistry.pamAlmond;
+			case 7:
+				return BlockRegistry.pamApricot;
+			case 8:
+				return BlockRegistry.pamCashew;
+			case 9:
+				return BlockRegistry.pamDurian;
+			case 10:
+				return BlockRegistry.pamFig;
+			case 11:
+				return BlockRegistry.pamGrapefruit;
+			case 12:
+				return BlockRegistry.pamLemon;
+			case 13:
+				return BlockRegistry.pamLime;
+			case 14:
+				return BlockRegistry.pamMango;
+			case 15:
+				return BlockRegistry.pamOrange;
+			case 16:
+				isLogFruit = true;
+				return BlockRegistry.pamPaperbark;
+			case 17:
+				return BlockRegistry.pamPeach;
+			case 18:
+				return BlockRegistry.pamPecan;
+			case 19:
+				return BlockRegistry.pamPeppercorn;
+			case 20:
+				return BlockRegistry.pamPersimmon;
+			case 21:
+				return BlockRegistry.pamPistachio;
+			case 22:
+				return BlockRegistry.pamPomegranate;
+			case 23:
+				return BlockRegistry.pamStarfruit;
+			case 24:
+				return BlockRegistry.pamVanillabean;
+			default:
+				return BlockRegistry.pamApple;
+		}
+	}
 	
 
 	public boolean GenerateTree(World world, Random random, int x, int y, int z)
@@ -222,23 +207,21 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		final IBlockState b = Blocks.leaves.getDefaultState().withProperty(BlockOldLeaf.VARIANT, woodType).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
 		final IBlockState c = fruitType.getDefaultState();
 
+		for (int tries = 0; tries < rarity; tries++)
 		{
-			for (int tries = 0; tries < rarity; tries++)
+			int i1 = (x + random.nextInt(8)) - random.nextInt(8);
+			int j1 = (y + random.nextInt(4)) - random.nextInt(4);
+			int k1 = (z + random.nextInt(8)) - random.nextInt(8);
+			BlockPos pos = new BlockPos(i1, j1, k1);
+			if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
 			{
-				int i1 = (x + random.nextInt(8)) - random.nextInt(8);
-				int j1 = (y + random.nextInt(4)) - random.nextInt(4);
-				int k1 = (z + random.nextInt(8)) - random.nextInt(8);
-				BlockPos pos = new BlockPos(i1, j1, k1);
-				if (world.isAirBlock(pos) && Blocks.yellow_flower.canBlockStay(world, pos, world.getBlockState(pos)))
+				if(isLogFruit)
 				{
-					if(isLogFruit)
-					{
-						new LogFruitTreeGen(true, 5, a, b, c).generate(world, random, pos);
-					}
-					else
-					{
-						new FruitTreeGen(true, 5, a, b, false, c).generate(world, random, pos);
-					}
+					new LogFruitTreeGen(true, 5, a, b, c).generate(world, random, pos);
+				}
+				else
+				{
+					new FruitTreeGen(true, 5, a, b, false, c).generate(world, random, pos);
 				}
 			}
 		}
