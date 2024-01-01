@@ -963,7 +963,6 @@ GameRegistry.registerItem(freshmilkItem = new Item().setUnlocalizedName("freshmi
                 
 
 GameRegistry.registerItem(calamaricookedItem = new ItemFood(5, meatymealsaturation, false).setUnlocalizedName("calamaricookedItem").setCreativeTab(harvestcraft.modTab), "calamaricookedItem");
-GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cropsaturationRestore, false).setUnlocalizedName("sunflowerseedsItem").setCreativeTab(harvestcraft.modTab), "sunflowerseedsItem");
 GameRegistry.registerItem(gooseberryItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("gooseberryItem").setCreativeTab(harvestcraft.modTab), "gooseberryItem");
 GameRegistry.registerItem(grilledasparagusItem = new ItemFood(4, mealsaturation, false).setUnlocalizedName("grilledasparagusItem").setCreativeTab(harvestcraft.modTab), "grilledasparagusItem");
 GameRegistry.registerItem(bakedsweetpotatoItem = new ItemFood(4, mealsaturation, false).setUnlocalizedName("bakedsweetpotatoItem").setCreativeTab(harvestcraft.modTab), "bakedsweetpotatoItem");
@@ -1397,6 +1396,7 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
 
         private static void CreateCropAndFruitList()
         {
+                //Sunflower is registered differently
                 PamCropItems = new Item[] { AgaveItem, AmaranthItem, ArrowrootItem, CassavaItem, ChickpeaItem,
                         ElderberryItem, FlaxItem, GigaPickleItem, GreenGrapeItem, HuckleberryItem, JicamaItem,
                         JuniperberryItem, JuteItem, KaleItem, KenafItem, KohlrabiItem, LentilItem, MilletItem,
@@ -1463,6 +1463,8 @@ GameRegistry.registerItem(toadintheholeItem = new ItemFood(10, meatymealsaturati
                 MulberryItem = RegisterCrop(BlockRegistry.MulberryCrop, Blocks.farmland, "MulberryItem");
                 QuinoaItem = RegisterCrop(BlockRegistry.QuinoaCrop, Blocks.farmland, "QuinoaItem");
                 SisalItem = RegisterCrop(BlockRegistry.SisalCrop, Blocks.farmland, "SisalItem");
+                //Old: GameRegistry.registerItem(sunflowerseedsItem = new ItemFood(cropfoodRestore, cropsaturationRestore, false).setUnlocalizedName("sunflowerseedsItem").setCreativeTab(harvestcraft.modTab), "sunflowerseedsItem");
+                sunflowerseedsItem = RegisterCrop(BlockRegistry.SunflowerCrop, Blocks.farmland, "sunflowerseedsItem");
                 TaroItem = RegisterCrop(BlockRegistry.TaroCrop, Blocks.farmland, "TaroItem");
                 TomatilloItem = RegisterCrop(BlockRegistry.TomatilloCrop, Blocks.farmland, "TomatilloItem");
                 blackberryItem = RegisterCrop(BlockRegistry.pamblackberryCrop, Blocks.farmland, "blackberryItem");

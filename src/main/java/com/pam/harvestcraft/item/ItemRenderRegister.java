@@ -41,7 +41,6 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.calamarirawItem);
 		//reg(ItemRegistry.muttoncookedItem);
 		reg(ItemRegistry.calamaricookedItem);
-		reg(ItemRegistry.sunflowerseedsItem);
 		reg(ItemRegistry.ediblerootItem);
 
 		reg(ItemRegistry.almondItem);
@@ -700,6 +699,8 @@ public final class ItemRenderRegister
         {
             reg(ItemRegistry.PamSeeds[i]);
         }
+
+		reg(ItemRegistry.sunflowerseedsItem);
 	}
 
 

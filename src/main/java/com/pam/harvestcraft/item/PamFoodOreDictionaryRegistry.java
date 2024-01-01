@@ -1094,6 +1094,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("listAllseed", Items.melon_seeds);
 
 		OreDictionary.registerOre("listAllseed", ItemRegistry.sunflowerseedsItem);
+		//sunflowerseedsItem is also registered as "cropSunflower"
 		
 		for(int i = 0; i < ItemRegistry.PamSeeds.length; i++)
 		{
