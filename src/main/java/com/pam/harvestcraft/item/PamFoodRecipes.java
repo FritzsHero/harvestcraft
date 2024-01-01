@@ -510,6 +510,7 @@ public class PamFoodRecipes
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.kiwismoothieItem, new Object[] { "toolJuicer", "cropKiwi", Items.snowball }));
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.kiwiyogurtItem, new Object[] { "cropKiwi", "foodPlainyogurt" }));
           recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.plainyogurtItem, 4, 0), new Object[] { "listAllmilk", Items.leather }));
+          recipeList.add(new ShapelessOreRecipe(ItemRegistry.plainyogurtItem, new Object[] { "toolPot", "listAllmilk" }));
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.appleyogurtItem, new Object[] { "cropApple", "foodPlainyogurt" }));
      
           recipeList.add(new ShapelessOreRecipe(ItemRegistry.saltedsunflowerseedsItem, new Object[] { "cropSunflower", "foodSalt" }));
