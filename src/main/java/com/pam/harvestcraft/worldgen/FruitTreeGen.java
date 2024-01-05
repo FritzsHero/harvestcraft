@@ -143,7 +143,7 @@ public class FruitTreeGen extends WorldGenAbstractTree
                         BlockPos upN = position.up(j3);
                         Block block2 = worldIn.getBlockState(upN).getBlock();
 
-                        if (block2.isAir(worldIn, upN) || block2.isLeaves(worldIn, upN) || block2.getDefaultState() == fruitType)
+                        if (block2.isAir(worldIn, upN) || block2.isLeaves(worldIn, upN) || block2.getMaterial() == Material.vine || block2.getDefaultState() == fruitType)
                         {
                             setBlockAndNotifyAdequately(worldIn, position.up(j3), metaWood);
 
