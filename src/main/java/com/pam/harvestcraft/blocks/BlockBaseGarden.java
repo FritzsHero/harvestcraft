@@ -3,16 +3,18 @@ package com.pam.harvestcraft.blocks;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
 import java.util.*;
 
 
-/**
- * Created by Matt on 4/8/2016.
- */
+/** Created by Matt on 4/8/2016. **/
 public abstract class BlockBaseGarden extends BlockBush
 {
     public static Map<String, List<ItemStack>> drops = new HashMap<String, List<ItemStack>>();
@@ -50,5 +52,24 @@ public abstract class BlockBaseGarden extends BlockBush
             newStack.add(drop.copy());
         }
         return newStack;
+    }
+
+
+    /* Right-click harvests crop item*/
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
+	{
+        if (worldIn.isRemote)
+        {
+            return true;
+        }
+        if (playerIn.getHeldItem() != null)
+        {
+            return true;
+        }
+
+        spawnAsEntity(worldIn, pos, new ItemStack(this));
+        worldIn.setBlockState(pos, Blocks.air.getDefaultState(), 3);
+        return true;
     }
 }
