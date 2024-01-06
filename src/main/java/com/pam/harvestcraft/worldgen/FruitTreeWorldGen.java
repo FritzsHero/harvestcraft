@@ -56,10 +56,11 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.MOUNTAIN)))		
 		{
 			{
-				rarity = BlockRegistry.temperatefruittreeRarity / 2;
+				rarity = BlockRegistry.temperatefruittreeRarity;
 				woodType = BlockPlanks.EnumType.OAK;
 
-				for(int i = 0; i < 9; i++)
+				//4 is a good value, 3 is to low only 1-2 trees per fruitTree location
+				for(int i = 0; i < 4; i++)
 				{
 					fruitType = GetTemperateFruit(random);
 					GenerateTree(world, random, xCh, yCh + 64, zCh);
@@ -67,18 +68,14 @@ public class FruitTreeWorldGen implements IWorldGenerator
 			}
 		}
 		
-		if (((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.WET)) 
-				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS))
-				&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DRY))) 
-				|| ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.HOT)) 
-						&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) 
-						&& (!BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.DRY))))
+		if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.JUNGLE))
 		{
 			{
 				rarity = BlockRegistry.tropicalfruittreeRarity;
 				woodType = BlockPlanks.EnumType.JUNGLE;
 
-				for(int i = 0; i < 18; i++)
+				//16 is a good value
+				for(int i = 0; i < 16; i++)
 				{
 					fruitType = GetTropicalFruit(random);
 					GenerateTree(world, random, xCh, yCh + 64, zCh);
@@ -91,8 +88,12 @@ public class FruitTreeWorldGen implements IWorldGenerator
 		{
 			rarity = BlockRegistry.tropicalfruittreeRarity;
 			woodType = BlockPlanks.EnumType.JUNGLE;
-			fruitType = BlockRegistry.pamOlive;
-			GenerateTree(world, random, xCh, yCh + 64, zCh);
+
+			for(int i = 0; i < 2; i++)
+			{
+				fruitType = BlockRegistry.pamOlive;
+				GenerateTree(world, random, xCh, yCh + 64, zCh);
+			}
 		}
 
 		
@@ -101,10 +102,14 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				|| (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.CONIFEROUS)))
 		{
 			rarity = BlockRegistry.tropicalfruittreeRarity;
-			isLogFruit = true;
 			woodType = BlockPlanks.EnumType.SPRUCE;
-			fruitType = BlockRegistry.pamMaple;
-			GenerateTree(world, random, xCh, yCh + 64, zCh);
+
+			for(int i = 0; i < 2; i++)
+			{
+				isLogFruit = true;
+				fruitType = BlockRegistry.pamMaple;
+				GenerateTree(world, random, xCh, yCh + 64, zCh);
+			}
 		}
 	}
 
