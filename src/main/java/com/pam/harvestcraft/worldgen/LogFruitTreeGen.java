@@ -131,7 +131,7 @@ public class LogFruitTreeGen extends WorldGenAbstractTree
                         BlockPos upN = position.up(j3);
                         Block block2 = worldIn.getBlockState(upN).getBlock();
 
-                        if (block2.isAir(worldIn, upN))
+                        if (block2.isAir(worldIn, upN) || block2.getMaterial() == Material.vine)
                         {
                         	setBlockAndNotifyAdequately(worldIn, position.up(j3), fruitWoodType);
                         }
