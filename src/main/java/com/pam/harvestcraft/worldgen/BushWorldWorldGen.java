@@ -51,9 +51,11 @@ public class BushWorldWorldGen implements IWorldGenerator
 			generateSoggyGarden(world, random, xCh, yCh + 64, zCh);
 		}
 		
-		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.JUNGLE)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.OCEAN)))
+		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.JUNGLE)))
 		{
 			generateTropicalGarden(world, random, xCh, yCh + 64, zCh);
+			//Do it again, since the spawn rate is so low, because of all the grass in jungle
+			generateTropicalGarden(world, random, xCh, 64, zCh);
 		}
 		
 		if ((BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.PLAINS)) || (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SAVANNA)))
