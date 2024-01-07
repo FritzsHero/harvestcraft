@@ -1,5 +1,10 @@
 # Changelog
 
+## [Version: 2.0.1] - 2024.01.07
+### Change
+- Added tropical gardens back to Ocean biome
+
+
 ## [Version: 2.0.0] - 2024.01.06
 ### Improvements
 - Fixed generation of LogFruitTrees with vines
