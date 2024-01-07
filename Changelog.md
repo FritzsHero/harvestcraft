@@ -1,5 +1,9 @@
 # Changelog
 
+## [Version: 2.0.2] - 2024.01.07
+### Change
+- Fixed client desync
+
 ## [Version: 2.0.1] - 2024.01.07
 ### Change
 - Added tropical gardens back to Ocean biome

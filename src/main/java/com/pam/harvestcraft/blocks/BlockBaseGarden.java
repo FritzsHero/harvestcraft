@@ -59,14 +59,15 @@ public abstract class BlockBaseGarden extends BlockBush
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumFacing side, float hitX, float hitY, float hitZ)
 	{
+        if (playerIn.getHeldItem() != null)
+        {
+            return false;
+        }
         if (worldIn.isRemote)
         {
             return true;
         }
-        if (playerIn.getHeldItem() != null)
-        {
-            return true;
-        }
+
 
         spawnAsEntity(worldIn, pos, new ItemStack(this));
         worldIn.setBlockState(pos, Blocks.air.getDefaultState(), 3);
