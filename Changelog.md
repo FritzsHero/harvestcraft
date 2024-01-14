@@ -1,13 +1,25 @@
 # Changelog
 
+
+## [Version: x.x.x] - xxxx.xx.xx
+### Change
+
+
+## [Version: 2.0.4] - 2024.01.14
+### Change
+- Fixed vines preventing leave generation
+
+
 ## [Version: 2.0.3] - 2024.01.14
 ### Change
 - Added tropical fruit trees back into swamps
 - Removed SuppressWarnings
 
+
 ## [Version: 2.0.2] - 2024.01.07
 ### Change
 - Fixed client desync
+
 
 ## [Version: 2.0.1] - 2024.01.07
 ### Change
