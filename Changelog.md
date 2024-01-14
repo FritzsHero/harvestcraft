@@ -1,5 +1,10 @@
 # Changelog
 
+## [Version: 2.0.3] - 2024.01.14
+### Change
+- Added tropical fruit trees back into swamps
+- Removed SuppressWarnings
+
 ## [Version: 2.0.2] - 2024.01.07
 ### Change
 - Fixed client desync

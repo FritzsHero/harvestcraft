@@ -82,6 +82,18 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				}
 			}
 		}
+		
+		if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SWAMP))
+		{
+			rarity = BlockRegistry.tropicalfruittreeRarity;
+			woodType = BlockPlanks.EnumType.JUNGLE;
+
+			for(int i = 0; i < 3; i++)
+			{
+				fruitType = GetTropicalFruit(random);
+				GenerateTree(world, random, xCh, yCh + 64, zCh);
+			}
+		}
 
 		
 		if (BiomeDictionary.isBiomeOfType(biome, BiomeDictionary.Type.SAVANNA))
