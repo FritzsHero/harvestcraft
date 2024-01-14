@@ -305,7 +305,6 @@ public class BlockPamFruit extends Block  implements IGrowable
 	}
 
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
 		list.add(new ItemStack(itemIn, 1, 0));

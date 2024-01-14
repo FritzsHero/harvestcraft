@@ -27,7 +27,6 @@ public class MetaItem extends Item
 	}
 
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override
 	public void getSubItems(Item itemIn, CreativeTabs tab, List subItems)
 	{

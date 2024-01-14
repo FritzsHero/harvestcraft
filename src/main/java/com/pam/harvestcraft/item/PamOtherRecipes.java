@@ -19,7 +19,6 @@ public class PamOtherRecipes
 	public static ItemStack book;
 
 
-	@SuppressWarnings("unchecked")
 	public static void getRecipes()
 	{
 		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{

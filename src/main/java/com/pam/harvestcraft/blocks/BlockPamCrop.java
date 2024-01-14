@@ -448,7 +448,6 @@ public class BlockPamCrop extends Block  implements IGrowable, net.minecraftforg
     }
 
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list) {
 		list.add(new ItemStack(itemIn, 1, 0));

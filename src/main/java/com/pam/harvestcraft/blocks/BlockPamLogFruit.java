@@ -169,7 +169,6 @@ public class BlockPamLogFruit extends Block  implements IGrowable
 	}
 
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, List list)
 	{
