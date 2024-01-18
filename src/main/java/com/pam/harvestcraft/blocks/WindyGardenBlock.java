@@ -1,16 +1,10 @@
 package com.pam.harvestcraft.blocks;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
-import com.google.common.collect.Lists;
-import com.pam.harvestcraft.Reference;
 import com.pam.harvestcraft.harvestcraft;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockBush;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;

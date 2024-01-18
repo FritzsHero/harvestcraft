@@ -1,7 +1,5 @@
 package com.pam.harvestcraft.item;
 
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.DamageSource;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 
 

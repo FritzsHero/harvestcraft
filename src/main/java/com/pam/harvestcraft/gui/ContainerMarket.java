@@ -1,7 +1,5 @@
 package com.pam.harvestcraft.gui;
 
-import java.util.List;
-
 import com.pam.harvestcraft.tileentity.TileEntityMarket;
 
 import net.minecraft.entity.player.EntityPlayer;

@@ -1,5 +1,5 @@
 ///*    */ package com.pam.harvestcraft.item;
-///*    */ import net.minecraft.entity.EntityLivingBase;
+
 ///*    */ import net.minecraft.entity.passive.EntitySheep;
 ///*    */ import net.minecraftforge.event.entity.living.LivingDropsEvent;
 ///*    */ 

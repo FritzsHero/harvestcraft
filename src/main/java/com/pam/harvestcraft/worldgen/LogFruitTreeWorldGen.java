@@ -2,9 +2,6 @@ package com.pam.harvestcraft.worldgen;
 
 import java.util.Random;
 
-import com.pam.harvestcraft.blocks.BlockRegistry;
-
-import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;

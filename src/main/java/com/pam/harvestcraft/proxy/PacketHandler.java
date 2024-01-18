@@ -1,4 +1,5 @@
-/*    */ package com.pam.harvestcraft.proxy;
+package com.pam.harvestcraft.proxy;
+
 import com.pam.harvestcraft.gui.MessageMarketBrowse;
 import com.pam.harvestcraft.gui.MessageMarketBuy;
 import com.pam.harvestcraft.gui.MessageMarketClosed;
