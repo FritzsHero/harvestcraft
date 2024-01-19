@@ -246,27 +246,27 @@ public class FruitTreeGen extends WorldGenAbstractTree
     }
 
 
-    private void func_181652_a(World p_181652_1_, int p_181652_2_, BlockPos p_181652_3_, EnumFacing p_181652_4_)
+    private void func_181652_a(World _world, int _age, BlockPos _blockPos, EnumFacing _enumFacing)
     {
-        setBlockAndNotifyAdequately(p_181652_1_, p_181652_3_, Blocks.cocoa.getDefaultState().withProperty(BlockCocoa.AGE, Integer.valueOf(p_181652_2_)).withProperty(BlockCocoa.FACING, p_181652_4_));
+        setBlockAndNotifyAdequately(_world, _blockPos, Blocks.cocoa.getDefaultState().withProperty(BlockCocoa.AGE, Integer.valueOf(_age)).withProperty(BlockCocoa.FACING, _enumFacing));
     }
 
 
-    private void func_181651_a(World p_181651_1_, BlockPos p_181651_2_, PropertyBool p_181651_3_)
+    private void func_181651_a(World _world, BlockPos _blockPos, PropertyBool _propertyBool)
     {
-        setBlockAndNotifyAdequately(p_181651_1_, p_181651_2_, Blocks.vine.getDefaultState().withProperty(p_181651_3_, Boolean.valueOf(true)));
+        setBlockAndNotifyAdequately(_world, _blockPos, Blocks.vine.getDefaultState().withProperty(_propertyBool, Boolean.valueOf(true)));
     }
 
 
-    private void func_181650_b(World p_181650_1_, BlockPos p_181650_2_, PropertyBool p_181650_3_)
+    private void func_181650_b(World _world, BlockPos _blockPos, PropertyBool _propertyBool)
     {
-        func_181651_a(p_181650_1_, p_181650_2_, p_181650_3_);
+        func_181651_a(_world, _blockPos, _propertyBool);
         int i = 4;
 
-        for (p_181650_2_ = p_181650_2_.down(); p_181650_1_.getBlockState(p_181650_2_).getBlock().isAir(p_181650_1_,p_181650_2_) && i > 0; --i)
+        for (_blockPos = _blockPos.down(); _world.getBlockState(_blockPos).getBlock().isAir(_world,_blockPos) && i > 0; --i)
         {
-            func_181651_a(p_181650_1_, p_181650_2_, p_181650_3_);
-            p_181650_2_ = p_181650_2_.down();
+            func_181651_a(_world, _blockPos, _propertyBool);
+            _blockPos = _blockPos.down();
         }
     }
 }
