@@ -870,7 +870,6 @@ public class PamFoodRecipes
           AddSmelting(Items.pumpkin_seeds, ItemRegistry.roastedpumpkinseedsItem);
           GameRegistry.addSmelting(Blocks.brown_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(Blocks.red_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
-          //GameRegistry.addSmelting(ItemRegistry.muttonrawItem, new ItemStack(ItemRegistry.muttoncookedItem, 1, 0), 0.1F);
 
           AddSmelting(ItemRegistry.asparagusItem, ItemRegistry.grilledasparagusItem);
           AddSmelting(ItemRegistry.riceItem, ItemRegistry.ricecakeItem);
