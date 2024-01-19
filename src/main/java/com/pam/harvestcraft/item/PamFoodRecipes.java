@@ -849,6 +849,7 @@ public class PamFoodRecipes
      }
 
 
+     //#region Smelting
      private static void RegisterSmelting()
      {
           RegisterGeneralSmelting();
@@ -920,4 +921,5 @@ public class PamFoodRecipes
           AddSmelting(ItemRegistry.snailrawItem, ItemRegistry.snailcookedItem);
           AddSmelting(ItemRegistry.turtlerawItem, ItemRegistry.turtlecookedItem);
      }
+     //#endregion
 }
