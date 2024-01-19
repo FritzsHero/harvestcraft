@@ -12,14 +12,16 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
- 
- 
- 
+
+
 public class PamFoodRecipes
 {
+     private static List<IRecipe> recipeList;
+
+
      public static void getRecipes()
      {
-          List<IRecipe> recipeList = CraftingManager.getInstance().getRecipeList();
+          recipeList = CraftingManager.getInstance().getRecipeList();
 
 
           AddSmelting();
