@@ -857,7 +857,6 @@ public class PamFoodRecipes
           GameRegistry.addSmelting(Blocks.red_mushroom, new ItemStack(ItemRegistry.grilledmushroomItem, 1, 0), 0.1F);
      
           //GameRegistry.addSmelting(ItemRegistry.muttonrawItem, new ItemStack(ItemRegistry.muttoncookedItem, 1, 0), 0.1F);
-          GameRegistry.addSmelting(ItemRegistry.calamarirawItem, new ItemStack(ItemRegistry.calamaricookedItem, 1, 0), 0.1F);
      
           GameRegistry.addSmelting(ItemRegistry.asparagusItem, new ItemStack(ItemRegistry.grilledasparagusItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.riceItem, new ItemStack(ItemRegistry.ricecakeItem, 1, 0), 0.1F);
@@ -873,6 +872,13 @@ public class PamFoodRecipes
           GameRegistry.addSmelting(ItemRegistry.chestnutItem, new ItemStack(ItemRegistry.roastedchestnutItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.sesameseedsItem, new ItemStack(ItemRegistry.toastedsesameseedsItem, 1, 0), 0.1F);
      
+          RegisterCookedFish();
+          RegisterOtherCookedFish();
+     }
+
+
+     private static void RegisterCookedFish()
+     {
           GameRegistry.addSmelting(ItemRegistry.anchovyrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.bassrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.carprawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
@@ -888,8 +894,12 @@ public class PamFoodRecipes
           GameRegistry.addSmelting(ItemRegistry.troutrawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.tunarawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.walleyerawItem, new ItemStack(Items.cooked_fish, 1, 0), 0.1F);
-     
- 
+     }
+
+
+     private static void RegisterOtherCookedFish()
+     {
+          GameRegistry.addSmelting(ItemRegistry.calamarirawItem, new ItemStack(ItemRegistry.calamaricookedItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.clamrawItem, new ItemStack(ItemRegistry.clamcookedItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.crabrawItem, new ItemStack(ItemRegistry.crabcookedItem, 1, 0), 0.1F);
           GameRegistry.addSmelting(ItemRegistry.crayfishrawItem, new ItemStack(ItemRegistry.crayfishcookedItem, 1, 0), 0.1F);
