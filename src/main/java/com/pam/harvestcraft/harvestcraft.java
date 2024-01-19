@@ -9,7 +9,6 @@ import com.pam.harvestcraft.item.ItemRenderRegister;
 import com.pam.harvestcraft.item.PamCropSeedDropRegistry;
 import com.pam.harvestcraft.item.PamFoodOreDictionaryRegistry;
 import com.pam.harvestcraft.item.PamFoodRecipes;
-import com.pam.harvestcraft.item.PamOtherOreDictionaryRegistry;
 import com.pam.harvestcraft.item.PamOtherRecipes;
 import com.pam.harvestcraft.item.PamSquidDrops;
 import com.pam.harvestcraft.proxy.CommonProxy;
@@ -64,7 +63,6 @@ public class harvestcraft {
         PamFoodRecipes.getRecipes();
         PamOtherRecipes.getRecipes();
         PamFoodOreDictionaryRegistry.getRegistry();
-        PamOtherOreDictionaryRegistry.getRegistry();
         PamCropSeedDropRegistry.getSeedDrops();
         FishRegistry.registerItems();
         MarketItems.registerItems();

@@ -1,5 +1,7 @@
 package com.pam.harvestcraft.item;
 
+import com.pam.harvestcraft.blocks.BlockRegistry;
+
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -1084,6 +1086,9 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("foodToadinthehole", ItemRegistry.toadintheholeItem);
 		OreDictionary.registerOre("foodTunapotato", ItemRegistry.tunapotatoItem);
 		OreDictionary.registerOre("foodYorkshirepudding", ItemRegistry.yorkshirepuddingItem);
+
+		
+		GetAdditionalRegistry();
 	}
 
 
@@ -1184,5 +1189,57 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("seedCurryleaf", ItemRegistry.curryleafseedItem);
 		OreDictionary.registerOre("seedSesameseed", ItemRegistry.sesameseedsseedItem);
 		OreDictionary.registerOre("seedWaterchestnut", ItemRegistry.waterchestnutseedItem);
+	}
+
+
+	public static void RegisterTools()
+	{
+		OreDictionary.registerOre("toolPot", ItemRegistry.potItem);
+		OreDictionary.registerOre("toolSkillet", ItemRegistry.skilletItem);
+		OreDictionary.registerOre("toolSaucepan", ItemRegistry.saucepanItem);
+		OreDictionary.registerOre("toolBakeware", ItemRegistry.bakewareItem);
+		OreDictionary.registerOre("toolCuttingboard", ItemRegistry.cuttingboardItem);
+		OreDictionary.registerOre("toolMortarandpestle", ItemRegistry.mortarandpestleItem);
+		OreDictionary.registerOre("toolMixingbowl", ItemRegistry.mixingbowlItem);
+		OreDictionary.registerOre("toolJuicer", ItemRegistry.juicerItem);
+	}
+
+
+	public static void GetAdditionalRegistry()
+	{
+		RegisterTools();
+
+		OreDictionary.registerOre("cropCotton", ItemRegistry.cottonItem);
+		OreDictionary.registerOre("seedCotton", ItemRegistry.cottonseedItem);
+		OreDictionary.registerOre("materialCloth", ItemRegistry.wovencottonItem);
+
+		OreDictionary.registerOre("cropCandle", ItemRegistry.candleberryItem);
+		OreDictionary.registerOre("cropCandleberry", ItemRegistry.candleberryItem);
+		OreDictionary.registerOre("seedCandleberry", ItemRegistry.candleberryseedItem);
+		//OreDictionary.registerOre("materialPressedwax", ItemRegistry.waxItem);
+
+		//OreDictionary.registerOre("grainBait", ItemRegistry.grainbaitItem);
+		//OreDictionary.registerOre("veggieBait", ItemRegistry.veggiebaitItem);
+		//OreDictionary.registerOre("fruitBait", ItemRegistry.fruitbaitItem);
+		//OreDictionary.registerOre("fishtrapBait", ItemRegistry.fishtrapbaitItem);
+
+		OreDictionary.registerOre("dustSalt", ItemRegistry.saltItem);
+		OreDictionary.registerOre("itemSalt", ItemRegistry.saltItem);
+
+		//OreDictionary.registerOre("beeQueen", ItemRegistry.queenbeeItem);
+		//OreDictionary.registerOre("materialWaxcomb", ItemRegistry.waxcombItem);
+		//OreDictionary.registerOre("materialHoneycomb", ItemRegistry.honeycombItem);
+		OreDictionary.registerOre("foodHoneydrop", ItemRegistry.honeyItem);
+		OreDictionary.registerOre("dropHoney", ItemRegistry.honeyItem);
+		//OreDictionary.registerOre("materialPressedwax", ItemRegistry.beeswaxItem);
+		//OreDictionary.registerOre("grubBee", ItemRegistry.grubItem);
+
+		OreDictionary.registerOre("flowerRed", Blocks.red_flower);
+		OreDictionary.registerOre("flowerYellow", Blocks.yellow_flower);
+		OreDictionary.registerOre("blockTorch", Blocks.torch);
+
+		OreDictionary.registerOre("logWood", BlockRegistry.pamMaple);
+		OreDictionary.registerOre("logWood", BlockRegistry.pamPaperbark);
+		OreDictionary.registerOre("logWood", BlockRegistry.pamCinnamon);
 	}
 }
