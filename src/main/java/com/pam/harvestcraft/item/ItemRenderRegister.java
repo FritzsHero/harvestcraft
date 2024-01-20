@@ -22,16 +22,9 @@ public final class ItemRenderRegister
 	{
 		RegisterCropRenderer();
 		RegisterSeedRenderer();
+		RegisterToolsRenderer();
 
 
-		reg(ItemRegistry.cuttingboardItem);
-		reg(ItemRegistry.potItem);
-		reg(ItemRegistry.skilletItem);
-		reg(ItemRegistry.saucepanItem);
-		reg(ItemRegistry.bakewareItem);
-		reg(ItemRegistry.mortarandpestleItem);
-		reg(ItemRegistry.mixingbowlItem);
-		reg(ItemRegistry.juicerItem);
 		reg(ItemRegistry.honeyItem);
 		reg(ItemRegistry.saltItem);
 		reg(ItemRegistry.wovencottonItem);
@@ -681,6 +674,19 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.bratwurstItem);
 		//reg(ItemRegistry.metaItem, 0, "meta_item_white");
 		//reg(ItemRegistry.metaItem, 1, "meta_item_black");
+	}
+
+
+	private static void RegisterToolsRenderer()
+	{
+		reg(ItemRegistry.cuttingboardItem);
+		reg(ItemRegistry.potItem);
+		reg(ItemRegistry.skilletItem);
+		reg(ItemRegistry.saucepanItem);
+		reg(ItemRegistry.bakewareItem);
+		reg(ItemRegistry.mortarandpestleItem);
+		reg(ItemRegistry.mixingbowlItem);
+		reg(ItemRegistry.juicerItem);
 	}
 
 
