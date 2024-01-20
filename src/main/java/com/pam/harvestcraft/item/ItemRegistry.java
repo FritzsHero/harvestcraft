@@ -82,6 +82,18 @@ public class ItemRegistry
         public static Item persimmonjuiceItem;
         // #endregion
 
+        //#region "Soda"
+        public static Item bubblywaterItem;
+        public static Item cherrysodaItem;
+        public static Item colasodaItem;
+        public static Item gingersodaItem;
+        public static Item grapesodaItem;
+        public static Item lemonlimesodaItem;
+        public static Item orangesodaItem;
+        public static Item rootbeersodaItem;
+        public static Item strawberrysodaItem;
+        //#endregion
+
         // #region "Fish"
         public static Item anchovyrawItem;
         public static Item bassrawItem;
@@ -643,15 +655,7 @@ public class ItemRegistry
         public static Item strawberryjellysandwichItem;
         public static Item watermelonjellyItem;
         public static Item watermelonjellysandwichItem;
-        public static Item bubblywaterItem;
-        public static Item cherrysodaItem;
-        public static Item colasodaItem;
-        public static Item gingersodaItem;
-        public static Item grapesodaItem;
-        public static Item lemonlimesodaItem;
-        public static Item orangesodaItem;
-        public static Item rootbeersodaItem;
-        public static Item strawberrysodaItem;
+
         public static Item caramelicecreamItem;
         public static Item mintchocolatechipicecreamItem;
         public static Item strawberryicecreamItem;
@@ -959,7 +963,9 @@ GameRegistry.registerItem(freshmilkItem = new Item().setUnlocalizedName("freshmi
                 RegisterPies();
                 RegisterBurgers();
                 RegisterJellySandwich();
-
+                
+                GameRegistry.registerItem(bubblywaterItem = new Item().setUnlocalizedName("bubblywaterItem").setCreativeTab(harvestcraft.modTab), "bubblywaterItem");
+                RegisterSodas();
                 
 
 GameRegistry.registerItem(gooseberryItem = new ItemFood(cropfoodRestore, false).setUnlocalizedName("gooseberryItem").setCreativeTab(harvestcraft.modTab), "gooseberryItem");
@@ -1149,16 +1155,6 @@ GameRegistry.registerItem(custardItem = new ItemFood(6, mealsaturation, false).s
 GameRegistry.registerItem(gardensoupItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("gardensoupItem").setCreativeTab(harvestcraft.modTab), "gardensoupItem");
 
 
-GameRegistry.registerItem(bubblywaterItem = new Item().setUnlocalizedName("bubblywaterItem").setCreativeTab(harvestcraft.modTab), "bubblywaterItem");
-GameRegistry.registerItem(cherrysodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("cherrysodaItem").setCreativeTab(harvestcraft.modTab), "cherrysodaItem");
-GameRegistry.registerItem(colasodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("colasodaItem").setCreativeTab(harvestcraft.modTab), "colasodaItem");
-GameRegistry.registerItem(gingersodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("gingersodaItem").setCreativeTab(harvestcraft.modTab), "gingersodaItem");
-GameRegistry.registerItem(grapesodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("grapesodaItem").setCreativeTab(harvestcraft.modTab), "grapesodaItem");
-GameRegistry.registerItem(lemonlimesodaItem = new ItemPamPotionFood(3, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("lemonlimesodaItem").setCreativeTab(harvestcraft.modTab), "lemonlimesodaItem");
-GameRegistry.registerItem(orangesodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("orangesodaItem").setCreativeTab(harvestcraft.modTab), "orangesodaItem");
-GameRegistry.registerItem(rootbeersodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("rootbeersodaItem").setCreativeTab(harvestcraft.modTab), "rootbeersodaItem");
-GameRegistry.registerItem(strawberrysodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("strawberrysodaItem").setCreativeTab(harvestcraft.modTab), "strawberrysodaItem");
-GameRegistry.registerItem(grapefruitsodaItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("grapefruitsodaItem").setCreativeTab(harvestcraft.modTab), "grapefruitsodaItem");
 
 
 GameRegistry.registerItem(caramelicecreamItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("caramelicecreamItem").setCreativeTab(harvestcraft.modTab), "caramelicecreamItem");
@@ -1215,7 +1211,6 @@ GameRegistry.registerItem(holidaycakeItem = new ItemFood(10, mealsaturation, fal
 GameRegistry.registerItem(appleciderItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("appleciderItem").setCreativeTab(harvestcraft.modTab), "appleciderItem");
 GameRegistry.registerItem(batterItem = new Item().setUnlocalizedName("batterItem").setCreativeTab(harvestcraft.modTab), "batterItem");
 GameRegistry.registerItem(coleslawItem = new ItemFood(7, mealsaturation, false).setUnlocalizedName("coleslawItem").setCreativeTab(harvestcraft.modTab), "coleslawItem");
-GameRegistry.registerItem(energydrinkItem = new ItemPamPotionFood(2, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName("energydrinkItem").setCreativeTab(harvestcraft.modTab), "energydrinkItem");
 GameRegistry.registerItem(friedonionsItem = new ItemFood(4, mealsaturation, false).setUnlocalizedName("friedonionsItem").setCreativeTab(harvestcraft.modTab), "friedonionsItem");
 GameRegistry.registerItem(pickledonionsItem = new ItemFood(7, mealsaturation, false).setUnlocalizedName("pickledonionsItem").setCreativeTab(harvestcraft.modTab), "pickledonionsItem");
 GameRegistry.registerItem(raspberrytrifleItem = new ItemFood(8, mealsaturation, false).setUnlocalizedName("raspberrytrifleItem").setCreativeTab(harvestcraft.modTab), "raspberrytrifleItem");
@@ -1715,6 +1710,14 @@ GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation,
         }
 
 
+        private static Item RegisterSoda(int _hunger, String _name)
+        {
+                Item food = new ItemPamPotionFood(_hunger, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(food, _name);
+                return food;
+        }
+
+
         private static void RegisterPies()
         {
                 applepieItem = RegisterMeatyMeal(8,"applepieItem");
@@ -1827,6 +1830,22 @@ GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation,
                 grapefruitjuiceItem = RegisterDrink(5, "grapefruitjuiceItem");
                 persimmonjuiceItem = RegisterDrink(5, "persimmonjuiceItem");
 	}
+
+
+        private static void RegisterSodas()
+        {
+                energydrinkItem = RegisterSoda(2, "energydrinkItem");
+
+                cherrysodaItem = RegisterSoda(2, "cherrysodaItem");
+                colasodaItem = RegisterSoda(2, "colasodaItem");
+                gingersodaItem = RegisterSoda(2, "gingersodaItem");
+                grapesodaItem = RegisterSoda(2, "grapesodaItem");
+                lemonlimesodaItem = RegisterSoda(3, "lemonlimesodaItem");
+                orangesodaItem = RegisterSoda(2, "orangesodaItem");
+                rootbeersodaItem = RegisterSoda(2, "rootbeersodaItem");
+                strawberrysodaItem = RegisterSoda(2, "strawberrysodaItem");
+                grapefruitsodaItem = RegisterSoda(2, "grapefruitsodaItem");
+        }
 
 
         public static void RegisterFish()
