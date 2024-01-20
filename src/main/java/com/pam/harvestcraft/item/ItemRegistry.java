@@ -1850,33 +1850,33 @@ GameRegistry.registerItem(yorkshirepuddingItem = new ItemFood(5, mealsaturation,
 
         public static void RegisterFish()
         {
-                GameRegistry.registerItem(anchovyrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("anchovyrawItem").setCreativeTab(harvestcraft.modTab), "anchovyrawItem");
-                GameRegistry.registerItem(bassrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("bassrawItem").setCreativeTab(harvestcraft.modTab), "bassrawItem");
-                GameRegistry.registerItem(carprawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("carprawItem").setCreativeTab(harvestcraft.modTab), "carprawItem");
-                GameRegistry.registerItem(catfishrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("catfishrawItem").setCreativeTab(harvestcraft.modTab), "catfishrawItem");
-                GameRegistry.registerItem(charrrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("charrrawItem").setCreativeTab(harvestcraft.modTab), "charrrawItem");
-                GameRegistry.registerItem(clamrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("clamrawItem").setCreativeTab(harvestcraft.modTab), "clamrawItem");
-                GameRegistry.registerItem(crabrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("crabrawItem").setCreativeTab(harvestcraft.modTab), "crabrawItem");
-                GameRegistry.registerItem(crayfishrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("crayfishrawItem").setCreativeTab(harvestcraft.modTab), "crayfishrawItem");
-                GameRegistry.registerItem(eelrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("eelrawItem").setCreativeTab(harvestcraft.modTab), "eelrawItem");
-                GameRegistry.registerItem(frograwItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("frograwItem").setCreativeTab(harvestcraft.modTab), "frograwItem");
-                GameRegistry.registerItem(grouperrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("grouperrawItem").setCreativeTab(harvestcraft.modTab), "grouperrawItem");
-                GameRegistry.registerItem(herringrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("herringrawItem").setCreativeTab(harvestcraft.modTab), "herringrawItem");
-                GameRegistry.registerItem(jellyfishrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("jellyfishrawItem").setCreativeTab(harvestcraft.modTab), "jellyfishrawItem");
-                GameRegistry.registerItem(mudfishrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("mudfishrawItem").setCreativeTab(harvestcraft.modTab), "mudfishrawItem");
-                GameRegistry.registerItem(octopusrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("octopusrawItem").setCreativeTab(harvestcraft.modTab), "octopusrawItem");
-                GameRegistry.registerItem(perchrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("perchrawItem").setCreativeTab(harvestcraft.modTab), "perchrawItem");
-                GameRegistry.registerItem(scalloprawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("scalloprawItem").setCreativeTab(harvestcraft.modTab), "scalloprawItem");
-                GameRegistry.registerItem(shrimprawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("shrimprawItem").setCreativeTab(harvestcraft.modTab), "shrimprawItem");
-                GameRegistry.registerItem(snailrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("snailrawItem").setCreativeTab(harvestcraft.modTab), "snailrawItem");
-                GameRegistry.registerItem(snapperrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("snapperrawItem").setCreativeTab(harvestcraft.modTab), "snapperrawItem");
-                GameRegistry.registerItem(tilapiarawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("tilapiarawItem").setCreativeTab(harvestcraft.modTab), "tilapiarawItem");
-                GameRegistry.registerItem(troutrawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("troutrawItem").setCreativeTab(harvestcraft.modTab), "troutrawItem");
-                GameRegistry.registerItem(tunarawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("tunarawItem").setCreativeTab(harvestcraft.modTab), "tunarawItem");
-                GameRegistry.registerItem(turtlerawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("turtlerawItem").setCreativeTab(harvestcraft.modTab), "turtlerawItem");
-                GameRegistry.registerItem(walleyerawItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("walleyerawItem").setCreativeTab(harvestcraft.modTab), "walleyerawItem");
-                GameRegistry.registerItem(greenheartfishItem = new ItemFood(2, meatymealsaturation, false).setUnlocalizedName("greenheartfishItem").setCreativeTab(harvestcraft.modTab), "greenheartfishItem");
-                GameRegistry.registerItem(calamarirawItem = new ItemFood(2, snacksaturation, false).setUnlocalizedName("calamarirawItem").setCreativeTab(harvestcraft.modTab), "calamarirawItem");
+                anchovyrawItem = RegisterMeatyMeal(2, "anchovyrawItem");
+                bassrawItem = RegisterMeatyMeal(2, "bassrawItem");
+                carprawItem = RegisterMeatyMeal(2, "carprawItem");
+                catfishrawItem = RegisterMeatyMeal(2, "catfishrawItem");
+                charrrawItem = RegisterMeatyMeal(2, "charrrawItem");
+                clamrawItem = RegisterMeatyMeal(2, "clamrawItem");
+                crabrawItem = RegisterMeatyMeal(2, "crabrawItem");
+                crayfishrawItem = RegisterMeatyMeal(2, "crayfishrawItem");
+                eelrawItem = RegisterMeatyMeal(2, "eelrawItem");
+                frograwItem = RegisterMeatyMeal(2, "frograwItem");
+                grouperrawItem = RegisterMeatyMeal(2, "grouperrawItem");
+                herringrawItem = RegisterMeatyMeal(2, "herringrawItem");
+                jellyfishrawItem = RegisterMeatyMeal(2, "jellyfishrawItem");
+                mudfishrawItem = RegisterMeatyMeal(2, "mudfishrawItem");
+                octopusrawItem = RegisterMeatyMeal(2, "octopusrawItem");
+                perchrawItem = RegisterMeatyMeal(2, "perchrawItem");
+                scalloprawItem = RegisterMeatyMeal(2, "scalloprawItem");
+                shrimprawItem = RegisterMeatyMeal(2, "shrimprawItem");
+                snailrawItem = RegisterMeatyMeal(2, "snailrawItem");
+                snapperrawItem = RegisterMeatyMeal(2, "snapperrawItem");
+                tilapiarawItem = RegisterMeatyMeal(2, "tilapiarawItem");
+                troutrawItem = RegisterMeatyMeal(2, "troutrawItem");
+                tunarawItem = RegisterMeatyMeal(2, "tunarawItem");
+                turtlerawItem = RegisterMeatyMeal(2, "turtlerawItem");
+                walleyerawItem = RegisterMeatyMeal(2, "walleyerawItem");
+                greenheartfishItem = RegisterMeatyMeal(2, "greenheartfishItem");
+                calamarirawItem = RegisterSnack(2, "calamarirawItem");
 	}
 
 
