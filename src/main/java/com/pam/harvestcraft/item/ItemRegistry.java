@@ -873,8 +873,8 @@ public class ItemRegistry
         public static float snacksaturation;
         public static float mealsaturation;
         public static float meatymealsaturation;
-        public static int freshmilkfrombucket = 8;
-        public static int freshwaterfrombucket = 8;
+        public static int amountFreshMilkFromBucket = 8;
+        public static int amountFreshWaterFromBucket = 8;
         public static int seedrarity;
         public static boolean enablecropitemsasseeds;
 

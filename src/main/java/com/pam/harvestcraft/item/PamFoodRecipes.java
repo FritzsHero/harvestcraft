@@ -59,17 +59,14 @@ public class PamFoodRecipes
                AddRecipe(ItemRegistry.saltItem, new Object[] { "toolPot", "listAllwater" });
           }
      
-          //below was messing with the configurable water recipe
-          //AddRecipe(ItemRegistry.freshwaterItem, new Object[] { "listAllwater" });
-     
           AddRecipe(Items.sugar, new Object[] { "toolPot", "foodHoneydrop" });
           AddRecipe(Items.sugar, new Object[] { "toolPot", "dropHoney" });
      
           AddRecipe(Items.fish, new Object[] { "listAllfishraw" });
      
  
-          AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.freshwaterfrombucket), new Object[] { Items.water_bucket });
-          AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.freshmilkfrombucket), new Object[] { Items.milk_bucket });
+          AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.amountFreshWaterFromBucket), new Object[] { Items.water_bucket });
+          AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.amountFreshMilkFromBucket), new Object[] { Items.milk_bucket });
           AddSmelting(ItemRegistry.freshwaterItem, ItemRegistry.bubblywaterItem);
      
           AddRecipe(new ItemStack(Items.cake, 1), new Object[] { "AAA", "BEB", "CCC", Character.valueOf('A'), "listAllmilk", Character.valueOf('B'), "honeyEqualssugar", Character.valueOf('C'), "flourEqualswheat", Character.valueOf('E'), "listAllegg" });
