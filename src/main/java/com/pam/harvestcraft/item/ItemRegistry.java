@@ -1949,21 +1949,21 @@ public class ItemRegistry
         private static void RegisterBees()
         {
                 //GameRegistry.registerItem(queenbeeItem = new ItemPamBee().setUnlocalizedName("queenbeeItem").setCreativeTab(harvestcraft.modTab), "queenbeeItem");
-                //GameRegistry.registerItem(waxcombItem = new Item().setUnlocalizedName("waxcombItem").setCreativeTab(harvestcraft.modTab), "waxcombItem");
-                //GameRegistry.registerItem(honeycombItem = new Item().setUnlocalizedName("honeycombItem").setCreativeTab(harvestcraft.modTab), "honeycombItem");
-                //GameRegistry.registerItem(beeswaxItem = new Item().setUnlocalizedName("beeswaxItem").setCreativeTab(harvestcraft.modTab), "beeswaxItem");
-                //GameRegistry.registerItem(grubItem = new Item().setUnlocalizedName("grubItem").setCreativeTab(harvestcraft.modTab), "grubItem");
-                //GameRegistry.registerItem(royaljellyItem = new Item().setUnlocalizedName("royaljellyItem").setCreativeTab(harvestcraft.modTab), "royaljellyItem");
-                //GameRegistry.registerItem(waxItem = new Item().setUnlocalizedName("waxItem").setCreativeTab(harvestcraft.modTab), "waxItem");
+                //waxcombItem = RegisterItem("waxcombItem");
+                //honeycombItem = RegisterItem("honeycombItem");
+                //beeswaxItem = RegisterItem("beeswaxItem");
+                //grubItem = RegisterItem("grubItem");
+                //royaljellyItem = RegisterItem("royaljellyItem");
+                //waxItem = RegisterItem("waxItem");
         }
 
 
         private static void RegisterBaits()
         {
-                //GameRegistry.registerItem(grainbaitItem = new Item().setUnlocalizedName("grainbaitItem").setCreativeTab(harvestcraft.modTab), "grainbaitItem");
-                //GameRegistry.registerItem(veggiebaitItem = new Item().setUnlocalizedName("veggiebaitItem").setCreativeTab(harvestcraft.modTab), "veggiebaitItem");
-                //GameRegistry.registerItem(fruitbaitItem = new Item().setUnlocalizedName("fruitbaitItem").setCreativeTab(harvestcraft.modTab), "fruitbaitItem");
-                //GameRegistry.registerItem(fishtrapbaitItem = new Item().setUnlocalizedName("fishtrapbaitItem").setCreativeTab(harvestcraft.modTab), "fishtrapbaitItem");
+                //grainbaitItem = RegisterItem("grainbaitItem");
+                //veggiebaitItem = RegisterItem("veggiebaitItem");
+                //fruitbaitItem = RegisterItem("fruitbaitItem");
+                //fishtrapbaitItem = RegisterItem("fishtrapbaitItem");
         }
 
 
@@ -1985,35 +1985,43 @@ public class ItemRegistry
         }
 
 
+        private static Item RegisterItem(String _name)
+        {
+                Item item = new Item().setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(item, _name);
+                return item;
+        }
+
+
         private static void RegisterItems()
         {
-                GameRegistry.registerItem(saltItem = new Item().setUnlocalizedName("saltItem").setCreativeTab(harvestcraft.modTab), "saltItem");
-                GameRegistry.registerItem(wovencottonItem = new Item().setUnlocalizedName("wovencottonItem").setCreativeTab(harvestcraft.modTab), "wovencottonItem");
-                //GameRegistry.registerItem(hardenedleatherItem = new Item().setUnlocalizedName("hardenedleatherItem").setCreativeTab(harvestcraft.modTab), "hardenedleatherItem");
-                GameRegistry.registerItem(freshwaterItem = new Item().setUnlocalizedName("freshwaterItem").setCreativeTab(harvestcraft.modTab), "freshwaterItem");
-                GameRegistry.registerItem(freshmilkItem = new Item().setUnlocalizedName("freshmilkItem").setCreativeTab(harvestcraft.modTab), "freshmilkItem");
-                GameRegistry.registerItem(bubblywaterItem = new Item().setUnlocalizedName("bubblywaterItem").setCreativeTab(harvestcraft.modTab), "bubblywaterItem");
-                GameRegistry.registerItem(vanillaItem = new Item().setUnlocalizedName("vanillaItem").setCreativeTab(harvestcraft.modTab), "vanillaItem");
-                GameRegistry.registerItem(toastedsesameseedsItem = new Item().setUnlocalizedName("toastedsesameseedsItem").setCreativeTab(harvestcraft.modTab), "toastedsesameseedsItem");
-                GameRegistry.registerItem(flourItem = new Item().setUnlocalizedName("flourItem").setCreativeTab(harvestcraft.modTab), "flourItem");
-                GameRegistry.registerItem(doughItem = new Item().setUnlocalizedName("doughItem").setCreativeTab(harvestcraft.modTab), "doughItem");
-                GameRegistry.registerItem(pastaItem = new Item().setUnlocalizedName("pastaItem").setCreativeTab(harvestcraft.modTab), "pastaItem");
-                GameRegistry.registerItem(heavycreamItem = new Item().setUnlocalizedName("heavycreamItem").setCreativeTab(harvestcraft.modTab), "heavycreamItem");
-                GameRegistry.registerItem(butterItem = new Item().setUnlocalizedName("butterItem").setCreativeTab(harvestcraft.modTab), "butterItem");
-                GameRegistry.registerItem(mayoItem = new Item().setUnlocalizedName("mayoItem").setCreativeTab(harvestcraft.modTab), "mayoItem");
-                GameRegistry.registerItem(cocoapowderItem = new Item().setUnlocalizedName("cocoapowderItem").setCreativeTab(harvestcraft.modTab), "cocoapowderItem");
-                GameRegistry.registerItem(ketchupItem = new Item().setUnlocalizedName("ketchupItem").setCreativeTab(harvestcraft.modTab), "ketchupItem");
-                GameRegistry.registerItem(cornmealItem = new Item().setUnlocalizedName("cornmealItem").setCreativeTab(harvestcraft.modTab), "cornmealItem");
-                GameRegistry.registerItem(vinegarItem = new Item().setUnlocalizedName("vinegarItem").setCreativeTab(harvestcraft.modTab), "vinegarItem");
-                GameRegistry.registerItem(mustardItem = new Item().setUnlocalizedName("mustardItem").setCreativeTab(harvestcraft.modTab), "mustardItem");
-                GameRegistry.registerItem(blackpepperItem = new Item().setUnlocalizedName("blackpepperItem").setCreativeTab(harvestcraft.modTab), "blackpepperItem");
-                GameRegistry.registerItem(groundcinnamonItem = new Item().setUnlocalizedName("groundcinnamonItem").setCreativeTab(harvestcraft.modTab), "groundcinnamonItem");
-                GameRegistry.registerItem(groundnutmegItem = new Item().setUnlocalizedName("groundnutmegItem").setCreativeTab(harvestcraft.modTab), "groundnutmegItem");
-                GameRegistry.registerItem(oliveoilItem = new Item().setUnlocalizedName("oliveoilItem").setCreativeTab(harvestcraft.modTab), "oliveoilItem");
-                GameRegistry.registerItem(saladdressingItem = new Item().setUnlocalizedName("saladdressingItem").setCreativeTab(harvestcraft.modTab), "saladdressingItem");
-                GameRegistry.registerItem(batterItem = new Item().setUnlocalizedName("batterItem").setCreativeTab(harvestcraft.modTab), "batterItem");
-                GameRegistry.registerItem(currypowderItem = new Item().setUnlocalizedName("currypowderItem").setCreativeTab(harvestcraft.modTab), "currypowderItem");
-                GameRegistry.registerItem(soysauceItem = new Item().setUnlocalizedName("soysauceItem").setCreativeTab(harvestcraft.modTab), "soysauceItem");
-                GameRegistry.registerItem(garammasalaItem = new Item().setUnlocalizedName("garammasalaItem").setCreativeTab(harvestcraft.modTab), "garammasalaItem");
+                saltItem = RegisterItem("saltItem");
+                wovencottonItem = RegisterItem("wovencottonItem");
+                //hardenedleatherItem = RegisterItem("hardenedleatherItem");
+                freshwaterItem = RegisterItem("freshwaterItem");
+                freshmilkItem = RegisterItem("freshmilkItem");
+                bubblywaterItem = RegisterItem("bubblywaterItem");
+                vanillaItem = RegisterItem("vanillaItem");
+                toastedsesameseedsItem = RegisterItem("toastedsesameseedsItem");
+                flourItem = RegisterItem("flourItem");
+                doughItem = RegisterItem("doughItem");
+                pastaItem = RegisterItem("pastaItem");
+                heavycreamItem = RegisterItem("heavycreamItem");
+                butterItem = RegisterItem("butterItem");
+                mayoItem = RegisterItem("mayoItem");
+                cocoapowderItem = RegisterItem("cocoapowderItem");
+                ketchupItem = RegisterItem("ketchupItem");
+                cornmealItem = RegisterItem("cornmealItem");
+                vinegarItem = RegisterItem("vinegarItem");
+                mustardItem = RegisterItem("mustardItem");
+                blackpepperItem = RegisterItem("blackpepperItem");
+                groundcinnamonItem = RegisterItem("groundcinnamonItem");
+                groundnutmegItem = RegisterItem("groundnutmegItem");
+                oliveoilItem = RegisterItem("oliveoilItem");
+                saladdressingItem = RegisterItem("saladdressingItem");
+                batterItem = RegisterItem("batterItem");
+                currypowderItem = RegisterItem("currypowderItem");
+                soysauceItem = RegisterItem("soysauceItem");
+                garammasalaItem = RegisterItem("garammasalaItem");
         }
 }
