@@ -1385,6 +1385,14 @@ public class ItemRegistry
         }
 
 
+        private static Item RegisterSnackDrink(int _hunger, String _name)
+        {
+                Item food = new ItemPamPotionFood(_hunger, snacksaturation, false).setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
+                GameRegistry.registerItem(food, _name);
+                return food;
+        }
+
+
         private static Item RegisterSoda(int _hunger, String _name)
         {
                 Item food = new ItemPamPotionFood(_hunger, snacksaturation, false).setPotionEffect(Potion.moveSpeed.id, 60, 0, 0.8F).setAlwaysEdible().setUnlocalizedName(_name).setCreativeTab(harvestcraft.modTab);
@@ -1961,19 +1969,19 @@ public class ItemRegistry
 
         private static void RegisterDrinks()
         {
-                GameRegistry.registerItem(teaItem = new ItemPamPotionFood(4, snacksaturation, false).setUnlocalizedName("teaItem").setCreativeTab(harvestcraft.modTab), "teaItem");
-                GameRegistry.registerItem(coffeeItem = new ItemPamPotionFood(4, snacksaturation, false).setUnlocalizedName("coffeeItem").setCreativeTab(harvestcraft.modTab), "coffeeItem");
-                GameRegistry.registerItem(hotchocolateItem = new ItemPamPotionFood(4, mealsaturation, false).setUnlocalizedName("hotchocolateItem").setCreativeTab(harvestcraft.modTab), "hotchocolateItem");
-                GameRegistry.registerItem(lemonaideItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("lemonaideItem").setCreativeTab(harvestcraft.modTab), "lemonaideItem");
-                GameRegistry.registerItem(raspberryicedteaItem = new ItemPamPotionFood(7, snacksaturation, false).setUnlocalizedName("raspberryicedteaItem").setCreativeTab(harvestcraft.modTab), "raspberryicedteaItem");
-                GameRegistry.registerItem(chaiteaItem = new ItemPamPotionFood(9, snacksaturation, false).setUnlocalizedName("chaiteaItem").setCreativeTab(harvestcraft.modTab), "chaiteaItem");
-                GameRegistry.registerItem(espressoItem = new ItemPamPotionFood(8, snacksaturation, false).setUnlocalizedName("espressoItem").setCreativeTab(harvestcraft.modTab), "espressoItem");
-                GameRegistry.registerItem(coffeeconlecheItem = new ItemPamPotionFood(10, snacksaturation, false).setUnlocalizedName("coffeeconlecheItem").setCreativeTab(harvestcraft.modTab), "coffeeconlecheItem");
-                GameRegistry.registerItem(coconutmilkItem = new ItemPamPotionFood(5, mealsaturation, false).setUnlocalizedName("coconutmilkItem").setCreativeTab(harvestcraft.modTab), "coconutmilkItem");
-                GameRegistry.registerItem(chocolatemilkItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("chocolatemilkItem").setCreativeTab(harvestcraft.modTab), "chocolatemilkItem");
-                GameRegistry.registerItem(fruitpunchItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("fruitpunchItem").setCreativeTab(harvestcraft.modTab), "fruitpunchItem");
-                GameRegistry.registerItem(eggnogItem = new ItemPamPotionFood(6, mealsaturation, false).setUnlocalizedName("eggnogItem").setCreativeTab(harvestcraft.modTab), "eggnogItem");
-                GameRegistry.registerItem(soymilkItem = new ItemPamPotionFood(4, mealsaturation, false).setUnlocalizedName("soymilkItem").setCreativeTab(harvestcraft.modTab), "soymilkItem");
+                teaItem = RegisterSnackDrink(4, "teaItem");
+                coffeeItem = RegisterSnackDrink(4, "coffeeItem");
+                hotchocolateItem = RegisterDrink(4, "hotchocolateItem");
+                lemonaideItem = RegisterDrink(6, "lemonaideItem");
+                raspberryicedteaItem = RegisterSnackDrink(7, "raspberryicedteaItem");
+                chaiteaItem = RegisterSnackDrink(9, "chaiteaItem");
+                espressoItem = RegisterSnackDrink(8, "espressoItem");
+                coffeeconlecheItem = RegisterSnackDrink(10, "coffeeconlecheItem");
+                coconutmilkItem = RegisterDrink(5, "coconutmilkItem");
+                chocolatemilkItem = RegisterDrink(6, "chocolatemilkItem");
+                fruitpunchItem = RegisterDrink(6, "fruitpunchItem");
+                eggnogItem = RegisterDrink(6, "eggnogItem");
+                soymilkItem = RegisterDrink(4, "soymilkItem");
         }
 
 
