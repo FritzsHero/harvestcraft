@@ -74,7 +74,6 @@ public class FoodRecipes
  
           AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.amountFreshWaterFromBucket), new Object[] { Items.water_bucket });
           AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.amountFreshMilkFromBucket), new Object[] { Items.milk_bucket });
-          AddSmelting(ItemRegistry.freshwaterItem, ItemRegistry.bubblywaterItem);
      
           AddRecipe(new ItemStack(Items.cake, 1), new Object[] { "AAA", "BEB", "CCC", Character.valueOf('A'), "listAllmilk", Character.valueOf('B'), "honeyEqualssugar", Character.valueOf('C'), "flourEqualswheat", Character.valueOf('E'), "listAllegg" });
      
@@ -907,6 +906,7 @@ public class FoodRecipes
 
      private static void RegisterGeneralSmelting()
      {
+          AddSmelting(ItemRegistry.freshwaterItem, ItemRegistry.bubblywaterItem);
           AddSmelting(ItemRegistry.doughItem, Items.bread);
           AddSmelting(Items.bread, ItemRegistry.toastItem);
           AddSmelting(Items.pumpkin_seeds, ItemRegistry.roastedpumpkinseedsItem);
