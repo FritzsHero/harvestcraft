@@ -522,15 +522,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.strawberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodStrawberryjelly", Items.bread });
           AddRecipe(ItemRegistry.watermelonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodWatermelonjelly", Items.bread });
      
-          AddRecipe(ItemRegistry.cherrysodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodCherryjuice" });
-          AddRecipe(ItemRegistry.colasodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropSpiceleaf" });
-          AddRecipe(ItemRegistry.gingersodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropGinger" });
-          AddRecipe(ItemRegistry.grapesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodGrapejuice" });
-          AddRecipe(ItemRegistry.lemonlimesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropLemon", "foodLimejuice" });
-          AddRecipe(ItemRegistry.orangesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodOrangejuice" });
-          AddRecipe(ItemRegistry.rootbeersodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropEdibleroot" });
-          AddRecipe(ItemRegistry.strawberrysodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodStrawberryjuice" });
-     
           AddRecipe(ItemRegistry.caramelicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "foodCaramel" });
           AddRecipe(ItemRegistry.mintchocolatechipicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropSpiceleaf", "foodChocolatebar" });
           AddRecipe(ItemRegistry.strawberryicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropStrawberry" });
@@ -568,7 +559,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.figjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodFigjelly", Items.bread });
           AddRecipe(ItemRegistry.grapefruitjellyItem, new Object[] { "toolSaucepan", "cropGrapefruit", "listAllsugar" });
           AddRecipe(ItemRegistry.grapefruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapefruitjelly", Items.bread });
-          AddRecipe(ItemRegistry.grapefruitsodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodGrapefruitjuice" });
           AddRecipe(ItemRegistry.citrussaladItem, new Object[] { "toolCuttingboard", "listAllcitrus", "cropLettuce" });
           AddRecipe(ItemRegistry.pecanpieItem, new Object[] { "toolBakeware", "cropPecan", "foodDough", "listAllsugar", "foodButter" });
           AddRecipe(ItemRegistry.pralinesItem, new Object[] { "toolSaucepan", "cropPecan", "listAllsugar" });
@@ -871,7 +861,15 @@ public class FoodRecipes
 
      private static void AddSodas()
      {
-
+          AddRecipe(ItemRegistry.cherrysodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodCherryjuice" });
+          AddRecipe(ItemRegistry.colasodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropSpiceleaf" });
+          AddRecipe(ItemRegistry.gingersodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropGinger" });
+          AddRecipe(ItemRegistry.grapesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodGrapejuice" });
+          AddRecipe(ItemRegistry.lemonlimesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropLemon", "foodLimejuice" });
+          AddRecipe(ItemRegistry.orangesodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodOrangejuice" });
+          AddRecipe(ItemRegistry.rootbeersodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "cropEdibleroot" });
+          AddRecipe(ItemRegistry.strawberrysodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodStrawberryjuice" });
+          AddRecipe(ItemRegistry.grapefruitsodaItem, new Object[] { "toolPot", "foodBubblywater", "listAllsugar", "foodGrapefruitjuice" });
      }
 
 
