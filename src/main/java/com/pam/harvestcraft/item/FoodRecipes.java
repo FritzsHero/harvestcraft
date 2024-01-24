@@ -70,6 +70,7 @@ public class FoodRecipes
           AddSodas();
           AddPies();
           AddJellies();
+          AddJellySandwiches();
  
           AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.amountFreshWaterFromBucket), new Object[] { Items.water_bucket });
           AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.amountFreshMilkFromBucket), new Object[] { Items.milk_bucket });
@@ -235,7 +236,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.trailmixItem, new Object[] { "foodSaltedsunflowerseeds", "foodRaisins", "foodChocolatebar" });
           AddRecipe(ItemRegistry.trailmixItem, new Object[] { "listAllnut", "listAllnut", "foodRaisins", "foodChocolatebar" });
           AddRecipe(ItemRegistry.trailmixItem, new Object[] { "foodRoastedpumpkinseeds", "foodRaisins", "foodChocolatebar" });
-          AddRecipe(ItemRegistry.pbandjItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapejelly", Items.bread });
           AddRecipe(ItemRegistry.peanutbuttercookiesItem, new Object[] { "toolBakeware", "listAllnutbutter", "foodFlour", "listAllegg", "listAllsugar" });
      
           AddRecipe(ItemRegistry.vinegarItem, new Object[] { "toolPot", "foodGrapejuice" });
@@ -477,24 +477,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.sushiItem, new Object[] { "toolCuttingboard", "listAllfishraw", "cropSeaweed", "cropRice" });
           AddRecipe(ItemRegistry.gardensoupItem, new Object[] { "toolPot", "foodStock", "listAllveggie", "listAllveggie" });
      
-          AddRecipe(ItemRegistry.applejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodApplejelly", Items.bread });
-          AddRecipe(ItemRegistry.blackberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodBlackberryjelly", Items.bread });
-          AddRecipe(ItemRegistry.blueberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodBlueberryjelly", Items.bread });
-          AddRecipe(ItemRegistry.cherryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodCherryjelly", Items.bread });
-          AddRecipe(ItemRegistry.cranberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodCranberryjelly", Items.bread });
-          AddRecipe(ItemRegistry.kiwijellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodKiwijelly", Items.bread });
-          AddRecipe(ItemRegistry.lemonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodLemonjelly", Items.bread });
-          AddRecipe(ItemRegistry.limejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodLimejelly", Items.bread });
-          AddRecipe(ItemRegistry.mangojellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodMangojelly", Items.bread });
-          AddRecipe(ItemRegistry.orangejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodOrangejelly", Items.bread });
-          AddRecipe(ItemRegistry.papayajellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPapayajelly", Items.bread });
-          AddRecipe(ItemRegistry.peachjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPeachjelly", Items.bread });
-          AddRecipe(ItemRegistry.pomegranatejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPomegranatejelly", Items.bread });
-          AddRecipe(ItemRegistry.raspberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodRaspberryjelly", Items.bread });
-          AddRecipe(ItemRegistry.starfruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodStarfruitjelly", Items.bread });
-          AddRecipe(ItemRegistry.strawberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodStrawberryjelly", Items.bread });
-          AddRecipe(ItemRegistry.watermelonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodWatermelonjelly", Items.bread });
-     
           AddRecipe(ItemRegistry.caramelicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "foodCaramel" });
           AddRecipe(ItemRegistry.mintchocolatechipicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropSpiceleaf", "foodChocolatebar" });
           AddRecipe(ItemRegistry.strawberryicecreamItem, new Object[] { "toolMixingbowl", "listAllicecream", "cropStrawberry" });
@@ -525,13 +507,9 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.sweetpotatosouffleItem, new Object[] { "toolBakeware", "cropSweetpotato", "cropPecan", "foodDough", "foodButter" });
           AddRecipe(ItemRegistry.cashewchickenItem, new Object[] { "toolSaucepan", "listAllchickenraw", "cropCashew", "cropRice", "listAllpepper" });
           AddRecipe(ItemRegistry.apricotglazedporkItem, new Object[] { "listAllporkcooked", "foodApricotjelly" });
-          AddRecipe(ItemRegistry.apricotjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodApricotjelly", Items.bread });
           AddRecipe(ItemRegistry.figbarItem, new Object[] { "toolBakeware", "cropFig", "listAllsugar", "foodDough" });
-          AddRecipe(ItemRegistry.figjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodFigjelly", Items.bread });
-          AddRecipe(ItemRegistry.grapefruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapefruitjelly", Items.bread });
           AddRecipe(ItemRegistry.citrussaladItem, new Object[] { "toolCuttingboard", "listAllcitrus", "cropLettuce" });
           AddRecipe(ItemRegistry.pralinesItem, new Object[] { "toolSaucepan", "cropPecan", "listAllsugar" });
-          AddRecipe(ItemRegistry.persimmonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPersimmonjelly", Items.bread });
           AddRecipe(ItemRegistry.pistachiobakedsalmonItem, new Object[] { "toolBakeware", "cropPistachio", "foodSalmonraw" });
           AddRecipe(ItemRegistry.baconwrappeddatesItem, new Object[] { "toolBakeware", "cropDate", "listAllporkcooked" });
           AddRecipe(ItemRegistry.datenutbreadItem, new Object[] { "toolBakeware", "cropDate", "foodDough", "listAllnut" });
@@ -644,7 +622,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.currypowderItem, new Object[] { "toolMortarandpestle", "cropCurryleaf" });
           AddRecipe(ItemRegistry.dimsumItem, new Object[] { "toolPot", "cropRice", "foodDough", "cropWaterchestnut", "listAllmushroom", "listAllmeatraw" });
           AddRecipe(ItemRegistry.friedpecanokraItem, new Object[] { "toolSkillet", "cropOkra", "cropPecan", "foodOliveoil", "foodBlackpepper" });
-          AddRecipe(ItemRegistry.gooseberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGooseberryjelly", Items.bread });
           AddRecipe(ItemRegistry.gooseberrymilkshakeItem, new Object[] { "toolJuicer", "listAllmilk", "cropGooseberry", Items.snowball });
           AddRecipe(ItemRegistry.hamsweetpicklesandwichItem, new Object[] { "toolCuttingboard", "foodSweetpickle", Items.bread, "listAllporkcooked", "foodMayo" });
           AddRecipe(ItemRegistry.hushpuppiesItem, new Object[] { "toolPot", "foodCornmeal", "listAllegg", "cropOnion", "foodOliveoil" });
@@ -682,8 +659,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.paneerItem, new Object[] { "toolPot", "listAllmilk", "foodVinegar", "foodLemonjuice"});
           AddRecipe(ItemRegistry.paneertikkamasalaItem, new Object[] { "toolSaucepan", "foodPaneer", "foodGarammasala", "foodCurrypowder", "foodCoconutcream", "cropOnion", "cropBellpepper", "cropTomato", "cropGinger", "cropGarlic"});
           AddRecipe(ItemRegistry.peaandhamsoupItem, new Object[] { "toolPot", "cropPeas", "listAllporkraw", "cropOnion", "cropCarrot", "cropCelery", "foodBlackpepper"});
-          AddRecipe(ItemRegistry.pearjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPearjelly", Items.bread });
-          AddRecipe(ItemRegistry.plumjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPlumjelly", Items.bread });
           AddRecipe(ItemRegistry.potatoandleeksoupItem, new Object[] { "toolPot", "cropPotato", "cropLeek", "foodStock", "listAllheavycream", "cropSpiceleaf", "foodBlackpepper"});
           AddRecipe(ItemRegistry.toadintheholeItem, new Object[] { "toolBakeware", "foodYorkshirepudding", "foodSausage"});
           AddRecipe(ItemRegistry.tunapotatoItem, new Object[] { "toolCuttingboard", "foodButteredpotato", "cropCorn", "listAllfishcooked"});
@@ -881,6 +856,36 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.gooseberryjellyItem, new Object[] { "toolSaucepan", "cropGooseberry", "listAllsugar" });
           AddRecipe(ItemRegistry.pearjellyItem, new Object[] { "toolSaucepan", "cropPear", "listAllsugar" });
           AddRecipe(ItemRegistry.plumjellyItem, new Object[] { "toolSaucepan", "cropPlum", "listAllsugar" });
+     }
+
+
+     private static void AddJellySandwiches()
+     {
+          AddRecipe(ItemRegistry.pbandjItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapejelly", Items.bread });
+          AddRecipe(ItemRegistry.applejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodApplejelly", Items.bread });
+          AddRecipe(ItemRegistry.blackberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodBlackberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.blueberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodBlueberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.cherryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodCherryjelly", Items.bread });
+          AddRecipe(ItemRegistry.cranberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodCranberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.kiwijellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodKiwijelly", Items.bread });
+          AddRecipe(ItemRegistry.lemonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodLemonjelly", Items.bread });
+          AddRecipe(ItemRegistry.limejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodLimejelly", Items.bread });
+          AddRecipe(ItemRegistry.mangojellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodMangojelly", Items.bread });
+          AddRecipe(ItemRegistry.orangejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodOrangejelly", Items.bread });
+          AddRecipe(ItemRegistry.papayajellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPapayajelly", Items.bread });
+          AddRecipe(ItemRegistry.peachjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPeachjelly", Items.bread });
+          AddRecipe(ItemRegistry.pomegranatejellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPomegranatejelly", Items.bread });
+          AddRecipe(ItemRegistry.raspberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodRaspberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.starfruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodStarfruitjelly", Items.bread });
+          AddRecipe(ItemRegistry.strawberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodStrawberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.watermelonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodWatermelonjelly", Items.bread });
+          AddRecipe(ItemRegistry.apricotjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodApricotjelly", Items.bread });
+          AddRecipe(ItemRegistry.figjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodFigjelly", Items.bread });
+          AddRecipe(ItemRegistry.grapefruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapefruitjelly", Items.bread });
+          AddRecipe(ItemRegistry.persimmonjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPersimmonjelly", Items.bread });
+          AddRecipe(ItemRegistry.gooseberryjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGooseberryjelly", Items.bread });
+          AddRecipe(ItemRegistry.pearjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPearjelly", Items.bread });
+          AddRecipe(ItemRegistry.plumjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodPlumjelly", Items.bread });
      }
      //#endregion
 
