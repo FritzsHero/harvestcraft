@@ -64,6 +64,11 @@ public class FoodRecipes
      
           AddRecipe(Items.fish, new Object[] { "listAllfishraw" });
      
+          AddJuices();
+          AddYogurts();
+          AddSmoothies();
+          AddSodas();
+          AddPies();
  
           AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.amountFreshWaterFromBucket), new Object[] { Items.water_bucket });
           AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.amountFreshMilkFromBucket), new Object[] { Items.milk_bucket });
@@ -89,6 +94,7 @@ public class FoodRecipes
      
           AddRecipe(ItemRegistry.pastaItem, new Object[] { "toolMixingbowl", "foodDough", "foodButter" });
           AddRecipe(ItemRegistry.heavycreamItem, new Object[] { "toolMixingbowl", "listAllmilk" });
+
           AddRecipe(ItemRegistry.butterItem, new Object[] { "toolSaucepan", "listAllheavycream", "foodSalt" });
           AddRecipe(ItemRegistry.butterItem, new Object[] { "toolSaucepan", "listAllheavycream", "dustSalt" });
           AddRecipe(ItemRegistry.butterItem, new Object[] { "toolSaucepan", "listAllheavycream", "itemSalt" });
@@ -105,14 +111,11 @@ public class FoodRecipes
      
           AddRecipe(ItemRegistry.grilledcheeseItem, new Object[] { "toolSkillet", "foodToast", "foodButter", "foodCheese" });
           AddRecipe(ItemRegistry.applesauceItem, new Object[] { "toolPot", "cropApple" });
-          AddRecipe(ItemRegistry.applejuiceItem, new Object[] { "toolJuicer", "cropApple" });
           AddRecipe(ItemRegistry.applepieItem, new Object[] { "toolBakeware", "cropApple", "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.caramelappleItem, new Object[] { "cropApple", "foodCaramel", "stickWood" });
           AddRecipe(ItemRegistry.pumpkinbreadItem, new Object[] { "toolBakeware", Blocks.pumpkin, "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.pumpkinsoupItem, new Object[] { "toolPot", Blocks.pumpkin, "listAllheavycream", "foodStock" });
-          AddRecipe(ItemRegistry.melonjuiceItem, new Object[] { "toolJuicer", Items.melon });
           AddRecipe(ItemRegistry.melonsmoothieItem, new Object[] { "toolJuicer", Items.melon, Items.snowball });
-          AddRecipe(ItemRegistry.carrotjuiceItem, new Object[] { "toolJuicer", Items.carrot });
           AddRecipe(ItemRegistry.carrotcakeItem, new Object[] { "toolBakeware", Items.carrot, "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.carrotsoupItem, new Object[] { "toolPot", Items.carrot, "listAllheavycream", "foodStock" });
           AddRecipe(ItemRegistry.glazedcarrotsItem, new Object[] { "toolSaucepan", Items.carrot, "foodButter", "listAllsugar" });
@@ -200,6 +203,7 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.springsaladItem, new Object[] { "toolCuttingboard", "cropLettuce", "cropWalnut" });
           AddRecipe(ItemRegistry.springsaladItem, new Object[] { "toolCuttingboard", "cropLettuce", "cropCauliflower" });
           AddRecipe(ItemRegistry.springsaladItem, new Object[] { "toolCuttingboard", "cropLettuce", "cropRhubarb" });
+
           AddRecipe(ItemRegistry.porklettucewrapItem, new Object[] { "toolCuttingboard", "cropLettuce", "listAllporkcooked" });
           AddRecipe(ItemRegistry.fishlettucewrapItem, new Object[] { "toolCuttingboard", "cropLettuce", "listAllfishcooked" });
           AddRecipe(ItemRegistry.bltItem, new Object[] { "toolCuttingboard", "cropLettuce", "cropTomato", "listAllporkcooked", "foodToast" });
@@ -228,7 +232,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.strawberrysmoothieItem, new Object[] { "toolJuicer", "cropStrawberry", Items.snowball });
           AddRecipe(ItemRegistry.strawberrypieItem, new Object[] { "toolBakeware", "cropStrawberry", "foodDough", "listAllsugar" });
           AddRecipe(ItemRegistry.strawberrysaladItem, new Object[] { "cropStrawberry", "foodFruitsalad" });
-          AddRecipe(ItemRegistry.strawberryjuiceItem, new Object[] { "toolJuicer", "cropStrawberry" });
           AddRecipe(ItemRegistry.chocolatestrawberryItem, new Object[] { "toolSaucepan", "cropStrawberry", "foodChocolatebar" });
      
           AddRecipe(ItemRegistry.peanutbutterItem, new Object[] { "toolJuicer", "cropPeanut" });
@@ -239,7 +242,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.pbandjItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapejelly", Items.bread });
           AddRecipe(ItemRegistry.peanutbuttercookiesItem, new Object[] { "toolBakeware", "listAllnutbutter", "foodFlour", "listAllegg", "listAllsugar" });
      
-          AddRecipe(ItemRegistry.grapejuiceItem, new Object[] { "toolJuicer", "cropGrape" });
           AddRecipe(ItemRegistry.vinegarItem, new Object[] { "toolPot", "foodGrapejuice" });
           AddRecipe(ItemRegistry.grapejellyItem, new Object[] { "toolSaucepan", "cropGrape", "listAllsugar" });
           AddRecipe(ItemRegistry.grapesaladItem, new Object[] { "cropGrape", "foodFruitsalad" });
@@ -248,7 +250,7 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.picklesItem, new Object[] { "toolPot", "cropCucumber", "foodSalt", "foodVinegar" });
           AddRecipe(ItemRegistry.picklesItem, new Object[] { "toolPot", "cropCucumber", "dustSalt", "foodVinegar" });
           AddRecipe(ItemRegistry.picklesItem, new Object[] { "toolPot", "cropCucumber", "itemSalt", "foodVinegar" });
-     
+
           AddRecipe(ItemRegistry.cucumbersaladItem, new Object[] { "toolCuttingboard", "cropCucumber", "foodSpringsalad" });
           AddRecipe(ItemRegistry.cucumbersoupItem, new Object[] { "toolPot", "cropCucumber", "foodStock", "listAllheavycream" });
           AddRecipe(ItemRegistry.vegetarianlettucewrapItem, new Object[] { "toolCuttingboard", "cropCucumber", "cropLettuce", "cropTomato" });
@@ -299,11 +301,9 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.blueberrysmoothieItem, new Object[] { "toolJuicer", "cropBlueberry", Items.snowball });
           AddRecipe(ItemRegistry.blueberrypieItem, new Object[] { "toolBakeware", "cropBlueberry", "foodDough", "listAllsugar" });
           AddRecipe(ItemRegistry.blueberrymuffinItem, new Object[] { "toolBakeware", "cropBlueberry", "foodFlour", "listAllegg" });
-          AddRecipe(ItemRegistry.blueberryjuiceItem, new Object[] { "toolJuicer", "cropBlueberry" });
           AddRecipe(ItemRegistry.pancakesItem, new Object[] { "toolSkillet", "foodFlour", "listAllegg", "listAllmilk" });
           AddRecipe(ItemRegistry.blueberrypancakesItem, new Object[] { "cropBlueberry", "foodPancakes" });
      
-          AddRecipe(new ItemStack(ItemRegistry.cherryjuiceItem, 1), new Object[] { "toolJuicer", "cropCherry" });
           AddRecipe(new ItemStack(ItemRegistry.cherrypieItem, 1), new Object[] { "toolBakeware", "cropCherry", "foodDough", "listAllsugar" });
           AddRecipe(new ItemStack(ItemRegistry.chocolatecherryItem, 1), new Object[] { "toolSaucepan", "cropCherry", "foodChocolatebar" });
           AddRecipe(new ItemStack(ItemRegistry.cherrysmoothieItem, 1), new Object[] { "toolJuicer", "cropCherry", Items.snowball });
@@ -400,11 +400,9 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.candiedwalnutsItem, new Object[] { "toolSaucepan", "cropWalnut", "foodVanilla", "foodGroundcinnamon", "listAllsugar" });
           AddRecipe(ItemRegistry.brownieItem, new Object[] { "toolBakeware", "cropWalnut", "foodFlour", "listAllegg", "foodButter", "listAllsugar", "foodCocoapowder", "foodVanilla" });
      
-          AddRecipe(ItemRegistry.papayajuiceItem, new Object[] { "toolJuicer", "cropPapaya" });
           AddRecipe(ItemRegistry.papayasmoothieItem, new Object[] { "toolJuicer", "cropPapaya", Items.snowball });
           AddRecipe(ItemRegistry.papayayogurtItem, new Object[] { "cropPapaya", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.starfruitjuiceItem, new Object[] { "toolJuicer", "cropStarfruit" });
           AddRecipe(ItemRegistry.starfruitsmoothieItem, new Object[] { "toolJuicer", "cropStarfruit", Items.snowball });
           AddRecipe(ItemRegistry.starfruityogurtItem, new Object[] { "cropStarfruit", "foodPlainyogurt" });
      
@@ -432,26 +430,21 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.coconutshrimpItem, new Object[] { "toolSkillet", "cropCoconut", "listAllegg", "foodFlour", "foodRawshrimp", "foodOliveoil" });
           AddRecipe(ItemRegistry.coconutyogurtItem, new Object[] { "cropCoconut", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.orangejuiceItem, new Object[] { "toolJuicer", "cropOrange" });
           AddRecipe(ItemRegistry.orangechickenItem, new Object[] { "toolSaucepan", "cropOrange", "listAllchickenraw", "listAllsugar", "cropRice", "cropBroccoli" });
           AddRecipe(ItemRegistry.orangesmoothieItem, new Object[] { "toolJuicer", "cropOrange", Items.snowball });
           AddRecipe(ItemRegistry.orangeyogurtItem, new Object[] { "cropOrange", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.peachjuiceItem, new Object[] { "toolJuicer", "cropPeach" });
           AddRecipe(ItemRegistry.peachcobblerItem, new Object[] { "toolBakeware", "cropPeach", "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.peachsmoothieItem, new Object[] { "toolJuicer", "cropPeach", Items.snowball });
           AddRecipe(ItemRegistry.peachyogurtItem, new Object[] { "cropPeach", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.limejuiceItem, new Object[] { "toolJuicer", "cropLime" });
           AddRecipe(ItemRegistry.keylimepieItem, new Object[] { "toolBakeware", "cropLime", "listAllheavycream", "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.limesmoothieItem, new Object[] { "toolJuicer", "cropLime", Items.snowball });
           AddRecipe(ItemRegistry.limeyogurtItem, new Object[] { "cropLime", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.mangojuiceItem, new Object[] { "toolJuicer", "cropMango" });
           AddRecipe(ItemRegistry.mangosmoothieItem, new Object[] { "toolJuicer", "cropMango", Items.snowball });
           AddRecipe(ItemRegistry.mangoyogurtItem, new Object[] { "cropMango", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.pomegranatejuiceItem, new Object[] { "toolJuicer", "cropPomegranate" });
           AddRecipe(ItemRegistry.pomegranatesmoothieItem, new Object[] { "toolJuicer", "cropPomegranate", Items.snowball });
           AddRecipe(ItemRegistry.pomegranateyogurtItem, new Object[] { "cropPomegranate", "foodPlainyogurt" });
      
@@ -493,21 +486,18 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.grapeyogurtItem, new Object[] { "cropGrape", "foodPlainyogurt" });
           AddRecipe(ItemRegistry.chocolateyogurtItem, new Object[] { "foodCocoapowder", "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.blackberryjuiceItem, new Object[] { "toolJuicer", "cropBlackberry" });
           AddRecipe(ItemRegistry.blackberrycobblerItem, new Object[] { "cropBlackberry", "toolBakeware", "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.blackberrysmoothieItem, new Object[] { "toolJuicer", "cropBlackberry", Items.snowball });
           AddRecipe(ItemRegistry.blackberryyogurtItem, new Object[] { "cropBlackberry", "foodPlainyogurt" });
           AddRecipe(ItemRegistry.chocolatemilkItem, new Object[] { "listAllmilk", "foodCocoapowder" });
           AddRecipe(ItemRegistry.pumpkinyogurtItem, new Object[] { Blocks.pumpkin, "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.raspberryjuiceItem, new Object[] { "toolJuicer", "cropRaspberry" });
           AddRecipe(ItemRegistry.raspberrypieItem, new Object[] { "cropRaspberry", "toolBakeware", "listAllsugar", "foodDough" });
           AddRecipe(ItemRegistry.raspberrysmoothieItem, new Object[] { "toolJuicer", "cropRaspberry", Items.snowball });
           AddRecipe(ItemRegistry.raspberryyogurtItem, new Object[] { "cropRaspberry", "foodPlainyogurt" });
           AddRecipe(ItemRegistry.cinnamonsugardonutItem, new Object[] { "foodDonut", "listAllsugar", "foodGroundcinnamon" });
           AddRecipe(ItemRegistry.melonyogurtItem, new Object[] { Items.melon, "foodPlainyogurt" });
      
-          AddRecipe(ItemRegistry.kiwijuiceItem, new Object[] { "toolJuicer", "cropKiwi" });
           AddRecipe(ItemRegistry.kiwismoothieItem, new Object[] { "toolJuicer", "cropKiwi", Items.snowball });
           AddRecipe(ItemRegistry.kiwiyogurtItem, new Object[] { "cropKiwi", "foodPlainyogurt" });
           AddRecipe(new ItemStack(ItemRegistry.plainyogurtItem, 4, 0), new Object[] { "listAllmilk", Items.leather });
@@ -524,13 +514,10 @@ public class FoodRecipes
      
           AddRecipe(ItemRegistry.sunflowerbroccolisaladItem, new Object[] { "toolCuttingboard", "cropSunflower", "cropBroccoli", "foodMayo", "listAllsugar", "listAllporkcooked" });
      
-          AddRecipe(ItemRegistry.cranberryjuiceItem, new Object[] { "toolJuicer", "cropCranberry", "listAllsugar" });
           AddRecipe(ItemRegistry.cranberrysauceItem, new Object[] { "toolPot", "cropCranberry", "listAllsugar" });
           AddRecipe(ItemRegistry.cranberrybarItem, new Object[] { "toolBakeware", "cropCranberry", "listAllsugar", "foodDough" });
      
           AddRecipe(ItemRegistry.peppermintItem, new Object[] { "toolSaucepan", "cropSpiceleaf", "listAllsugar" });
-     
-          AddRecipe(ItemRegistry.cactusfruitjuiceItem, new Object[] { "toolJuicer", "cropCactusfruit" });
      
           AddRecipe(ItemRegistry.blackpepperItem, new Object[] { "toolMortarandpestle", "cropPeppercorn" });
           AddRecipe(ItemRegistry.groundcinnamonItem, new Object[] { "toolMortarandpestle", "cropCinnamon" });
@@ -624,9 +611,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.beefjerkyItem, new Object[] { "listAllbeefraw", "dustSalt" });
           AddRecipe(ItemRegistry.beefjerkyItem, new Object[] { "listAllbeefraw", "itemSalt" });
      
-          AddRecipe(ItemRegistry.plumjuiceItem, new Object[] { "toolJuicer", "cropPlum" });
-          AddRecipe(ItemRegistry.pearjuiceItem, new Object[] { "toolJuicer", "cropPear" });
-     
           AddRecipe(ItemRegistry.ovenroastedcauliflowerItem, new Object[] { "toolBakeware", "cropCauliflower", "foodOliveoil", "cropGarlic", "cropLemon" });
           AddRecipe(ItemRegistry.leekbaconsoupItem, new Object[] { "toolPot", "cropLeek", "listAllporkcooked", Items.potato, "listAllheavycream" });
           AddRecipe(ItemRegistry.herbbutterparsnipsItem, new Object[] { "toolSaucepan", "cropParsnip", "foodButter", "cropSpiceleaf" });
@@ -635,7 +619,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.bamboosteamedriceItem, new Object[] { "toolPot", "cropRice", "cropBambooshoot" });
           AddRecipe(ItemRegistry.sweetpotatosouffleItem, new Object[] { "toolBakeware", "cropSweetpotato", "cropPecan", "foodDough", "foodButter" });
           AddRecipe(ItemRegistry.cashewchickenItem, new Object[] { "toolSaucepan", "listAllchickenraw", "cropCashew", "cropRice", "listAllpepper" });
-          AddRecipe(ItemRegistry.apricotjuiceItem, new Object[] { "toolJuicer", "cropApricot" });
           AddRecipe(ItemRegistry.apricotyogurtItem, new Object[] { "cropApricot", "foodPlainyogurt" });
           AddRecipe(ItemRegistry.apricotglazedporkItem, new Object[] { "listAllporkcooked", "foodApricotjelly" });
           AddRecipe(ItemRegistry.apricotjellyItem, new Object[] { "toolSaucepan", "cropApricot", "listAllsugar" });
@@ -646,8 +629,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.figjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodFigjelly", Items.bread });
           AddRecipe(ItemRegistry.figsmoothieItem, new Object[] { "toolJuicer", "cropFig", Items.snowball });
           AddRecipe(ItemRegistry.figyogurtItem, new Object[] { "cropFig", "foodPlainyogurt" });
-          AddRecipe(ItemRegistry.figjuiceItem, new Object[] { "toolJuicer", "cropFig" });
-          AddRecipe(ItemRegistry.grapefruitjuiceItem, new Object[] { "toolJuicer", "cropGrapefruit" });
           AddRecipe(ItemRegistry.grapefruitjellyItem, new Object[] { "toolSaucepan", "cropGrapefruit", "listAllsugar" });
           AddRecipe(ItemRegistry.grapefruitjellysandwichItem, new Object[] { "toolCuttingboard", "listAllnutbutter", "foodGrapefruitjelly", Items.bread });
           AddRecipe(ItemRegistry.grapefruitsmoothieItem, new Object[] { "toolJuicer", "cropGrapefruit", Items.snowball });
@@ -656,7 +637,6 @@ public class FoodRecipes
           AddRecipe(ItemRegistry.citrussaladItem, new Object[] { "toolCuttingboard", "listAllcitrus", "cropLettuce" });
           AddRecipe(ItemRegistry.pecanpieItem, new Object[] { "toolBakeware", "cropPecan", "foodDough", "listAllsugar", "foodButter" });
           AddRecipe(ItemRegistry.pralinesItem, new Object[] { "toolSaucepan", "cropPecan", "listAllsugar" });
-          AddRecipe(ItemRegistry.persimmonjuiceItem, new Object[] { "toolJuicer", "cropPersimmon" });
           AddRecipe(ItemRegistry.persimmonyogurtItem, new Object[] { "cropPersimmon", "foodPlainyogurt" });
           AddRecipe(ItemRegistry.persimmonsmoothieItem, new Object[] { "toolJuicer", "cropPersimmon", Items.snowball });
           AddRecipe(ItemRegistry.persimmonjellyItem, new Object[] { "toolSaucepan", "cropPersimmon", "listAllsugar" });
@@ -862,6 +842,60 @@ public class FoodRecipes
      private static void AddRecipe(ItemStack _output, Object[] _input)
      {
           recipeList.add(new ShapelessOreRecipe(_output, _input));
+     }
+
+
+     private static void AddJuices()
+     {
+          AddRecipe(ItemRegistry.applejuiceItem, new Object[] { "toolJuicer", "cropApple" });
+          AddRecipe(ItemRegistry.melonjuiceItem, new Object[] { "toolJuicer", Items.melon });
+          AddRecipe(ItemRegistry.carrotjuiceItem, new Object[] { "toolJuicer", Items.carrot });
+          AddRecipe(ItemRegistry.strawberryjuiceItem, new Object[] { "toolJuicer", "cropStrawberry" });
+          AddRecipe(ItemRegistry.grapejuiceItem, new Object[] { "toolJuicer", "cropGrape" });
+          AddRecipe(new ItemStack(ItemRegistry.cherryjuiceItem, 1), new Object[] { "toolJuicer", "cropCherry" });
+          AddRecipe(ItemRegistry.blueberryjuiceItem, new Object[] { "toolJuicer", "cropBlueberry" });
+          AddRecipe(ItemRegistry.papayajuiceItem, new Object[] { "toolJuicer", "cropPapaya" });
+          AddRecipe(ItemRegistry.starfruitjuiceItem, new Object[] { "toolJuicer", "cropStarfruit" });
+          AddRecipe(ItemRegistry.orangejuiceItem, new Object[] { "toolJuicer", "cropOrange" });
+          AddRecipe(ItemRegistry.peachjuiceItem, new Object[] { "toolJuicer", "cropPeach" });
+          AddRecipe(ItemRegistry.limejuiceItem, new Object[] { "toolJuicer", "cropLime" });
+          AddRecipe(ItemRegistry.mangojuiceItem, new Object[] { "toolJuicer", "cropMango" });
+          AddRecipe(ItemRegistry.pomegranatejuiceItem, new Object[] { "toolJuicer", "cropPomegranate" });
+          AddRecipe(ItemRegistry.blackberryjuiceItem, new Object[] { "toolJuicer", "cropBlackberry" });
+          AddRecipe(ItemRegistry.raspberryjuiceItem, new Object[] { "toolJuicer", "cropRaspberry" });
+          AddRecipe(ItemRegistry.kiwijuiceItem, new Object[] { "toolJuicer", "cropKiwi" });
+          AddRecipe(ItemRegistry.cranberryjuiceItem, new Object[] { "toolJuicer", "cropCranberry", "listAllsugar" });
+          AddRecipe(ItemRegistry.cactusfruitjuiceItem, new Object[] { "toolJuicer", "cropCactusfruit" });
+          AddRecipe(ItemRegistry.plumjuiceItem, new Object[] { "toolJuicer", "cropPlum" });
+          AddRecipe(ItemRegistry.pearjuiceItem, new Object[] { "toolJuicer", "cropPear" });
+          AddRecipe(ItemRegistry.apricotjuiceItem, new Object[] { "toolJuicer", "cropApricot" });
+          AddRecipe(ItemRegistry.figjuiceItem, new Object[] { "toolJuicer", "cropFig" });
+          AddRecipe(ItemRegistry.grapefruitjuiceItem, new Object[] { "toolJuicer", "cropGrapefruit" });
+          AddRecipe(ItemRegistry.persimmonjuiceItem, new Object[] { "toolJuicer", "cropPersimmon" });
+     }
+
+
+     private static void AddYogurts()
+     {
+          
+     }
+
+
+     private static void AddSmoothies()
+     {
+
+     }
+
+
+     private static void AddSodas()
+     {
+
+     }
+
+
+     private static void AddPies()
+     {
+          
      }
 
 
