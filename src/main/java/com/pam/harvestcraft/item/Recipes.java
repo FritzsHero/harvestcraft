@@ -701,6 +701,12 @@ public class Recipes
      }
 
 
+     private static void AddShapedRecipe(Block _output, Object[] _input)
+     {
+          recipeList.add(new ShapedOreRecipe(_output, _input));
+     }
+
+
      //#region "Add Food"
      private static void AddJuices()
      {
@@ -979,83 +985,51 @@ public class Recipes
 
      private static void GetShapedRecipes()
 	{
-		//Woven Cloth Recipes
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.string, 2), "cropCotton", "cropCotton", "cropCotton"));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), Items.string, Items.string));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 3), "materialCloth", "materialCloth", "materialCloth"));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.wool, 1, 0), "materialCloth", "materialCloth"));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
+          //Woven Cloth Recipes
+          AddRecipe(new ItemStack(Items.string, 2), new Object[]{ "cropCotton", "cropCotton", "cropCotton" });
+          AddRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), new Object[]{ Items.string, Items.string });
+          AddRecipe(new ItemStack(ItemRegistry.wovencottonItem, 3), new Object[]{ "materialCloth", "materialCloth", "materialCloth" });
+          AddRecipe(Blocks.wool, new Object[]{ "materialCloth", "materialCloth" });
+          AddRecipe(Items.slime_ball, new Object[]{ "foodJellyfishraw" });
 
-		//Cotton Armor Recipes
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_helmet, 1), new Object[]
-		    {
-		        "XXX", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_chestplate, 1), new Object[]
-		    {
-		        "X X", "XXX", "XXX", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_leggings, 1), new Object[]
-		    {
-		        "XXX", "X X", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_boots, 1), new Object[]
-		    {
-		        "X X", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
+          //Cotton Armor Recipes
+          AddShapedRecipe(Items.leather_helmet, new Object[]{ "XXX", "X X", 'X', ItemRegistry.wovencottonItem });
+          AddShapedRecipe(Items.leather_chestplate, new Object[]{ "X X", "XXX", "XXX", 'X', ItemRegistry.wovencottonItem });
+          AddShapedRecipe(Items.leather_leggings, new Object[]{ "XXX", "X X", "X X", 'X', ItemRegistry.wovencottonItem });
+          AddShapedRecipe(Items.leather_boots, new Object[]{ "X X", "X X", 'X', ItemRegistry.wovencottonItem });
 
-		//Logs
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
+          //Logs
+          GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
+          GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
+          GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
 	}
 
 
      private static void RegisterTools()
      {
-          recipeList.add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
-	 	 		"X@@", " @@", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.skilletItem, true, new Object[]{
-	 	 		"@  ", " @ ", "  X", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.saucepanItem, true, new Object[]{
-	 	 		"@ ", "X ", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.bakewareItem, true, new Object[]{
-	 	 		"@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrick"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.cuttingboardItem, true, new Object[]{
-	 	 		"@  ", " X ", "  O", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.mortarandpestleItem, true, new Object[]{
-	 	 		"X@X", " X ", Character.valueOf('@'), "stickWood", Character.valueOf('X'), "stone"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.mixingbowlItem, true, new Object[]{
-	 	 		"X@X", " X ", Character.valueOf('@'), "stickWood", Character.valueOf('X'), "plankWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.juicerItem, true, new Object[]{
-	 	 		"@ ", "X ", Character.valueOf('@'), "stone", Character.valueOf('X'), Blocks.stone_pressure_plate}));
+          AddShapedRecipe(ItemRegistry.potItem, new Object[]{ true, "X@@", " @@", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.skilletItem, new Object[]{ true, "@  ", " @ ", "  X", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.saucepanItem, new Object[]{ true, "@ ", "X ", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.bakewareItem, new Object[]{ true, "@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrick"});
+          AddShapedRecipe(ItemRegistry.cuttingboardItem, new Object[]{ true, "@  ", " X ", "  O", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"});
+          AddShapedRecipe(ItemRegistry.mortarandpestleItem, new Object[]{ true, "X@X", " X ", Character.valueOf('@'), "stickWood", Character.valueOf('X'), "stone"});
+          AddShapedRecipe(ItemRegistry.mixingbowlItem, new Object[]{ true, "X@X", " X ", Character.valueOf('@'), "stickWood", Character.valueOf('X'), "plankWood"});
+          AddShapedRecipe(ItemRegistry.juicerItem, new Object[]{ true, "@ ", "X ", Character.valueOf('@'), "stone", Character.valueOf('X'), Blocks.stone_pressure_plate});
 		
-		//Copper Tools
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
-	 	 		"X@@", " @@", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.skilletItem, true, new Object[]{
-	 	 		"@  ", " @ ", "  X", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.saucepanItem, true, new Object[]{
-	 	 		"@  ", "X  ", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.cuttingboardItem, true, new Object[]{
-	 	 		"@  ", " X ", "  O", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"}));
-		//Steel Tools
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
-	 	 		"X@@", " @@", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.skilletItem, true, new Object[]{
-	 	 		"@  ", " @ ", "  X", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.saucepanItem, true, new Object[]{
-	 	 		"@  ", "X  ", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"}));
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.cuttingboardItem, true, new Object[]{
-	 	 		"@  ", " X ", "  O", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"}));
-		//Nether Brick Bakeware
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.bakewareItem, true, new Object[]{
-	 	 		"@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrickNether"}));
+          //Copper Tools
+          AddShapedRecipe(ItemRegistry.potItem, new Object[]{ true, "X@@", " @@", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.skilletItem, new Object[]{ true, "@  ", " @ ", "  X", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.saucepanItem, new Object[]{ true, "@  ", "X  ", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.cuttingboardItem, new Object[]{ true, "@  ", " X ", "  O", Character.valueOf('@'), "ingotCopper", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"});
+          //Steel Tools
+          AddShapedRecipe(ItemRegistry.potItem, new Object[]{ true, "X@@", " @@", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.skilletItem, new Object[]{ true, "@  ", " @ ", "  X", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.saucepanItem, new Object[]{ true, "@  ", "X  ", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood"});
+          AddShapedRecipe(ItemRegistry.cuttingboardItem, new Object[]{ true, "@  ", " X ", "  O", Character.valueOf('@'), "ingotSteel", Character.valueOf('X'), "stickWood", Character.valueOf('O'), "plankWood"});
+          //Nether Brick Bakeware
+          AddShapedRecipe(ItemRegistry.bakewareItem, new Object[]{ true, "@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrickNether"});
 		
-		//Market Recipe
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-               {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.emerald
-               }));
+          //Market Recipe
+          AddShapedRecipe(BlockRegistry.pamMarket, new Object[]{ "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.emerald });
      }
 }
