@@ -16,7 +16,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 
-public class FoodRecipes
+public class Recipes
 {
      private static List<IRecipe> recipeList;
 
