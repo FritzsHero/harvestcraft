@@ -12,12 +12,6 @@ import com.pam.harvestcraft.Reference;
 
 public final class ItemRenderRegister
 {
-	public static void preInit()
-	{
-		//ModelBakery.registerItemVariants(ItemRegistry.metaItem, new ResourceLocation("harvestcraft:meta_item_white"), new ResourceLocation("harvestcraft:meta_item_black"));
-	}
-
-
 	public static void registerItemRenderer()
 	{
 		RegisterCropRenderer();
@@ -672,8 +666,6 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.wontonsoupItem);
 		reg(ItemRegistry.schnitzelItem);
 		reg(ItemRegistry.bratwurstItem);
-		//reg(ItemRegistry.metaItem, 0, "meta_item_white");
-		//reg(ItemRegistry.metaItem, 1, "meta_item_black");
 	}
 
 

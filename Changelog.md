@@ -5,6 +5,49 @@
 ### Change
 
 
+## [Version: 2.1.0] - 2024.01.27
+### Change
+- Removed MetaItem
+- Refactored AddShapedRecipe
+- Removed separated candleberry seed recipe
+- Removed separated cotton seed recipe
+- Fixed cake recipe
+- Removed Pumpkin Lantern recipe
+- Moved RegisterTools into separated method
+- Refactored registration for shaped recipes
+- Moved ShapedRecipes into Recipes file
+- Removed non emerald market recipes
+- Renamed Recipes class
+- Renamed Recipes file
+- Moved BubblyWater Recipe to GeneralSmelting
+- Moved JellySandwich Recipes into separated method
+- Moved Jelly Recipes to separated method
+- Moved Pie Recipes into separated method
+- Moved Soda Recipes into separated method
+- Moved Yogurt Recipes into separated method
+- Moved Smoothie Recipes into separated method
+- Moved Juice Recipes into separated method
+- Refactored RegisterItems
+- Refactored RegisterDrinks
+- Refactored Item registration
+- Refactored ItemFood into an method
+- Refactored RegisterFish
+- Refactored RegisterSodas
+- Refactored all meaty meals
+- Refactored RegisterMeatyMeals method
+- Refactored RegisterToolsRenderer
+- Renamed amount variables
+- Refactored AddRecipe method
+- Removed mutton smelting comment
+- Refactored AddSmelting method
+- Refactored general smelting
+- Refactored smelting registration for fish
+- Renamed method parameters
+- Changed recipeList to static var
+- Merged OreDictionary registration
+- Removed unused imports
+
+
 ## [Version: 2.0.4] - 2024.01.14
 ### Change
 - Fixed vines preventing leave generation
