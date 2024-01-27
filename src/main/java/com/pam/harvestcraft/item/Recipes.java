@@ -671,6 +671,7 @@ public class Recipes
           AddRecipe(ItemRegistry.schnitzelItem, new Object[] { "toolSkillet", "listAllporkraw", "foodFlour", "cropLemon", "foodOliveoil", "foodBlackpepper" });
           AddRecipe(ItemRegistry.bratwurstItem, new Object[] { "toolCuttingboard", "foodPorksausage", "foodPickles", "cropOnion", Items.bread });
      
+          RegisterTools();
           GetShapedRecipes();
      }
 
@@ -972,7 +973,51 @@ public class Recipes
 
      private static void GetShapedRecipes()
 	{
-		recipeList.add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
+		//Cotton Seed
+		recipeList.add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));
+		//Woven Cloth Recipes
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.string, 2), "cropCotton", "cropCotton", "cropCotton"));
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), Items.string, Items.string));
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 3), "materialCloth", "materialCloth", "materialCloth"));
+		//Woven Cloth into Wool Recipe
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.wool, 1, 0), "materialCloth", "materialCloth"));
+				
+		//Cotton Armor Recipes
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_helmet, 1), new Object[]
+		    {
+		        "XXX", "X X", 'X', ItemRegistry.wovencottonItem
+		    }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_chestplate, 1), new Object[]
+		    {
+		        "X X", "XXX", "XXX", 'X', ItemRegistry.wovencottonItem
+		    }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_leggings, 1), new Object[]
+		    {
+		        "XXX", "X X", "X X", 'X', ItemRegistry.wovencottonItem
+		    }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_boots, 1), new Object[]
+		    {
+		        "X X", "X X", 'X', ItemRegistry.wovencottonItem
+		    }));
+		        
+		recipeList.add(new ShapelessOreRecipe(ItemRegistry.candleberryseedItem, ItemRegistry.candleberryItem));
+		      
+		//Random Recipes
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
+				
+		//Pumpkin Lantern
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.lit_pumpkin, 1), "cropPumpkin", "blockTorch"));
+
+		//Logs
+		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
+		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
+		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
+	}
+
+
+     private static void RegisterTools()
+     {
+          recipeList.add(new ShapedOreRecipe(ItemRegistry.potItem, true, new Object[]{
 	 	 		"X@@", " @@", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
 		recipeList.add(new ShapedOreRecipe(ItemRegistry.skilletItem, true, new Object[]{
 	 	 		"@  ", " @ ", "  X", Character.valueOf('@'), "ingotIron", Character.valueOf('X'), "stickWood"}));
@@ -1016,45 +1061,5 @@ public class Recipes
                {
                     "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.emerald
                }));
-		
-		//Cotton Seed
-		recipeList.add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));
-		//Woven Cloth Recipes
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.string, 2), "cropCotton", "cropCotton", "cropCotton"));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), Items.string, Items.string));
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 3), "materialCloth", "materialCloth", "materialCloth"));
-		//Woven Cloth into Wool Recipe
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.wool, 1, 0), "materialCloth", "materialCloth"));
-				
-		//Cotton Armor Recipes
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_helmet, 1), new Object[]
-		    {
-		        "XXX", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_chestplate, 1), new Object[]
-		    {
-		        "X X", "XXX", "XXX", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_leggings, 1), new Object[]
-		    {
-		        "XXX", "X X", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_boots, 1), new Object[]
-		    {
-		        "X X", "X X", 'X', ItemRegistry.wovencottonItem
-		    }));
-		        
-		recipeList.add(new ShapelessOreRecipe(ItemRegistry.candleberryseedItem, ItemRegistry.candleberryItem));
-		      
-		//Random Recipes
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
-				
-		//Pumpkin Lantern
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.lit_pumpkin, 1), "cropPumpkin", "blockTorch"));
-
-		//Logs
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
-		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
-	}
+     }
 }
