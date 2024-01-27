@@ -1004,9 +1004,6 @@ public class Recipes
 		      
 		//Random Recipes
 		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
-				
-		//Pumpkin Lantern
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.lit_pumpkin, 1), "cropPumpkin", "blockTorch"));
 
 		//Logs
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
