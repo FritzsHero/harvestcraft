@@ -58,48 +58,10 @@ public class PamOtherRecipes
 	 	 		"@@@", "@ @", "@@@", Character.valueOf('@'), "ingotBrickNether"}));
 		
 		//Market Recipe
-		if (BlockRegistry.marketblockrecipeItem == 0)
-		{
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
                 {
                     "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.emerald
                 }));
-		}
-		if (BlockRegistry.marketblockrecipeItem == 1)
-		{
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-                {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.diamond
-                }));
-		}
-		if (BlockRegistry.marketblockrecipeItem == 2)
-		{
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-                {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.gold_ingot
-                }));
-		}
-		if (BlockRegistry.marketblockrecipeItem == 3)
-		{
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-                {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.gold_nugget
-                }));
-		}
-		if (BlockRegistry.marketblockrecipeItem == 4)
-		{
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-                {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.iron_ingot
-                }));
-		}
-		if (BlockRegistry.marketblockrecipeItem == 5)
-		{
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(BlockRegistry.pamMarket, 1), new Object[]
-                {
-                    "XOX", "OEO", "XOX",'X', "plankWood", 'O', Blocks.wool, 'E', Items.apple
-                }));
-		}
 		
 		//Cotton Seed
 				CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));

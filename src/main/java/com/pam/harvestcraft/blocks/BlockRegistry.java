@@ -211,7 +211,6 @@ public class BlockRegistry
 	public static boolean marketsellChicken;
 	public static boolean marketsellHorse;
 	public static boolean marketsellBonemeal;
-	public static int marketblockrecipeItem;
 	public static int marketseedPrice;
 	public static int marketsaplingPrice;
 	public static int marketpigPrice;
@@ -264,7 +263,6 @@ public class BlockRegistry
 		marketsellChicken = config.get("market sales", "marketsellChicken", true).getBoolean(true);
 		marketsellHorse = config.get("market sales", "marketsellHorse", true).getBoolean(true);
 		marketsellBonemeal = config.get("market sales", "marketsellBonemeal", true).getBoolean(true);
-		marketblockrecipeItem = config.get("miscellaneous recipes", "marketblockrecipeItem", 0).getInt();
 		marketseedPrice = config.get("market prices", "marketseedPrice", 1).getInt();
 		marketsaplingPrice = config.get("market prices", "marketsaplingPrice", 3).getInt();
 		marketpigPrice = config.get("market prices", "marketpigPrice", 6).getInt();
