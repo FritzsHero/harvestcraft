@@ -53,7 +53,7 @@ public class Recipes
           }
      
           AddRecipe(new ItemStack(ItemRegistry.sunflowerseedsItem, 2, 0), new Object[] { new ItemStack(Blocks.double_plant, 1, 0), new ItemStack(Blocks.double_plant, 1, 0) });
-     
+
           if (ItemRegistry.isSaltFromWaterEnabled)
           {
                AddRecipe(ItemRegistry.saltItem, new Object[] { "toolPot", "listAllwater" });
@@ -979,15 +979,13 @@ public class Recipes
 
      private static void GetShapedRecipes()
 	{
-		//Cotton Seed
-		recipeList.add(new ShapelessOreRecipe(ItemRegistry.cottonseedItem, ItemRegistry.cottonItem));
 		//Woven Cloth Recipes
 		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.string, 2), "cropCotton", "cropCotton", "cropCotton"));
 		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 1), Items.string, Items.string));
 		recipeList.add(new ShapelessOreRecipe(new ItemStack(ItemRegistry.wovencottonItem, 3), "materialCloth", "materialCloth", "materialCloth"));
-		//Woven Cloth into Wool Recipe
 		recipeList.add(new ShapelessOreRecipe(new ItemStack(Blocks.wool, 1, 0), "materialCloth", "materialCloth"));
-				
+		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
+
 		//Cotton Armor Recipes
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.leather_helmet, 1), new Object[]
 		    {
@@ -1005,11 +1003,6 @@ public class Recipes
 		    {
 		        "X X", "X X", 'X', ItemRegistry.wovencottonItem
 		    }));
-		        
-		recipeList.add(new ShapelessOreRecipe(ItemRegistry.candleberryseedItem, ItemRegistry.candleberryItem));
-		      
-		//Random Recipes
-		recipeList.add(new ShapelessOreRecipe(new ItemStack(Items.slime_ball, 1), "foodJellyfishraw"));
 
 		//Logs
 		GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
