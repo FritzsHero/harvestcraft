@@ -75,7 +75,7 @@ public class Recipes
           AddRecipe(new ItemStack(ItemRegistry.freshwaterItem, ItemRegistry.amountFreshWaterFromBucket), new Object[] { Items.water_bucket });
           AddRecipe(new ItemStack(ItemRegistry.freshmilkItem, ItemRegistry.amountFreshMilkFromBucket), new Object[] { Items.milk_bucket });
      
-          AddRecipe(new ItemStack(Items.cake, 1), new Object[] { "AAA", "BEB", "CCC", Character.valueOf('A'), "listAllmilk", Character.valueOf('B'), "honeyEqualssugar", Character.valueOf('C'), "flourEqualswheat", Character.valueOf('E'), "listAllegg" });
+          AddShapedRecipe(Items.cake, new Object[] { "AAA", "BEB", "CCC", Character.valueOf('A'), "listAllmilk", Character.valueOf('B'), "honeyEqualssugar", Character.valueOf('C'), "flourEqualswheat", Character.valueOf('E'), "listAllegg" });
      
           AddRecipe(Items.mushroom_stew, new Object[] { Items.bowl, "listAllmushroom", "listAllmushroom" });
      
@@ -692,6 +692,12 @@ public class Recipes
      {
           // In 1.8 the same as GameRegistry.addShapelessRecipe
           recipeList.add(new ShapelessOreRecipe(_output, _input));
+     }
+
+
+     private static void AddShapedRecipe(Item _output, Object[] _input)
+     {
+          recipeList.add(new ShapedOreRecipe(_output, _input));
      }
 
 
