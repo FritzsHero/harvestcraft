@@ -873,6 +873,7 @@ public class ItemRegistry
         public static Item bratwurstItem;
         public static Item BakedCactusItem;
         public static Item TomatoHerbChickenItem;
+        public static Item ChickenBiscuitItem;
 
         public static int cropfoodRestore;
         public static float cropsaturationRestore;
@@ -1949,6 +1950,7 @@ public class ItemRegistry
                 GameRegistry.registerItem(AppleFritterItem = new ItemFood(6, 0.75F, false).setUnlocalizedName("AppleFritterItem").setCreativeTab(harvestcraft.modTab), "AppleFritterItem");
                 GameRegistry.registerItem(BakedCactusItem = new ItemFood(2, snacksaturation, false).setUnlocalizedName("BakedCactusItem").setCreativeTab(harvestcraft.modTab), "BakedCactusItem");
                 GameRegistry.registerItem(TomatoHerbChickenItem = new ItemFood(4, snacksaturation, false).setUnlocalizedName("TomatoHerbChickenItem").setCreativeTab(harvestcraft.modTab), "TomatoHerbChickenItem");
+                GameRegistry.registerItem(ChickenBiscuitItem = new ItemFood(17, mealsaturation, false).setUnlocalizedName("ChickenBiscuitItem").setCreativeTab(harvestcraft.modTab), "ChickenBiscuitItem");
         }
 
 
