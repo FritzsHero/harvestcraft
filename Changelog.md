@@ -4,6 +4,28 @@
 ## [Version: x.x.x] - xxxx.xx.xx
 ### Change
 
+## [Version: 2.4.0] - 2025.03.01
+### Change
+- Added TomatoHerbChicken
+- Added ChickenBiscuit
+- Added BBQsauce
+- Added CinnamonToast
+
+
+## [Version: 2.3.0] - 2025.03.01
+### Change
+- Added BakedCactus
+
+
+## [Version: 2.2.1] - 2025.03.01
+### Change
+- Fixed FishTaco image
+
+
+## [Version: 2.2.0] - 2025.03.01
+### Change
+- Added AppleFritter
+
 
 ## [Version: 2.1.0] - 2024.01.27
 ### Change

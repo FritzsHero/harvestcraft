@@ -906,6 +906,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("foodTomatoHerbChicken", ItemRegistry.TomatoHerbChickenItem);
 		OreDictionary.registerOre("foodChickenBiscuit", ItemRegistry.ChickenBiscuitItem);
 		OreDictionary.registerOre("foodBBQsauce", ItemRegistry.BBQsauceItem);
+		OreDictionary.registerOre("foodCinnamonToast", ItemRegistry.CinnamonToastItem);
 		OreDictionary.registerOre("foodChickengumbo", ItemRegistry.chickengumboItem);
 		OreDictionary.registerOre("foodGeneraltsochicken", ItemRegistry.generaltsochickenItem);
 		OreDictionary.registerOre("foodCaliforniaroll", ItemRegistry.californiarollItem);
