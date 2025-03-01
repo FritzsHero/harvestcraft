@@ -871,6 +871,7 @@ public class ItemRegistry
         public static Item wontonsoupItem;
         public static Item schnitzelItem;
         public static Item bratwurstItem;
+        public static Item BakedCactusItem;
 
         public static int cropfoodRestore;
         public static float cropsaturationRestore;
@@ -1945,6 +1946,7 @@ public class ItemRegistry
                 GameRegistry.registerItem(schnitzelItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("schnitzelItem").setCreativeTab(harvestcraft.modTab), "schnitzelItem");
                 GameRegistry.registerItem(bratwurstItem = new ItemFood(13, mealsaturation, false).setUnlocalizedName("bratwurstItem").setCreativeTab(harvestcraft.modTab), "bratwurstItem");
                 GameRegistry.registerItem(AppleFritterItem = new ItemFood(6, 0.75F, false).setUnlocalizedName("AppleFritterItem").setCreativeTab(harvestcraft.modTab), "AppleFritterItem");
+                GameRegistry.registerItem(BakedCactusItem = new ItemFood(2, snacksaturation, false).setUnlocalizedName("BakedCactusItem").setCreativeTab(harvestcraft.modTab), "BakedCactusItem");
         }
 
 
