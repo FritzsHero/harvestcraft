@@ -903,6 +903,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("foodBratwurst", ItemRegistry.bratwurstItem);
 		OreDictionary.registerOre("foodAppleFritter", ItemRegistry.AppleFritterItem);
 		OreDictionary.registerOre("foodBakedCactus", ItemRegistry.BakedCactusItem);
+		OreDictionary.registerOre("foodTomatoHerbChicken", ItemRegistry.TomatoHerbChickenItem);
 		OreDictionary.registerOre("foodChickengumbo", ItemRegistry.chickengumboItem);
 		OreDictionary.registerOre("foodGeneraltsochicken", ItemRegistry.generaltsochickenItem);
 		OreDictionary.registerOre("foodCaliforniaroll", ItemRegistry.californiarollItem);

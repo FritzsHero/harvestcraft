@@ -668,6 +668,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.bratwurstItem);
 		reg(ItemRegistry.AppleFritterItem);
 		reg(ItemRegistry.BakedCactusItem);
+		reg(ItemRegistry.TomatoHerbChickenItem);
 	}
 
 
