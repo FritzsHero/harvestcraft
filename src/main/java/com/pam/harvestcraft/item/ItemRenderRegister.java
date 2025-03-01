@@ -666,6 +666,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.wontonsoupItem);
 		reg(ItemRegistry.schnitzelItem);
 		reg(ItemRegistry.bratwurstItem);
+		reg(ItemRegistry.AppleFritterItem);
 	}
 
 

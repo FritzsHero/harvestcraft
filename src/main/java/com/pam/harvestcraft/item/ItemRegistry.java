@@ -128,6 +128,7 @@ public class ItemRegistry
         public static Item sunflowerseedsItem;
         public static Item AgaveItem;
         public static Item AmaranthItem;
+        public static Item AppleFritterItem;
         public static Item ArrowrootItem;
         public static Item CassavaItem;
         public static Item ChickpeaItem;
@@ -1943,6 +1944,7 @@ public class ItemRegistry
                 GameRegistry.registerItem(wontonsoupItem = new ItemFood(9, mealsaturation, false).setUnlocalizedName("wontonsoupItem").setCreativeTab(harvestcraft.modTab), "wontonsoupItem");
                 GameRegistry.registerItem(schnitzelItem = new ItemFood(6, mealsaturation, false).setUnlocalizedName("schnitzelItem").setCreativeTab(harvestcraft.modTab), "schnitzelItem");
                 GameRegistry.registerItem(bratwurstItem = new ItemFood(13, mealsaturation, false).setUnlocalizedName("bratwurstItem").setCreativeTab(harvestcraft.modTab), "bratwurstItem");
+                GameRegistry.registerItem(AppleFritterItem = new ItemFood(6, 0.75F, false).setUnlocalizedName("AppleFritterItem").setCreativeTab(harvestcraft.modTab), "AppleFritterItem");
         }
 
 

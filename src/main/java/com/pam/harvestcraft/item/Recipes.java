@@ -670,6 +670,7 @@ public class Recipes
           AddRecipe(ItemRegistry.wontonsoupItem, new Object[] { "toolPot", "foodStock", "foodDough", "cropScallion", "cropGinger", "foodSoysauce" });
           AddRecipe(ItemRegistry.schnitzelItem, new Object[] { "toolSkillet", "listAllporkraw", "foodFlour", "cropLemon", "foodOliveoil", "foodBlackpepper" });
           AddRecipe(ItemRegistry.bratwurstItem, new Object[] { "toolCuttingboard", "foodPorksausage", "foodPickles", "cropOnion", Items.bread });
+          AddRecipe(ItemRegistry.AppleFritterItem, new Object[] { "toolPot", Items.apple, "foodDough", "listAllsugar", "foodOliveoil" });
      
           RegisterTools();
           GetShapedRecipes();
