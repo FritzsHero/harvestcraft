@@ -670,6 +670,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.BakedCactusItem);
 		reg(ItemRegistry.TomatoHerbChickenItem);
 		reg(ItemRegistry.ChickenBiscuitItem);
+		reg(ItemRegistry.BBQsauceItem);
 	}
 
 
