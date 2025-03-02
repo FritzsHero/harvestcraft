@@ -677,6 +677,7 @@ public class Recipes
           AddRecipe(new ItemStack(ItemRegistry.BBQsauceItem, 6), new Object[] { "toolSaucepan", "listAllsugar", "cropTomato", "foodBlackpepper", "foodVinegar", "cropMustard" });
           AddRecipe(ItemRegistry.BBQsauceItem, new Object[] { "toolSaucepan", "cropMustard", "cropTomato" });
           AddRecipe(ItemRegistry.CinnamonToastItem, new Object[] { "toolBakeware", Items.bread, "foodGroundcinnamon", "foodButter", "listAllsugar" });
+          AddRecipe(ItemRegistry.vanillaItem, new Object[] { "toolBakeware", "cropVanillabean" });
 
           RegisterTools();
           GetShapedRecipes();
