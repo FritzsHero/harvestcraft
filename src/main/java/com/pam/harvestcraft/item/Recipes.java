@@ -384,8 +384,8 @@ public class Recipes
      
           AddRecipe(ItemRegistry.walnutraisinbreadItem, new Object[] { "toolBakeware", "cropWalnut", "foodRaisins", "foodDough", "foodGroundcinnamon" });
           AddRecipe(ItemRegistry.candiedwalnutsItem, new Object[] { "toolSaucepan", "cropWalnut", "foodVanilla", "foodGroundcinnamon", "listAllsugar" });
-          AddRecipe(ItemRegistry.brownieItem, new Object[] { "toolBakeware", "cropWalnut", "foodFlour", "listAllegg", "foodButter", "listAllsugar", "foodCocoapowder", "foodVanilla" });
-     
+          AddRecipe(ItemRegistry.brownieItem, new Object[] { "toolBakeware", "cropWalnut", "foodBatter", "foodButter", "listAllsugar", "foodCocoapowder", "foodVanilla" });
+
           AddRecipe(ItemRegistry.guacamoleItem, new Object[] { "toolCuttingboard", "cropAvocado", "cropChilipepper", "cropTomato", "cropOnion", "cropSpiceleaf" });
           AddRecipe(ItemRegistry.creamofavocadosoupItem, new Object[] { "toolPot", "cropAvocado", "listAllheavycream", "cropLime", "cropSpiceleaf", "foodStock" });
           AddRecipe(ItemRegistry.avocadoburritoItem, new Object[] { "toolCuttingboard", "cropAvocado", "foodTortilla", "foodCheese", "listAllchickencooked" });
