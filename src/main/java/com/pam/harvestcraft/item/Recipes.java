@@ -673,7 +673,7 @@ public class Recipes
           AddRecipe(ItemRegistry.AppleFritterItem, new Object[] { "toolPot", Items.apple, "foodDough", "listAllsugar", "foodOliveoil" });
           AddRecipe(ItemRegistry.BakedCactusItem, new Object[] { "toolBakeware", Blocks.cactus });
           AddRecipe(ItemRegistry.TomatoHerbChickenItem, new Object[] { "toolBakeware", "listAllchickenraw", "cropTomato", "cropSpiceleaf" });
-          AddRecipe(ItemRegistry.ChickenBiscuitItem, new Object[] { "toolCuttingboard", ItemRegistry.friedchickenItem, ItemRegistry.biscuitItem });
+          AddRecipe(ItemRegistry.ChickenBiscuitItem, new Object[] { "toolCuttingboard", "foodFriedchicken", "foodBiscuit" });
           AddRecipe(new ItemStack(ItemRegistry.BBQsauceItem, 6), new Object[] { "toolSaucepan", "listAllsugar", "cropTomato", "foodBlackpepper", "foodVinegar", "cropMustard" });
           AddRecipe(ItemRegistry.BBQsauceItem, new Object[] { "toolSaucepan", "cropMustard", "cropTomato" });
           AddRecipe(ItemRegistry.CinnamonToastItem, new Object[] { "toolBakeware", Items.bread, "foodGroundcinnamon", "foodButter", "listAllsugar" });
