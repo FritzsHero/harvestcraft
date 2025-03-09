@@ -236,6 +236,9 @@ public class BlockPamFruit extends Block  implements IGrowable
             if(currentBlock == BlockRegistry.pamGrapefruit){
                 savedStack = new ItemStack(ItemRegistry.grapefruitItem);
             } else
+			if(currentBlock == BlockRegistry.pamGuava){
+                savedStack = new ItemStack(ItemRegistry.guavaItem);
+            } else
             if(currentBlock == BlockRegistry.pamLemon){
                 savedStack = new ItemStack(ItemRegistry.lemonItem);
             } else

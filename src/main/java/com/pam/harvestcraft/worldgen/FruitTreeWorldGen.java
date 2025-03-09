@@ -158,7 +158,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 	{
 		isLogFruit = false;
 
-		switch (_random.nextInt(25))
+		switch (_random.nextInt(26))
 		{
 			case 0:
 				return BlockRegistry.pamBanana;
@@ -214,6 +214,8 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				return BlockRegistry.pamVanillabean;
 			case 25:
 				return BlockRegistry.pamBreadfruit;
+			case 26:
+				return BlockRegistry.pamGuava;
 			default:
 				return BlockRegistry.pamApple;
 		}

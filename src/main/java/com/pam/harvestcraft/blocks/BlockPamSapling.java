@@ -142,6 +142,10 @@ public class BlockPamSapling extends BlockBush implements IGrowable
 		{
 			fruitType = BlockRegistry.pamGrapefruit;
 		}
+		else if (this == BlockRegistry.pamguavaSapling)
+		{
+			fruitType = BlockRegistry.pamGuava;
+		}
 		else if (this == BlockRegistry.pamlemonSapling)
 		{
 			fruitType = BlockRegistry.pamLemon;
