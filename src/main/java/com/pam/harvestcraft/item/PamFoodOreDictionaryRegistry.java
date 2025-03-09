@@ -304,6 +304,8 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("cropAvocado", ItemRegistry.avocadoItem);
 		OreDictionary.registerOre("cropBanana", ItemRegistry.bananaItem);
 		OreDictionary.registerOre("listAllfruit", ItemRegistry.bananaItem);
+		OreDictionary.registerOre("cropBreadfruit", ItemRegistry.breadfruitItem);
+		OreDictionary.registerOre("listAllfruit", ItemRegistry.breadfruitItem);
 		OreDictionary.registerOre("cropCherry", ItemRegistry.cherryItem);
 		OreDictionary.registerOre("listAllfruit", ItemRegistry.cherryItem);
 		OreDictionary.registerOre("cropCinnamon", ItemRegistry.cinnamonItem);
