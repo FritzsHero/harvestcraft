@@ -28,11 +28,11 @@ public class Recipes
 
           RegisterSmelting();
 
-          for (int i = 0; i < 9; i++)
+          for (int i = 0; i < BlockRegistry.PamTemperateSaplings.length; i++)
           {
                AddRecipe(BlockRegistry.PamTemperateSaplings[i], new Object[] { ItemRegistry.PamTemperateFruits[i], ItemRegistry.PamTemperateFruits[i], ItemRegistry.PamTemperateFruits[i], new ItemStack(Blocks.sapling, 1, 0) });
           }
-          for (int i = 0; i < 24; i++)
+          for (int i = 0; i < BlockRegistry.PamWarmSaplings.length; i++)
           {
                AddRecipe(BlockRegistry.PamWarmSaplings[i], new Object[] { ItemRegistry.PamWarmFruits[i], ItemRegistry.PamWarmFruits[i], ItemRegistry.PamWarmFruits[i], new ItemStack(Blocks.sapling, 1, 3) });
           }
