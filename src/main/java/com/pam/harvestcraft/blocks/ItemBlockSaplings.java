@@ -34,7 +34,6 @@ public class ItemBlockSaplings extends ItemBlockVariants
 		case 0:
 			//list.add(StatCollector.translateToLocal("Apple Sapling"));
 			break;
-		
 		}
 	}
 }

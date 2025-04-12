@@ -14,8 +14,8 @@ public class PacketHandler
 
     public static void init()
     {
-//        Instance.registerMessage(MessageMarketBrowse.class, MessageMarketBrowse.class, 0, Side.SERVER);
-//        Instance.registerMessage(MessageMarketBuy.class, MessageMarketBuy.class, 1, Side.SERVER);
-//        Instance.registerMessage(MessageMarketClosed.class, MessageMarketClosed.class, 2, Side.SERVER);
+        // Instance.registerMessage(MessageMarketBrowse.class, MessageMarketBrowse.class, 0, Side.SERVER);
+        // Instance.registerMessage(MessageMarketBuy.class, MessageMarketBuy.class, 1, Side.SERVER);
+        // Instance.registerMessage(MessageMarketClosed.class, MessageMarketClosed.class, 2, Side.SERVER);
     }
 }

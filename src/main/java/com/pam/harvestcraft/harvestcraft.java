@@ -1,17 +1,15 @@
 package com.pam.harvestcraft;
 
-import com.pam.harvestcraft.blocks.BlockRegistry;
 import com.pam.harvestcraft.gui.GuiHandler;
 import com.pam.harvestcraft.gui.MarketItems;
 import com.pam.harvestcraft.item.FishRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
-import com.pam.harvestcraft.item.ItemRenderRegister;
 import com.pam.harvestcraft.item.PamCropSeedDropRegistry;
 import com.pam.harvestcraft.item.PamFoodOreDictionaryRegistry;
 import com.pam.harvestcraft.item.Recipes;
 import com.pam.harvestcraft.item.PamSquidDrops;
 import com.pam.harvestcraft.proxy.CommonProxy;
-import com.pam.harvestcraft.proxy.PacketHandler;
+// import com.pam.harvestcraft.proxy.PacketHandler;
 import com.pam.harvestcraft.tileentity.TileEntityMarket;
 import com.pam.harvestcraft.worldgen.BushWorldWorldGen;
 import com.pam.harvestcraft.worldgen.FruitTreeWorldGen;
@@ -64,7 +62,7 @@ public class harvestcraft {
         PamCropSeedDropRegistry.getSeedDrops();
         FishRegistry.registerItems();
         MarketItems.registerItems();
-//        PacketHandler.init();
+        // PacketHandler.init();
         
         GameRegistry.registerTileEntity(TileEntityMarket.class, "PamMarket");
         if (ItemRegistry.squiddropCalamari)

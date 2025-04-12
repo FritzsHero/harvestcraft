@@ -3,7 +3,7 @@ package com.pam.harvestcraft.gui;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.entity.player.EntityPlayer;
+// import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -27,7 +27,7 @@ public class GuiMarket extends GuiContainer
  
         private ItemStack buySlot;
         private TileEntityMarket tileEntityMarket;
-        private EntityPlayer player;
+        // private EntityPlayer player;
  
 
         public GuiMarket(InventoryPlayer inventoryplayer, TileEntityMarket _tileEntityMarket)
@@ -165,7 +165,7 @@ public class GuiMarket extends GuiContainer
         public void drawScreen(int par1, int par2, float par3)
         {
                 super.drawScreen(par1, par2, par3);
-                ItemStack item = MarketItems.getData(itemNum).getItem();
+                // ItemStack item = MarketItems.getData(itemNum).getItem();
                 //if (this.func_146978_c(73, 16, 16, 16, par1, par2))
                 //{
                         //this.renderToolTip(item, par1, par2);
