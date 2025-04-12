@@ -178,6 +178,7 @@ public class ItemModels
 		RegisterFruitModel(BlockRegistry.pamOlive, "olive");
 		RegisterFruitModel(BlockRegistry.pamOrange, "orange");
 		RegisterFruitModel(BlockRegistry.pamPapaya, "papaya");
+		RegisterFruitModel(BlockRegistry.pamPassionfruit, "passionfruit");
 		RegisterFruitModel(BlockRegistry.pamPeach, "peach");
 		RegisterFruitModel(BlockRegistry.pamPear, "pear");
 		RegisterFruitModel(BlockRegistry.pamPecan, "pecan");
@@ -233,6 +234,7 @@ public class ItemModels
 		RegisterSaplingModel(BlockRegistry.pamoliveSapling, "olive");
 		RegisterSaplingModel(BlockRegistry.pamorangeSapling, "orange");
 		RegisterSaplingModel(BlockRegistry.pampapayaSapling, "papaya");
+		RegisterSaplingModel(BlockRegistry.pampassionfruitSapling, "passionfruit");
 		RegisterSaplingModel(BlockRegistry.pampeachSapling, "peach");
 		RegisterSaplingModel(BlockRegistry.pampearSapling, "pear");
 		RegisterSaplingModel(BlockRegistry.pampecanSapling, "pecan");
