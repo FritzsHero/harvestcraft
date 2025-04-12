@@ -67,7 +67,7 @@ public class harvestcraft {
         GameRegistry.registerTileEntity(TileEntityMarket.class, "PamMarket");
         if (ItemRegistry.squiddropCalamari)
         {
-        MinecraftForge.EVENT_BUS.register(new PamSquidDrops());
+            MinecraftForge.EVENT_BUS.register(new PamSquidDrops());
         }
     }
 
