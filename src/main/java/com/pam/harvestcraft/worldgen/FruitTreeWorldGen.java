@@ -128,7 +128,7 @@ public class FruitTreeWorldGen implements IWorldGenerator
 
 	private Block GetTemperateFruit(Random _random)
 	{
-		switch (_random.nextInt(9))
+		switch (_random.nextInt(10))
 		{
 			case 0:
 				return BlockRegistry.pamApple;
@@ -150,6 +150,8 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				return BlockRegistry.pamGooseberry;
 			case 9:
 				return BlockRegistry.pamHazelnut;
+			case 10:
+				return BlockRegistry.pamPawpaw;
 			default:
 				return BlockRegistry.pamApple;
 		}
