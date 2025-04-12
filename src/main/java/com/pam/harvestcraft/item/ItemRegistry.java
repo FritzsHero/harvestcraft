@@ -332,6 +332,7 @@ public class ItemRegistry
         public static Item pistachioItem;
         public static Item plumItem;
         public static Item pomegranateItem;
+        public static Item rambutanItem;
         public static Item starfruitItem;
         public static Item vanillabeanItem;
         public static Item walnutItem;
@@ -1008,11 +1009,11 @@ public class ItemRegistry
                 PamTemperateFruits = new Item[] { Items.apple, avocadoItem, cherryItem, chestnutItem,
                         hazelnutItem, nutmegItem, pawpawItem, pearItem, plumItem, walnutItem, gooseberryItem };
                 PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, breadfruitItem, cashewItem,
-                        coconutItem,
-                        dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem, guavaItem, jackfruitItem,
-                        lemonItem, limeItem, lycheeItem, mangoItem, oliveItem, orangeItem, papayaItem,
-                        passionfruitItem, peachItem, pecanItem, peppercornItem,
-                        persimmonItem, pistachioItem, pomegranateItem, starfruitItem, vanillabeanItem };
+                        coconutItem, dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem,
+                        guavaItem, jackfruitItem, lemonItem, limeItem, lycheeItem, mangoItem, oliveItem,
+                        orangeItem, papayaItem, passionfruitItem, peachItem, pecanItem, peppercornItem,
+                        persimmonItem, pistachioItem, pomegranateItem, rambutanItem,
+                        starfruitItem, vanillabeanItem };
                 PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
         }
 
@@ -1253,6 +1254,7 @@ public class ItemRegistry
                 pistachioItem = RegisterFruit("pistachioItem");
                 plumItem = RegisterFruit("plumItem");
                 pomegranateItem = RegisterFruit("pomegranateItem");
+                rambutanItem = RegisterFruit("rambutanItem");
                 starfruitItem = RegisterFruit("starfruitItem");
                 vanillabeanItem = RegisterFruit("vanillabeanItem");
                 walnutItem = RegisterFruit("walnutItem");

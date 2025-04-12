@@ -65,6 +65,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.pistachioItem);
 		reg(ItemRegistry.plumItem);
 		reg(ItemRegistry.pomegranateItem);
+		reg(ItemRegistry.rambutanItem);
 		reg(ItemRegistry.starfruitItem);
 		reg(ItemRegistry.vanillabeanItem);
 		reg(ItemRegistry.walnutItem);
