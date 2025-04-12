@@ -335,6 +335,7 @@ public class ItemRegistry
         public static Item rambutanItem;
         public static Item soursopItem;
         public static Item starfruitItem;
+        public static Item tamarindItem;
         public static Item vanillabeanItem;
         public static Item walnutItem;
         public static Item gooseberryItem;
@@ -1014,8 +1015,8 @@ public class ItemRegistry
                         coconutItem, dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem,
                         guavaItem, jackfruitItem, lemonItem, limeItem, lycheeItem, mangoItem, oliveItem,
                         orangeItem, papayaItem, passionfruitItem, peachItem, pecanItem, peppercornItem,
-                        persimmonItem, pistachioItem, pomegranateItem, rambutanItem,
-                        starfruitItem, vanillabeanItem };
+                        persimmonItem, pistachioItem, pomegranateItem, rambutanItem, starfruitItem,
+                        tamarindItem, vanillabeanItem };
                 PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
         }
 
@@ -1259,6 +1260,7 @@ public class ItemRegistry
                 rambutanItem = RegisterFruit("rambutanItem");
                 soursopItem = RegisterFruit("soursopItem");
                 starfruitItem = RegisterFruit("starfruitItem");
+                tamarindItem = RegisterFruit("tamarindItem");
                 vanillabeanItem = RegisterFruit("vanillabeanItem");
                 walnutItem = RegisterFruit("walnutItem");
         }

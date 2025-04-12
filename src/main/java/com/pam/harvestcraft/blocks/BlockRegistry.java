@@ -192,6 +192,8 @@ public class BlockRegistry
 	public static Block pamsoursopSapling;
 	public static Block pamStarfruit;
 	public static Block pamstarfruitSapling;
+	public static Block pamTamarind;
+	public static Block pamtamarindSapling;
 	public static Block pamVanillabean;
 	public static Block pamvanillabeanSapling;
 	public static Block pamWalnut;
@@ -346,7 +348,7 @@ public class BlockRegistry
 		GameRegistry.registerBlock(pamMarket, "market");
 		
 		PamTemperateSaplings = new Block[] { pamappleSapling, pamavocadoSapling, pamcherrySapling, pamchestnutSapling, pamhazelnutSapling, pamnutmegSapling, pampawpawSapling, pampearSapling, pamplumSapling, pamsoursopSapling, pamwalnutSapling, pamgooseberrySapling };
-		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pambreadfruitSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamguavaSapling, pamjackfruitSapling, pamlemonSapling, pamlimeSapling, pamlycheeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampassionfruitSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamrambutanSapling, pamstarfruitSapling, pamvanillabeanSapling };
+		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pambreadfruitSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamguavaSapling, pamjackfruitSapling, pamlemonSapling, pamlimeSapling, pamlycheeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampassionfruitSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamrambutanSapling, pamstarfruitSapling, pamtamarindSapling, pamvanillabeanSapling };
 		PamLogSaplings = new Block[] { pamcinnamonSapling, pammapleSapling, pampaperbarkSapling };
 	}
 
@@ -522,6 +524,8 @@ public class BlockRegistry
 		pamsoursopSapling = new BlockPamSapling("soursop_sapling");
 		pamStarfruit = RegisterPamFruit("pamStarfruit");
 		pamstarfruitSapling = new BlockPamSapling("starfruit_sapling");
+		pamTamarind = RegisterPamFruit("pamTamarind");
+		pamtamarindSapling = new BlockPamSapling("tamarind_sapling");
 		pamVanillabean = RegisterPamFruit("pamVanillabean");
 		pamvanillabeanSapling = new BlockPamSapling("vanillabean_sapling");
 		pamWalnut = RegisterPamFruit("pamWalnut");
