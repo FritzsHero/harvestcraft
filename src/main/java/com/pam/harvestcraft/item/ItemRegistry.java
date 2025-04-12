@@ -312,6 +312,7 @@ public class ItemRegistry
         public static Item grapefruitItem;
         public static Item guavaItem;
         public static Item hazelnutItem;
+        public static Item jackfruitItem;
         public static Item lemonItem;
         public static Item limeItem;
         public static Item maplesyrupItem;
@@ -1005,8 +1006,8 @@ public class ItemRegistry
                         hazelnutItem, nutmegItem, pearItem, plumItem, walnutItem, gooseberryItem };
                 PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, breadfruitItem, cashewItem,
                         coconutItem,
-                        dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem, guavaItem, lemonItem,
-                        limeItem,
+                        dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem, guavaItem, jackfruitItem,
+                        lemonItem, limeItem,
                         mangoItem, oliveItem, orangeItem, papayaItem, peachItem, pecanItem, peppercornItem,
                         persimmonItem, pistachioItem, pomegranateItem, starfruitItem, vanillabeanItem };
                 PamLogFruits = new Item[] { cinnamonItem, maplesyrupItem, Items.paper };
@@ -1229,6 +1230,7 @@ public class ItemRegistry
                 grapefruitItem = RegisterFruit("grapefruitItem");
                 guavaItem = RegisterFruit("GuavaItem");
                 hazelnutItem = RegisterFruit("HazelnutItem");
+                jackfruitItem = RegisterFruit("JackfruitItem");
                 lemonItem = RegisterFruit("lemonItem");
                 limeItem = RegisterFruit("limeItem");
                 maplesyrupItem = RegisterFruit("maplesyrupItem");

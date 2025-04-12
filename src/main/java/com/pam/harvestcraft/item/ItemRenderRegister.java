@@ -45,6 +45,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.grapefruitItem);
 		reg(ItemRegistry.guavaItem);
 		reg(ItemRegistry.hazelnutItem);
+		reg(ItemRegistry.jackfruitItem);
 		reg(ItemRegistry.lemonItem);
 		reg(ItemRegistry.limeItem);
 		reg(ItemRegistry.maplesyrupItem);
