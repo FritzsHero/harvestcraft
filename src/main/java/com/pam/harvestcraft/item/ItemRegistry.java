@@ -333,6 +333,7 @@ public class ItemRegistry
         public static Item plumItem;
         public static Item pomegranateItem;
         public static Item rambutanItem;
+        public static Item soursopItem;
         public static Item starfruitItem;
         public static Item vanillabeanItem;
         public static Item walnutItem;
@@ -1007,7 +1008,8 @@ public class ItemRegistry
                         wintersquashseedItem, zucchiniseedItem, bambooshootseedItem, spinachseedItem,
                         curryleafseedItem, sesameseedsseedItem, waterchestnutseedItem };
                 PamTemperateFruits = new Item[] { Items.apple, avocadoItem, cherryItem, chestnutItem,
-                        hazelnutItem, nutmegItem, pawpawItem, pearItem, plumItem, walnutItem, gooseberryItem };
+                        hazelnutItem, nutmegItem, pawpawItem, pearItem, plumItem, soursopItem, walnutItem,
+                        gooseberryItem };
                 PamWarmFruits = new Item[] { almondItem, apricotItem, bananaItem, breadfruitItem, cashewItem,
                         coconutItem, dateItem, dragonfruitItem, durianItem, figItem, grapefruitItem,
                         guavaItem, jackfruitItem, lemonItem, limeItem, lycheeItem, mangoItem, oliveItem,
@@ -1255,6 +1257,7 @@ public class ItemRegistry
                 plumItem = RegisterFruit("plumItem");
                 pomegranateItem = RegisterFruit("pomegranateItem");
                 rambutanItem = RegisterFruit("rambutanItem");
+                soursopItem = RegisterFruit("soursopItem");
                 starfruitItem = RegisterFruit("starfruitItem");
                 vanillabeanItem = RegisterFruit("vanillabeanItem");
                 walnutItem = RegisterFruit("walnutItem");
