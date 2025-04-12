@@ -148,6 +148,8 @@ public class FruitTreeWorldGen implements IWorldGenerator
 				return BlockRegistry.pamWalnut;
 			case 8:
 				return BlockRegistry.pamGooseberry;
+			case 9:
+				return BlockRegistry.pamHazelnut;
 			default:
 				return BlockRegistry.pamApple;
 		}

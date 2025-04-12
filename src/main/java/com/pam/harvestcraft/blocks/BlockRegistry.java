@@ -142,6 +142,8 @@ public class BlockRegistry
 	public static Block pamgrapefruitSapling;
 	public static Block pamGuava;
 	public static Block pamguavaSapling;
+	public static Block pamHazelnut;
+	public static Block pamhazelnutSapling;
 	public static Block pamLemon;
 	public static Block pamlemonSapling;
 	public static Block pamLime;
@@ -331,7 +333,7 @@ public class BlockRegistry
 		pamMarket = new BlockPamMarket(Material.wood).setHardness(1.0F).setResistance(1.0F);
 		GameRegistry.registerBlock(pamMarket, "market");
 		
-		PamTemperateSaplings = new Block[] { pamappleSapling, pamavocadoSapling, pamcherrySapling, pamchestnutSapling, pamnutmegSapling, pampearSapling, pamplumSapling, pamwalnutSapling, pamgooseberrySapling };
+		PamTemperateSaplings = new Block[] { pamappleSapling, pamavocadoSapling, pamcherrySapling, pamchestnutSapling, pamhazelnutSapling, pamnutmegSapling, pampearSapling, pamplumSapling, pamwalnutSapling, pamgooseberrySapling };
 		PamWarmSaplings = new Block[] { pamalmondSapling, pamapricotSapling, pambananaSapling, pambreadfruitSapling, pamcashewSapling, pamcoconutSapling, pamdateSapling, pamdragonfruitSapling, pamdurianSapling, pamfigSapling, pamgrapefruitSapling, pamguavaSapling, pamlemonSapling, pamlimeSapling, pammangoSapling, pamoliveSapling, pamorangeSapling, pampapayaSapling, pampeachSapling, pampecanSapling, pampeppercornSapling, pampersimmonSapling, pampistachioSapling, pampomegranateSapling, pamstarfruitSapling, pamvanillabeanSapling };
 		PamLogSaplings = new Block[] { pamcinnamonSapling, pammapleSapling, pampaperbarkSapling };
 	}
@@ -462,6 +464,8 @@ public class BlockRegistry
 		pamgrapefruitSapling = new BlockPamSapling("grapefruit_sapling");
 		pamGuava = RegisterPamFruit("pamGuava");
 		pamguavaSapling = new BlockPamSapling("guava_sapling");
+		pamHazelnut = RegisterPamFruit("pamHazelnut");
+		pamhazelnutSapling = new BlockPamSapling("hazelnut_sapling");
 		pamLemon = RegisterPamFruit("pamLemon");
 		pamlemonSapling = new BlockPamSapling("lemon_sapling");
 		pamLime = RegisterPamFruit("pamLime");
