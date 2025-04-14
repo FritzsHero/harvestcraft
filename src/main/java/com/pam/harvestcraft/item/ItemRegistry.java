@@ -935,7 +935,7 @@ public class ItemRegistry
                 isTofuAsMilkEnabled = config.get(common, "isTofuAsMilkEnabled", true).getBoolean(true);
                 enablecroptoseedRecipe = config.get(common, "enablecroptoseedRecipe", true).getBoolean(true);
 
-                //enableharvestcraftfish = config.get(common, "enableharvestcraftfish", true).getBoolean(true);
+                enableharvestcraftfish = config.get(common, "enableharvestcraftfish", true).getBoolean(true);
                 //fishtrapbaitrecipeamount = config.get(common, "fishtrapbaitrecipeamount", 4).getInt();
                 //grainbaitrecipeamount = config.get(common, "grainbaitrecipeamount", 4).getInt();
                 //veggiebaitrecipeamount = config.get(common, "veggiebaitrecipeamount", 4).getInt();

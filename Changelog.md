@@ -4,6 +4,26 @@
 ## [Version: x.x.x] - xxxx.xx.xx
 ### Change
 
+
+## [Version: 2.5.0] - 2025.04.14
+### Change
+- Fixed extensibility of ChickenBiscuit
+- Added vanilla bakeware recipe
+- Changed Brownie recipe to V1
+- Updated sausage picture to V2
+- Added Breadfruit tree
+- Added Guava tree
+- Added Hazelnut tree
+- Added Jackfruit tree
+- Added Lychee tree
+- Added Passionfruit tree
+- Added Pawpaw tree
+- Added Rambutan tree
+- Added Soursop tree
+- Added Tamarind tree
+- Enabled fishes
+
+
 ## [Version: 2.4.0] - 2025.03.01
 ### Change
 - Added TomatoHerbChicken
