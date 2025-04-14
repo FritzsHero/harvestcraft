@@ -1257,10 +1257,10 @@ public class ItemRegistry
                 pistachioItem = RegisterFruit("pistachioItem");
                 plumItem = RegisterFruit("plumItem");
                 pomegranateItem = RegisterFruit("pomegranateItem");
-                rambutanItem = RegisterFruit("rambutanItem");
-                soursopItem = RegisterFruit("soursopItem");
+                rambutanItem = RegisterFruit("RambutanItem");
+                soursopItem = RegisterFruit("SoursopItem");
                 starfruitItem = RegisterFruit("starfruitItem");
-                tamarindItem = RegisterFruit("tamarindItem");
+                tamarindItem = RegisterFruit("TamarindItem");
                 vanillabeanItem = RegisterFruit("vanillabeanItem");
                 walnutItem = RegisterFruit("walnutItem");
         }
