@@ -678,6 +678,7 @@ public class Recipes
           AddRecipe(ItemRegistry.BBQsauceItem, new Object[] { "toolSaucepan", "cropMustard", "cropTomato" });
           AddRecipe(ItemRegistry.CinnamonToastItem, new Object[] { "toolBakeware", Items.bread, "foodGroundcinnamon", "foodButter", "listAllsugar" });
           AddRecipe(ItemRegistry.vanillaItem, new Object[] { "toolBakeware", "cropVanillabean" });
+          AddRecipe(ItemRegistry.PressedWax, new Object[] { "toolPot", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry" });
 
           RegisterTools();
           GetShapedRecipes();

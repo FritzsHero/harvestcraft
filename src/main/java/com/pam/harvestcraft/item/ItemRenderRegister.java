@@ -17,6 +17,7 @@ public final class ItemRenderRegister
 		RegisterToolsRenderer();
 
 
+		reg(ItemRegistry.PressedWax);
 		reg(ItemRegistry.honeyItem);
 		reg(ItemRegistry.saltItem);
 		reg(ItemRegistry.wovencottonItem);
