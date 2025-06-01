@@ -1,9 +1,10 @@
-package com.pam.harvestcraft.item;
+package com.pam.harvestcraft.events;
 
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import com.pam.harvestcraft.item.ItemRegistry;
 
 
-public class PamSquidDrops
+public class SquidDrops
 {
     public static double rand;
 

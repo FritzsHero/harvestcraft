@@ -7,7 +7,7 @@ import com.pam.harvestcraft.item.ItemRegistry;
 import com.pam.harvestcraft.item.PamCropSeedDropRegistry;
 import com.pam.harvestcraft.item.PamFoodOreDictionaryRegistry;
 import com.pam.harvestcraft.item.Recipes;
-import com.pam.harvestcraft.item.PamSquidDrops;
+import com.pam.harvestcraft.events.SquidDrops;
 import com.pam.harvestcraft.proxy.CommonProxy;
 // import com.pam.harvestcraft.proxy.PacketHandler;
 import com.pam.harvestcraft.tileentity.TileEntityMarket;
@@ -67,7 +67,7 @@ public class harvestcraft {
         GameRegistry.registerTileEntity(TileEntityMarket.class, "PamMarket");
         if (ItemRegistry.squiddropCalamari)
         {
-            MinecraftForge.EVENT_BUS.register(new PamSquidDrops());
+            MinecraftForge.EVENT_BUS.register(new SquidDrops());
         }
     }
 
