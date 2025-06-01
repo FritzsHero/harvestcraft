@@ -66,7 +66,9 @@ public class Config
 						"harvestcraft:asparagusItem", "harvestcraft:cranberryItem", "harvestcraft:riceItem",
 						"harvestcraft:seaweedItem", "harvestcraft:waterchestnutItem", "harvestcraft:okraItem",
 						"harvestcraft:GreenGrapeItem", "harvestcraft:JicamaItem", "harvestcraft:KaleItem",
-						"harvestcraft:MilletItem", "harvestcraft:MulberryItem", "harvestcraft:TomatilloItem"},
+						"harvestcraft:MilletItem", "harvestcraft:MulberryItem", "harvestcraft:TomatilloItem",
+						"harvestcraft:candleberryItem"
+				},
 				"comment"));
 		dropConfig.put("tropicalGarden", config.getStringList("tropicalGarden", "drops",
 				new String[]{"harvestcraft:grapeItem", "harvestcraft:pineappleItem", "harvestcraft:kiwiItem",
