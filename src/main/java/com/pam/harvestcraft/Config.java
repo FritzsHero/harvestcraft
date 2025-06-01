@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class Config 
 {
 	public static final Config instance = new Config();
-	
+
 	public static final String CATEGORY_CROPS = "crops";
 	public static final String CATEGORY_GARDENS = "gardens";
 	public static final String CATEGORY_FRUIT_TREES = "fruit trees";
@@ -34,7 +34,7 @@ public class Config
 	public static final String CATEGORY_MISC_RECIPES = "miscellaneous recipes";
 
 	private Map<String, String[]> dropConfig = new HashMap<String, String[]>();
-	
+
 
 	public void load(FMLPreInitializationEvent event) {
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
@@ -93,36 +93,33 @@ public class Config
 		}
 	}
 
-	
-	/**
-	 * Configures drops from the various gardens; this needs to happen after the item registries are updated
-     */
+	/// <summary> Configures drops from the various gardens; this needs to happen after the item registries are updated </summary>
 	public void configureGardenDrops() {
 		final Pattern ITEM_STACK_PATTERN = Pattern.compile("(?:([0-9]+)x)?([\\w:]+)(?:[@:]([0-9]+))?");
 		final Matcher ITEM_STACK_MATCHER = ITEM_STACK_PATTERN.matcher("");
 
-		for(String garden : dropConfig.keySet()) {
+		for (String garden : dropConfig.keySet()) {
 			System.out.println("Registering drops for '" + garden + "'.");
 
 			List<ItemStack> drops = new ArrayList<ItemStack>();
 			String[] itemNames = dropConfig.get(garden);
 
-			for(String baseItemName : itemNames) {
+			for (String baseItemName : itemNames) {
 				ITEM_STACK_MATCHER.reset(baseItemName);
-				if(ITEM_STACK_MATCHER.find()) {
+				if (ITEM_STACK_MATCHER.find()) {
 					String itemName = ITEM_STACK_MATCHER.group(2);
 					int metadata = 0;
-					if(ITEM_STACK_MATCHER.group(3) != null) {
+					if (ITEM_STACK_MATCHER.group(3) != null) {
 						metadata = Integer.parseInt(ITEM_STACK_MATCHER.group(3));
 					}
 					int stackSize = 1;
-					if(ITEM_STACK_MATCHER.group(1) != null) {
+					if (ITEM_STACK_MATCHER.group(1) != null) {
 						stackSize = Integer.parseInt(ITEM_STACK_MATCHER.group(1));
 					}
 					ItemStack drop = GameRegistry.makeItemStack(itemName, metadata, stackSize, null);
 
 					// Check to make sure we got a valid item
-					if(drop != null) {
+					if (drop != null) {
 						drops.add(drop);
 					} else {
 						// Otherwise, let the user know about it...
