@@ -23,9 +23,7 @@ public final class ItemRenderRegister
 		reg(ItemRegistry.wovencottonItem);
 		reg(ItemRegistry.freshwaterItem);
 		reg(ItemRegistry.freshmilkItem);
-		//reg(ItemRegistry.muttonrawItem);
 		reg(ItemRegistry.calamarirawItem);
-		//reg(ItemRegistry.muttoncookedItem);
 		reg(ItemRegistry.calamaricookedItem);
 		reg(ItemRegistry.ediblerootItem);
 

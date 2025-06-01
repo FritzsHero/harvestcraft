@@ -786,8 +786,6 @@ public class PamFoodOreDictionaryRegistry
 
 		OreDictionary.registerOre("foodMuttonraw", Items.mutton);
 		OreDictionary.registerOre("foodMuttoncooked", Items.cooked_mutton);
-		//OreDictionary.registerOre("foodMuttonraw", ItemRegistry.muttonrawItem);
-		// OreDictionary.registerOre("foodMuttoncooked", ItemRegistry.muttoncookedItem);
 		OreDictionary.registerOre("foodCalamariraw", ItemRegistry.calamarirawItem);
 		OreDictionary.registerOre("foodCalamaricooked", ItemRegistry.calamaricookedItem);
 
