@@ -1,0 +1,96 @@
+
+# Legend
+- Included
+- (Not Included)
+
+# Cows:
+- Wheat, Rye, Barley, Oats, Rice, Corn
+- Soybeans
+- Carrots
+- Apples
+- Bananas
+- (Pumpkins)
+- (Watermelons)
+- (Cucumber)
+- (Spinach)
+
+# Pigs:
+- However, domesticated pigs need a well-balanced diet that contains:
+  - Grass
+  - Flowers and leaves
+  - Roots
+  - Fruits and berries
+  - (Vegetables, turnips, and legumes)
+  - (Mushrooms)
+  - (Tree barks)
+
+- The only way for pigs to reach desired weight quickly is to feed them with:
+  - A concentrated grain diet low in fiber that includes wheat, corn, barley, and oats
+  - Soybean
+  - (Alfalfa)
+  - Hay
+
+- On the other hand, wild pigs prefer:
+  - (Small birds)
+  - (Rabbits)
+  - (Rats)
+  - (Dead insects)
+  - (Worms)
+  - (Eggs)
+  - (Carcasses)
+  - (Nuts, such as acorns and pecans)
+
+# Chicken:
+- Wheat seeds
+- Wheat, Rye, Barley, Oats, Rice, Corn
+- Peas
+- Sunflower seeds
+- Fruits like Apples, Bananas, (Berries), (Watermelons)
+- Quinoa
+- Millet
+- Amaranth
+- Pumpkin seeds
+- (Carrots)
+- (Kale)
+- (Spinach)
+- (Cucumber)
+- (Pears)
+
+# Sheep:
+- Wheat, Rye, Barley, Oats, Corn
+- Soybeans
+- Apples
+- Bananas
+- Carrots
+- (Pears)
+- (Pumpkin)
+- (Watermelon)
+- (Dandelions)
+- (Mustard Seed)
+
+# Rabbits:
+- Wheat seeds
+- Hay
+- Carrots
+- Apple
+- Pear
+- Bananas
+- (Spinach)
+- (Kale)
+- (Cucumber)
+- (Melons)
+
+# Wolf:
+- Meat
+
+
+
+
+
+
+
+
+
+
+
+

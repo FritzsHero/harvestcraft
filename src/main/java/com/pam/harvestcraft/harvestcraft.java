@@ -7,6 +7,7 @@ import com.pam.harvestcraft.item.ItemRegistry;
 import com.pam.harvestcraft.item.PamCropSeedDropRegistry;
 import com.pam.harvestcraft.item.PamFoodOreDictionaryRegistry;
 import com.pam.harvestcraft.item.Recipes;
+import com.pam.harvestcraft.events.BreedingItems;
 import com.pam.harvestcraft.events.SquidDrops;
 import com.pam.harvestcraft.proxy.CommonProxy;
 // import com.pam.harvestcraft.proxy.PacketHandler;
@@ -69,6 +70,7 @@ public class harvestcraft {
         {
             MinecraftForge.EVENT_BUS.register(new SquidDrops());
         }
+        MinecraftForge.EVENT_BUS.register(new BreedingItems());
     }
 
 
