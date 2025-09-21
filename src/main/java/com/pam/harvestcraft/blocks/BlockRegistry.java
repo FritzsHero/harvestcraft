@@ -199,6 +199,7 @@ public class BlockRegistry
 	public static Block pamWalnut;
 	public static Block pamwalnutSapling;
 	
+	public static Block Candle1;
 	public static Block pamMarket;
 	
 	public static int gardenRarity;
@@ -343,6 +344,7 @@ public class BlockRegistry
 		RegisterCrops();
 		RegisterTrees();
 		RegisterLogTrees();
+		Candle1 = new ItemBlockCandle();
 
 		pamMarket = new BlockPamMarket(Material.wood).setHardness(1.0F).setResistance(1.0F);
 		GameRegistry.registerBlock(pamMarket, "market");

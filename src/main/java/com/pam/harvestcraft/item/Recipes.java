@@ -1011,7 +1011,9 @@ public class Recipes
           GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 1), "L", 'L', new ItemStack(BlockRegistry.pamMaple));
           GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamPaperbark));
           GameRegistry.addShapedRecipe(new ItemStack(Blocks.planks, 4, 3), "L", 'L', new ItemStack(BlockRegistry.pamCinnamon));
-	}
+
+          AddShapedRecipe(BlockRegistry.Candle1, new Object[]{ "@", "X", Character.valueOf('@'), Items.string, Character.valueOf('X'), "materialWax" });
+     }
 
 
      private static void RegisterTools()

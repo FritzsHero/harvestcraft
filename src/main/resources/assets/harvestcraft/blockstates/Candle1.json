@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "inventory": { "model": "harvestcraft:candles/Candle1_inventory" },
+        "facing=up": { "model": "harvestcraft:candles/Candle1" },
+        "facing=east": { "model": "harvestcraft:candles/Candle1_wall" },
+        "facing=south": { "model": "harvestcraft:candles/Candle1_wall", "y": 90 },
+        "facing=west": { "model": "harvestcraft:candles/Candle1_wall", "y": 180 },
+        "facing=north": { "model": "harvestcraft:candles/Candle1_wall", "y": 270 }
+    }
+}

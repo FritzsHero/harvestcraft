@@ -1,0 +1,33 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "harvestcraft:blocks/Candle1",
+	    "Candle1": "harvestcraft:blocks/Candle1"
+    },
+    "elements": [
+        {
+            "from": [ 7, 0, 7 ],
+            "to": [ 9, 10, 9 ],
+            "faces": {
+                "down": { "uv": [ 7, 13, 9, 15 ], "texture": "#Candle1" },
+                "up":   { "uv": [ 7,  6, 9,  8 ], "texture": "#Candle1" }
+            }
+        },
+        {
+            "from": [ 7, 0, 0 ],
+            "to": [ 9, 16, 16 ],
+            "faces": {
+                "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#Candle1" },
+                "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#Candle1" }
+            }
+        },
+        {
+            "from": [ 0, 0, 7 ],
+            "to": [ 16, 16, 9 ],
+            "faces": {
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#Candle1" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#Candle1" }
+            }
+        }
+    ]
+}
