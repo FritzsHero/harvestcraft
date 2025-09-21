@@ -17,7 +17,7 @@ public class TropicalGardenBlock extends BlockBaseGarden
 {
 	private final String name = "tropicalgarden";
 	public static List<ItemStack> drops;
-	
+
 
 	public TropicalGardenBlock()
 	{	
@@ -26,20 +26,20 @@ public class TropicalGardenBlock extends BlockBaseGarden
 		setUnlocalizedName(name);
 		setCreativeTab(harvestcraft.modTab);
 	}
-	
+
 
 	@Override
 	protected boolean canPlaceBlockOn(Block ground)
     {
         return ground == Blocks.grass;
     }
-	
+
 
 	public String getName()
 	{
 		return name;
 	}
-	
+
 
 	@Override
     public net.minecraftforge.common.EnumPlantType getPlantType(net.minecraft.world.IBlockAccess world, BlockPos pos)
@@ -47,7 +47,7 @@ public class TropicalGardenBlock extends BlockBaseGarden
         return net.minecraftforge.common.EnumPlantType.Plains;
     }
 
-	
+
     @Override
     public IBlockState getPlant(net.minecraft.world.IBlockAccess world, BlockPos pos)
     {
