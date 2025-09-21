@@ -1238,7 +1238,7 @@ public class PamFoodOreDictionaryRegistry
 		OreDictionary.registerOre("cropCandle", ItemRegistry.candleberryItem);
 		OreDictionary.registerOre("cropCandleberry", ItemRegistry.candleberryItem);
 		OreDictionary.registerOre("seedCandleberry", ItemRegistry.candleberryseedItem);
-		//OreDictionary.registerOre("materialPressedwax", ItemRegistry.waxItem);
+		OreDictionary.registerOre("materialWax", ItemRegistry.PressedWax);
 
 		//OreDictionary.registerOre("grainBait", ItemRegistry.grainbaitItem);
 		//OreDictionary.registerOre("veggieBait", ItemRegistry.veggiebaitItem);
