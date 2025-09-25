@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 
 public class MarketItems
 {
-      private static ArrayList<MarketData> items = new ArrayList();
+      private static ArrayList<MarketData> items = new ArrayList<MarketData>();
   
       public static void registerItems(MarketData data)
       {
