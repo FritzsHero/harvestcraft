@@ -20,6 +20,7 @@ public class ItemModels
 	{
 		DefineItemModels();
 		RegisterCandleModel(BlockRegistry.Candle1, "Candle1");
+		RegisterCandleModel(BlockRegistry.LanternBlock, "Lantern");
 		prepareModels();
 	}
 

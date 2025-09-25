@@ -198,6 +198,8 @@ public class BlockRegistry
 	public static Block pamvanillabeanSapling;
 	public static Block pamWalnut;
 	public static Block pamwalnutSapling;
+
+	public static Block LanternBlock;
 	
 	public static Block Candle1;
 	public static Block pamMarket;
@@ -345,6 +347,7 @@ public class BlockRegistry
 		RegisterTrees();
 		RegisterLogTrees();
 		Candle1 = new ItemBlockCandle();
+		LanternBlock = new ItemBlockLantern();
 
 		pamMarket = new BlockPamMarket(Material.wood).setHardness(1.0F).setResistance(1.0F);
 		GameRegistry.registerBlock(pamMarket, "market");
