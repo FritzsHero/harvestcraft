@@ -1,7 +1,14 @@
 {
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "harvestcraft:blocks/PressedWax"
+    },
+    "model": "cube_all",
+    "uvlock": true
+  },
   "variants": {
-    "normal": {
-      "model": "harvestcraft:PressedWax"
-    }
+    "inventory": [{}],
+    "normal": [{}]
   }
 }

@@ -201,6 +201,7 @@ public class BlockRegistry
 
 	public static Block LanternBlock;
 	
+	public static Block PressedWaxBlock;
 	public static Block Candle1;
 	public static Block pamMarket;
 	
@@ -346,6 +347,7 @@ public class BlockRegistry
 		RegisterCrops();
 		RegisterTrees();
 		RegisterLogTrees();
+		PressedWaxBlock = new PressedWaxBlock();
 		Candle1 = new ItemBlockCandle();
 		LanternBlock = new ItemBlockLantern();
 
