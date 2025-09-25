@@ -17,6 +17,8 @@ public class ItemBlockCandle extends BlockTorch
     GameRegistry.registerBlock(this, name);
     setUnlocalizedName(name);
     setCreativeTab(harvestcraft.modTab);
+    setLightLevel(1f);
+    setLightOpacity(0);
   }
 
 
