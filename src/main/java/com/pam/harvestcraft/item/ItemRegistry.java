@@ -886,7 +886,7 @@ public class ItemRegistry
         public static Item ChickenBiscuitItem;
         public static Item BBQsauceItem;
         public static Item CinnamonToastItem;
-        public static Item PressedWax;
+        public static Item PressedWaxItem;
 
         public static int cropfoodRestore;
         public static float cropsaturationRestore;
@@ -1991,7 +1991,7 @@ public class ItemRegistry
                 //grubItem = RegisterItem("grubItem");
                 //royaljellyItem = RegisterItem("royaljellyItem");
                 //waxItem = RegisterItem("waxItem");
-                PressedWax = RegisterItem("PressedWax");
+                PressedWaxItem = RegisterItem("PressedWaxItem");
         }
 
 
