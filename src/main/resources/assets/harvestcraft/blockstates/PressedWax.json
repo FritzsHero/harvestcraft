@@ -4,11 +4,15 @@
     "textures": {
       "all": "harvestcraft:blocks/PressedWax"
     },
-    "model": "cube_all",
-    "uvlock": true
+    "model": "cube_all"
   },
   "variants": {
-    "inventory": [{}],
+    "inventory": [{
+      "model": "cube_all",
+      "textures": {
+        "all": "harvestcraft:blocks/PressedWax"
+      }
+    }],
     "normal": [{}]
   }
 }

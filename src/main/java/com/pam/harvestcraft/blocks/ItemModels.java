@@ -19,8 +19,9 @@ public class ItemModels
 	public static void preInit()
 	{
 		DefineItemModels();
-		RegisterCandleModel(BlockRegistry.Candle1, "Candle1");
-		RegisterCandleModel(BlockRegistry.LanternBlock, "Lantern");
+		RegisterModel(BlockRegistry.PressedWaxBlock, "PressedWax");
+		RegisterModel(BlockRegistry.Candle1, "Candle1");
+		RegisterModel(BlockRegistry.LanternBlock, "Lantern");
 		prepareModels();
 	}
 
@@ -31,7 +32,7 @@ public class ItemModels
 	}
 
 
-	private static void RegisterCandleModel(Block _candleBlock, String _name)
+	private static void RegisterModel(Block _candleBlock, String _name)
 	{
 		registerItemModels(Item.getItemFromBlock(_candleBlock), new ItemModelList()
 			.add(0, _name));
