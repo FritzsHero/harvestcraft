@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"particle": "blocks/lantern",
-		"lantern": "blocks/lantern"
+		"particle": "harvestcraft:blocks/lantern/lantern",
+		"lantern": "harvestcraft:blocks/lantern/lantern"
 	},
 	"elements": [
 		{
