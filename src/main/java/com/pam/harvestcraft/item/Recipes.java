@@ -681,6 +681,7 @@ public class Recipes
           AddRecipe(ItemRegistry.PressedWaxItem, new Object[] { "toolPot", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry", "cropCandleberry" });
           AddRecipe(BlockRegistry.PressedWaxBlock, new Object[] { "materialWax", "materialWax", "materialWax", "materialWax", "materialWax", "materialWax", "materialWax", "materialWax", "materialWax" });
           AddRecipe(new ItemStack(ItemRegistry.PressedWaxItem, 9), new Object[] { BlockRegistry.PressedWaxBlock });
+          AddRecipe(BlockRegistry.LanternBlock, new Object[] { Items.iron_ingot, Blocks.torch });
 
           RegisterTools();
           GetShapedRecipes();
