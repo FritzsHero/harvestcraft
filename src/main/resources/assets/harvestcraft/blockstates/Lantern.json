@@ -1,12 +1,11 @@
 {
   "variants": {
     "inventory": { "model": "harvestcraft:deco/lantern_inventory" },
-    "hanging=false": { "model": "harvestcraft:deco/lantern" },
-    "hanging=true": { "model": "harvestcraft:deco/lantern_hanging" },
     "facing=up": { "model": "harvestcraft:deco/lantern" },
-    "facing=east": { "model": "harvestcraft:deco/lantern" },
-    "facing=south": { "model": "harvestcraft:deco/lantern" },
-    "facing=west": { "model": "harvestcraft:deco/lantern" },
-    "facing=north": { "model": "harvestcraft:deco/lantern" }
+    "facing=east": { "model": "harvestcraft:deco/lantern_wall", "y": 270 },
+    "facing=south": { "model": "harvestcraft:deco/lantern_wall" },
+    "facing=west": { "model": "harvestcraft:deco/lantern_wall", "y": 90 },
+    "facing=north": { "model": "harvestcraft:deco/lantern_wall", "y": 180 },
+    "facing=down": { "model": "harvestcraft:deco/lantern_hanging" }
   }
 }
