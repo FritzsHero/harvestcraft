@@ -5,6 +5,19 @@
 ### Change
 
 
+## [Version: 3.0.0] - 2025.10.04
+### Change
+- Added PressedWax
+- Renamed SquidDrops event
+- Removed PamSheepDrops
+- Added candleberry to soggyGarden drops
+- Added more breeding items
+- Added Candle1
+- Added lantern
+- Added PressedWax block
+- Refactored SquidDrops
+
+
 ## [Version: 2.5.0] - 2025.04.14
 ### Change
 - Fixed extensibility of ChickenBiscuit
